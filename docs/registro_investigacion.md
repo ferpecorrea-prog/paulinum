@@ -202,6 +202,5 @@ ejecuta. Aux impostores: 16 especificaciones publicadas (`9029391`, 1 h 35 min; 
 **Registro en OSF (17:47 UTC).** Hecho desde el navegador integrado con la sesión del autor (proyecto OSF `bvq4n`,
 creado por el autor; registro `nphcu`, plantilla *Open-Ended Registration*, licencia CC-BY 4.0, materias y etiquetas,
 resumen con los diez puntos del protocolo y los tres DOI; público sin embargo; el autor pulsó la orden de registrar).
-Queda «pendiente de aprobación» hasta que el autor la confirme por el correo de OSF (o 48 h). Anotado en `REGISTRO.md`
-y `README.md`.
+El autor lo aprobó minutos después: el registro es público (`Public registration`). Anotado en `REGISTRO.md` y `README.md`.
 
