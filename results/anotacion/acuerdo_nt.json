@@ -1,6 +1,11 @@
 {
  "modelo": "grc_odycy_joint_sm",
- "disponible": false,
- "motivo": "no se pudo instalar/cargar el modelo grc_odycy_joint_sm: CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.16/x64/bin/python', '-m', 'grecy', 'install', 'grc_odycy_joint_sm']' returned non-zero exit status 1.",
- "apto": false
+ "disponible": true,
+ "tokens_nt": 137554,
+ "acuerdo_pos": 0.14829812291899908,
+ "acuerdo_lema": 0.4872922634020094,
+ "umbral_pos": 0.95,
+ "umbral_lema": 0.95,
+ "apto": false,
+ "segundos": 23
 }
