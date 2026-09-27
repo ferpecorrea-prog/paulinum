@@ -66,6 +66,12 @@ registrado. Descarga de nivel 1 (NT y Padres Apostólicos, 43 archivos) comproba
 
 **Pendiente (sesión 2, antes del Sello 2).** Familias NCD y Dirichlet-multinomial; `epist_pairs`, `genre_pairs`,
 `mediated_pairs`; envolventes B y G; `nearest_author`; ruido de edición con NA28 (extracción local) y testigos si
-el autor los deposita; anotación uniforme y su validación; `scripts/veredicto.py`; lexicón; cotejo de las máscaras
-de Hebreos con NA28 por el autor.
+el autor los deposita; anotación uniforme y su validación; `scripts/veredicto.py`; lexicón; cotejo de las máscaras `otq` de
+las otras trece cartas con NA28 por el mismo procedimiento (mismo rasero).
+
+**Cotejo de Hebreos con NA28 (27-IX-2026, tarde).** El ejemplar del autor es un escaneo sin capa de texto; el cotejo se
+hizo visualmente sobre las 28 páginas de Hebreos (pp. 657-684, renderizadas a 300 ppp), leyendo los tramos en cursiva
+del texto y las referencias en cursiva del margen. Resultado: 27 de los 28 tramos de partida confirmados; ocho tramos
+añadidos (3,5; 7,1-2; 7,4; 10,8-9; 10,28; 11,21; 12,15; 12,29); uno retirado (12,20, en redonda). Enmienda 1 del
+registro del protocolo; `metadata/masks.csv` con 35 tramos `otq` para Hebreos; cobertura 21,7 % (24,1 % con el cierre).
 
