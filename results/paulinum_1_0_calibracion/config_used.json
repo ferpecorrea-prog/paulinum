@@ -1,0 +1,156 @@
+{
+ "nombre": "paulinum_1_0_calibracion",
+ "descripcion": "catorce cartas (siete indiscutidas + Ef Col 2Tes 1Tim 2Tim Tit Heb); envolvente epistolar ampliada; tres familias de métodos; 16 especificaciones principales, 300 iteraciones",
+ "protocolo": "protocols/paulinum_1_0/PROTOCOLO.md",
+ "corpus": {
+  "tier": 4,
+  "edicion": "sblgnt",
+  "min_tokens": 100
+ },
+ "rejilla": {
+  "rasgos": [
+   "mfw:300",
+   "closed:150",
+   "char3:600",
+   "lemma_dict:300"
+  ],
+  "distancias": [
+   "minmax",
+   "delta"
+  ],
+  "ventanas": [
+   500
+  ],
+  "mascaras": [
+   "none",
+   "formulae+preformed+otq+reuse"
+  ],
+  "diacriticos": [
+   "dia"
+  ],
+  "nucleos": [
+   "seven"
+  ],
+  "ediciones": [
+   "sblgnt"
+  ]
+ },
+ "familias": {
+  "impostores": {
+   "activa": true
+  },
+  "ncd": {
+   "activa": true,
+   "compresor": "lzma",
+   "preset": 6,
+   "unidad": "caracteres sin diacríticos",
+   "ventana": 500
+  },
+  "dirichlet": {
+   "activa": true,
+   "rasgos": [
+    "mfw:300",
+    "closed:150"
+   ],
+   "hiperparametro": "empirico (envolvente)",
+   "ventana": 500
+  }
+ },
+ "parametros": {
+  "iters": 300,
+  "fraccion_rasgos": 0.5,
+  "impostores": 30,
+  "semilla": 20260927,
+  "sin_dianas": true,
+  "auc_minima": 0.8,
+  "max_positivos_por_autor": 6,
+  "n_pares_negativos": 400
+ },
+ "mismo_rasero": {
+  "rasgos": "mfw:300",
+  "distancias": [
+   "minmax",
+   "delta"
+  ],
+  "ventana": 500,
+  "sorteos": 20,
+  "tope_pares_por_autor": 120,
+  "bootstrap_autores": 2000,
+  "bootstrap_ventanas": 100,
+  "percentil_intra": 90,
+  "percentil_inter_minimo": 10
+ },
+ "variables": {
+  "rasgos": "mfw:200",
+  "distancia": "delta",
+  "ventana": 400,
+  "permutaciones": 499,
+  "permutaciones_controles": 299
+ },
+ "rolling": {
+  "rasgos": "mfw:300",
+  "distancia": "minmax",
+  "ventana": 400,
+  "paso": 100,
+  "iters": 60
+ },
+ "segundo_modelo": {
+  "rasgos": [
+   "mfw:300",
+   "closed:150",
+   "char3:600",
+   "lemma_dict:300"
+  ],
+  "ventana": 500,
+  "tope_ventanas_documento": 20,
+  "tope_ventanas_autor": 120,
+  "pliegues": 10
+ },
+ "sensibilidad": {
+  "nucleos": [
+   "hauptbriefe",
+   "seven_plus",
+   "trece"
+  ],
+  "ediciones": [
+   "tischendorf",
+   "nestle1904",
+   "na28"
+  ],
+  "testigos": [
+   "p46",
+   "sinaiticus"
+  ],
+  "ventanas": [
+   300,
+   null
+  ],
+  "rasgos": [
+   "mfw:100",
+   "mfw:500",
+   "char4:1000",
+   "pos3:200"
+  ],
+  "distancias": [
+   "cosine"
+  ],
+  "diacriticos": [
+   "nodia"
+  ]
+ },
+ "preregistro": {
+  "fecha": "2026-09-27",
+  "dianas": "Ef, Col, 2Tes, 1Tim, 2Tim, Tit y Heb se valoran una a una con el mismo procedimiento; las siete indiscutidas en leave-one-out con el mismo procedimiento; Hebreos no parte de ninguna hipótesis previa",
+  "rejilla": "4 rasgos × 2 distancias × 1 ventana × 2 máscaras × 1 diacríticos × 1 núcleo × 1 edición = 16 especificaciones, iters 300, en cada una de las tres familias de métodos",
+  "regla_auc": "una especificación con AUC < 0,80 en los problemas de respuesta conocida epistolares no produce LR; una familia cuya mediana de AUC epistolar es < 0,80 se informa como no apta y no entra en el veredicto",
+  "veredicto": "por carta y familia: mediana de log10 LR entre las especificaciones válidas, con Q1-Q3 y mín-máx; escala verbal; calibración epistolar como principal, general y cristiana como secundarias; el veredicto lo calcula scripts/veredicto.py (sellado) y el texto del libro no lo modifica",
+  "mismo_rasero": "ninguna carta se declara fuera del rango intra-autor si el IC 95 % de su percentil en la envolvente intra-autor incluye un valor <= 90; se declara fuera solo si el IC está entero por encima de 90 y su distancia cae además dentro del cuerpo de la distribución inter-autor (percentil >= 10); en otro caso, indeterminado",
+  "genero": "la distancia de Hebreos y de cada carta al núcleo se lee también frente a la distribución de saltos de género dentro de un mismo autor (Libanio, Juliano, Basilio, Isócrates, Eliano, Orígenes, Ignacio): un salto del tamaño de un cambio de género intra-autor no cuenta como cambio de autor",
+  "carta_por_carta": "hermanas excluidas como candidatas (Col para Ef, 1Tes para 2Tes); la máscara reuse forma parte de la máscara completa; si el signo de la LR cambia al enmascarar, se informa como dependencia de los pasajes paralelos",
+  "tres_corintios": "control de falsificación (pseudo_pairs); nunca argumento a favor ni en contra de una carta concreta",
+  "composicion_mediada": "Epicteto/Arriano y Plotino/Porfirio son problemas de respuesta conocida aparte (§ 7.4): si el editor no borra al autor, la lectura de H2 se apoya en ellos",
+  "resultado_adverso": "si alguna carta del núcleo queda por debajo de 0,5 en leave-one-out en la mayoría de las especificaciones, se informa como heterogeneidad del núcleo; no se cambia el núcleo ni los parámetros dentro de la campaña",
+  "orden": "ninguna fila de diana se lee antes de cerrar y publicar (commit) las etapas de calibración y envolvente; el historial de git es el registro del orden",
+  "enmiendas": "toda desviación del protocolo se anota en protocols/paulinum_1_0/REGISTRO.md con fecha y motivo antes de ejecutarse; el libro las cita"
+ }
+}
