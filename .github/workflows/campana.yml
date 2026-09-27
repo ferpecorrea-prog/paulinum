@@ -55,8 +55,38 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - name: Textos de origen (huellas en data/provenance.json)
-        run: python -m paulinum fetch --tier 4 --editions
+      - name: Textos de origen (huellas comprobadas contra data/provenance.json)
+        run: |
+          python -m paulinum fetch --tier 4 --editions
+          # `fetch` reescribe data/provenance.json (archivo versionado) con las huellas y la hora de cada descarga.
+          # Se comprueba que cada huella coincide con la registrada en el repositorio y se restaura el archivo canónico,
+          # para que el árbol de trabajo quede limpio (si no, `git pull --rebase` del envío final falla).
+          git show HEAD:data/provenance.json > /tmp/provenance_repo.json
+          python - <<'PY'
+          import json, sys
+          repo = json.load(open("/tmp/provenance_repo.json"))["files"]
+          nuevo = json.load(open("data/provenance.json"))["files"]
+          dif, nuevos, faltan = [], [], []
+          for k, v in nuevo.items():
+              if v.get("status") not in ("ok", "local"):
+                  continue
+              r = repo.get(k)
+              if r is None:
+                  nuevos.append(k)
+              elif r.get("sha256") and v.get("sha256") != r.get("sha256"):
+                  dif.append((k, r.get("sha256", "")[:12], v.get("sha256", "")[:12]))
+          for k, r in repo.items():
+              if r.get("status") == "ok" and k not in nuevo:
+                  faltan.append(k)
+          print(f"huellas comprobadas: {len(nuevo)} archivos; iguales al repositorio: {len(nuevo) - len(dif) - len(nuevos)}; "
+                f"no registrados antes: {len(nuevos)}; ausentes ahora: {len(faltan)}")
+          for k in nuevos[:20]: print("  [nuevo]", k)
+          for k in faltan[:20]: print("  [ausente]", k)
+          if dif:
+              for k, a, b in dif: print(f"::error::huella distinta en {k}: repositorio {a}… descargado {b}…")
+              sys.exit(1)
+          PY
+          git checkout -- data/provenance.json
       - name: Lexicón uniforme desde Diorisis (solo si la rejilla usa lemma_dict; huella comprobada)
         run: |
           if grep -q "lemma_dict" "${{ github.event.inputs.config }}"; then
@@ -122,7 +152,22 @@ jobs:
           git add -A results/
           if git diff --cached --quiet; then echo "sin cambios"; exit 0; fi
           git commit -m "[lab] ${{ github.event.inputs.stage }} de ${{ github.event.inputs.run || github.event.inputs.config }} (ejecución ${{ github.run_id }})"
+          # Cualquier archivo versionado que la ejecución haya tocado fuera de results/ (p. ej. data/provenance.json)
+          # se restaura: solo se publican resultados, y el árbol debe estar limpio para el rebase.
+          git checkout -- .
+          git status --short | head -20
+          enviado=0
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push origin HEAD:main && break
+            if git pull --rebase origin main && git push origin HEAD:main; then enviado=1; break; fi
+            echo "intento $i fallido; se reintenta"
             sleep $((i * 20))
           done
+          if [ "$enviado" != "1" ]; then echo "::error::no se pudieron enviar los resultados a main (véase el artefacto de la ejecución)"; exit 1; fi
+      - name: Copia de seguridad de results/ como artefacto de la ejecución (por si el envío falla)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-${{ github.run_id }}
+          path: results/
+          retention-days: 30
+          if-no-files-found: ignore

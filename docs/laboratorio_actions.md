@@ -11,17 +11,30 @@ deja cada ejecución registrada en público: el *log* del ejecutor, la bitácora
 1. Parte de cero: `actions/checkout` del *commit* de `main` en el momento del lanzamiento (después del Sello 2, el
    código de ese *commit* es el sellado; la huella se puede recomputar con `python -m paulinum seal`), Python 3.11 y
    las versiones fijadas en `requirements.txt`.
-2. Descarga los textos de origen (`python -m paulinum fetch --tier 4 --editions`) y comprueba sus huellas contra
-   `data/provenance.json`.
+2. Descarga los textos de origen (`python -m paulinum fetch --tier 4 --editions`) y **comprueba sus huellas contra
+   `data/provenance.json`** (el archivo versionado): `fetch` reescribe ese archivo con las huellas y la hora de cada
+   descarga; el flujo compara cada huella con la registrada en el repositorio, se detiene si alguna difiere, informa
+   de los archivos no registrados o ausentes y restaura el archivo canónico (`git checkout -- data/provenance.json`),
+   de modo que el árbol de trabajo queda limpio para el envío final.
 3. Si la configuración usa `lemma_dict`, descarga Diorisis desde figshare (artículo 6187256; CC BY-NC-SA 4.0, no se
    redistribuye), reconstruye el lexicón con `scripts/construir_lexicon.py` y **comprueba que su SHA-256 coincide con
    el sellado** en `protocols/paulinum_1_0/SELLO.json`; si no coincide, la ejecución se detiene.
 4. Construye el corpus e inventario (`build`, `inventory`).
 5. Ejecuta la etapa pedida con tope de horas (`timeout`), cuatro procesos (`--workers 4`) y, si se indica, solo
    algunas familias (`--familias`) o algunas especificaciones (`--solo`, para trocear la familia NCD).
-6. Añade `results/` y hace *commit* y *push* a `main` (con reintentos si otra ejecución empujó antes). Si el tope de
-   tiempo cortó la etapa, se envía lo hecho: los archivos `specs/<spec>.json.parcial.jsonl` guardan cada problema
-   terminado y la siguiente ejecución retoma donde quedó.
+6. Añade `results/` y hace *commit* y *push* a `main` (con reintentos si otra ejecución empujó antes; antes del
+   *rebase* restaura cualquier archivo versionado tocado fuera de `results/`). Si el envío no se logra en cinco
+   intentos, la ejecución **falla de forma visible**; en todo caso, `results/` se guarda además como artefacto de la
+   ejecución (`results-<run_id>`, 30 días), de modo que ningún cómputo se pierde. Si el tope de tiempo cortó la
+   etapa, se envía lo hecho: los archivos `specs/<spec>.json.parcial.jsonl` guardan cada problema terminado y la
+   siguiente ejecución retoma donde quedó.
+
+Primera ejecución real (27-IX-2026, 13:14 UTC, `anotacion`): la descarga, la reconstrucción del lexicón (4 min; huella
+igual a la sellada) y el corpus funcionaron; el envío final falló en silencio porque `fetch` había modificado
+`data/provenance.json` y `git pull --rebase` se negaba a continuar con cambios sin confirmar; el bucle de reintentos
+no hacía fallar el paso. Corregido en el propio flujo como se describe en los puntos 2 y 6 (sin cambio de código
+sellado: el flujo no forma parte del sello). La ejecución de `specs` que corría en paralelo se canceló y se relanzó
+con el flujo corregido.
 
 ## Entradas del flujo
 

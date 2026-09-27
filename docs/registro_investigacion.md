@@ -176,3 +176,10 @@ punta a punta de la descarga de Diorisis desde figshare, la reconstrucción del 
 Permiso de borrado concedido de nuevo para `Correccion_Fondo` (archivos de bloqueo de git). Las órdenes con hora y
 duración quedan en `results/<run>/bitacora.md` (las escribe el propio código) y en los *logs* públicos de Actions.
 
+**Primeras órdenes (13:14 UTC).** El token de acceso necesitaba el permiso `Actions: write` (el autor lo añadió). Lanzadas
+`anotacion` (run `paulinum_1_0`) y `specs` de impostores del run auxiliar. La primera ejecución del laboratorio mostró un
+fallo de infraestructura: el envío de resultados fallaba en silencio (árbol sucio por `data/provenance.json`, que `fetch`
+reescribe). Flujo corregido (comprobación real de huellas, restauración del archivo canónico, fallo visible y artefacto
+de respaldo; `docs/laboratorio_actions.md`); la ejecución de `specs` se canceló a los 25 min y se relanza con el flujo
+corregido; `anotacion` se repite. Los resultados de `anotacion` de la primera ejecución no llegaron al repositorio.
+
