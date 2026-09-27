@@ -22,8 +22,11 @@ falsificación preparado.
   `ecaf65723ff53cdab462bb3ad014dcf3475a076b011060dc4333f603fa190117`, idéntica a la registrada por la
   reconstrucción el 25-IX-2026.
 - Inventario de fuentes abiertas y de accesibilidad de red: `docs/inventario_fuentes_sesion0.md`.
-- 3 Corintios (P. Bodmer X): normalización de la transcripción diplomática de referencia y fichero de
-  alineación, pendientes de validación filológica por el autor antes de entrar en `data/local/`.
+- 3 Corintios (P. Bodmer X): normalización de la transcripción diplomática de referencia (531 palabras, solo la
+  respuesta de Pablo) y fichero de alineación con 136 intervenciones no triviales; doce decisiones pendientes de
+  validación filológica por el autor (`docs/3Cor_validacion_pendiente.md`); ficheros con sufijo `_BORRADOR`.
+- Primer envío a GitHub (`main`, etiqueta `v0.2.0-r`); la comprobación automática (`selftest` + `pytest`) pasó en
+  el primer intento (commit `3f6b31f`).
 
 **Decisiones.** D-001 a D-006 en `docs/decisiones.md`.
 
