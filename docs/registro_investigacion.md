@@ -152,7 +152,7 @@ conocida y congelar el código (Sello 2, `paulinum-1.0.0`).
   `cd32dad63855460c77a200606d81b2bd863f9e4d3121926aead66e9a6b0a29ef` (50 archivos: paquete, metadatos, configuración,
   protocolo, 18 guiones, 2 guiones de testigos, 9 configuraciones de sensibilidad y el lexicón), `SELLO.json` y
   `SELLO_paulinum-1.0.0.json`; el Sello 1 se conserva en `SELLO_protocolo-1.0.0.json`. Etiqueta `paulinum-1.0.0`,
-  *release* de GitHub; DOI de Zenodo pendiente de anotar. `pytest` 10/10 y `selftest` 25/25 (huella `ecaf6572…`)
+  *release* de GitHub; Zenodo archivó la *release* el mismo día: DOI 10.5281/zenodo.22996786 (registro 22996786). `pytest` 10/10 y `selftest` 25/25 (huella `ecaf6572…`)
   en el portátil y en la nube.
 
 **Decisiones.** D-014 a D-022; enmiendas 3 y 4 del registro del protocolo.

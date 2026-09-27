@@ -28,3 +28,6 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.22993122
     description: Sello 1, protocolo preregistrado de paulinum 1.0 (etiqueta protocolo-1.0.0)
+  - type: doi
+    value: 10.5281/zenodo.22996786
+    description: Sello 2, código congelado de paulinum 1.0 (etiqueta paulinum-1.0.0, versión 1.0.0)

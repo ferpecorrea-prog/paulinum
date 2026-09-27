@@ -3,7 +3,7 @@
 | sello | etiqueta de git | huella SHA-256 del conjunto | *release* de GitHub | DOI de Zenodo | fecha |
 |---|---|---|---|---|---|
 | 1. Protocolo preregistrado | `protocolo-1.0.0` | `9b65c9d823691887279abb93522a8dbd1479ec7b08fef411dc099bf083edbfe4` (34 archivos, sin lexicón; conservado en `SELLO_protocolo-1.0.0.json`) | https://github.com/ferpecorrea-prog/paulinum/releases/tag/protocolo-1.0.0 | https://doi.org/10.5281/zenodo.22993122 (registro 22993122; DOI de concepto de todas las versiones: https://doi.org/10.5281/zenodo.22993121) | 2026-09-27 |
-| 2. Código congelado | `paulinum-1.0.0` | `cd32dad63855460c77a200606d81b2bd863f9e4d3121926aead66e9a6b0a29ef` (50 archivos, con el lexicón; `SELLO.json` = `SELLO_paulinum-1.0.0.json`) | https://github.com/ferpecorrea-prog/paulinum/releases/tag/paulinum-1.0.0 | pendiente de archivo en Zenodo (se anota al recibir el DOI) | 2026-09-27 |
+| 2. Código congelado | `paulinum-1.0.0` | `cd32dad63855460c77a200606d81b2bd863f9e4d3121926aead66e9a6b0a29ef` (50 archivos, con el lexicón; `SELLO.json` = `SELLO_paulinum-1.0.0.json`) | https://github.com/ferpecorrea-prog/paulinum/releases/tag/paulinum-1.0.0 | https://doi.org/10.5281/zenodo.22996786 (registro 22996786; misma serie que el Sello 1 bajo el DOI de concepto 10.5281/zenodo.22993121) | 2026-09-27 |
 | 3. Resultados | `resultados-1.0.0` | — | — | — | — |
 
 Registro en OSF: pendiente (se hará con el DOI del Sello 1 como documento de preregistro).
