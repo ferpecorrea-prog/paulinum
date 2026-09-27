@@ -1,0 +1,6 @@
+{
+ "modelo": "grc_proiel_sm",
+ "disponible": false,
+ "motivo": "no se pudo instalar/cargar el modelo grc_proiel_sm: OSError: [E050] Can't find model 'grc_proiel_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+ "apto": false
+}
