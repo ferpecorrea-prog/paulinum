@@ -157,7 +157,12 @@ jobs:
                   # spaCy 3.7 exige numpy < 2 (thinc 8.2) y su CLI importa `click`, que typer >= 0.20 ya no arrastra: en este
                   # paso, y solo en este, numpy baja a 1.26; la anotación no calcula ninguna cifra de la campaña.
                   grc_odycy_*) pip install "spacy>=3.7.4,<3.8.0" click 2>&1 | tail -n 5
-                               pip install "https://huggingface.co/chcaa/${MODELO}/resolve/main/${MODELO}-any-py3-none-any.whl" 2>&1 | tail -n 25 || echo "no se pudo instalar $MODELO" ;;
+                               # el wheel publicado se llama «<modelo>-any-py3-none-any.whl» (sin versión) y pip moderno lo
+                               # rechaza por el nombre; se descarga y se instala con un nombre de archivo válido (versión 0.7.0
+                               # según su meta.json del 27-IX-2026; el contenido es el mismo).
+                               curl -sSL -o "/tmp/${MODELO}-0.7.0-py3-none-any.whl" "https://huggingface.co/chcaa/${MODELO}/resolve/main/${MODELO}-any-py3-none-any.whl"
+                               ls -la "/tmp/${MODELO}-0.7.0-py3-none-any.whl"; sha256sum "/tmp/${MODELO}-0.7.0-py3-none-any.whl"
+                               pip install "/tmp/${MODELO}-0.7.0-py3-none-any.whl" 2>&1 | tail -n 25 || echo "no se pudo instalar $MODELO" ;;
                   *) pip install spacy grecy 2>&1 | tail -n 5; (python -m grecy install "$MODELO" 2>&1 | tail -n 25 || echo "no se pudo instalar $MODELO") ;;
                 esac
                 python -c "import spacy, numpy; print('spaCy', spacy.__version__, '| numpy', numpy.__version__)" || echo "spaCy no importable"
