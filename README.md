@@ -21,7 +21,7 @@ investigador independiente, Barcelona. Todo el material está en español.
 | Registro de investigación | `docs/registro_investigacion.md` (bitácora por sesiones); traspaso entre sesiones de trabajo: `docs/ESTADO_DEL_PROYECTO_<fecha>.md` |
 | Decisiones metodológicas y filológicas | `docs/decisiones.md` (numeradas, fechadas, con motivo) |
 | Cambios por versión | `CHANGELOG.md` |
-| Preregistro y sellado | `protocols/` (cada campaña: protocolo, huella SHA-256, registro público y DOI) |
+| Preregistro y sellado | `protocols/` (cada campaña: protocolo, huella SHA-256, registro público y DOI); registro del protocolo paulinum 1.0 en OSF: [osf.io/nphcu](https://osf.io/nphcu) (remite al Sello 1) |
 | Archivo con DOI | Zenodo, a partir de cada *release* de GitHub. DOI de concepto (todas las versiones): [10.5281/zenodo.22993121](https://doi.org/10.5281/zenodo.22993121). Sello 1 (`protocolo-1.0.0`): [10.5281/zenodo.22993122](https://doi.org/10.5281/zenodo.22993122). Sello 2 (`paulinum-1.0.0`): [10.5281/zenodo.22996786](https://doi.org/10.5281/zenodo.22996786) |
 
 ## Qué hay en el repositorio

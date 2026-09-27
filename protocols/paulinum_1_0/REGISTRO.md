@@ -6,7 +6,7 @@
 | 2. Código congelado | `paulinum-1.0.0` | `cd32dad63855460c77a200606d81b2bd863f9e4d3121926aead66e9a6b0a29ef` (50 archivos, con el lexicón; `SELLO.json` = `SELLO_paulinum-1.0.0.json`) | https://github.com/ferpecorrea-prog/paulinum/releases/tag/paulinum-1.0.0 | https://doi.org/10.5281/zenodo.22996786 (registro 22996786; misma serie que el Sello 1 bajo el DOI de concepto 10.5281/zenodo.22993121) | 2026-09-27 |
 | 3. Resultados | `resultados-1.0.0` | — | — | — | — |
 
-Registro en OSF: pendiente (lo hace el autor en persona con el DOI del Sello 1 como documento de preregistro; texto preparado en `docs/osf_registro_texto.md`).
+Registro en OSF: **https://osf.io/nphcu** (plantilla *Open-Ended Registration*, proyecto https://osf.io/bvq4n; documento registrado: el protocolo del Sello 1 con DOI 10.5281/zenodo.22993122; enviado el 27-IX-2026, 17:47 UTC, público sin embargo, pendiente de la aprobación del autor como administrador, que OSF concede automáticamente a las 48 h si no se pulsa antes; texto en `docs/osf_registro_texto.md`).
 
 ## Enmiendas
 

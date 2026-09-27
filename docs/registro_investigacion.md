@@ -199,3 +199,9 @@ equivalencias) / 0,942. Resultado del protocolo: **`pos3` descartada** (D-024); 
 ejecuta. Aux impostores: 16 especificaciones publicadas (`9029391`, 1 h 35 min; AUC epistolar 0,964-0,991, general
 0,757-0,901 — las AUC generales bajas son de `lemma_dict:300` con Delta); dirichlet + NCD del auxiliar en curso.
 
+**Registro en OSF (17:47 UTC).** Hecho desde el navegador integrado con la sesión del autor (proyecto OSF `bvq4n`,
+creado por el autor; registro `nphcu`, plantilla *Open-Ended Registration*, licencia CC-BY 4.0, materias y etiquetas,
+resumen con los diez puntos del protocolo y los tres DOI; público sin embargo; el autor pulsó la orden de registrar).
+Queda «pendiente de aprobación» hasta que el autor la confirme por el correo de OSF (o 48 h). Anotado en `REGISTRO.md`
+y `README.md`.
+
