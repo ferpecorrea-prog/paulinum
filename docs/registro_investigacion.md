@@ -183,3 +183,11 @@ reescribe). Flujo corregido (comprobación real de huellas, restauración del ar
 de respaldo; `docs/laboratorio_actions.md`); la ejecución de `specs` se canceló a los 25 min y se relanza con el flujo
 corregido; `anotacion` se repite. Los resultados de `anotacion` de la primera ejecución no llegaron al repositorio.
 
+**Laboratorio en marcha (13:29-13:46 UTC).** Con el flujo corregido: `ruido` publicado (`7acbd58`; ruido de edición
+alineado 0,03-0,12 en min-max y 0,05-0,10 en Delta frente a una distancia mínima entre cartas del núcleo de 0,54-0,58,
+en las ocho combinaciones de edición × métrica × máscara; `inventory.csv` de 857 documentos); `anotacion` publicado
+(`c53f883`): el modelo de greCy no está disponible (D-023), se relanza con OdyCy `grc_odycy_joint_sm`. `specs` de
+impostores del run auxiliar en curso desde las 13:36 UTC; dirichlet + NCD en cola. Réplica en la nube preparada
+(corpus 857 documentos; lexicón y derivados de testigos traídos del portátil, huella del lexicón verificada; huella del
+Sello 2 reproducida: `cd32dad6…`; `pytest` 10/10, `selftest` 25/25).
+

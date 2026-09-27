@@ -32,6 +32,10 @@ on:
         description: "tiempo máximo de cálculo en horas (después se envía lo hecho, reanudable)"
         required: false
         default: "5"
+      modelo:
+        description: "solo para stage=anotacion: modelo spaCy de griego antiguo (grc_odycy_joint_sm, grc_proiel_sm…)"
+        required: false
+        default: "grc_odycy_joint_sm"
 
 concurrency:
   group: campana-${{ github.event.inputs.run || github.event.inputs.config }}
@@ -141,7 +145,16 @@ jobs:
             bootstrap) timeout ${{ github.event.inputs.horas }}h python scripts/bootstrap_percentil.py --run "$NAME" --metric minmax --config "${{ github.event.inputs.config }}" && timeout ${{ github.event.inputs.horas }}h python scripts/bootstrap_percentil.py --run "$NAME" --metric delta --config "${{ github.event.inputs.config }}" || echo "tope de tiempo o error: se envía lo hecho" ;;
             veredicto) python scripts/veredicto.py --run "$NAME" ;;
             ruido) python -m paulinum build --config config/sens/paulinum_1_0_ediciones.yaml && python scripts/ruido_edicion.py --run "$NAME" --config "${{ github.event.inputs.config }}" --ediciones tischendorf,nestle1904 ;;
-            anotacion) pip install spacy grecy && timeout ${{ github.event.inputs.horas }}h python scripts/anotacion_uniforme.py --edicion sblgnt || echo "anotación no disponible o tope de tiempo: se envía el informe" ;;
+            anotacion)
+              # D-016/D-023: el modelo se instala aquí (huggingface.co solo se alcanza desde el ejecutor). OdyCy (chcaa,
+              # MIT; spaCy >=3.7.4,<3.8) se instala desde su wheel publicado; greCy se instala con `python -m grecy install`.
+              MODELO="${{ github.event.inputs.modelo }}"; MODELO="${MODELO:-grc_odycy_joint_sm}"
+              case "$MODELO" in
+                grc_odycy_*) pip install "spacy>=3.7.4,<3.8.0" && pip install "https://huggingface.co/chcaa/${MODELO}/resolve/main/${MODELO}-any-py3-none-any.whl" || echo "no se pudo instalar $MODELO" ;;
+                *) pip install spacy grecy && (python -m grecy install "$MODELO" || echo "no se pudo instalar $MODELO") ;;
+              esac
+              python -c "import spacy, numpy; print('spaCy', spacy.__version__, '| numpy', numpy.__version__)"
+              timeout ${{ github.event.inputs.horas }}h python scripts/anotacion_uniforme.py --edicion sblgnt --modelo "$MODELO" || echo "anotación no disponible o tope de tiempo: se envía el informe" ;;
             svm) timeout ${{ github.event.inputs.horas }}h python scripts/modelo_svm.py --run "$NAME" --features mfw:300,closed:150,char3:600,lemma_dict:300 || echo "tope de tiempo o error: se envía lo hecho" ;;
             *) timeout ${{ github.event.inputs.horas }}h python -m paulinum run $ARGS --stage "$STAGE" || echo "tope de tiempo o error: se envía lo hecho (reanudable)" ;;
           esac
