@@ -21,3 +21,10 @@ keywords:
   - impostores generales
   - humanidades digitales
   - investigación reproducible
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22993121
+    description: DOI de concepto (todas las versiones archivadas en Zenodo)
+  - type: doi
+    value: 10.5281/zenodo.22993122
+    description: Sello 1, protocolo preregistrado de paulinum 1.0 (etiqueta protocolo-1.0.0)

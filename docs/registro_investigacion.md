@@ -60,12 +60,12 @@ registrado. Descarga de nivel 1 (NT y Padres Apostólicos, 43 archivos) comproba
   cartas consecutivas; `build_problems` seguro con dianas dentro del núcleo. `scripts/selftest.py` 25/25 con la
   misma huella de referencia (`ecaf6572…`) en la nube y en el portátil tras los cambios.
 - Sello 1: `protocols/paulinum_1_0/SELLO.json` (34 archivos), etiqueta `protocolo-1.0.0`, *release* de GitHub;
-  DOI de Zenodo pendiente de anotar por el autor en `REGISTRO.md`.
+  Zenodo archivó la *release* el mismo día: DOI 10.5281/zenodo.22993122 (registro 22993122); DOI de concepto 10.5281/zenodo.22993121 (anotados en `REGISTRO.md`, `README.md` y `CITATION.cff`).
 
 **Decisiones.** D-008 a D-012.
 
 **Pendiente (sesión 2, antes del Sello 2).** Familias NCD y Dirichlet-multinomial; `epist_pairs`, `genre_pairs`,
 `mediated_pairs`; envolventes B y G; `nearest_author`; ruido de edición con NA28 (extracción local) y testigos si
 el autor los deposita; anotación uniforme y su validación; `scripts/veredicto.py`; lexicón; cotejo de las máscaras
-de Hebreos con NA28 por el autor; DOI del Sello 1.
+de Hebreos con NA28 por el autor.
 

@@ -2,7 +2,7 @@
 
 | sello | etiqueta de git | huella SHA-256 del conjunto | *release* de GitHub | DOI de Zenodo | fecha |
 |---|---|---|---|---|---|
-| 1. Protocolo preregistrado | `protocolo-1.0.0` | véase `SELLO.json` (campo `sha256`) | https://github.com/ferpecorrea-prog/paulinum/releases/tag/protocolo-1.0.0 | *pendiente de anotar por el autor cuando Zenodo lo emita* | 2026-09-27 |
+| 1. Protocolo preregistrado | `protocolo-1.0.0` | véase `SELLO.json` (campo `sha256`) | https://github.com/ferpecorrea-prog/paulinum/releases/tag/protocolo-1.0.0 | https://doi.org/10.5281/zenodo.22993122 (registro 22993122; DOI de concepto de todas las versiones: https://doi.org/10.5281/zenodo.22993121) | 2026-09-27 |
 | 2. Código congelado | `paulinum-1.0.0` | — | — | — | — |
 | 3. Resultados | `resultados-1.0.0` | — | — | — | — |
 

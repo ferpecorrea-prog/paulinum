@@ -22,7 +22,7 @@ investigador independiente, Barcelona. Todo el material está en español.
 | Decisiones metodológicas y filológicas | `docs/decisiones.md` (numeradas, fechadas, con motivo) |
 | Cambios por versión | `CHANGELOG.md` |
 | Preregistro y sellado | `protocols/` (cada campaña: protocolo, huella SHA-256, registro público y DOI) |
-| Archivo con DOI | Zenodo, a partir de cada *release* de GitHub (el DOI de concepto se añadirá aquí tras la primera) |
+| Archivo con DOI | Zenodo, a partir de cada *release* de GitHub. DOI de concepto (todas las versiones): [10.5281/zenodo.22993121](https://doi.org/10.5281/zenodo.22993121). Sello 1 (`protocolo-1.0.0`): [10.5281/zenodo.22993122](https://doi.org/10.5281/zenodo.22993122) |
 
 ## Qué hay en el repositorio
 
