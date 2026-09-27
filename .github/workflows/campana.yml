@@ -150,10 +150,12 @@ jobs:
               # MIT; spaCy >=3.7.4,<3.8) se instala desde su wheel publicado; greCy se instala con `python -m grecy install`.
               MODELO="${{ github.event.inputs.modelo }}"; MODELO="${MODELO:-grc_odycy_joint_sm}"
               case "$MODELO" in
-                grc_odycy_*) pip install "spacy>=3.7.4,<3.8.0" && pip install "https://huggingface.co/chcaa/${MODELO}/resolve/main/${MODELO}-any-py3-none-any.whl" || echo "no se pudo instalar $MODELO" ;;
+                # spaCy 3.7 exige numpy < 2 (thinc 8.2) y su CLI importa `click`, que typer >= 0.20 ya no arrastra: en este
+                # paso, y solo en este, numpy baja a 1.26; la anotación no calcula ninguna cifra de la campaña.
+                grc_odycy_*) pip install "spacy>=3.7.4,<3.8.0" click && pip install "https://huggingface.co/chcaa/${MODELO}/resolve/main/${MODELO}-any-py3-none-any.whl" || echo "no se pudo instalar $MODELO" ;;
                 *) pip install spacy grecy && (python -m grecy install "$MODELO" || echo "no se pudo instalar $MODELO") ;;
               esac
-              python -c "import spacy, numpy; print('spaCy', spacy.__version__, '| numpy', numpy.__version__)"
+              python -c "import spacy, numpy; print('spaCy', spacy.__version__, '| numpy', numpy.__version__)" || echo "spaCy no importable"
               timeout ${{ github.event.inputs.horas }}h python scripts/anotacion_uniforme.py --edicion sblgnt --modelo "$MODELO" || echo "anotación no disponible o tope de tiempo: se envía el informe" ;;
             svm) timeout ${{ github.event.inputs.horas }}h python scripts/modelo_svm.py --run "$NAME" --features mfw:300,closed:150,char3:600,lemma_dict:300 || echo "tope de tiempo o error: se envía lo hecho" ;;
             *) timeout ${{ github.event.inputs.horas }}h python -m paulinum run $ARGS --stage "$STAGE" || echo "tope de tiempo o error: se envía lo hecho (reanudable)" ;;
