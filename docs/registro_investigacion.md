@@ -191,3 +191,11 @@ impostores del run auxiliar en curso desde las 13:36 UTC; dirichlet + NCD en col
 (corpus 857 documentos; lexicón y derivados de testigos traídos del portátil, huella del lexicón verificada; huella del
 Sello 2 reproducida: `cd32dad6…`; `pytest` 10/10, `selftest` 25/25).
 
+**Anotación uniforme (14:13-15:45 UTC).** Tres intentos hasta cargar OdyCy en el ejecutor (permiso `click` ausente con
+typer ≥ 0,20; wheel publicado sin versión en el nombre, que pip rechaza: se descarga y se instala con nombre válido). El
+guion sellado da acuerdo 0,148 / 0,487 (`ea436c9`, `7d6eb95`); el diagnóstico fuera del sello (`diagnostico/`,
+`64a8a8d`) atribuye la cifra a dos defectos del guion (formato de etiqueta, sigma final) y mide 0,844 (0,916 con
+equivalencias) / 0,942. Resultado del protocolo: **`pos3` descartada** (D-024); el bloque de sensibilidad `pos3` no se
+ejecuta. Aux impostores: 16 especificaciones publicadas (`9029391`, 1 h 35 min; AUC epistolar 0,964-0,991, general
+0,757-0,901 — las AUC generales bajas son de `lemma_dict:300` con Delta); dirichlet + NCD del auxiliar en curso.
+
