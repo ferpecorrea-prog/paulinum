@@ -141,33 +141,29 @@ jobs:
           [ -n "$FAM" ] && ARGS="$ARGS --familias $FAM"
           [ -n "$SOLO" ] && ARGS="$ARGS --solo $SOLO"
           NAME="${RUN:-$(python -c "import yaml,sys; print(yaml.safe_load(open('${{ github.event.inputs.config }}'))['nombre'])")}"
-          case "$STAGE" in
-            bootstrap) timeout ${{ github.event.inputs.horas }}h python scripts/bootstrap_percentil.py --run "$NAME" --metric minmax --config "${{ github.event.inputs.config }}" && timeout ${{ github.event.inputs.horas }}h python scripts/bootstrap_percentil.py --run "$NAME" --metric delta --config "${{ github.event.inputs.config }}" || echo "tope de tiempo o error: se envía lo hecho" ;;
-            veredicto) python scripts/veredicto.py --run "$NAME" ;;
-            ruido) python -m paulinum build --config config/sens/paulinum_1_0_ediciones.yaml && python scripts/ruido_edicion.py --run "$NAME" --config "${{ github.event.inputs.config }}" --ediciones tischendorf,nestle1904 ;;
-            anotacion)
-              # D-016/D-023: el modelo se instala aquí (huggingface.co solo se alcanza desde el ejecutor). OdyCy (chcaa,
-              # MIT; spaCy >=3.7.4,<3.8) se instala desde su wheel publicado; greCy se instala con `python -m grecy install`.
-              MODELO="${{ github.event.inputs.modelo }}"; MODELO="${MODELO:-grc_odycy_joint_sm}"
-              mkdir -p results/anotacion
-              LOG="results/anotacion/instalacion_${MODELO}_${{ github.run_id }}.log"   # diagnóstico público de la instalación
-              {
-                echo "== instalación de $MODELO (ejecución ${{ github.run_id }}) =="
-                case "$MODELO" in
-                  # spaCy 3.7 exige numpy < 2 (thinc 8.2) y su CLI importa `click`, que typer >= 0.20 ya no arrastra: en este
-                  # paso, y solo en este, numpy baja a 1.26; la anotación no calcula ninguna cifra de la campaña.
-                  grc_odycy_*) pip install "spacy>=3.7.4,<3.8.0" click 2>&1 | tail -n 5
-                               # el wheel publicado se llama «<modelo>-any-py3-none-any.whl» (sin versión) y pip moderno lo
-                               # rechaza por el nombre; se descarga y se instala con un nombre de archivo válido (versión 0.7.0
-                               # según su meta.json del 27-IX-2026; el contenido es el mismo).
-                               curl -sSL -o "/tmp/${MODELO}-0.7.0-py3-none-any.whl" "https://huggingface.co/chcaa/${MODELO}/resolve/main/${MODELO}-any-py3-none-any.whl"
-                               ls -la "/tmp/${MODELO}-0.7.0-py3-none-any.whl"; sha256sum "/tmp/${MODELO}-0.7.0-py3-none-any.whl"
-                               pip install "/tmp/${MODELO}-0.7.0-py3-none-any.whl" 2>&1 | tail -n 25 || echo "no se pudo instalar $MODELO" ;;
-                  *) pip install spacy grecy 2>&1 | tail -n 5; (python -m grecy install "$MODELO" 2>&1 | tail -n 25 || echo "no se pudo instalar $MODELO") ;;
-                esac
-                python -c "import spacy, numpy; print('spaCy', spacy.__version__, '| numpy', numpy.__version__)" || echo "spaCy no importable"
-                pip show "$MODELO" 2>&1 | head -n 3 || true
-                python - "$MODELO" <<'PY' || true
+          instalar_modelo() {
+            # D-016/D-023: el modelo se instala aquí (huggingface.co solo se alcanza desde el ejecutor). OdyCy (chcaa,
+            # MIT; spaCy >=3.7.4,<3.8) se instala desde su wheel publicado; greCy se instala con `python -m grecy install`.
+            MODELO="${{ github.event.inputs.modelo }}"; MODELO="${MODELO:-grc_odycy_joint_sm}"
+            mkdir -p results/anotacion
+            LOG="results/anotacion/instalacion_${MODELO}_${{ github.run_id }}.log"   # diagnóstico público de la instalación
+            {
+              echo "== instalación de $MODELO (ejecución ${{ github.run_id }}) =="
+              case "$MODELO" in
+                # spaCy 3.7 exige numpy < 2 (thinc 8.2) y su CLI importa `click`, que typer >= 0.20 ya no arrastra: en este
+                # paso, y solo en este, numpy baja a 1.26; la anotación no calcula ninguna cifra de la campaña.
+                grc_odycy_*) pip install "spacy>=3.7.4,<3.8.0" click 2>&1 | tail -n 5
+                             # el wheel publicado se llama «<modelo>-any-py3-none-any.whl» (sin versión) y pip moderno lo
+                             # rechaza por el nombre; se descarga y se instala con un nombre de archivo válido (versión 0.7.0
+                             # según su meta.json del 27-IX-2026; el contenido es el mismo).
+                             curl -sSL -o "/tmp/${MODELO}-0.7.0-py3-none-any.whl" "https://huggingface.co/chcaa/${MODELO}/resolve/main/${MODELO}-any-py3-none-any.whl"
+                             ls -la "/tmp/${MODELO}-0.7.0-py3-none-any.whl"; sha256sum "/tmp/${MODELO}-0.7.0-py3-none-any.whl"
+                             pip install "/tmp/${MODELO}-0.7.0-py3-none-any.whl" 2>&1 | tail -n 3 || echo "no se pudo instalar $MODELO" ;;
+                *) pip install spacy grecy 2>&1 | tail -n 5; (python -m grecy install "$MODELO" 2>&1 | tail -n 25 || echo "no se pudo instalar $MODELO") ;;
+              esac
+              python -c "import spacy, numpy; print('spaCy', spacy.__version__, '| numpy', numpy.__version__)" || echo "spaCy no importable"
+              pip show "$MODELO" 2>&1 | head -n 3 || true
+              python - "$MODELO" <<'PY' || true
           import sys, traceback
           try:
               import spacy
@@ -176,8 +172,19 @@ jobs:
           except Exception:
               traceback.print_exc()
           PY
-              } 2>&1 | tee "$LOG"
+            } 2>&1 | tee "$LOG"
+          }
+          case "$STAGE" in
+            bootstrap) timeout ${{ github.event.inputs.horas }}h python scripts/bootstrap_percentil.py --run "$NAME" --metric minmax --config "${{ github.event.inputs.config }}" && timeout ${{ github.event.inputs.horas }}h python scripts/bootstrap_percentil.py --run "$NAME" --metric delta --config "${{ github.event.inputs.config }}" || echo "tope de tiempo o error: se envía lo hecho" ;;
+            veredicto) python scripts/veredicto.py --run "$NAME" ;;
+            ruido) python -m paulinum build --config config/sens/paulinum_1_0_ediciones.yaml && python scripts/ruido_edicion.py --run "$NAME" --config "${{ github.event.inputs.config }}" --ediciones tischendorf,nestle1904 ;;
+            anotacion)
+              instalar_modelo
               timeout ${{ github.event.inputs.horas }}h python scripts/anotacion_uniforme.py --edicion sblgnt --modelo "$MODELO" || echo "anotación no disponible o tope de tiempo: se envía el informe" ;;
+            diagnostico_anotacion)
+              # guion de diagnóstico, fuera del código sellado (diagnostico/): no produce ninguna cifra del protocolo
+              instalar_modelo
+              timeout ${{ github.event.inputs.horas }}h python diagnostico/anotacion_diagnostico.py --edicion sblgnt --modelo "$MODELO" || echo "diagnóstico no disponible o tope de tiempo" ;;
             svm) timeout ${{ github.event.inputs.horas }}h python scripts/modelo_svm.py --run "$NAME" --features mfw:300,closed:150,char3:600,lemma_dict:300 || echo "tope de tiempo o error: se envía lo hecho" ;;
             *) timeout ${{ github.event.inputs.horas }}h python -m paulinum run $ARGS --stage "$STAGE" || echo "tope de tiempo o error: se envía lo hecho (reanudable)" ;;
           esac
