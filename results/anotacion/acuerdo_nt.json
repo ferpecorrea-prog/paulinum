@@ -1,6 +1,6 @@
 {
- "modelo": "grc_proiel_sm",
+ "modelo": "grc_odycy_joint_sm",
  "disponible": false,
- "motivo": "no se pudo instalar/cargar el modelo grc_proiel_sm: OSError: [E050] Can't find model 'grc_proiel_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+ "motivo": "no se pudo instalar/cargar el modelo grc_odycy_joint_sm: CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.16/x64/bin/python', '-m', 'grecy', 'install', 'grc_odycy_joint_sm']' returned non-zero exit status 1.",
  "apto": false
 }
