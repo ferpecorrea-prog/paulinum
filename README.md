@@ -18,7 +18,7 @@ investigador independiente, Barcelona. Todo el material está en español.
 | Versión | `1.0.0` (Sello 2, código congelado; etiqueta `paulinum-1.0.0`) |
 | Protocolo preregistrado | [`protocols/paulinum_1_0/PROTOCOLO.md`](protocols/paulinum_1_0/PROTOCOLO.md) — Sello 1 (`protocolo-1.0.0`) y Sello 2 (`paulinum-1.0.0`, código congelado) el 27-IX-2026; Sello 3 (resultados) pendiente |
 | Punto de partida | `v0.2.0-r`: reconstrucción declarada del laboratorio publicado en 2026 (véase `LEEME_PRIMERO.md` y `docs/README_reconstruccion_0.2.0-r.md`) |
-| Registro de investigación | `docs/registro_investigacion.md` (bitácora por sesiones) |
+| Registro de investigación | `docs/registro_investigacion.md` (bitácora por sesiones); traspaso entre sesiones de trabajo: `docs/ESTADO_DEL_PROYECTO_<fecha>.md` |
 | Decisiones metodológicas y filológicas | `docs/decisiones.md` (numeradas, fechadas, con motivo) |
 | Cambios por versión | `CHANGELOG.md` |
 | Preregistro y sellado | `protocols/` (cada campaña: protocolo, huella SHA-256, registro público y DOI) |
