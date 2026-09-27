@@ -148,6 +148,13 @@ conocida y congelar el código (Sello 2, `paulinum-1.0.0`).
   entre cartas del núcleo: las distancias del «mismo rasero» llevan dentro la variación entre pasajes, que afecta por
   igual a las envolventes y a las cartas y que el *bootstrap* de ventanas cuantifica.
 
+- Sello 2: versión `1.0.0`; `python -m paulinum seal … --etiqueta paulinum-1.0.0` en el portátil → huella
+  `cd32dad63855460c77a200606d81b2bd863f9e4d3121926aead66e9a6b0a29ef` (50 archivos: paquete, metadatos, configuración,
+  protocolo, 18 guiones, 2 guiones de testigos, 9 configuraciones de sensibilidad y el lexicón), `SELLO.json` y
+  `SELLO_paulinum-1.0.0.json`; el Sello 1 se conserva en `SELLO_protocolo-1.0.0.json`. Etiqueta `paulinum-1.0.0`,
+  *release* de GitHub; DOI de Zenodo pendiente de anotar. `pytest` 10/10 y `selftest` 25/25 (huella `ecaf6572…`)
+  en el portátil y en la nube.
+
 **Decisiones.** D-014 a D-022; enmiendas 3 y 4 del registro del protocolo.
 
 **Pendiente (bloque 5, después del Sello 2).** Campaña principal en el laboratorio de Actions en el orden de

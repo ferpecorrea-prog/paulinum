@@ -2,8 +2,8 @@
 
 | sello | etiqueta de git | huella SHA-256 del conjunto | *release* de GitHub | DOI de Zenodo | fecha |
 |---|---|---|---|---|---|
-| 1. Protocolo preregistrado | `protocolo-1.0.0` | véase `SELLO.json` (campo `sha256`) | https://github.com/ferpecorrea-prog/paulinum/releases/tag/protocolo-1.0.0 | https://doi.org/10.5281/zenodo.22993122 (registro 22993122; DOI de concepto de todas las versiones: https://doi.org/10.5281/zenodo.22993121) | 2026-09-27 |
-| 2. Código congelado | `paulinum-1.0.0` | — | — | — | — |
+| 1. Protocolo preregistrado | `protocolo-1.0.0` | `9b65c9d823691887279abb93522a8dbd1479ec7b08fef411dc099bf083edbfe4` (34 archivos, sin lexicón; conservado en `SELLO_protocolo-1.0.0.json`) | https://github.com/ferpecorrea-prog/paulinum/releases/tag/protocolo-1.0.0 | https://doi.org/10.5281/zenodo.22993122 (registro 22993122; DOI de concepto de todas las versiones: https://doi.org/10.5281/zenodo.22993121) | 2026-09-27 |
+| 2. Código congelado | `paulinum-1.0.0` | `cd32dad63855460c77a200606d81b2bd863f9e4d3121926aead66e9a6b0a29ef` (50 archivos, con el lexicón; `SELLO.json` = `SELLO_paulinum-1.0.0.json`) | https://github.com/ferpecorrea-prog/paulinum/releases/tag/paulinum-1.0.0 | pendiente de archivo en Zenodo (se anota al recibir el DOI) | 2026-09-27 |
 | 3. Resultados | `resultados-1.0.0` | — | — | — | — |
 
 Registro en OSF: pendiente (se hará con el DOI del Sello 1 como documento de preregistro).
@@ -52,7 +52,14 @@ Formato de cada entrada: fecha · alcance · motivo · afecta a filas de diana y
 Con el repositorio en la etiqueta indicada:
 
 ```bash
+# Sello 1 (etiqueta protocolo-1.0.0): sin lexicón
 python -m paulinum seal --config config/paulinum_1_0.yaml --run paulinum_1_0 --protocol protocols/paulinum_1_0 --sin-lexicon --etiqueta protocolo-1.0.0
+# Sello 2 (etiqueta paulinum-1.0.0): con el lexicón uniforme reconstruido desde MorphGNT + PROIEL + Diorisis
+python -m paulinum fetch --tier 1 --editions
+python scripts/construir_lexicon.py --diorisis-zip <ruta a Diorisis.zip>     # SHA-256 esperado: b0ea6312…4ea7
+python -m paulinum seal --config config/paulinum_1_0.yaml --run paulinum_1_0 --protocol protocols/paulinum_1_0 --etiqueta paulinum-1.0.0
 ```
 
-debe reproducir la huella de `SELLO.json` (el campo `sealed_utc` cambia; la huella no).
+debe reproducir la huella de `SELLO_<etiqueta>.json` (el campo `sealed_utc` cambia; la huella no). El lexicón no se
+redistribuye (Diorisis es CC BY-NC-SA): su huella `b0ea6312655cbe8fdd5f92337089a7b9e5f961d7f2d5aa1b6e67bf25440c4ea7` está
+en el sello y el laboratorio de GitHub Actions la comprueba en cada ejecución (`docs/laboratorio_actions.md`).

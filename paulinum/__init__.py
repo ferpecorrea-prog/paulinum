@@ -6,4 +6,4 @@ Apéndice técnico (A.1) de la Parte II del libro anterior; el código original 
 El protocolo preregistrado de la nueva investigación está en protocols/paulinum_1_0/PROTOCOLO.md.
 """
 
-__version__ = "1.0.0.dev0"
+__version__ = "1.0.0"

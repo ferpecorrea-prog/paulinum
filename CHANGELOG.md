@@ -3,7 +3,10 @@
 Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). Versionado semántico para el software;
 cada campaña de investigación lleva además su propia etiqueta (`campana-XX-sellado`, `campana-XX-resultados`).
 
-## [Sin publicar] — 1.0.0.dev0
+## [1.0.0] — 2026-09-27 — Sello 2 (`paulinum-1.0.0`, código congelado)
+
+El código de esta versión es el que ejecuta la campaña `paulinum_1_0`; después de este sello no cambia salvo por
+enmienda registrada en `protocols/paulinum_1_0/REGISTRO.md` (§ 12 del protocolo), que llevaría versión 1.0.1.
 
 ### Añadido
 - **Protocolo preregistrado de paulinum 1.0** (`protocols/paulinum_1_0/PROTOCOLO.md`, `config/paulinum_1_0.yaml`,
@@ -45,13 +48,13 @@ cada campaña de investigación lleva además su propia etiqueta (`campana-XX-se
   trasladable a otras ediciones y testigos por versículo y posición (`corpus.reuse_refs_table`).
 
 ### Cambiado
-- `paulinum/__init__.py`: versión `1.0.0.dev0`; `verify.build_problems` no incluye la diana entre sus candidatos
+- `paulinum/__init__.py`: versión `1.0.0.dev0` durante el desarrollo y `1.0.0` en el Sello 2; `verify.build_problems` no incluye la diana entre sus candidatos
   con el núcleo `trece`.
 - `pipeline.Context.corpus` lee la capa `pos_uniforme` de `data/cache/` o, si falta, de
   `results/anotacion/pos_uniforme_<edición>.jsonl.gz`; `selftest.yml` no se lanza por cambios en `results/`;
   `.gitignore` excluye los tensores `.npy` de resultados y los XML y derivados de testigos.
 - `README.md` reescrito para la nueva investigación; el README de la reconstrucción pasa a `docs/README_reconstruccion_0.2.0-r.md`.
-- `pyproject.toml`: versión `1.0.0.dev0`.
+- `pyproject.toml` y `CITATION.cff`: versión `1.0.0`.
 
 ## [0.2.0-r] — 2026-09-25
 

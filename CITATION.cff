@@ -3,7 +3,7 @@ message: "Si utiliza este software o sus datos, cite este repositorio (con la ve
 type: software
 title: "paulinum: verificación convergente de la autoría del corpus paulino canónico"
 abstract: "Software, corpus de control, protocolos preregistrados y resultados de una investigación de verificación de autoría, con controles de autoría segura y calibración de la tasa de error, sobre las catorce cartas del corpus paulino canónico. Incluye, como punto de partida declarado, la reconstrucción (0.2.0-r) del laboratorio publicado en 2026."
-version: "1.0.0.dev0"
+version: "1.0.0"
 date-released: "2026-09-27"
 license: MIT
 repository-code: "https://github.com/ferpecorrea-prog/paulinum"
