@@ -79,5 +79,5 @@ registro del protocolo; `metadata/masks.csv` con 35 tramos `otq` para Hebreos; c
 `preparar_testigos.py`, solo biblioteca estándar, que descarga de UBIRA y NTVMR y escribe el manifiesto de procedencia).
 El guion se conserva sin cambios en `scripts/testigos/`. Ni el portátil (espacio de trabajo) ni la réplica en la nube
 alcanzan epapers.bham.ac.uk ni ntvmr.uni-muenster.de (lista de dominios; véase el inventario de la sesión 0), así que
-la descarga debe hacerse fuera de ambos entornos; pendiente. Especificación de derivados y reglas: `docs/testigos_manuscritos.md`; D-013.
+la descarga la hizo el autor en su Windows con el guion (10:19 UTC): Sinaítico v1.05 (30,2 MB), Sinaítico NTVMR (3,9 MB), 𝔓46 NTVMR (0,8 MB), los tres XML bien formados; NTVMR declara CC BY 4.0 en la cabecera TEI; la respuesta `getCopyright` llegó vacía. Derivados generados con `scripts/testigos/derivar_testigos.py` (reglas en `docs/testigos_manuscritos.md` § 4; resultados en § 4.5): acuerdo regularizado con SBLGNT 0,958-0,988 (Sinaítico) y 0,927-0,962 (𝔓46); las dos transcripciones del Sinaítico coinciden al 0,996. D-013.
 

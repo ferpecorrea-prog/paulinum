@@ -1,0 +1,129 @@
+{
+  "generated_at_utc": "2026-09-27T10:19:22.577123+00:00",
+  "project_directory": "[ruta local del autor, suprimida en la copia publicada]",
+  "tool": "preparar_testigos.py",
+  "sources": [
+    {
+      "url": "https://epapers.bham.ac.uk/id/eprint/3306/1/FINAL_TRANSCRIPTION_version105.xml.zip",
+      "status": 200,
+      "headers": {
+        "Date": "Sun, 27 Sep 2026 10:19:23 GMT",
+        "Server": "Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips mod_perl/2.0.10 Perl/v5.16.3",
+        "ETag": "54ae97b99d705417729b9e3a6a72082b",
+        "Content-MD5": "VK6XuZ1wVBdym546anIIKw==",
+        "Last-Modified": "Mon, 07 Sep 2020 16:55:44 GMT",
+        "Expires": "Mon, 27 Sep 2027 10:19:23 GMT",
+        "Content-Disposition": "inline; filename=FINAL_TRANSCRIPTION_version105.xml.zip",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4631748",
+        "X-FRAME-OPTIONS": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "Connection": "close",
+        "Content-Type": "application/zip",
+        "Set-Cookie": "[suprimida en la copia publicada: cookie de sesión del servidor]",
+        "Strict-Transport-Security": "max-age=16070400; includeSubDomains"
+      },
+      "downloaded_at_utc": "2026-09-27T10:19:24.962913+00:00",
+      "bytes": 4631748,
+      "sha256": "f0a47bc8d9da2e46d3d00895c539aa09b96f54336f0a72a4afab8e096efceffa",
+      "label": "Codex Sinaiticus official published transcription v1.05 (ZIP)",
+      "file": "sinaiticus_project_v105_source.zip",
+      "local_zip_removed_after_verification": true
+    },
+    {
+      "zip_member": "FINAL_TRANSCRIPTION_version105.xml",
+      "bytes": 30238942,
+      "sha256": "22a520d094fc64972d2ee41e17d091310667c1e43ea70bd133a21939b1ec131e",
+      "looks_like_xml": true,
+      "well_formed_xml": true,
+      "label": "Codex Sinaiticus official published transcription v1.05 (XML extracted)",
+      "file": "sinaiticus_project_v105.xml",
+      "derived_from": "sinaiticus_project_v105_source.zip"
+    },
+    {
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/transcript/get/?docID=10046&pageID=ALL&format=teiraw",
+      "status": 200,
+      "headers": {
+        "Date": "Sun, 27 Sep 2026 10:19:35 GMT",
+        "Server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k mod_fcgid/2.3.9 mod_jk/1.2.41",
+        "Set-Cookie": "[suprimida en la copia publicada: cookie de sesión del servidor]",
+        "X-Request-Received-Epoch": "1790504375130",
+        "X-Request-Post-Validation-Epoch": "1790504375131",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/xml;charset=UTF-8"
+      },
+      "downloaded_at_utc": "2026-09-27T10:19:36.492986+00:00",
+      "bytes": 824213,
+      "sha256": "aba2bd5a285cb31edc64961234f301b23412685b43acc7f3030ecc1150b800d1",
+      "looks_like_xml": true,
+      "well_formed_xml": true,
+      "label": "P46 NTVMR published TEI transcription",
+      "file": "p46_ntvmr_10046.xml",
+      "docID": "10046",
+      "ga": "P46"
+    },
+    {
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/transcript/get/?docID=10046&getCopyright=true",
+      "status": 200,
+      "headers": {
+        "Date": "Sun, 27 Sep 2026 10:19:38 GMT",
+        "Server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k mod_fcgid/2.3.9 mod_jk/1.2.41",
+        "Set-Cookie": "[suprimida en la copia publicada: cookie de sesión del servidor]",
+        "X-Request-Received-Epoch": "1790504378709",
+        "X-Request-Post-Validation-Epoch": "1790504378710",
+        "X-Request-Response-Epoch": "1790504378724",
+        "X-Response-Time": "15ms",
+        "Content-Length": "0",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+        "Connection": "close",
+        "Content-Type": "text/html;charset=UTF-8"
+      },
+      "downloaded_at_utc": "2026-09-27T10:19:38.706798+00:00",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "label": "NTVMR copyright response for P46",
+      "file": "p46_ntvmr_copyright.txt"
+    },
+    {
+      "url": "https://ntvmr.uni-muenster.de/community/vmr/api/transcript/get/?docID=20001&pageID=ALL&format=teiraw",
+      "status": 200,
+      "headers": {
+        "Date": "Sun, 27 Sep 2026 10:19:40 GMT",
+        "Server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k mod_fcgid/2.3.9 mod_jk/1.2.41",
+        "Set-Cookie": "[suprimida en la copia publicada: cookie de sesión del servidor]",
+        "X-Request-Received-Epoch": "1790504380880",
+        "X-Request-Post-Validation-Epoch": "1790504380881",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/xml;charset=UTF-8"
+      },
+      "downloaded_at_utc": "2026-09-27T10:19:47.688327+00:00",
+      "bytes": 3924089,
+      "sha256": "b9f616adef043cd81d86688b0a324b0050225f9e8dcfb94c2e2bce086d1e7df1",
+      "looks_like_xml": true,
+      "well_formed_xml": true,
+      "label": "Codex Sinaiticus NTVMR published TEI transcription",
+      "file": "sinaiticus_ntvmr_20001.xml",
+      "docID": "20001",
+      "ga": "01"
+    }
+  ],
+  "warnings": [],
+  "generated_files": [
+    {
+      "file": "README_TESTIGOS.md",
+      "bytes": 2039,
+      "sha256": "6617c7f234c35f29a0661f3f33297cf02d568e4c30210d156983095612c1ddd9"
+    }
+  ],
+  "nota_publicacion": "Copia publicada de TESTIGOS_MANIFEST.json: idéntica al original salvo las cabeceras Set-Cookie (cookies de sesión de los servidores), suprimidas; el original se conserva intacto en local."
+}

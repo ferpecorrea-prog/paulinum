@@ -36,3 +36,5 @@ Thumbs.db
 data/local/testigos/*.xml
 data/local/testigos/*.zip
 data/local/testigos/derivados/*.txt
+data/local/testigos/TESTIGOS_MANIFEST.json
+data/local/testigos/p46_ntvmr_copyright.txt

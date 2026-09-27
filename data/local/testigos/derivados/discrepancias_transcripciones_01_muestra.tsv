@@ -1,0 +1,99 @@
+carta	ref	tipo	proyecto	ntvmr
+Rom	1:12	replace	ην	ενν
+Rom	2:16	delete	χριστου	
+Rom	3:5	replace	επιφερων	ε πιφερων
+Rom	3:15	replace	αυ των	αυτων
+Rom	3:18	replace	απεναν τι	απεναντι
+Rom	3:31	replace	νη	μη
+Rom	8:21	insert		τησ φθορασ
+Rom	8:27	replace	εντυγχανιν	εντυγχανι
+Rom	11:10	replace	συκαμψον	συνκαμψον
+Rom	11:21	insert		ει γαρ
+Rom	11:24	replace	ενκεντρισθησοταιν	ενκεντρισθησονται
+Rom	12:12	replace	υπομενοντεσν	υπομενοντεσ
+Rom	16:1	replace	κεχραιαισ	κενχραιαισ
+1Cor	1:1	replace	αυ	ιησου
+1Cor	1:18	replace	σωμενοισ	σω μενοισ
+1Cor	2:13	insert		λογοισ αλλ
+1Cor	4:15	replace	εχητε	εχη τε
+1Cor	7:27	replace	γυναικα	γυ ναικα
+1Cor	9:18	replace	υαγγγελιζομενοσ	ευαγγελιζομενοσ
+1Cor	10:10	replace	αυτων	αυ των
+1Cor	10:28	insert		εστιν μη
+1Cor	11:19	replace	αιρεσισ	αιρεσεισ
+1Cor	11:26	insert		το ποτηριον
+1Cor	12:1	replace	πνικων	πνευματικων
+1Cor	12:15	replace	ουκ	ου κ
+1Cor	14:5	replace	εκτοσ	εκ τοσ
+1Cor	15:22	insert		αποθνησκουσιν
+1Cor	15:27	insert		παντα
+1Cor	15:28	delete	παντα	
+1Cor	15:37	replace	λοιπων	λοι πων
+1Cor	15:44	replace	πνικον	πνευματικον
+1Cor	16:12	replace	παντωσ	παν τωσ
+2Cor	1:12	replace	υμων	ημων
+2Cor	1:12	replace	ανεστραφημεν	ανεστρα φημεν
+2Cor	3:3	replace	ενγεγραμμενη	ενγεγραμ μενη
+2Cor	4:5	replace	κυριου	ιησου
+2Cor	7:15	replace	υμασ	υ μασ
+2Cor	9:4	replace	υποστασει	υποστα σει
+2Cor	10:16	replace	κανονι	κανο νι
+2Cor	11:13	insert		αποστολουσ χριστου
+2Cor	11:32	replace	δαμασκηνων	δαμα σκηνων
+Gal	3:2	insert		μονον
+Gal	3:6	replace	επιστευσεν	επι στευσεν
+Gal	5:8	replace	καλουτασ	καλουντασ
+Gal	5:26	insert		προκαλουμενοι
+Gal	6:8	insert		τησ σαρκοσ
+Gal	6:8	insert		εισ το
+Gal	6:9	insert		καιρω
+Ef	2:3	delete	ο	
+Ef	2:4	insert		ο
+Ef	2:12	replace	ελιαγγελιασ	ελαγγελιασ
+Ef	4:12	replace	καταρτισμον	καταρ τισμον
+Ef	4:13	replace	τεσ	τησ
+Ef	4:16	replace	συναρμολογουμενο	συναρμολογουμενον
+Ef	4:21	replace	χριστου	ιησου
+Ef	4:22	replace	ιησου οθεσθαι	αποθεσθαι
+Ef	5:13	replace	υπο	υ πο
+Ef	6:15	replace	υποδησαμενοι	υποδησαμε νοι
+Flp	1:7	replace	συκοινωνουσ	συνκοινωνουσ
+Flp	2:24	insert		δε εν κυριω οτι και αυ τοσ
+Flp	4:3	replace	συλαμβανουν	συνλαμβανου
+Col	1:9	replace	ηκουσαμεν	ηκου σαμεν
+Col	2:3	insert		γνωσεωσ
+Col	2:7	replace	εποικοδομουμενοι	εποικοδομου μενοι
+Col	2:12	insert		του εγειραντοσ αυτον εκ νεκρων
+Col	2:14	insert		τοισ
+Col	2:23	insert		και αφιδια σωματοσ ουκ εν τιμη τινι προσ πλησμονην τησ σαρκοσ
+Col	3:10	replace	επεδυσαμενοιν	επενδυσαμενοι
+Col	3:12	insert		χρηστοτητα ταπινοφροσυνην
+Col	3:16	replace	πλουσιωσ	πλου σιωσ
+Col	3:17	replace	τ	εν
+1Tes	2:14	delete	συμφυλετων καθωσ και αυτοι υπο των ιουδαιων	
+1Tes	4:13	replace	ου θελομεν δε υμασ αγνοειν αδελφοι περι των κοιμωμενων ινα μη λυπησθε	πησθε
+1Tes	5:23	replace	ολοτελεισ	ολοελεισ
+2Tes	2:1	insert		ερωτωμεν
+1Tim	1:9	insert		ανδροφονοισ
+1Tim	1:10	insert		πορνοισ αρσενοκοιταισ ανδραποδισταισ
+1Tim	3:16	insert		εν
+1Tim	5:13	insert		περιεργοι
+1Tim	6:9	replace	βλαβερασ	βλα βερασ
+2Tim	1:15	replace	φυγελοσ	φυ γελοσ
+2Tim	4:12	replace	τηχικον	τυχικον
+2Tim	4:21	replace	αδελφοι	αδελ φοι
+Tit	1:7	insert		ωσ θεου οικονομον
+Flm	1:2	replace	συστρατιωτην	συνστρατιωτη
+Flm	1:11	insert		τον
+Flm	1:11	replace	νυνιν	νυννι
+Heb	1:1	insert		πατρασιν
+Heb	2:7	insert		εστεφανωσασ αυτον
+Heb	3:13	replace	τη αμαρτια	τησ αμαρτιασ
+Heb	4:12	replace	διυκνουμενοσ	διικνουμενοσ
+Heb	6:18	replace	καταφυγοντεσ	καταφυγον τεσ
+Heb	8:1	delete	θρονου τησ μεγαλωσυνησ εν τοισ ουρανοισ	
+Heb	9:14	delete	ποσω μαλλον το αιμα του χριστου οσ δια πνευματοσ αιωνιου εαυτον προσηνεγκεν αμωμον τω	
+Heb	10:4	replace	αφελιν	αφεριν
+Heb	12:10	replace	μεταταβειν	μεταλαβειν
+Heb	12:20	replace	θυκ	ουκ
+Heb	13:18	replace	καληθαν	καληνθα
