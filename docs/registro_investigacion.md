@@ -81,3 +81,11 @@ El guion se conserva sin cambios en `scripts/testigos/`. Ni el portátil (espaci
 alcanzan epapers.bham.ac.uk ni ntvmr.uni-muenster.de (lista de dominios; véase el inventario de la sesión 0), así que
 la descarga la hizo el autor en su Windows con el guion (10:19 UTC): Sinaítico v1.05 (30,2 MB), Sinaítico NTVMR (3,9 MB), 𝔓46 NTVMR (0,8 MB), los tres XML bien formados; NTVMR declara CC BY 4.0 en la cabecera TEI; la respuesta `getCopyright` llegó vacía. Derivados generados con `scripts/testigos/derivar_testigos.py` (reglas en `docs/testigos_manuscritos.md` § 4; resultados en § 4.5): acuerdo regularizado con SBLGNT 0,958-0,988 (Sinaítico) y 0,927-0,962 (𝔓46); las dos transcripciones del Sinaítico coinciden al 0,996. D-013.
 
+## Sesión 2 — 2026-09-27 — Cotejo de las trece cartas con NA28 (enmienda 2)
+
+Mismo procedimiento que el de Hebreos: 176 páginas de NA28 (pp. 481-656) renderizadas a 300 ppp y leídas una a una en
+busca de los tramos en cursiva. Resultado: los tramos de partida de las trece cartas están todos en cursiva en NA28;
+faltaban once citas breves que NA28 marca (Rom 2,6; 4,23; 11,2; 1 Cor 9,10; 14,25; 15,25; 2 Cor 9,7; 9,10; Ef 1,22;
+4,9-10; 1 Tim 5,19), añadidas como enmienda 2 del registro del protocolo. Con esto las catorce cartas tienen la máscara
+de citas por la misma regla y la misma fuente. Bloque 4 en curso: implementación de las familias nuevas y Sello 2.
+

@@ -16,7 +16,8 @@ cada campaña de investigación lleva además su propia etiqueta (`campana-XX-se
   cartas públicas), Alcifrón por libros, Eliano, Plotino/Porfirio, Ps-Clemente *De virginitate*, trece colecciones
   pseudoepigráficas de Hercher.
 - Hebreos como diana (`target`, D-002): máscaras de cierre epistolar y de 35 tramos de citas del AT cotejados
-  con NA28 (`metadata/masks.csv`; enmienda 1 del protocolo), variables de situación (`metadata/letter_variables.csv`); `TARGETS` con siete cartas;
+  con NA28 (`metadata/masks.csv`; enmienda 1 del protocolo); máscara de citas de las otras trece cartas cotejada con
+  NA28 por el mismo procedimiento (enmienda 2: once tramos añadidos), variables de situación (`metadata/letter_variables.csv`); `TARGETS` con siete cartas;
   núcleo de sensibilidad `trece`.
 - `paulinum seal --protocol/--sin-lexicon/--etiqueta`; `Source.group_tokens` y agrupación de cartas consecutivas en
   `parsers.parse_tei`; `by_tier(4)` con sustitución de `Liban_Ep` y `Alciphr`.

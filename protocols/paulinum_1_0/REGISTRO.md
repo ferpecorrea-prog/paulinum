@@ -29,3 +29,14 @@ python -m paulinum seal --config config/paulinum_1_0.yaml --run paulinum_1_0 --p
 ```
 
 debe reproducir la huella de `SELLO.json` (el campo `sealed_utc` cambia; la huella no).
+
+2. **2026-09-27** · metadatos: `metadata/masks.csv`, máscara `otq` de las trece cartas con nombre de Pablo · motivo: mismo
+   rasero con Hebreos (enmienda 1): las máscaras de citas de las trece venían de las fichas del libro anterior y se han
+   cotejado página a página con el texto de NA28 (pp. 481-656 del ejemplar del autor; criterio: cursiva = cita, por
+   versículos completos). Los tramos de partida están todos en cursiva en NA28; se añaden once tramos breves que NA28
+   imprime en cursiva y faltaban: Rom 2,6; 4,23; 11,2; 1 Cor 9,10; 14,25; 15,25; 2 Cor 9,7; 9,10; Ef 1,22; 4,9-10;
+   1 Tim 5,19. Sin cambios en Flp, Col, 1-2 Tes, 2 Tim, Tit y Flm (Tit 1,12, cita pagana, no es del AT; Ef 5,14, de
+   origen desconocido, ya está en `preformed`). Cobertura de citas: Rom 14,6 % (antes 14,0), 1 Cor 4,9 % (4,1),
+   2 Cor 4,2 % (3,3), Ef 5,3 % (3,4), 1 Tim 1,8 % (0,9). SHA-256 de `metadata/masks.csv`: antes `7b1a49f2f06c4ea57755ed31f711c7bf84b9ba48c0be6b1f340620eb7b1d6cf0`, después
+   `2410dadf8b3dae40299b19e9a1e16ada2a94b92db5f669dff37635066ef29bf7` · afecta a filas de diana ya calculadas: **no** · nuevo sello: **no** (§ 12).
+
