@@ -1,0 +1,22 @@
+[11:11:32] run prueba_veredicto_ignacio (paulinum 1.0.0.dev0) · etapas: specs, calibration · familias: impostores, dirichlet · workers 2
+[11:12:56]   spec impostores 000 dia|mfw:300|minmax|w500|mnone|seven|sblgnt: AUC=0.902 (epist. 0.985) c@1=0.885 (1370 problemas, 84.0 s)
+[11:14:17]   spec impostores 001 dia|mfw:300|delta|w500|mnone|seven|sblgnt: AUC=0.860 (epist. 0.979) c@1=0.855 (1370 problemas, 80.9 s)
+[11:17:24]   spec impostores 002 dia|char3:600|minmax|w500|mnone|seven|sblgnt: AUC=0.909 (epist. 0.991) c@1=0.880 (1370 problemas, 187.4 s)
+[11:20:32]   spec impostores 003 dia|char3:600|delta|w500|mnone|seven|sblgnt: AUC=0.901 (epist. 0.990) c@1=0.868 (1370 problemas, 188.2 s)
+[11:21:19]   spec dirichlet 000 dirichlet|dia|mfw:300|dirmult|w500|mnone|seven|sblgnt: AUC=0.961 (epist. 0.979) c@1=0.954 (1370 problemas, 46.7 s)
+[11:21:19] etapa specs: 587 s
+[11:21:19] etapa calibration: 0 s
+[11:21:43] run prueba_veredicto_ignacio (paulinum 1.0.0.dev0) · etapas: ledger · familias: impostores, ncd, dirichlet · workers 1
+[11:29:36]   ledger minmax: E 917 pares, B 1560, G 715; 466 s
+[11:32:54] run prueba_veredicto_ignacio (paulinum 1.0.0.dev0) · etapas: ledger · familias: impostores, ncd, dirichlet · workers 1
+[11:33:38]   ledger minmax: E 917 pares, B 1560, G 715; 39 s
+[11:34:14]   ledger delta: E 917 pares, B 1560, G 715; 35 s
+[11:34:14] etapa ledger: 80 s
+[11:34:52] run prueba_veredicto_ignacio (paulinum 1.0.0.dev0) · etapas: ledger · familias: impostores, ncd, dirichlet · workers 1
+[11:35:36]   ledger minmax: E 917 pares, B 1560, G 715; 38 s
+[11:36:11]   ledger delta: E 917 pares, B 1560, G 715; 35 s
+[11:36:11] etapa ledger: 79 s
+[11:37:14] run prueba_veredicto_ignacio (paulinum 1.0.0.dev0) · etapas: ledger · familias: impostores, ncd, dirichlet · workers 1
+[11:37:58]   ledger minmax: E 917 pares, B 1560, G 715; 38 s
+[11:38:33]   ledger delta: E 917 pares, B 1560, G 715; 35 s
+[11:38:33] etapa ledger: 79 s

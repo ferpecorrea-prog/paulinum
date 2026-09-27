@@ -16,7 +16,7 @@ investigador independiente, Barcelona. Todo el material está en español.
 | | |
 |---|---|
 | Versión en desarrollo | `1.0.0.dev0` |
-| Protocolo preregistrado | [`protocols/paulinum_1_0/PROTOCOLO.md`](protocols/paulinum_1_0/PROTOCOLO.md) — Sello 1 (`protocolo-1.0.0`) el 27-IX-2026; Sello 2 (código congelado) y Sello 3 (resultados) pendientes |
+| Protocolo preregistrado | [`protocols/paulinum_1_0/PROTOCOLO.md`](protocols/paulinum_1_0/PROTOCOLO.md) — Sello 1 (`protocolo-1.0.0`) y Sello 2 (`paulinum-1.0.0`, código congelado) el 27-IX-2026; Sello 3 (resultados) pendiente |
 | Punto de partida | `v0.2.0-r`: reconstrucción declarada del laboratorio publicado en 2026 (véase `LEEME_PRIMERO.md` y `docs/README_reconstruccion_0.2.0-r.md`) |
 | Registro de investigación | `docs/registro_investigacion.md` (bitácora por sesiones) |
 | Decisiones metodológicas y filológicas | `docs/decisiones.md` (numeradas, fechadas, con motivo) |
@@ -29,8 +29,8 @@ investigador independiente, Barcelona. Todo el material está en español.
 | carpeta | contenido |
 |---|---|
 | `paulinum/` | paquete Python: `sources` (manifiesto de textos), `fetch`, `parsers`, `text`, `corpus`, `features`, `distances`, `verify`, `variables`, `rolling`, `pipeline`, `report`, `cli` |
-| `scripts/` | guiones auxiliares (calibración secundaria, lexicón, reutilización, variables de los controles, *bootstrap*, segundo modelo, lecturas) |
-| `config/` | configuraciones de campaña, cada una con su bloque de preregistro literal |
+| `scripts/` | guiones auxiliares (veredicto mecánico, *bootstrap* de percentiles, anotación uniforme, sensibilidad, lexicón, calibración secundaria, reutilización, variables de los controles, segundo modelo, lecturas; `testigos/` para los testigos manuscritos) |
+| `config/` | configuraciones de campaña, cada una con su bloque de preregistro literal; `sens/` con los bloques de sensibilidad; `prueba_*.yaml` para las pruebas sin dianas |
 | `protocols/` | protocolos sellados de la nueva investigación: `paulinum_1_0/` (protocolo, sello, registro público) |
 | `metadata/` | máscaras por referencia, pasajes paralelos, variables de situación, auditoría de estados de los controles |
 | `data/` | `raw/` (descargas, no versionadas), `cache/` (corpus construidos, no versionados), `local/` (3 Corintios preparado a partir de P. Bodmer X), `provenance.json` (huellas SHA-256) |
@@ -40,6 +40,7 @@ investigador independiente, Barcelona. Todo el material está en español.
 | `investigacion_1/` | material de la primera investigación publicada (capa de trece lemas y segunda campaña), conservado como registro histórico |
 | `docs/` | especificación, guías, registro de investigación, decisiones, inventarios de fuentes |
 | `tests/` | pruebas (`pytest`) |
+| `.github/workflows/` | `selftest.yml` (comprobación automática) y `campana.yml` (laboratorio de cómputo: ejecuta etapas de la campaña y publica los resultados; `docs/laboratorio_actions.md`) |
 
 ## Instalación y comprobación
 
@@ -61,8 +62,12 @@ pytest -q
 - Cada resultado publicado remite a la versión exacta (etiqueta de git y DOI) del código, del corpus y de
   la configuración que lo produjo; la bitácora de cada campaña (`results/<campaña>/bitacora.md`) registra
   cada orden con su hora y su duración.
-- Los cálculos se ejecutan en dos entornos con las mismas versiones de las bibliotecas numéricas y se
-  comprueba que las pruebas de referencia dan la misma huella.
+- Los cálculos se ejecutan en tres entornos con las mismas versiones de las bibliotecas numéricas (portátil,
+  réplica en la nube y ejecutores de GitHub Actions, `docs/laboratorio_actions.md`) y se comprueba que las pruebas de
+  referencia dan la misma huella; cada problema lleva su propia semilla, de modo que el reparto entre procesos o
+  máquinas no cambia ningún resultado.
+- El lexicón uniforme (derivado de Diorisis, CC BY-NC-SA, no redistribuido) entra en el Sello 2 por su huella; el
+  laboratorio lo reconstruye desde la fuente y se detiene si la huella no coincide.
 
 ## Licencias
 

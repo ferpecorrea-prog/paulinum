@@ -1,0 +1,6 @@
+family,features,metric,mask,window,dia,core,edition,IgnLong#1,IgnLong#4,IgnLong#5,IgnLong#9,IgnLong#10,IgnLong#13,IgnLong#2,IgnLong#11
+dirichlet,mfw:300,dirmult,none,500,dia,seven,sblgnt,0.0,0.0,0.0,0.5,0.2,0.0,0.26,0.88
+impostores,char3:600,delta,none,500,dia,seven,sblgnt,0.1,0.66,0.2,0.78,0.86,0.12,0.82,0.92
+impostores,char3:600,minmax,none,500,dia,seven,sblgnt,0.22,0.68,0.14,0.82,0.82,0.0,0.66,1.0
+impostores,mfw:300,delta,none,500,dia,seven,sblgnt,0.1,0.36,0.3,0.64,0.42,0.24,0.54,0.8
+impostores,mfw:300,minmax,none,500,dia,seven,sblgnt,0.1,0.44,0.28,0.8,0.62,0.22,0.42,0.86

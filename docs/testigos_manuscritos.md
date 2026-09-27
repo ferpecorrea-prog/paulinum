@@ -94,6 +94,9 @@ ni Filemón.
 
 - Cada testigo entra como una «edición» más de la rejilla de sensibilidad, con la variante `nodia` (los testigos no
   tienen diacríticos; SBLGNT se compara sin ellos) y con el derivado `_reg` como texto; el `_bruto` solo se informa.
+  En el código son las ediciones `sinaiticus`, `sblgnt_rec_sinaiticus`, `p46` y `sblgnt_rec_p46`
+  (`sources.WITNESS_EDITIONS`; `corpus.build_corpus` sustituye las catorce cartas del corpus SBLGNT por el derivado
+  correspondiente y aplica las mismas máscaras); el bloque `config/sens/paulinum_1_0_testigos.yaml` las recorre.
 - **Recorte simétrico.** Para cada testigo y carta se construye también la edición SBLGNT **recortada a los versículos
   que el testigo conserva** (`conservado`; los `parcial` se excluyen de ambos lados). Así la distancia testigo-edición
   mide solo diferencias de texto, no de cobertura, y se compara con la distancia entre cartas distintas del núcleo

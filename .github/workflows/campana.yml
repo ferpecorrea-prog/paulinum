@@ -1,0 +1,128 @@
+# Laboratorio público de paulinum 1.0: ejecuta una etapa (o un trozo de ella) de una campaña en un ejecutor de GitHub
+# Actions y envía los resultados al repositorio. Cada ejecución queda registrada con su bitácora y su registro (log).
+# Reproducibilidad: el ejecutor parte de cero (descarga los textos de sus repositorios, construye el corpus y, si la
+# rejilla usa lemma_dict, reconstruye el lexicón desde Diorisis y comprueba su huella frente a la sellada).
+# Ninguna credencial: usa el GITHUB_TOKEN del propio flujo para escribir en el repositorio.
+name: campana
+
+on:
+  workflow_dispatch:
+    inputs:
+      config:
+        description: "configuración (p. ej. config/paulinum_1_0.yaml o config/sens/paulinum_1_0_nucleos.yaml)"
+        required: true
+        default: "config/paulinum_1_0.yaml"
+      run:
+        description: "nombre de la ejecución (results/<run>); vacío = el «nombre» de la configuración"
+        required: false
+        default: ""
+      stage:
+        description: "etapas separadas por comas (specs,calibration,ledger,variables,rolling,extras) o guion (bootstrap, veredicto, svm, anotacion, ruido)"
+        required: true
+        default: "specs"
+      familias:
+        description: "familias separadas por comas (impostores,ncd,dirichlet); vacío = las activas"
+        required: false
+        default: ""
+      solo:
+        description: "índices de especificación separados por comas (para trocear); vacío = todas"
+        required: false
+        default: ""
+      horas:
+        description: "tiempo máximo de cálculo en horas (después se envía lo hecho, reanudable)"
+        required: false
+        default: "5"
+
+concurrency:
+  group: campana-${{ github.event.inputs.run || github.event.inputs.config }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  campana:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Dependencias (versiones fijadas)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Textos de origen (huellas en data/provenance.json)
+        run: python -m paulinum fetch --tier 4 --editions
+      - name: Lexicón uniforme desde Diorisis (solo si la rejilla usa lemma_dict; huella comprobada)
+        run: |
+          if grep -q "lemma_dict" "${{ github.event.inputs.config }}"; then
+            mkdir -p data/local
+            # Diorisis (Vatri y McGillivray 2018, CC BY-NC-SA 4.0; figshare, artículo 6187256): no se redistribuye.
+            curl -sSL -o data/local/figshare_6187256.zip "https://figshare.com/ndownloader/articles/6187256/versions/1"
+            python - <<'PY'
+          import hashlib, os, shutil, sys, zipfile
+          src = "data/local/figshare_6187256.zip"
+          dst = "data/local/Diorisis.zip"
+          with zipfile.ZipFile(src) as z:
+              names = z.namelist()
+              inner = [n for n in names if n.lower().endswith(".zip")]
+              if any(n.lower().endswith(".xml") for n in names):
+                  shutil.copyfile(src, dst)            # el archivo ya es el corpus (XML en la raíz)
+              elif len(inner) == 1:                    # el zip del artículo envuelve Diorisis.zip
+                  with z.open(inner[0]) as f, open(dst, "wb") as g:
+                      shutil.copyfileobj(f, g)
+              else:
+                  print("::error::no se reconoce el contenido descargado de figshare:", names[:10]); sys.exit(1)
+          h = hashlib.sha256(open(dst, "rb").read()).hexdigest()
+          print("Diorisis.zip:", h, "(el ejemplar usado para el sello: fb32b7ff4bcfc433f1234aff8134096f524c9a32accbfdf0a072df4a5f019b65)")
+          PY
+            python scripts/construir_lexicon.py --diorisis-zip data/local/Diorisis.zip
+            python - <<'PY'
+          import hashlib, json, os, sys
+          h = hashlib.sha256(open("data/cache/lexicon_uniforme.tsv", "rb").read()).hexdigest()
+          sello = json.load(open("protocols/paulinum_1_0/SELLO.json"))
+          esperado = sello["files"].get("data/cache/lexicon_uniforme.tsv")
+          print("lexicón:", h, "| sellado:", esperado)
+          if esperado and h != esperado:
+              print("::error::el lexicón reconstruido no coincide con el sellado")
+              sys.exit(1)
+          PY
+          fi
+      - name: Corpus
+        run: |
+          python -m paulinum build --config "${{ github.event.inputs.config }}"
+          python -m paulinum inventory --config "${{ github.event.inputs.config }}" ${{ github.event.inputs.run != '' && format('--run {0}', github.event.inputs.run) || '' }}
+      - name: Ejecutar (con tope de tiempo; reanudable por problema)
+        run: |
+          RUN="${{ github.event.inputs.run }}"
+          FAM="${{ github.event.inputs.familias }}"
+          SOLO="${{ github.event.inputs.solo }}"
+          STAGE="${{ github.event.inputs.stage }}"
+          ARGS="--config ${{ github.event.inputs.config }} --workers 4"
+          [ -n "$RUN" ] && ARGS="$ARGS --run $RUN"
+          [ -n "$FAM" ] && ARGS="$ARGS --familias $FAM"
+          [ -n "$SOLO" ] && ARGS="$ARGS --solo $SOLO"
+          NAME="${RUN:-$(python -c "import yaml,sys; print(yaml.safe_load(open('${{ github.event.inputs.config }}'))['nombre'])")}"
+          case "$STAGE" in
+            bootstrap) timeout ${{ github.event.inputs.horas }}h python scripts/bootstrap_percentil.py --run "$NAME" --metric minmax --config "${{ github.event.inputs.config }}" && timeout ${{ github.event.inputs.horas }}h python scripts/bootstrap_percentil.py --run "$NAME" --metric delta --config "${{ github.event.inputs.config }}" || echo "tope de tiempo o error: se envía lo hecho" ;;
+            veredicto) python scripts/veredicto.py --run "$NAME" ;;
+            ruido) python -m paulinum build --config config/sens/paulinum_1_0_ediciones.yaml && python scripts/ruido_edicion.py --run "$NAME" --config "${{ github.event.inputs.config }}" --ediciones tischendorf,nestle1904 ;;
+            anotacion) pip install spacy grecy && timeout ${{ github.event.inputs.horas }}h python scripts/anotacion_uniforme.py --edicion sblgnt || echo "anotación no disponible o tope de tiempo: se envía el informe" ;;
+            svm) timeout ${{ github.event.inputs.horas }}h python scripts/modelo_svm.py --run "$NAME" --features mfw:300,closed:150,char3:600,lemma_dict:300 || echo "tope de tiempo o error: se envía lo hecho" ;;
+            *) timeout ${{ github.event.inputs.horas }}h python -m paulinum run $ARGS --stage "$STAGE" || echo "tope de tiempo o error: se envía lo hecho (reanudable)" ;;
+          esac
+      - name: Enviar resultados al repositorio
+        run: |
+          git config user.name "paulinum-lab"
+          git config user.email "paulinum-lab@users.noreply.github.com"
+          git add -A results/
+          if git diff --cached --quiet; then echo "sin cambios"; exit 0; fi
+          git commit -m "[lab] ${{ github.event.inputs.stage }} de ${{ github.event.inputs.run || github.event.inputs.config }} (ejecución ${{ github.run_id }})"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            sleep $((i * 20))
+          done

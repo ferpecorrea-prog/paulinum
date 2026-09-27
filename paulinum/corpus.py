@@ -20,7 +20,7 @@ from dataclasses import dataclass, field, asdict
 
 from . import parsers
 from .fetch import raw_path, DATA_DIR
-from .sources import ALL_SOURCES, NT, EDITION_SOURCES, Source, by_tier
+from .sources import ALL_SOURCES, NT, EDITION_SOURCES, WITNESS_EDITIONS, Source, by_tier
 from .text import normalize_form, strip_diacritics
 
 METADATA_DIR = os.environ.get("PAULINUM_METADATA", "metadata")
@@ -101,7 +101,43 @@ def load_reuse_table(path: str | None = None) -> dict[str, list[tuple[int, int]]
     return out
 
 
-def apply_masks(doc: Document, mask_table: dict, reuse_table: dict) -> None:
+def reuse_refs_table(reuse_table: dict[str, list[tuple[int, int]]], base_docs: list[Document]) -> dict[str, dict]:
+    """
+    Traduce los tramos de reutilización (posiciones de palabra en SBLGNT, `metadata/reuse_ranges.csv`) a tramos
+    «versículo + posición dentro del versículo» {id: {(c, v): [(ini, fin), …]}} usando las referencias del documento
+    SBLGNT. Sirve para aplicar la máscara `reuse` a otra edición o a un testigo, cuyas posiciones de palabra absolutas
+    no coinciden: dentro de cada versículo las ediciones difieren en pocas palabras, así que el tramo enmascarado es
+    prácticamente el mismo.
+    """
+    out: dict[str, dict] = {}
+    by_id = {d.id: d for d in base_docs}
+    for doc_id, ranges in reuse_table.items():
+        d = by_id.get(doc_id)
+        if d is None:
+            continue
+        pos_in_verse, count = [], {}
+        for ref in d.refs:
+            k = _ref_key(ref)
+            pos_in_verse.append(count.get(k, 0))
+            count[k] = count.get(k, 0) + 1
+        spans: dict[tuple, list] = {}
+        for start, end in ranges:
+            for i in range(max(0, start), min(d.n_tokens, end)):
+                k = _ref_key(d.refs[i])
+                if not k[0]:
+                    continue
+                lst = spans.setdefault(k, [])
+                if lst and lst[-1][1] == pos_in_verse[i]:
+                    lst[-1] = (lst[-1][0], pos_in_verse[i] + 1)
+                else:
+                    lst.append((pos_in_verse[i], pos_in_verse[i] + 1))
+        out[doc_id] = spans
+    return out
+
+
+def apply_masks(doc: Document, mask_table: dict, reuse_table: dict, reuse_refs: dict | None = None) -> None:
+    """Máscaras por referencia (formulae, preformed, otq, …) y de reutilización (`reuse`): esta última por posiciones de
+    palabra en SBLGNT o, si se pasa `reuse_refs` (otras ediciones y testigos), por versículo y posición dentro de él."""
     n = doc.n_tokens
     names = {"formulae", "preformed", "otq", "reuse"}
     for name in names:
@@ -113,6 +149,15 @@ def apply_masks(doc: Document, mask_table: dict, reuse_table: dict) -> None:
             c, v = _ref_key(ref)
             if (c1, v1) <= (c, v) <= (c2, v2) and c:
                 doc.masks[mask][i] = True
+    if reuse_refs is not None and doc.id in reuse_refs:
+        spans, count = reuse_refs[doc.id], {}
+        for i, ref in enumerate(doc.refs):
+            k = _ref_key(ref)
+            j = count.get(k, 0)
+            count[k] = j + 1
+            if any(a <= j < b for a, b in spans.get(k, ())):
+                doc.masks["reuse"][i] = True
+        return
     for start, end in reuse_table.get(doc.id, []):
         for i in range(max(0, start), min(n, end)):
             doc.masks["reuse"][i] = True
@@ -179,6 +224,31 @@ def build_corpus(tier: int = 1, edition_key: str = "sblgnt", data_dir: str = DAT
     reuse_table = load_reuse_table(reuse_path)
     docs: list[Document] = []
     nt_ids = {s.id: s for s in NT}
+    letters = {"Rom", "1Cor", "2Cor", "Gal", "Ef", "Flp", "Col", "1Tes", "2Tes", "1Tim", "2Tim", "Tit", "Flm", "Heb"}
+    if edition_key in WITNESS_EDITIONS:
+        # paulinum 1.0 (D-013, docs/testigos_manuscritos.md § 5): las catorce cartas se toman del derivado
+        # regularizado del testigo (o del SBLGNT recortado a lo que el testigo conserva); el resto del corpus queda
+        # igual que en sblgnt, para que la sensibilidad mida solo el cambio de texto de las cartas.
+        testigo, suffix = WITNESS_EDITIONS[edition_key]
+        base = build_corpus(tier=tier, edition_key="sblgnt", data_dir=data_dir, mask_path=mask_path,
+                            reuse_path=reuse_path, verbose=False, only_ids=only_ids)
+        reuse_refs = reuse_refs_table(reuse_table, [d for d in base if d.id in letters])
+        docs = [d for d in base if d.id not in letters]
+        ddir = os.path.join(data_dir, "local", "testigos", "derivados")
+        for L in sorted(letters):
+            path = os.path.join(ddir, f"{testigo}_{L}_{suffix}.txt")
+            if not os.path.exists(path):
+                if verbose:
+                    print(f"  [ausente] {edition_key}: {path} (el testigo no conserva {L} o no se ha derivado)")
+                continue
+            toks = parsers.parse_local(path)[0]["tokens"]
+            d = _make_document(nt_ids[L], {"part": "", "tokens": toks}, edition_key)
+            if d:
+                apply_masks(d, mask_table, reuse_table, reuse_refs)
+                docs.append(d)
+        if verbose:
+            print(f"build: {len(docs)} documentos, {sum(d.n_tokens for d in docs)} tokens (edición {edition_key})")
+        return docs
     for src in by_tier(tier):
         if only_ids and src.id not in only_ids:
             continue
@@ -206,10 +276,15 @@ def build_corpus(tier: int = 1, edition_key: str = "sblgnt", data_dir: str = DAT
         if src.max_docs and len(made) > src.max_docs:
             made = made[: src.max_docs]
         docs.extend(made)
+    reuse_refs = None
     if edition_key != "sblgnt":
         alt = EDITION_SOURCES[edition_key]
         path = raw_path(alt, data_dir)
         if os.path.exists(path):
+            # la máscara `reuse` de otra edición se aplica por versículos, traducida desde las posiciones en SBLGNT
+            base_letters = build_corpus(tier=1, edition_key="sblgnt", data_dir=data_dir, mask_path=mask_path,
+                                        reuse_path=reuse_path, verbose=False, only_ids=letters)
+            reuse_refs = reuse_refs_table(reuse_table, base_letters)
             books = parsers.parse_proiel(path) if alt.parser == "proiel" else parsers.parse_macula(path)
             for bid, toks in books.items():
                 src = nt_ids[bid]
@@ -219,7 +294,7 @@ def build_corpus(tier: int = 1, edition_key: str = "sblgnt", data_dir: str = DAT
         elif verbose:
             print(f"  [ausente] edición {edition_key}: {path}")
     for d in docs:
-        apply_masks(d, mask_table, reuse_table)
+        apply_masks(d, mask_table, reuse_table, reuse_refs if d.edition_key == edition_key and edition_key != "sblgnt" else None)
     if verbose:
         print(f"build: {len(docs)} documentos, {sum(d.n_tokens for d in docs)} tokens (edición {edition_key})")
     return docs

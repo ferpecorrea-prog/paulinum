@@ -1,0 +1,101 @@
+{
+ "nombre": "prueba_veredicto_ignacio",
+ "descripcion": "prueba del veredicto con Ignacio (núcleo) frente a Ps-Ignacio (dianas); tier 4; sin cartas paulinas",
+ "corpus": {
+  "tier": 4,
+  "edicion": "sblgnt",
+  "min_tokens": 100
+ },
+ "rejilla": {
+  "rasgos": [
+   "mfw:300",
+   "char3:600"
+  ],
+  "distancias": [
+   "minmax",
+   "delta"
+  ],
+  "ventanas": [
+   500
+  ],
+  "mascaras": [
+   "none"
+  ],
+  "diacriticos": [
+   "dia"
+  ],
+  "nucleos": [
+   "seven"
+  ],
+  "ediciones": [
+   "sblgnt"
+  ]
+ },
+ "familias": {
+  "impostores": {
+   "activa": true
+  },
+  "ncd": {
+   "activa": true,
+   "preset": 6,
+   "iters": 3
+  },
+  "dirichlet": {
+   "activa": true,
+   "rasgos": [
+    "mfw:300"
+   ]
+  }
+ },
+ "parametros": {
+  "iters": 50,
+  "fraccion_rasgos": 0.5,
+  "impostores": 30,
+  "semilla": 20260927,
+  "auc_minima": 0.8,
+  "max_positivos_por_autor": 6,
+  "n_pares_negativos": 200,
+  "nucleo_ids": [
+   "IgnEf",
+   "IgnMagn",
+   "IgnTral",
+   "IgnRom",
+   "IgnFil",
+   "IgnEsm",
+   "IgnPol"
+  ],
+  "dianas_ids": [
+   "IgnLong#1",
+   "IgnLong#4",
+   "IgnLong#5",
+   "IgnLong#9",
+   "IgnLong#10",
+   "IgnLong#13",
+   "IgnLong#2",
+   "IgnLong#11"
+  ]
+ },
+ "mismo_rasero": {
+  "rasgos": "mfw:300",
+  "distancias": [
+   "minmax",
+   "delta"
+  ],
+  "ventana": 500,
+  "sorteos": 20,
+  "tope_pares_por_autor": 120
+ },
+ "variables": {
+  "rasgos": "mfw:200",
+  "distancia": "delta",
+  "ventana": 400,
+  "permutaciones": 99
+ },
+ "rolling": {
+  "rasgos": "mfw:300",
+  "distancia": "minmax",
+  "ventana": 400,
+  "paso": 100,
+  "iters": 10
+ }
+}

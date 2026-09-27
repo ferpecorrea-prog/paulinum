@@ -23,7 +23,8 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Matrices grandes de ejecuciones completas (se rehacen con `run --stage ledger`)
-results/*/distance_matrix_*.npy
+results/**/distance_matrix_*.npy
+results/**/distance_letters_docs_*.npy
 
 # Ficheros temporales del sistema y de editores
 .DS_Store

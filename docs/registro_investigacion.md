@@ -89,3 +89,68 @@ faltaban once citas breves que NA28 marca (Rom 2,6; 4,23; 11,2; 1 Cor 9,10; 14,2
 4,9-10; 1 Tim 5,19), añadidas como enmienda 2 del registro del protocolo. Con esto las catorce cartas tienen la máscara
 de citas por la misma regla y la misma fuente. Bloque 4 en curso: implementación de las familias nuevas y Sello 2.
 
+
+## Sesión 2 (continuación) — 2026-09-27 — Implementación de lo que faltaba y Sello 2
+
+**Objeto.** Punto 2 de § 3.3 del protocolo: implementar las piezas nuevas, probarlas solo con problemas de respuesta
+conocida y congelar el código (Sello 2, `paulinum-1.0.0`).
+
+**Hecho (código).**
+- `paulinum/verify.py`: familias B (`NCDEngine`, LZMA2 preset 6; D-020) y C (`DirichletEngine`, perfiles de autor a
+  ambos lados, α por máxima verosimilitud marginal; D-019) con la misma envoltura de problemas, banco e impostores que
+  la familia A; `build_problems` con `pos_epist`/`neg_epist` (D-014), `genre_pairs`, `mediated_pairs`, modo
+  `sin_dianas` y núcleo/dianas a medida (`nucleo_ids`/`dianas_ids`); calibraciones general, epistolar y cristiana;
+  razones de verosimilitud `log10lr`, `log10lr_epistolar`, `log10lr_cristiana`, `log10lr_cj`.
+- `paulinum/pipeline.py`: rejilla por familia con semillas propias; etapa `specs` reanudable por problema y
+  paralelizable (`--workers`, `--familias`, `--solo`); etapa `calibration` con `familias_aptitud.csv` (AUC epistolar
+  mediana ≥ `auc_minima`), `concordancia_familias.csv`, `lr_secundaria_por_carta.csv`; etapa `ledger` con envolventes
+  E, B y G, percentiles con estadísticas, tensor carta × documento (D-021) y `nearest_author_<m>.csv` con IC del
+  margen; `campaign_sets` que respeta `sin_dianas`; capa `pos_uniforme` opcional (D-016).
+- `paulinum/variables.py`: `inter_author_pairs`, `genre_pairs`, `same_standard_ledger` con tres envolventes,
+  `matrix_rect`, `nearest_authors` con réplicas de ventana.
+- `paulinum/features.py`: espacio `pos3:N` sobre la anotación uniforme; `paulinum/corpus.py` y `sources.py`:
+  ediciones de testigos (`sinaiticus`, `sblgnt_rec_sinaiticus`, `p46`, `sblgnt_rec_p46`) a partir de los derivados
+  de D-013; `paulinum/cli.py`: `run --workers/--familias/--solo`, `seal` con `SELLO_<etiqueta>.json`, guiones de
+  `scripts/testigos/` y `config/sens/*.yaml` en el sello.
+- Guiones: `scripts/veredicto.py` (reglas de § 8, cuatro niveles, patrón de § 8.5, «qué revisaría este juicio»),
+  `scripts/bootstrap_percentil.py` (IC por autores, leave-one-author-out, IC por ventanas, para pct_E, pct_B y pct_G),
+  `scripts/anotacion_uniforme.py` (validación de greCy contra MorphGNT, umbrales 0,95/0,95),
+  `scripts/generar_sensibilidad.py` → nueve configuraciones en `config/sens/`.
+- Lexicón uniforme (`data/cache/lexicon_uniforme.tsv`, no versionado): construido en la réplica en la nube con
+  MorphGNT + PROIEL + Diorisis (Diorisis.zip del autor, SHA-256 `fb32b7ff…`); 397.681 formas, 15.719 con las tres
+  fuentes; SHA-256 `b0ea6312655cbe8fdd5f92337089a7b9e5f961d7f2d5aa1b6e67bf25440c4ea7`, copiado al portátil con la
+  huella verificada. Entra en el Sello 2; el laboratorio de Actions lo reconstruye y comprueba la huella (D-017).
+- Laboratorio en GitHub Actions: `.github/workflows/campana.yml` y `docs/laboratorio_actions.md` (D-017).
+- `tests/test_paulinum_1_0.py`: ocho pruebas con corpus sintético (rejilla por familia, problemas, separación de
+  autores en las tres familias, Dirichlet-multinomial y α, propiedades de NCD, envolventes, conjuntos de campaña y
+  testigos, determinismo por problema).
+
+**Hecho (validación sin dianas, D-018).**
+- `results/prueba_1_0/` (estrato 1, `sin_dianas`, 20 iteraciones; ninguna fila de diana): las tres familias corren de
+  punta a punta; AUC epistolar mediana: impostores 0,885, NCD 0,962, Dirichlet 1,000 (en un corpus pequeño, solo
+  como prueba de funcionamiento).
+- `results/prueba_veredicto_ignacio/` (estrato 4, 857 documentos; núcleo = las siete cartas de Ignacio, dianas = ocho
+  cartas de la recensión larga; impostores 4 especificaciones × 50 iteraciones, Dirichlet 1 × 50): AUC epistolar
+  0,988 (impostores) y 0,979 (Dirichlet); las siete cartas genuinas en *leave-one-out* dan «apoyo moderado a
+  H_mismo-autor» (log10 LR ≈ +1,9) y el núcleo es el autor más próximo en todas; de las seis cartas espurias de la
+  recensión larga (#1, #4, #5, #9, #10, #13), tres dan LR en contra (#1 −1,0; #5 −0,9; #13 −1,0) y no pasan el
+  nivel 3, dos son discordantes entre familias (#4, #10) y una (#9, +0,8) se lee débilmente como Ignacio: un fallo
+  que la prueba deja a la vista; de las dos genuinas interpoladas (`mixed`), #11 se lee como Ignacio (+1,8, lo
+  esperable de un texto interpolado y no reescrito) y #2 es discordante. El nivel 2 es conservador («dentro» para todas: la envolvente B solapa a E en un 41 %
+  y G queda dentro de E en un 88 % con este núcleo de siete cartas breves), lo que el protocolo prevé: el nivel 2 no
+  decide solo. Ninguna cifra de estas pruebas es un resultado de la investigación.
+
+- Ruido de edición (§ 5.4): `scripts/ruido_edicion.py` con ventanas alineadas y recorte simétrico (D-022); probado
+  con Tischendorf y Nestle 1904 sobre el corpus del estrato 4 (`results/prueba_ruido/`): ruido alineado 0,03-0,12
+  (min-max) frente a una distancia mínima entre cartas del núcleo de 0,54; hallazgo de datos: el NT de PROIEL no
+  contiene Hebreos 13 (ni 1-2 Juan ni 2 Pedro), de ahí el recorte simétrico (278 de 303 versículos de Hebreos).
+  La distancia de una carta larga consigo misma con ventanas independientes (0,4-0,58) es del orden de la distancia
+  entre cartas del núcleo: las distancias del «mismo rasero» llevan dentro la variación entre pasajes, que afecta por
+  igual a las envolventes y a las cartas y que el *bootstrap* de ventanas cuantifica.
+
+**Decisiones.** D-014 a D-022; enmiendas 3 y 4 del registro del protocolo.
+
+**Pendiente (bloque 5, después del Sello 2).** Campaña principal en el laboratorio de Actions en el orden de
+`docs/laboratorio_actions.md` (anotación; especificaciones por familia; calibración, envolventes y variables
+publicadas antes de las dianas; *bootstrap*; segundo modelo; sensibilidad; veredicto; Sello 3); después, los tres
+canales no estilométricos (§ 9) y el montaje de los Tomos IV-VI.

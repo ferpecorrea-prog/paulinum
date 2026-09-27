@@ -20,7 +20,7 @@ from collections import Counter
 
 import numpy as np
 
-from .corpus import Document, masked_tokens
+from .corpus import Document, masked_tokens, mask_vector
 from .text import strip_diacritics
 
 # Pronombres personales y posesivos de 1.ª y 2.ª persona (formas normalizadas, con diacríticos)
@@ -154,7 +154,26 @@ class FeatureSpace:
                 s = f"_{t}_"
                 out.extend(s[i:i + k] for i in range(len(s) - k + 1))
             return out
+        if self.kind == "pos3":
+            return [g for g in self._pos_trigrams(d) if g]
         raise ValueError(f"espacio de rasgos desconocido: {self.kind}")
+
+    def _pos_trigrams(self, d: Document) -> list[str]:
+        """Trigramas de categoría gramatical de la anotación UNIFORME (capa `pos_uniforme`, paulinum 1.0, PROTOCOLO
+        § 5.3), alineados token a token con la secuencia enmascarada; un token sin anotación aporta ''. La anotación
+        manual de MorphGNT (capa `pos`) NO se usa aquí, porque solo el NT la tiene."""
+        tags = getattr(d, "pos_uniforme", None) or []
+        if len(tags) != d.n_tokens:
+            return [""] * len(masked_tokens(d, self.mask))
+        excl = mask_vector(d, self.mask)
+        seq = [t for t, e in zip(tags, excl) if not e]
+        out = []
+        for i in range(len(seq)):
+            if i + 2 < len(seq) and seq[i] and seq[i + 1] and seq[i + 2]:
+                out.append(f"{seq[i]}_{seq[i + 1]}_{seq[i + 2]}")
+            else:
+                out.append("")
+        return out
 
     # ---- proyección ----
     def token_ids(self, d: Document) -> list[list[int]]:
@@ -167,6 +186,8 @@ class FeatureSpace:
             return [[self.index[u]] if (u and u in self.index) else [] for u in toks]
         if self.kind in ("lemma", "lemma_dict"):
             return [[self.index[u]] if (u and u in self.index) else [] for u in self._lemmatize(d)]
+        if self.kind == "pos3":
+            return [[self.index[u]] if (u and u in self.index) else [] for u in self._pos_trigrams(d)]
         k = 3 if self.kind == "char3" else 4
         out = []
         for t in self._tokens(d):

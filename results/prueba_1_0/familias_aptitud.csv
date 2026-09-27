@@ -1,0 +1,4 @@
+family,n_specs,auc_epist_mediana,auc_epist_min,apta
+impostores,8,0.8854166666666667,0.6541666666666667,True
+ncd,2,0.9624999999999999,0.95,True
+dirichlet,4,1.0,0.9875,True

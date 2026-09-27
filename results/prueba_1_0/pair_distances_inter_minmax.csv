@@ -1,0 +1,31 @@
+author,a,b,distance
+Clemente Romano~Ignacio,1Clem,IgnEf,0.6660833763194985
+Clemente Romano~Ignacio,1Clem,IgnMagn,0.6488065164897417
+Clemente Romano~Ignacio,1Clem,IgnTral,0.6913167397759863
+Clemente Romano~Ignacio,1Clem,IgnRom,0.7260896705373779
+Clemente Romano~Ignacio,1Clem,IgnFil,0.6606695507051586
+Clemente Romano~Ignacio,1Clem,IgnEsm,0.6748088003847187
+Clemente Romano~Ignacio,1Clem,IgnPol,0.6660653259079746
+Clemente Romano~Policarpo,1Clem,PolFil,0.6317254533836737
+Ignacio~Clemente Romano,IgnEf,1Clem,0.6608450575594433
+Ignacio~Clemente Romano,IgnMagn,1Clem,0.6703735035097494
+Ignacio~Clemente Romano,IgnTral,1Clem,0.6598827154170455
+Ignacio~Clemente Romano,IgnRom,1Clem,0.7159965098904431
+Ignacio~Clemente Romano,IgnFil,1Clem,0.6382018002011415
+Ignacio~Clemente Romano,IgnEsm,1Clem,0.6547605872359654
+Ignacio~Clemente Romano,IgnPol,1Clem,0.6529826928553508
+Ignacio~Policarpo,IgnEf,PolFil,0.6481561606221804
+Ignacio~Policarpo,IgnMagn,PolFil,0.6357007142074322
+Ignacio~Policarpo,IgnTral,PolFil,0.6550994968963811
+Ignacio~Policarpo,IgnRom,PolFil,0.6990904868422809
+Ignacio~Policarpo,IgnFil,PolFil,0.6198783527719263
+Ignacio~Policarpo,IgnEsm,PolFil,0.6714301001818933
+Ignacio~Policarpo,IgnPol,PolFil,0.6644349993149932
+Policarpo~Clemente Romano,PolFil,1Clem,0.6524096025304164
+Policarpo~Ignacio,PolFil,IgnEf,0.6151670674373412
+Policarpo~Ignacio,PolFil,IgnMagn,0.6389197589338566
+Policarpo~Ignacio,PolFil,IgnTral,0.666788243011203
+Policarpo~Ignacio,PolFil,IgnRom,0.6958904915306128
+Policarpo~Ignacio,PolFil,IgnFil,0.6138638550076323
+Policarpo~Ignacio,PolFil,IgnEsm,0.6911689661805884
+Policarpo~Ignacio,PolFil,IgnPol,0.6666687569158409

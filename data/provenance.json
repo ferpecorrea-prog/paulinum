@@ -1072,11 +1072,21 @@
   },
   "local/3Cor.txt": {
    "bytes": 6364,
-   "fetched": "2026-09-27T08:51:14Z",
+   "fetched": "2026-09-27T11:59:21Z",
    "path": "data/local/3Cor.txt",
    "sha256": "04fd948567e980d1f94fd4656e964bea7da93cc299ba6a91ccaccba6934a3a42",
    "status": "local",
    "url": ""
+  },
+  "macula/Nestle1904/tsv/macula-greek-Nestle1904.tsv": {
+   "bytes": 19566178,
+   "edition": "Nestle 1904 (MACULA)",
+   "fetched": "2026-09-27T11:59:29Z",
+   "license": "CC BY 4.0",
+   "path": "data/raw/macula/Nestle1904/tsv/macula-greek-Nestle1904.tsv",
+   "sha256": "c7cf33b8273c0f549e3582d1610603c86210c18e1f245bb80a69281622385fa5",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/Clear-Bible/macula-greek/main/Nestle1904/tsv/macula-greek-Nestle1904.tsv"
   },
   "morphgnt/61-Mt-morphgnt.txt": {
    "bytes": 1188216,
@@ -1957,6 +1967,16 @@
    "sha256": "170f6489117ed942c0e1d659ac53772e5268739d417b48c8fd016d084b821b56",
    "status": "ok",
    "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2040/tlg004/tlg2040.tlg004.perseus-grc2.xml"
+  },
+  "proiel/greek-nt.xml": {
+   "bytes": 29132513,
+   "edition": "Tischendorf (PROIEL greek-nt.xml)",
+   "fetched": "2026-09-27T11:59:25Z",
+   "license": "CC BY-NC-SA 3.0",
+   "path": "data/raw/proiel/greek-nt.xml",
+   "sha256": "93f868f54109acf305c0bd5f465e65509c90798ac176ddd20b09ebcfae9f422f",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/proiel/proiel-treebank/master/greek-nt.xml"
   }
  },
  "repos": {

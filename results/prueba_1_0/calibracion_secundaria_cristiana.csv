@@ -1,0 +1,15 @@
+family,spec_index,label,dia,features,metric,window,mask,core,edition,iters,n_neg_cristianos,auc_cristiana,auc_cristiana_pos_cristianos,fpr_cristiana_0.5
+dirichlet,0,dirichlet|dia|mfw:300|dirmult|w500|mnone|seven|sblgnt,dia,mfw:300,dirmult,500,none,seven,sblgnt,20,40,0.9925,0.9925,0.025
+dirichlet,1,dirichlet|dia|mfw:300|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,mfw:300,dirmult,500,formulae+preformed+otq+reuse,seven,sblgnt,20,40,0.99,0.99,0.0
+dirichlet,2,dirichlet|dia|closed:150|dirmult|w500|mnone|seven|sblgnt,dia,closed:150,dirmult,500,none,seven,sblgnt,20,40,0.99,0.99,0.0
+dirichlet,3,dirichlet|dia|closed:150|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,closed:150,dirmult,500,formulae+preformed+otq+reuse,seven,sblgnt,20,40,0.99875,0.99875,0.0
+impostores,0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,dia,mfw:300,minmax,500,none,seven,sblgnt,20,40,0.8,0.8,0.1
+impostores,1,dia|mfw:300|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,mfw:300,minmax,500,formulae+preformed+otq+reuse,seven,sblgnt,20,40,0.79875,0.79875,0.1
+impostores,2,dia|mfw:300|delta|w500|mnone|seven|sblgnt,dia,mfw:300,delta,500,none,seven,sblgnt,20,40,0.66,0.66,0.15
+impostores,3,dia|mfw:300|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,mfw:300,delta,500,formulae+preformed+otq+reuse,seven,sblgnt,20,40,0.63375,0.63375,0.225
+impostores,4,dia|closed:150|minmax|w500|mnone|seven|sblgnt,dia,closed:150,minmax,500,none,seven,sblgnt,20,40,0.70375,0.70375,0.075
+impostores,5,dia|closed:150|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,closed:150,minmax,500,formulae+preformed+otq+reuse,seven,sblgnt,20,40,0.7425,0.7425,0.05
+impostores,6,dia|closed:150|delta|w500|mnone|seven|sblgnt,dia,closed:150,delta,500,none,seven,sblgnt,20,40,0.635,0.635,0.1
+impostores,7,dia|closed:150|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,closed:150,delta,500,formulae+preformed+otq+reuse,seven,sblgnt,20,40,0.72875,0.72875,0.0
+ncd,0,ncd|dia|ncd|ncd|w500|mnone|seven|sblgnt,dia,ncd,ncd,500,none,seven,sblgnt,5,40,0.7625,0.7625,0.1
+ncd,1,ncd|dia|ncd|ncd|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,ncd,ncd,500,formulae+preformed+otq+reuse,seven,sblgnt,5,40,0.75375,0.75375,0.075

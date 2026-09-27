@@ -1,0 +1,85 @@
+{
+ "nombre": "prueba_1_0",
+ "descripcion": "prueba de la cadena completa de paulinum 1.0 sin dianas; tier 1; 3 familias; 20 iteraciones",
+ "corpus": {
+  "tier": 1,
+  "edicion": "sblgnt",
+  "min_tokens": 100
+ },
+ "rejilla": {
+  "rasgos": [
+   "mfw:300",
+   "closed:150"
+  ],
+  "distancias": [
+   "minmax",
+   "delta"
+  ],
+  "ventanas": [
+   500
+  ],
+  "mascaras": [
+   "none",
+   "formulae+preformed+otq+reuse"
+  ],
+  "diacriticos": [
+   "dia"
+  ],
+  "nucleos": [
+   "seven"
+  ],
+  "ediciones": [
+   "sblgnt"
+  ]
+ },
+ "familias": {
+  "impostores": {
+   "activa": true
+  },
+  "ncd": {
+   "activa": true,
+   "preset": 6,
+   "iters": 5
+  },
+  "dirichlet": {
+   "activa": true,
+   "rasgos": [
+    "mfw:300",
+    "closed:150"
+   ]
+  }
+ },
+ "parametros": {
+  "iters": 20,
+  "fraccion_rasgos": 0.5,
+  "impostores": 30,
+  "semilla": 20260927,
+  "auc_minima": 0.8,
+  "max_positivos_por_autor": 6,
+  "n_pares_negativos": 40,
+  "sin_dianas": true
+ },
+ "mismo_rasero": {
+  "rasgos": "mfw:300",
+  "distancias": [
+   "minmax",
+   "delta"
+  ],
+  "ventana": 500,
+  "sorteos": 5,
+  "tope_pares_por_autor": 30
+ },
+ "variables": {
+  "rasgos": "mfw:200",
+  "distancia": "delta",
+  "ventana": 400,
+  "permutaciones": 99
+ },
+ "rolling": {
+  "rasgos": "mfw:300",
+  "distancia": "minmax",
+  "ventana": 400,
+  "paso": 100,
+  "iters": 10
+ }
+}

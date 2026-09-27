@@ -552,6 +552,10 @@ REPLACED_IN_10 = {"Liban_Ep", "Alciphr"}
 
 ALL_SOURCES: list[Source] = NT + AF + [THREE_COR] + CONTROLS + CONTROLS_03 + CONTROLS_10
 EDITION_SOURCES = {"sblgnt": None, "tischendorf": NT_TISCHENDORF, "nestle1904": NT_NESTLE1904}
+# Ediciones de testigos manuscritos (paulinum 1.0, D-013): clave → (testigo, sufijo del derivado). «sblgnt_rec_*» es el
+# SBLGNT recortado a las palabras que el testigo conserva (recorte simétrico, docs/testigos_manuscritos.md § 5).
+WITNESS_EDITIONS = {"sinaiticus": ("sinaiticus", "reg"), "sblgnt_rec_sinaiticus": ("sinaiticus", "sblgnt_recortado"),
+                    "p46": ("p46", "reg"), "sblgnt_rec_p46": ("p46", "sblgnt_recortado")}
 
 # Núcleos y dianas (config: core = seven | hauptbriefe | seven_plus)
 CORE_SETS = {

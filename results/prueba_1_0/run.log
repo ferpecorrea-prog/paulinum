@@ -1,0 +1,31 @@
+[11:01:17] run prueba_1_0 (paulinum 1.0.0.dev0) · etapas: specs, calibration, ledger, variables, rolling, extras · familias: impostores, ncd, dirichlet · workers 2 · SIN DIANAS
+[11:01:19]   spec impostores 000 dia|mfw:300|minmax|w500|mnone|seven|sblgnt: AUC=0.800 (epist. 0.946) c@1=0.880 (50 problemas, 2.0 s)
+[11:01:20]   spec impostores 001 dia|mfw:300|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.799 (epist. 0.908) c@1=0.845 (50 problemas, 1.7 s)
+[11:01:22]   spec impostores 002 dia|mfw:300|delta|w500|mnone|seven|sblgnt: AUC=0.660 (epist. 0.958) c@1=0.844 (50 problemas, 1.6 s)
+[11:01:24]   spec impostores 003 dia|mfw:300|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.634 (epist. 0.863) c@1=0.789 (50 problemas, 1.7 s)
+[11:01:25]   spec impostores 004 dia|closed:150|minmax|w500|mnone|seven|sblgnt: AUC=0.704 (epist. 0.654) c@1=0.792 (50 problemas, 1.6 s)
+[11:01:27]   spec impostores 005 dia|closed:150|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.743 (epist. 0.842) c@1=0.858 (50 problemas, 1.5 s)
+[11:01:28]   spec impostores 006 dia|closed:150|delta|w500|mnone|seven|sblgnt: AUC=0.635 (epist. 0.775) c@1=0.821 (50 problemas, 1.6 s)
+[11:01:30]   spec impostores 007 dia|closed:150|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.729 (epist. 0.992) c@1=0.890 (50 problemas, 1.5 s)
+[11:02:19]   spec ncd 000 ncd|dia|ncd|ncd|w500|mnone|seven|sblgnt: AUC=0.762 (epist. 0.975) c@1=0.851 (50 problemas, 49.6 s)
+[11:03:08]   spec ncd 001 ncd|dia|ncd|ncd|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.754 (epist. 0.950) c@1=0.869 (50 problemas, 49.0 s)
+[11:03:09]   spec dirichlet 000 dirichlet|dia|mfw:300|dirmult|w500|mnone|seven|sblgnt: AUC=0.995 (epist. 1.000) c@1=0.960 (50 problemas, 1.0 s)
+[11:03:10]   spec dirichlet 001 dirichlet|dia|mfw:300|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.998 (epist. 1.000) c@1=0.978 (50 problemas, 1.1 s)
+[11:03:11]   spec dirichlet 002 dirichlet|dia|closed:150|dirmult|w500|mnone|seven|sblgnt: AUC=0.922 (epist. 0.879) c@1=0.900 (50 problemas, 1.0 s)
+[11:03:12]   spec dirichlet 003 dirichlet|dia|closed:150|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.895 (epist. 0.825) c@1=0.900 (50 problemas, 0.8 s)
+[11:03:12] etapa specs: 116 s
+[11:03:12] etapa calibration: 0 s
+[11:03:13]   ledger minmax: E 22 pares, B 30, G 1; 0 s
+[11:03:13]   ledger delta: E 22 pares, B 30, G 1; 0 s
+[11:03:13] etapa ledger: 1 s
+[11:03:13] etapa variables: 0 s
+[11:03:13] etapa rolling: 0 s
+[11:03:14]   extras: 0 pares de ruido de edición, 0 contribuciones de rasgos
+[11:03:14] etapa extras: 1 s
+[11:03:58] run prueba_1_0 (paulinum 1.0.0.dev0) · etapas: specs, calibration · familias: dirichlet · workers 1 · SIN DIANAS
+[11:04:00]   spec dirichlet 000 dirichlet|dia|mfw:300|dirmult|w500|mnone|seven|sblgnt: AUC=0.993 (epist. 1.000) c@1=0.978 (50 problemas, 1.4 s)
+[11:04:01]   spec dirichlet 001 dirichlet|dia|mfw:300|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.990 (epist. 1.000) c@1=0.960 (50 problemas, 1.1 s)
+[11:04:02]   spec dirichlet 002 dirichlet|dia|closed:150|dirmult|w500|mnone|seven|sblgnt: AUC=0.990 (epist. 0.988) c@1=0.929 (50 problemas, 0.9 s)
+[11:04:02]   spec dirichlet 003 dirichlet|dia|closed:150|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.999 (epist. 1.000) c@1=0.946 (50 problemas, 0.9 s)
+[11:04:02] etapa specs: 4 s
+[11:04:02] etapa calibration: 0 s

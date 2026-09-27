@@ -41,8 +41,11 @@ def seal(config_path: str, run_name: str, results_dir: str = "results", include_
     """
     Sello SHA-256 del conjunto: paulinum/*.py, metadata/*.csv, la configuración, scripts/*.py (siempre en los
     protocolos de paulinum 1.0; en las reconstrucciones solo en la campaña 03) y, si la rejilla usa lemma_dict, el
-    lexicón. Con `protocol_dir` (paulinum 1.0) se sella además <protocol_dir>/PROTOCOLO.md y el sello se escribe en
-    <protocol_dir>/SELLO.json; sin él, en results/PROTOCOLO_SELLADO_<run>.json (campañas reconstruidas).
+    lexicón. Con `protocol_dir` (paulinum 1.0) se sellan además <protocol_dir>/PROTOCOLO.md, los guiones de los
+    subdirectorios de scripts/ (scripts/testigos/*.py) y las configuraciones de sensibilidad (config/sens/*.yaml), y el
+    sello se escribe en <protocol_dir>/SELLO.json y, si lleva etiqueta, también en <protocol_dir>/SELLO_<etiqueta>.json
+    (así cada sello conserva su archivo cuando el siguiente sobrescribe SELLO.json); sin `protocol_dir`, en
+    results/PROTOCOLO_SELLADO_<run>.json (campañas reconstruidas).
     Huella = SHA-256 de la concatenación ordenada de «ruta\n + SHA-256 binario del archivo + \n».
     """
     root = os.getcwd()
@@ -55,6 +58,9 @@ def seal(config_path: str, run_name: str, results_dir: str = "results", include_
         include_scripts = bool(protocol_dir) or "03" in run_name or "prueba" in run_name
     if include_scripts:
         files += sorted(glob.glob(os.path.join("scripts", "*.py")))
+    if protocol_dir:
+        files += sorted(glob.glob(os.path.join("scripts", "*", "*.py")))
+        files += sorted(glob.glob(os.path.join("config", "sens", "*.yaml")))
     lex = os.path.join("data", "cache", "lexicon_uniforme.tsv")
     if include_lexicon is None:
         # el lexicón entra en el sello cuando la rejilla usa lemma_dict (campaña 03; paulinum 1.0 desde el Sello 2)
@@ -93,10 +99,14 @@ def seal(config_path: str, run_name: str, results_dir: str = "results", include_
     else:
         os.makedirs(results_dir, exist_ok=True)
         out = os.path.join(results_dir, f"PROTOCOLO_SELLADO_{run_name}.json")
-    with open(out, "w", encoding="utf-8") as f:
-        json.dump(sello, f, ensure_ascii=False, indent=1)
-        f.write("\n")
-    print(f"sello {run_name}: {sello['sha256']} ({len(files)} archivos) → {out}")
+    outs = [out]
+    if protocol_dir and label:
+        outs.append(os.path.join(protocol_dir, f"SELLO_{label}.json"))
+    for o in outs:
+        with open(o, "w", encoding="utf-8") as f:
+            json.dump(sello, f, ensure_ascii=False, indent=1)
+            f.write("\n")
+    print(f"sello {run_name}: {sello['sha256']} ({len(files)} archivos) → {', '.join(outs)}")
     return sello
 
 
@@ -128,6 +138,9 @@ def main(argv=None) -> int:
     p.add_argument("--run", default=None)
     p.add_argument("--stage", default=None, help="etapas separadas por comas")
     p.add_argument("--data", default="data")
+    p.add_argument("--workers", type=int, default=1, help="procesos en paralelo dentro de cada especificación")
+    p.add_argument("--familias", default=None, help="familias separadas por comas (impostores,ncd,dirichlet)")
+    p.add_argument("--solo", default=None, help="índices de especificación separados por comas (para trocear una etapa)")
     p = sub.add_parser("report", help="informe automático y figuras")
     p.add_argument("--run", required=True)
     a = ap.parse_args(argv)
@@ -175,7 +188,9 @@ def main(argv=None) -> int:
     if a.cmd == "run":
         from .pipeline import run_campaign
         stages = a.stage.split(",") if a.stage else None
-        run_campaign(a.config, a.run, stages, data_dir=a.data)
+        fams = a.familias.split(",") if a.familias else None
+        only = [int(x) for x in a.solo.split(",")] if a.solo else None
+        run_campaign(a.config, a.run, stages, data_dir=a.data, workers=a.workers, families=fams, only=only)
         return 0
     if a.cmd == "report":
         from .report import build_report

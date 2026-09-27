@@ -1,0 +1,6 @@
+family,spec_index,label,dia,features,metric,window,mask,core,edition,iters,n_neg_cristianos,auc_cristiana,auc_cristiana_pos_cristianos,fpr_cristiana_0.5
+dirichlet,0,dirichlet|dia|mfw:300|dirmult|w500|mnone|seven|sblgnt,dia,mfw:300,dirmult,500,none,seven,sblgnt,50,393,0.9594536857696252,0.91470737913486,0.010178117048346057
+impostores,0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,dia,mfw:300,minmax,500,none,seven,sblgnt,50,393,0.8736707682959249,0.8636471586089907,0.1297709923664122
+impostores,1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,dia,mfw:300,delta,500,none,seven,sblgnt,50,393,0.8134375830769816,0.7859202714164546,0.10687022900763359
+impostores,2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,dia,char3:600,minmax,500,none,seven,sblgnt,50,393,0.8758497588393909,0.8525021204410518,0.15776081424936386
+impostores,3,dia|char3:600|delta|w500|mnone|seven|sblgnt,dia,char3:600,delta,500,none,seven,sblgnt,50,393,0.8609006494246325,0.8264631043256997,0.16030534351145037
