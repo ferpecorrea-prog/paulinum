@@ -1,10 +1,32 @@
-# descargas de los repositorios de origen (se rehacen con `python -m paulinum fetch`)
+# Credenciales locales — NUNCA versionar
+github_token.txt
+*.token
+.env
+*.pem
+*.key
+
+# Descargas de repositorios de terceros y corpus construidos (se rehacen con `fetch` y `build`)
 data/raw/
-# corpus construidos y lexicón (se rehacen con `build` y `construir_lexicon.py`); el lexicón puede pesar decenas de MB
 data/cache/
-# entornos y cachés de Python
+
+# Recursos de terceros con derechos o no redistribuibles (uso local; se documentan por huella en provenance.json)
+data/local/Diorisis.zip
+data/local/NA28*
+*.zip
+
+# Entornos y cachés de Python
 .venv/
+venv/
 __pycache__/
 *.pyc
-# matrices de distancia grandes de ejecuciones completas (se rehacen con `run --stage ledger`)
-results/campana_0*/distance_matrix_*.npy
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Matrices grandes de ejecuciones completas (se rehacen con `run --stage ledger`)
+results/*/distance_matrix_*.npy
+
+# Ficheros temporales del sistema y de editores
+.DS_Store
+Thumbs.db
+*~
+*.swp

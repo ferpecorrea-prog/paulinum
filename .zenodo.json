@@ -1,0 +1,33 @@
+{
+  "title": "paulinum: verificación convergente de la autoría del corpus paulino canónico",
+  "upload_type": "software",
+  "description": "<p>Software (Python), corpus de control, protocolos preregistrados, resultados e informes de una investigación de verificación de autoría sobre las catorce cartas del corpus paulino canónico, con controles de autoría segura, calibración de la tasa de error, envolvente intra-autor («mismo rasero»), análisis de las variables de situación y canales no estilométricos (recepción, transmisión, onomástica, epigrafía institucional).</p><p>Código bajo licencia MIT; datos, metadatos, resultados, informes y documentación bajo CC BY 4.0 (véase LICENSE-DATA). Los textos griegos de origen no se redistribuyen: se descargan con <code>python -m paulinum fetch</code> y quedan registrados por su huella SHA-256.</p><p>El repositorio parte de la reconstrucción (paulinum 0.2.0-r, 25-IX-2026) del laboratorio publicado en el libro <em>¿Quién escribió las cartas de san Pablo?</em> (Barcelona, 2026); cada versión archivada en Zenodo indica en su CHANGELOG qué protocolo o qué resultados contiene.</p>",
+  "creators": [
+    {
+      "name": "Fernández-Pedrera Correa, Jesús",
+      "orcid": "0009-0000-7024-5028",
+      "affiliation": "Investigador independiente, Barcelona"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "language": "spa",
+  "keywords": [
+    "estilometría",
+    "verificación de autoría",
+    "corpus paulino",
+    "epístolas paulinas",
+    "griego antiguo",
+    "impostores generales",
+    "humanidades digitales",
+    "investigación reproducible",
+    "preregistro"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ferpecorrea-prog/paulinum",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

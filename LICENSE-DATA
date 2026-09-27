@@ -1,12 +1,21 @@
-Los datos, metadatos, resultados, informes y documentación propios de este repositorio
-(carpetas metadata/, results/, results_publicados/, informes/, docs/, investigacion_1/ salvo los
-archivos .py, y los archivos .md y .yaml de la raíz y de config/) se publican bajo la licencia
-Creative Commons Atribución 4.0 Internacional (CC BY 4.0):
+Licencia de los datos, metadatos, resultados, informes y documentación de este repositorio
+
+Los datos, metadatos, resultados, informes, protocolos y documentación propios de este
+repositorio (carpetas metadata/, protocols/, results/, results_publicados/, informes/, docs/,
+investigacion_1/ salvo los archivos .py, y los archivos .md, .cff, .json y .yaml de la raíz y de
+config/) se publican bajo la licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0):
 https://creativecommons.org/licenses/by/4.0/deed.es
 
-Atribución requerida: Jesús, «paulinum_lab: laboratorio de reproducibilidad de la verificación
-convergente de la autoría del corpus paulino canónico» (reconstrucción, 2026).
+El código (paquete paulinum/, scripts/, tests/ y los archivos .py de investigacion_1/) se publica
+bajo la licencia MIT (véase LICENSE).
+
+Atribución requerida: Jesús Fernández-Pedrera Correa (ORCID 0009-0000-7024-5028), «paulinum:
+verificación convergente de la autoría del corpus paulino canónico», Barcelona, 2026,
+https://github.com/ferpecorrea-prog/paulinum (DOI de Zenodo en el README).
 
 Los textos griegos de origen (MorphGNT/SBLGNT, Open Apostolic Fathers, Perseus canonical-greekLit,
-First1KGreek, PROIEL, MACULA, Diorisis) no forman parte de este repositorio y conservan las licencias
-de sus editores, registradas en paulinum/sources.py y en data/provenance.json.
+First1KGreek, PROIEL, MACULA, Diorisis y los demás que se incorporen) no forman parte de este
+repositorio; se descargan con `python -m paulinum fetch`, conservan las licencias de sus editores y
+quedan registrados, con su huella SHA-256, en paulinum/sources.py y en data/provenance.json. Los
+derivados de recursos con licencia no comercial (por ejemplo, un lexicón construido a partir de
+Diorisis, CC BY-NC-SA 4.0) no se redistribuyen: se reconstruyen localmente con los guiones indicados.
