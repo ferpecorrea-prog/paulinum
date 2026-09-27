@@ -1,0 +1,533 @@
+n	forma_papiro	forma_normalizada	tipo
+1	ΠΑΥΛΟΣ	Παῦλος	minúsculas y acentuación
+2	Ο	ὁ	minúsculas y acentuación
+3	ΔΕΣΜΕΙΟΣ	δέσμιος	ortografía (itacismo / grafía del copista) y acentuación
+4	<ΧΡΥ>	Χριστοῦ	expansión de nomen sacrum
+5	<ΙΗΥ>	Ἰησοῦ	expansión de nomen sacrum
+6	ΤΟΙΣ	τοῖς	minúsculas y acentuación
+7	ΕΝ	ἐν	minúsculas y acentuación
+8	ΚΟΡΙΝΘΩ	Κορίνθῳ	minúsculas y acentuación
+9	ΑΔΕΛΦΟΙΣ	ἀδελφοῖς	minúsculas y acentuación
+10	ΕΝ	ἐν	minúsculas y acentuación
+11	ΠΟΛΛΟΙΣ	πολλοῖς	minúsculas y acentuación
+12	ΩΝ	ὢν	minúsculas y acentuación
+13	ΑΣΤΟΧΗΜΑΣΙ	ἀστοχήμασι	minúsculas y acentuación
+14	ΧΑΙΡΕΙΝ	χαίρειν	minúsculas y acentuación
+15	ΟΥ	οὐ	minúsculas y acentuación
+16	ΘΑΥΜΑ ΖΩ	θαυμάζω	unión de palabra partida por cambio de línea
+17	Η	ᾗ	minúsculas y acentuación
+18	ΟΥΤΩΣ	οὕτως	minúsculas y acentuación
+19	ΤΑΧΕΩΣ	ταχέως	minúsculas y acentuación
+20	ΤΑ	τὰ	minúsculas y acentuación
+21	ΤΟΥ	τοῦ	minúsculas y acentuación
+22	ΠΟΝΗ ΡΟΥ	πονηροῦ	unión de palabra partida por cambio de línea
+23	ΠΡΟΤΡΕΧΕΙ	προτρέχει	minúsculas y acentuación
+24	ΔΟΓΜΑΤΑ	δόγματα	minúsculas y acentuación
+25	ΟΤΙ	ὅτι	minúsculas y acentuación
+26	Ο	ὁ	minúsculas y acentuación
+27	<ΚΣ>	κύριος	expansión de nomen sacrum
+28	<ΧΡΣ>	Χριστὸς	expansión de nomen sacrum
+29	ΕΙΣ	εἰς	minúsculas y acentuación
+30	ΤΑΧΕΙΑΝ	ταχεῖαν	minúsculas y acentuación
+31	ΠΟΙΗΣΗΤΑΙ	ποιήσηται	minúsculas y acentuación
+32	ΤΗΝΕΛ ΕΥΣ<Ι>	τὴν ἔλευσιν	resegmentación (dos palabras escritas unidas/partidas)
+33	ΑΘΕΤΟΥΜΕΝΟΣ	ἀθετούμενος	minúsculas y acentuación
+34	ΑΠ[[Α<Ο>]]	ἀπὸ	restitución editorial de letras (Testuz)
+35	ΤΩΝ	τῶν	minúsculas y acentuación
+36	ΠΑΡΑΧΑΡΑ ΣΟΝΤΩΝ	παραχαρασσόντων	unión de palabra partida por cambio de línea
+37	ΤΑ	τὰ	minúsculas y acentuación
+38	ΛΟΓΕΙΑ	λόγια	ortografía (itacismo / grafía del copista) y acentuación
+39	ΑΥΤΟΥ	αὐτοῦ	minúsculas y acentuación
+40	ΕΓΩ	ἐγὼ	minúsculas y acentuación
+41	ΓΑΡ	γὰρ	minúsculas y acentuación
+42	ΕΝ	ἐν	minúsculas y acentuación
+43	ΑΡΧΗ	ἀρχῇ	minúsculas y acentuación
+44	ΠΑΡΕΔΩΚΑ	παρέδωκα	minúsculas y acentuación
+45	ΥΜΙΝ	ὑμῖν	minúsculas y acentuación
+46	Α	ἃ	minúsculas y acentuación
+47	ΚΑΙ	καὶ	minúsculas y acentuación
+48	ΠΑΡΕ ΛΑΒΟΝ	παρέλαβον	unión de palabra partida por cambio de línea
+49	ΥΠΟ	ὑπὸ	minúsculas y acentuación
+50	ΤΩΝ	τῶν	minúsculas y acentuación
+51	ΠΡΟ	πρὸ	minúsculas y acentuación
+52	ΕΜΟΥ	ἐμοῦ	minúsculas y acentuación
+53	ΑΠΟΣΤΟ ΛΩΝ	ἀποστόλων	unión de palabra partida por cambio de línea
+54	ΓΕΝΟΜΕΝΩΝ	γενομένων	minúsculas y acentuación
+55	ΤΟΝ	τὸν	minúsculas y acentuación
+56	ΠΑΝΤΑ	πάντα	minúsculas y acentuación
+57	ΧΡΟΝΟΝ	χρόνον	minúsculas y acentuación
+58	ΜΕΤΑ	μετὰ	minúsculas y acentuación
+59	<ΙΗΥ>	Ἰησοῦ	expansión de nomen sacrum
+60	<ΧΡΥ>	Χριστοῦ	expansión de nomen sacrum
+61	ΟΤΙ	ὅτι	minúsculas y acentuación
+62	Ο	ὁ	minúsculas y acentuación
+63	<ΚΣ>	κύριος	expansión de nomen sacrum
+64	ΗΜ<Ω>	ἡμῶν	restitución editorial de letras (Testuz)
+65	<ΧΡΣ>	Χριστὸς	expansión de nomen sacrum
+66	<ΙΗΣ>	Ἰησοῦς	expansión de nomen sacrum
+67	ΕΚ	ἐκ	minúsculas y acentuación
+68	ΜΑΡΕΙΑΣ	Μαρίας	ortografía (itacismo / grafía del copista) y acentuación
+69	ΕΓΕΝΝΗΘΗ	ἐγεννήθη	minúsculas y acentuación
+70	ΕΚ	ἐκ	minúsculas y acentuación
+71	ΣΠΕΡΜΑΤΟΣ	σπέρματος	minúsculas y acentuación
+72	<ΔΑΥΙΔ>	Δαυὶδ	expansión de nomen sacrum
+73	<ΠΝΣ>	πνεύματος	expansión de nomen sacrum
+74	ΑΓΕΙΟΥ	ἁγίου	ortografía (itacismo / grafía del copista) y acentuación
+75	ΑΠΟ	ἀπὸ	minúsculas y acentuación
+76	ΟΥΡΑΝΑ̣ΟΥ	οὐρανοῦ	ortografía (itacismo / grafía del copista) y acentuación
+77	ΠΑΡΑ	παρὰ	minúsculas y acentuación
+78	ΤΟΥ	τοῦ	minúsculas y acentuación
+79	<ΠΡΣ>	πατρὸς	expansión de nomen sacrum
+80	ΑΠΟΣ ΤΑΛΕΝΤΟΣ	ἀποσταλέντος	unión de palabra partida por cambio de línea
+81	ΕΙΣ	εἰς	minúsculas y acentuación
+82	ΑΥΤΗΝ	αὐτήν	minúsculas y acentuación
+83	ΕΙΝΑ	ἵνα	ortografía (itacismo / grafía del copista) y acentuación
+84	ΕΙΣ	εἰς	minúsculas y acentuación
+85	ΚΟΣΜΟΝ	κόσμον	minúsculas y acentuación
+86	ΠΡΟΕΛΘΗ	προέλθῃ	minúsculas y acentuación
+87	ΚΑΙ	καὶ	minúsculas y acentuación
+88	ΕΛΕΥΘΕΡΩ ΣΗ	ἐλευθερώσῃ	unión de palabra partida por cambio de línea
+89	ΠΑΣΑΝ	πᾶσαν	minúsculas y acentuación
+90	ΣΑΡΚΑ	σάρκα	minúsculas y acentuación
+91	ΔΙΑ	διὰ	minúsculas y acentuación
+92	ΤΗΣ	τῆς	minúsculas y acentuación
+93	ΙΔΙΑΣ	ἰδίας	minúsculas y acentuación
+94	ΣΑΡΚΟΣ	σαρκὸς	minúsculas y acentuación
+95	ΚΑΙ	καὶ	minúsculas y acentuación
+96	ΕΙΝΑ	ἵνα	ortografía (itacismo / grafía del copista) y acentuación
+97	ΕΚ	ἐκ	minúsculas y acentuación
+98	ΝΕΚΡΩΝ	νεκρῶν	minúsculas y acentuación
+99	ΗΜΑΣ	ἡμᾶς	minúsculas y acentuación
+100	ΕΓΕΙΡΗ	ἐγείρῃ	minúsculas y acentuación
+101	ΣΑΡΚΕΙΚΟΥΣ	σαρκικοὺς	ortografía (itacismo / grafía del copista) y acentuación
+102	ΩΣ	ὡς	minúsculas y acentuación
+103	ΕΑΥΤΟΝ	ἑαυτὸν	minúsculas y acentuación
+104	ΤΥ ΠΟΝ	τύπον	unión de palabra partida por cambio de línea
+105	Ε̣Ν̣	ἐν	minúsculas y acentuación
+106	Τ̣Υ̣Π̣Ο̣Ν̣	τύπον	minúsculas y acentuación
+107	ΕΔΕΙΞΕ	ἔδειξε	minúsculas y acentuación
+108	ΚΑΙ	καὶ	minúsculas y acentuación
+109	ΟΤΙ	ὅτι	minúsculas y acentuación
+110	Ο	ὁ	minúsculas y acentuación
+111	<ΑΝΠΣ>	ἄνθρωπος	expansión de nomen sacrum
+112	ΥΠΟ	ὑπὸ	minúsculas y acentuación
+113	ΤΟΥ	τοῦ	minúsculas y acentuación
+114	<ΠΡΣ>	πατρὸς	expansión de nomen sacrum
+115	ΑΥΤΟΥ	αὐτοῦ	minúsculas y acentuación
+116	ΕΠΛΑΣΘΗ	ἐπλάσθη	minúsculas y acentuación
+117	ΔΙΟ	διὸ	minúsculas y acentuación
+118	ΚΑΙ	καὶ	minúsculas y acentuación
+119	ΑΠΟΛΛΟΙΜΕΝΟΣ	ἀπολλύμενος	ortografía (itacismo / grafía del copista) y acentuación
+120	ΕΖΗΤΗΘΗ	ἐζητήθη	minúsculas y acentuación
+121	Ι ΝΑ	ἵνα	unión de palabra partida por cambio de línea
+122	ΖΩΟΠΟΙΗΘΗ	ζωοποιηθῇ	minúsculas y acentuación
+123	ΔΕΙΑ	διὰ	ortografía (itacismo / grafía del copista) y acentuación
+124	ΤΗΣ	τῆς	minúsculas y acentuación
+125	ΥΙΟΘΕΣΙΑΣ	υἱοθεσίας	minúsculas y acentuación
+126	ΕΠΕΙ	ἐπεὶ	minúsculas y acentuación
+127	ΓΑΡ	γὰρ	minúsculas y acentuación
+128	Ο	ὁ	minúsculas y acentuación
+129	<ΘΣ>	θεὸς	expansión de nomen sacrum
+130	Ο	ὁ	minúsculas y acentuación
+131	ΤΩΝ	τῶν	minúsculas y acentuación
+132	ΟΛΩΝ	ὅλων	minúsculas y acentuación
+133	Ο	ὁ	minúsculas y acentuación
+134	ΠΑΝΤΟ ΚΡΑΤΩΡ	παντοκράτωρ	unión de palabra partida por cambio de línea
+135	Ο	ὁ	minúsculas y acentuación
+136	ΠΟΙΗΣΑΣ	ποιήσας	minúsculas y acentuación
+137	ΤΟΝ	τὸν	minúsculas y acentuación
+138	ΟΥΡΑΝΟΝ	οὐρανὸν	minúsculas y acentuación
+139	ΚΑΙ	καὶ	minúsculas y acentuación
+140	Τ<Η>	τὴν	restitución editorial de letras (Testuz)
+141	ΓΗΝ	γῆν	minúsculas y acentuación
+142	ΑΠΕΣΤΕΙΛΕ	ἀπέστειλε	minúsculas y acentuación
+143	ΠΡΩΤΟΙΣ	πρώτοις	minúsculas y acentuación
+144	ΙΟΥΔΕΟΙΣ	Ἰουδαίοις	ortografía (itacismo / grafía del copista) y acentuación
+145	ΠΡΟΦΗΤΑΣ	προφήτας	minúsculas y acentuación
+146	ΕΙΣ	εἰς	minúsculas y acentuación
+147	ΤΟ	τὸ	minúsculas y acentuación
+148	ΑΠΟ	ἀπὸ	minúsculas y acentuación
+149	ΤΩΝ	τῶν	minúsculas y acentuación
+150	ΑΜΑΡΤΙ<Ω>	ἁμαρτιῶν	restitución editorial de letras (Testuz)
+151	ΑΠΟΣΠΑΣΘΗΝΑΙ	ἀποσπασθῆναι	minúsculas y acentuación
+152	ΕΒΟΥΛΕΤΟ	ἐβούλετο	minúsculas y acentuación
+153	ΓΑΡ	γὰρ	minúsculas y acentuación
+154	ΤΟΝ	τὸν	minúsculas y acentuación
+155	ΟΙΚΟΝ	οἶκον	minúsculas y acentuación
+156	<ΙΣΡΛ>	Ἰσραὴλ	expansión de nomen sacrum
+157	ΣΩΣΑΙ	σῶσαι	minúsculas y acentuación
+158	ΜΕΡΕΙΣΑΣ	μερίσας	ortografía (itacismo / grafía del copista) y acentuación
+159	ΟΥΝ	οὖν	minúsculas y acentuación
+160	ΑΠΟ	ἀπὸ	minúsculas y acentuación
+161	ΤΟΥ	τοῦ	minúsculas y acentuación
+162	<ΠΝΣ>	πνεύματος	expansión de nomen sacrum
+163	ΤΟΥ	τοῦ	minúsculas y acentuación
+164	<ΧΡΥ>	Χριστοῦ	expansión de nomen sacrum
+165	ΕΠΕΜΣΕΝ	ἔπεμψεν	ortografía (itacismo / grafía del copista) y acentuación
+166	ΕΙΣ	εἰς	minúsculas y acentuación
+167	ΤΟΥΣ	τοὺς	minúsculas y acentuación
+168	ΠΡΟΦΗΤΑΣ	προφήτας	minúsculas y acentuación
+169	ΟΙΤΕΙΝΕΣ	οἵτινες	ortografía (itacismo / grafía del copista) y acentuación
+170	ΤΗΝ	τὴν	minúsculas y acentuación
+171	ΑΠΛΑΝΗ	ἀπλανῆ	minúsculas y acentuación
+172	ΘΕΟΣΕΒΙΑΝ	θεοσέβειαν	ortografía (itacismo / grafía del copista) y acentuación
+173	ΕΚΗΡΥΣΣΟΝ	ἐκήρυσσον	minúsculas y acentuación
+174	ΧΡΟΝΟΙΣ	χρόνοις	minúsculas y acentuación
+175	ΠΟΛΛΟΙΣ	πολλοῖς	minúsculas y acentuación
+176	ΘΕΛΩΝ	θέλων	minúsculas y acentuación
+177	ΕΙΝΑΙ	εἶναι	minúsculas y acentuación
+178	ΖΕΙΕΧΕΙΡΙ ΖΕΤΟ	ζειεχειριζετο	forma corrupta conservada sin corregir — PENDIENTE DE DECISIÓN
+179	ΑΥΤΟΥΣ	αὐτοὺς	minúsculas y acentuación
+180	ΚΑΙ	καὶ	minúsculas y acentuación
+181	ΤΗΝ	τὴν	minúsculas y acentuación
+182	ΠΑΣΑΝ	πᾶσαν	minúsculas y acentuación
+183	ΣΑΡΚΑ	σάρκα	minúsculas y acentuación
+184	<ΑΝΠΝ>	ἀνθρώπων	expansión de nomen sacrum
+185	ΠΡΟΣ	πρὸς	minúsculas y acentuación
+186	ΗΔΟΝΗΝ	ἡδονὴν	minúsculas y acentuación
+187	ΕΔΕΣΜΕΥΕΝ	ἐδέσμευεν	minúsculas y acentuación
+188	Ο	ὁ	minúsculas y acentuación
+189	<ΘΣ>	θεὸς	expansión de nomen sacrum
+190	Ο	ὁ	minúsculas y acentuación
+191	ΠΑΝΤΟΚΡΑΤΩΡ	παντοκράτωρ	minúsculas y acentuación
+192	ΔΙΚΕΟΣ	δίκαιος	ortografía (itacismo / grafía del copista) y acentuación
+193	ΩΝ	ὢν	minúsculas y acentuación
+194	ΚΑΙ	καὶ	minúsculas y acentuación
+195	ΜΗ	μὴ	minúsculas y acentuación
+196	ΒΟΥΛΟΜΕΝΟΣ	βουλόμενος	minúsculas y acentuación
+197	ΑΚΥΡΩΣΑΙ	ἀκυρῶσαι	minúsculas y acentuación
+198	ΤΟ	τὸ	minúsculas y acentuación
+199	ΙΔΙΟΝ	ἴδιον	minúsculas y acentuación
+200	ΠΛΑΣΜΑ	πλάσμα	minúsculas y acentuación
+201	ΚΑΤΕΠΕΜΣΕ	κατέπεμψε	ortografía (itacismo / grafía del copista) y acentuación
+202	<ΠΝΑ>	πνεῦμα	expansión de nomen sacrum
+203	ΔΙΑ	διὰ	minúsculas y acentuación
+204	ΠΥΡΟΣ	πυρὸς	minúsculas y acentuación
+205	ΕΙΣ	εἰς	minúsculas y acentuación
+206	ΜΑΡΕΙΑΝ	Μαρίαν	ortografía (itacismo / grafía del copista) y acentuación
+207	ΤΗΝ	τὴν	minúsculas y acentuación
+208	ΓΑΛΕΙΛΕΑΝ	Γαλιλαίαν	ortografía (itacismo / grafía del copista) y acentuación
+209	ΙΝΑ	ἵνα	minúsculas y acentuación
+210	ΔΙ	δι’	minúsculas y acentuación
+211	ΗΣ	ἧς	minúsculas y acentuación
+212	ΣΑΡΚΟΣ	σαρκὸς	minúsculas y acentuación
+213	ΑΠΟΛΛΥΜΕΝΗΣ	ἀπολλυμένης	minúsculas y acentuación
+214	ΕΝΕΠΟΛΕΙ ΤΕΥΕΤΟ	ἐνεπολιτεύετο	unión de palabra partida por cambio de línea
+215	Ο	ὁ	minúsculas y acentuación
+216	ΠΟΝΗΡΟΣ	πονηρός	minúsculas y acentuación
+217	ΔΙΑ	διὰ	minúsculas y acentuación
+218	ΤΑΥΤΗΣ	ταύτης	minúsculas y acentuación
+219	ΝΙΚΗ ΘΕΙΣ	νικηθεὶς	unión de palabra partida por cambio de línea
+220	ΕΛΕΓ’ΧΘΗΤΟ	ἐλεγχθητο	forma corrupta conservada sin corregir — PENDIENTE DE DECISIÓN
+221	ΜΗ	μὴ	minúsculas y acentuación
+222	ΩΝ	ὢν	minúsculas y acentuación
+223	<ΘΣ>	θεός	expansión de nomen sacrum
+224	ΤΩ	τῷ	minúsculas y acentuación
+225	ΓΑΡ	γὰρ	minúsculas y acentuación
+226	ΙΔΙΩ	ἰδίῳ	minúsculas y acentuación
+227	ΣΩΜΑΤΙ	σώματι	minúsculas y acentuación
+228	<ΧΡΣ>	Χριστὸς	expansión de nomen sacrum
+229	<ΙΗΣ>	Ἰησοῦς	expansión de nomen sacrum
+230	ΠΑΣΑΝ	πᾶσαν	minúsculas y acentuación
+231	ΕΣΩΣΕ	ἔσωσε	minúsculas y acentuación
+232	ΣΑΡΚΑ	σάρκα	minúsculas y acentuación
+233	ΙΝΑ	ἵνα	minúsculas y acentuación
+234	ΔΙΚΕΟΣΥΝΗΣ	δικαιοσύνης	ortografía (itacismo / grafía del copista) y acentuación
+235	ΝΑΟΝ	ναὸν	minúsculas y acentuación
+236	ΕΝ	ἐν	minúsculas y acentuación
+237	ΤΩ	τῷ	minúsculas y acentuación
+238	ΙΔΕΙΩ	ἰδίῳ	ortografía (itacismo / grafía del copista) y acentuación
+239	ΣΩΜΑΤΙ	σώματι	minúsculas y acentuación
+240	ΑΝΑΔΕΙΞΗ	ἀναδείξῃ	minúsculas y acentuación
+241	ΕΝ	ἐν	minúsculas y acentuación
+242	Ω	ᾧ	minúsculas y acentuación
+243	ΗΜΕΙΣ	ἡμεῖς	minúsculas y acentuación
+244	ΗΛΕΥΘΕΡΩΜΕΘΑ	ἠλευθερώμεθα	minúsculas y acentuación
+245	ΟΥΚ	οὐκ	minúsculas y acentuación
+246	ΕΙΣΙΝ	εἰσὶν	minúsculas y acentuación
+247	ΟΥΝ	οὖν	minúsculas y acentuación
+248	ΤΕ ΚΝΑ	τέκνα	unión de palabra partida por cambio de línea
+249	ΔΙΚΕΟΣΥΝΗΣ	δικαιοσύνης	ortografía (itacismo / grafía del copista) y acentuación
+250	ΑΛΛΑ	ἀλλὰ	minúsculas y acentuación
+251	ΤΕΚΝΑ	τέκνα	minúsculas y acentuación
+252	ΟΡΓΗΣ	ὀργῆς	minúsculas y acentuación
+253	ΟΙΤΕΙΝΕΣ	οἵτινες	ortografía (itacismo / grafía del copista) y acentuación
+254	ΤΗΝ	τὴν	minúsculas y acentuación
+255	<ΘΥ>	θεοῦ	expansión de nomen sacrum
+256	ΠΡΟΝΟΙΑΝ	πρόνοιαν	minúsculas y acentuación
+257	ΑΝΑΚΟ ΠΤΟΥΣΕΙΝ	ἀνακόπτουσιν	unión de palabra partida por cambio de línea
+258	ΛΕΓΟΝΤΕΣ	λέγοντες	minúsculas y acentuación
+259	ΜΗ	μὴ	minúsculas y acentuación
+260	ΕΙΝΑΙ	εἶναι	minúsculas y acentuación
+261	ΤΟΝ	τὸν	minúsculas y acentuación
+262	ΟΥΡΑΝΟΝ	οὐρανὸν	minúsculas y acentuación
+263	ΚΑΙ	καὶ	minúsculas y acentuación
+264	ΤΗΝ	τὴν	minúsculas y acentuación
+265	ΓΗΝ	γῆν	minúsculas y acentuación
+266	ΚΑΙ	καὶ	minúsculas y acentuación
+267	ΠΑΝΤΑ	πάντα	minúsculas y acentuación
+268	ΤΑ	τὰ	minúsculas y acentuación
+269	ΕΝ	ἐν	minúsculas y acentuación
+270	ΑΥΤΟΙΣ	αὐτοῖς	minúsculas y acentuación
+271	ΤΟΥ	τοῦ	minúsculas y acentuación
+272	<ΠΡΣ>	πατρὸς	expansión de nomen sacrum
+273	ΕΡΓΑ	ἔργα	minúsculas y acentuación
+274	ΚΑΤΗΡΑΜΕ ΝΗΝ	κατηραμένην	unión de palabra partida por cambio de línea
+275	ΓΑΡ	γὰρ	minúsculas y acentuación
+276	ΤΟΥ	τοῦ	minúsculas y acentuación
+277	ΟΦΕΩΣ	ὄφεως	minúsculas y acentuación
+278	ΠΙΣΤΙΝ	πίστιν	minúsculas y acentuación
+279	ΕΧΟΥΣ<Ι>	ἔχουσιν	restitución editorial de letras (Testuz)
+280	ΟΥΣΤΙΝΑΣ	οὕστινας	minúsculas y acentuación
+281	ΑΠΟΤΡΕΠΕΣΘΕ	ἀποτρέπεσθε	minúsculas y acentuación
+282	ΚΑΙ	καὶ	minúsculas y acentuación
+283	ΑΠΟ	ἀπὸ	minúsculas y acentuación
+284	ΤΗΣ	τῆς	minúsculas y acentuación
+285	ΔΙΔΑΣΚΑΛΕΙΑΣ	διδασκαλίας	ortografía (itacismo / grafía del copista) y acentuación
+286	ΑΥΤΩΝ	αὐτῶν	minúsculas y acentuación
+287	ΑΠΟ ΦΕΥΓΕΤΕ	ἀποφεύγετε	unión de palabra partida por cambio de línea
+288	ΟΙ	οἱ	minúsculas y acentuación
+289	ΔΕ	δὲ	minúsculas y acentuación
+290	ΥΜΙΝ	ὑμῖν	minúsculas y acentuación
+291	ΛΕΓΟΥΣΙΝ	λέγουσιν	minúsculas y acentuación
+292	ΑΝΑΣΤΑΣΙΣ	ἀνάστασις	minúsculas y acentuación
+293	ΟΥΚ	οὐκ	minúsculas y acentuación
+294	ΕΣΤΙΝ	ἔστιν	minúsculas y acentuación
+295	ΣΑΡΚΟΣ	σαρκός	minúsculas y acentuación
+296	ΕΚΕΙ ΝΟΙΣ	ἐκείνοις	unión de palabra partida por cambio de línea
+297	ΟΥΚ	οὐκ	minúsculas y acentuación
+298	ΕΣΤΙΝ	ἔστιν	minúsculas y acentuación
+299	ΑΝΑΣΤΑΣΕΙΣ	ἀνάστασις	ortografía (itacismo / grafía del copista) y acentuación
+300	ΟΙΤΙΝΕΣ	οἵτινες	minúsculas y acentuación
+301	ΤΟΝ	τὸν	minúsculas y acentuación
+302	ΟΥΤΩΣ	οὕτως	minúsculas y acentuación
+303	ΑΝΑΣΤΑΝΤΑ	ἀναστάντα	minúsculas y acentuación
+304	ΑΠΕΙΣΤΟΥΣΙ	ἀπιστοῦσι	ortografía (itacismo / grafía del copista) y acentuación
+305	ΟΥ ΤΕ	οὔτε	unión de palabra partida por cambio de línea
+306	ΓΑΡ	γὰρ	minúsculas y acentuación
+307	ΑΝΔΡΕΣ	ἄνδρες	minúsculas y acentuación
+308	ΚΟΡΙΝΘΕΙΟΙ	Κορίνθιοι	ortografía (itacismo / grafía del copista) y acentuación
+309	ΟΙΔΑΣΕΙ	οἴδασι	ortografía (itacismo / grafía del copista) y acentuación
+310	ΤΟΝ	τὸν	minúsculas y acentuación
+311	ΕΠΕΙ	ἐπὶ	ortografía (itacismo / grafía del copista) y acentuación
+312	ΤΟΥ	τοῦ	minúsculas y acentuación
+313	ΠΥΡΟΥ	πυροῦ	minúsculas y acentuación
+314	ΣΠΟΡΟΝ	σπόρον	minúsculas y acentuación
+315	Η	ἢ	minúsculas y acentuación
+316	ΤΩΝ	τῶν	minúsculas y acentuación
+317	ΑΛΛΩΝ	ἄλλων	minúsculas y acentuación
+318	ΣΠΕΡΜΑΤΩΝ	σπερμάτων	minúsculas y acentuación
+319	ΟΤΙ	ὅτι	minúsculas y acentuación
+320	ΓΥΜΝΑ	γυμνὰ	minúsculas y acentuación
+321	ΒΑΛ ΛΕΤΕ	βάλλεται	unión de palabra partida por cambio de línea
+322	ΕΙΣ	εἰς	minúsculas y acentuación
+323	ΤΗΝ	τὴν	minúsculas y acentuación
+324	ΓΗΝ	γῆν	minúsculas y acentuación
+325	ΚΑΙ	καὶ	minúsculas y acentuación
+326	ΣΥΝΦΘΑΡΕΝΤΑ	συμφθαρέντα	ortografía (itacismo / grafía del copista) y acentuación
+327	ΚΑΤΩ	κάτω	minúsculas y acentuación
+328	ΗΓΕΡΘΗ	ἠγέρθη	minúsculas y acentuación
+329	ΕΝ	ἐν	minúsculas y acentuación
+330	ΘΕΛΗΜΑΤΙ	θελήματι	minúsculas y acentuación
+331	<ΘΥ>	θεοῦ	expansión de nomen sacrum
+332	ΕΝ ΣΩ ΜΑ	ἔνσωμα	unión de palabra partida por cambio de línea
+333	ΚΑΙ	καὶ	minúsculas y acentuación
+334	ΗΜΦΙΕΣΜΕΝΑ	ἠμφιεσμένα	minúsculas y acentuación
+335	ΩΣΤΕ	ὥστε	minúsculas y acentuación
+336	ΟΥ	οὐ	minúsculas y acentuación
+337	ΜΟΝΟΝ	μόνον	minúsculas y acentuación
+338	ΤΟ	τὸ	minúsculas y acentuación
+339	ΣΩΜΑ	σῶμα	minúsculas y acentuación
+340	ΕΓΕΙΡΕΤΕ	ἐγείρεται	ortografía (itacismo / grafía del copista) y acentuación
+341	ΤΟ	τὸ	minúsculas y acentuación
+342	ΒΛΗΘΕΝ	βληθὲν	minúsculas y acentuación
+343	ΑΛΛΑ	ἀλλὰ	minúsculas y acentuación
+344	ΠΟΛΛΟΣΤΟΝ	πολλοστὸν	minúsculas y acentuación
+345	ΟΡΘΟΝ	ὀρθὸν	minúsculas y acentuación
+346	ΗΥΛΟΓΗΜΕΝΟΝ	εὐλογημένον	ortografía (itacismo / grafía del copista) y acentuación
+347	Ε]Ι	εἰ	restitución editorial de letras (Testuz)
+348	ΔΕ	δὲ	minúsculas y acentuación
+349	ΔΕΙ	δεῖ	minúsculas y acentuación
+350	ΗΜΑΣ	ἡμᾶς	minúsculas y acentuación
+351	ΚΑΙ	καὶ	minúsculas y acentuación
+352	ΑΠΟ	ἀπὸ	minúsculas y acentuación
+353	ΤΩΝ	τῶν	minúsculas y acentuación
+354	ΣΠΕΡΜΑ Τ]ΩΝ	σπερμάτων	unión de palabra partida por cambio de línea
+355	ΜΗ	μὴ	minúsculas y acentuación
+356	ΠΟΙΕΙ<Σ>ΘΑΙ	ποιεῖσθαι	restitución editorial de letras (Testuz)
+357	ΤΗΝ	τὴν	minúsculas y acentuación
+358	ΠΑΡΑΒΟΛΗΝ	παραβολήν	minúsculas y acentuación
+359	ΟΙ]ΔΑΤΕ	οἴδατε	restitución editorial de letras (Testuz)
+360	ΟΤΙ	ὅτι	minúsculas y acentuación
+361	ΙΩΝΑΣ	Ἰωνᾶς	minúsculas y acentuación
+362	Ο	ὁ	minúsculas y acentuación
+363	ΑΜΑΘΙΟΥ	Ἀμαθίου	minúsculas y acentuación
+364	ΥΙΟΣ	υἱὸς	minúsculas y acentuación
+365	ΙΝΑ]	ἵνα	restitución editorial de letras (Testuz)
+366	ΕΙΣ	εἰς	minúsculas y acentuación
+367	ΝΕΙΝΕΟΥΗ	Νινευὴ	ortografía (itacismo / grafía del copista) y acentuación
+368	ΜΗ	μὴ	minúsculas y acentuación
+369	ΚΗΡΥΞΗ	κηρύξῃ	minúsculas y acentuación
+370	ΕΙΣ	εἰς	minúsculas y acentuación
+371	ΚΗ ΤΟΣ]	κῆτος	unión de palabra partida por cambio de línea
+372	ΚΑΤΑΠΕΠΟΤΕ	καταπέποται	ortografía (itacismo / grafía del copista) y acentuación
+373	ΚΑΙ	καὶ	minúsculas y acentuación
+374	ΜΕΤΑ	μετὰ	minúsculas y acentuación
+375	ΤΡΙ<Σ>	τρεῖς	restitución editorial de letras (Testuz)
+376	ΗΜΕΡΑΣ	ἡμέρας	minúsculas y acentuación
+377	Κ]ΑΙ	καὶ	restitución editorial de letras (Testuz)
+378	ΤΡΙΣ	τρεῖς	ortografía (itacismo / grafía del copista) y acentuación
+379	ΝΥΚΤΑΣ	νύκτας	minúsculas y acentuación
+380	ΕΚ	ἐκ	minúsculas y acentuación
+381	ΤΟΥ	τοῦ	minúsculas y acentuación
+382	ΚΑΤΩΤΑΤΟΥ	κατωτάτου	minúsculas y acentuación
+383	Α]ΔΟΥ	ᾅδου	restitución editorial de letras (Testuz)
+384	ΕΠΗΚΟΥΣΕΝ	ἐπήκουσεν	minúsculas y acentuación
+385	Ο	ὁ	minúsculas y acentuación
+386	<ΘΣ>	θεὸς	expansión de nomen sacrum
+387	ΠΡΟΣΕΥΧΟΜΕ ΝΟΥ	προσευχομένου	unión de palabra partida por cambio de línea
+388	ΙΩΝΑ	Ἰωνᾶ	minúsculas y acentuación
+389	ΚΑΙ	καὶ	minúsculas y acentuación
+390	ΟΥΔΕΝ	οὐδὲν	minúsculas y acentuación
+391	ΑΥΤΟΥ	αὐτοῦ	minúsculas y acentuación
+392	ΔΙΕΦΘΑΡΗ	διεφθάρη	minúsculas y acentuación
+393	ΟΥΤΕ	οὔτε	minúsculas y acentuación
+394	ΕΡΞ·	ερξ	forma corrupta conservada sin corregir — PENDIENTE DE DECISIÓN
+395	ΟΥΤΕ	οὔτε	minúsculas y acentuación
+396	ΒΛΕΦΑΡΟΝ	βλέφαρον	minúsculas y acentuación
+397	ΠΟΣΩ	πόσῳ	minúsculas y acentuación
+398	ΜΑΛΛΟΝ	μᾶλλον	minúsculas y acentuación
+399	ΥΜΑΣ	ὑμᾶς	minúsculas y acentuación
+400	ΟΛΕΙΓΟΠΕΙΣΤΟΙ	ὀλιγόπιστοι	ortografía (itacismo / grafía del copista) y acentuación
+401	ΤΟΥΣ	τοὺς	minúsculas y acentuación
+402	ΠΕΙΣΤΕΥΣΑΝΤΑΣ	πιστεύσαντας	ortografía (itacismo / grafía del copista) y acentuación
+403	ΕΙΣ	εἰς	minúsculas y acentuación
+404	<ΧΡΝ>	Χριστὸν	expansión de nomen sacrum
+405	<ΙΗΝ>	Ἰησοῦν	expansión de nomen sacrum
+406	ΕΞΕ ΓΕΙΡΕΙ	ἐξεγείρει	unión de palabra partida por cambio de línea
+407	ΩΣ	ὡς	minúsculas y acentuación
+408	ΑΥΤΟΣ	αὐτὸς	minúsculas y acentuación
+409	ΗΓΕΡΘΗ	ἠγέρθη	minúsculas y acentuación
+410	ΕΙ	εἰ	minúsculas y acentuación
+411	ΚΑΙ	καὶ	minúsculas y acentuación
+412	ΤΑ	τὰ	minúsculas y acentuación
+413	ΕΛΕΙΣΑΙΟΥ’	Ἐλισαίου	ortografía (itacismo / grafía del copista) y acentuación
+414	ΟΣΤΑ	ὀστᾶ	minúsculas y acentuación
+415	ΤΟΥ	τοῦ	minúsculas y acentuación
+416	ΠΡΟΦΗΤΟΥ	προφήτου	minúsculas y acentuación
+417	ΝΕΚΡΟΥ	νεκροῦ	minúsculas y acentuación
+418	ΒΛΗΘΕΝΤΟΣ	βληθέντος	minúsculas y acentuación
+419	ΑΠΟ	ἀπὸ	minúsculas y acentuación
+420	ΤΩΝ	τῶν	minúsculas y acentuación
+421	ΥΙ<Ω>	υἱῶν	restitución editorial de letras (Testuz)
+422	<ΙΣΡΗΛ>	Ἰσραὴλ	expansión de nomen sacrum
+423	ΕΠ	ἐπ’	minúsculas y acentuación
+424	ΑΥΤΑ	αὐτὰ	minúsculas y acentuación
+425	ΑΝΕΣΤΗ	ἀνέστη	minúsculas y acentuación
+426	ΤΟ	τὸ	minúsculas y acentuación
+427	ΣΩΜΑ	σῶμα	minúsculas y acentuación
+428	ΤΟΥ	τοῦ	minúsculas y acentuación
+429	<ΑΝΠΟΥ>	ἀνθρώπου	expansión de nomen sacrum
+430	ΤΙ	τί	minúsculas y acentuación
+431	ΚΕ	καὶ	ortografía (itacismo / grafía del copista) y acentuación
+432	ΥΜΕΙΣ	ὑμεῖς	minúsculas y acentuación
+433	ΤΟ	τὸ	minúsculas y acentuación
+434	ΣΩΜΑ	σῶμα	minúsculas y acentuación
+435	ΚΑΙ	καὶ	minúsculas y acentuación
+436	ΤΑ	τὰ	minúsculas y acentuación
+437	ΟΣΤΑ	ὀστᾶ	minúsculas y acentuación
+438	ΚΑΙ	καὶ	minúsculas y acentuación
+439	ΤΟ	τὸ	minúsculas y acentuación
+440	<ΠΝΑ>	πνεῦμα	expansión de nomen sacrum
+441	<ΧΡΥ>	Χριστοῦ	expansión de nomen sacrum
+442	ΕΠΕΙΡΕΙΦΕΝ ΤΕΣ	ἐπιρριφέντες	unión de palabra partida por cambio de línea
+443	ΕΝ	ἐν	minúsculas y acentuación
+444	ΕΚΕΙΝΗ	ἐκείνῃ	minúsculas y acentuación
+445	ΤΗ	τῇ	minúsculas y acentuación
+446	ΗΜΕΡΑ	ἡμέρᾳ	minúsculas y acentuación
+447	ΑΝΑΣΤΗ ΣΕΣΘΕ	ἀναστήσεσθε	unión de palabra partida por cambio de línea
+448	ΕΧΟΝΤΕΣ	ἔχοντες	minúsculas y acentuación
+449	ΥΓΙΗ	ὑγιῆ	minúsculas y acentuación
+450	ΤΗΝ	τὴν	minúsculas y acentuación
+451	ΣΑΡΚΑ	σάρκα	minúsculas y acentuación
+452	[[Ο]]		supresión (letra tachada / palabra incompleta en laguna)
+453	ΕΙ	εἰ	minúsculas y acentuación
+454	ΔΕ	δέ	minúsculas y acentuación
+455	ΤΙ	τι	minúsculas y acentuación
+456	ΑΛΛΟ	ἄλλο	minúsculas y acentuación
+457	ΠΑΡΑΔΕΧΕΣΘΕ	παραδέχεσθε	minúsculas y acentuación
+458	ΚΟΠΟΥΣ	κόπους	minúsculas y acentuación
+459	ΜΟΙ	μοι	minúsculas y acentuación
+460	ΜΗ	μὴ	minúsculas y acentuación
+461	ΠΑΡΕΧΕΤΕ	παρέχετε	minúsculas y acentuación
+462	ΕΓΩ	ἐγὼ	minúsculas y acentuación
+463	ΓΑΡ	γὰρ	minúsculas y acentuación
+464	ΤΑ	τὰ	minúsculas y acentuación
+465	ΔΕΣΜΑ	δεσμὰ	minúsculas y acentuación
+466	ΕΙΣ	εἰς	minúsculas y acentuación
+467	ΤΑΣ	τὰς	minúsculas y acentuación
+468	ΧΕΙΡΑΣ	χεῖρας	minúsculas y acentuación
+469	ΕΧΩ	ἔχω	minúsculas y acentuación
+470	ΕΙΝΑ	ἵνα	ortografía (itacismo / grafía del copista) y acentuación
+471	<ΧΡΝ>	Χριστὸν	expansión de nomen sacrum
+472	ΚΕΡΔΗΣ[Ω	κερδήσω	restitución editorial de letras (Testuz)
+473	ΚΑΙ	καὶ	minúsculas y acentuación
+474	ΤΑ	τὰ	minúsculas y acentuación
+475	ΣΤΙΓΜΑΤΑ	στίγματα	minúsculas y acentuación
+476	ΕΝ	ἐν	minúsculas y acentuación
+477	ΤΩ	τῷ	minúsculas y acentuación
+478	ΣΩΜΑΤΙ	σώματί	minúsculas y acentuación
+479	ΜΟΥ	μου	minúsculas y acentuación
+480	ΕΙΝΑ	ἵνα	ortografía (itacismo / grafía del copista) y acentuación
+481	ΕΛΘΩ	ἔλθω	minúsculas y acentuación
+482	ΕΙΣ	εἰς	minúsculas y acentuación
+483	ΤΗΝ	τὴν	minúsculas y acentuación
+484	ΕΚ	ἐκ	minúsculas y acentuación
+485	ΝΕΚΡΩΝ	νεκρῶν	minúsculas y acentuación
+486	ΑΝ[ΑΣ ΤΑΣΙΝ	ἀνάστασιν	unión de palabra partida por cambio de línea
+487	ΚΑΙ	καὶ	minúsculas y acentuación
+488	ΕΙ	εἴ	minúsculas y acentuación
+489	ΤΙΣ	τις	minúsculas y acentuación
+490	Ω	ᾧ	minúsculas y acentuación
+491	ΠΑΡΕΛΑΒΕ	παρέλαβε	minúsculas y acentuación
+492	ΚΑΝΟΝΙ	κανόνι	minúsculas y acentuación
+493	ΔΙΑ	διὰ	minúsculas y acentuación
+494	ΤΩΝ	τῶν	minúsculas y acentuación
+495	ΜΑΚΑΡΙΩΝ	μακαρίων	minúsculas y acentuación
+496	ΠΡΟ ΦΗΤΩΝ	προφητῶν	unión de palabra partida por cambio de línea
+497	ΚΑΙ	καὶ	minúsculas y acentuación
+498	ΤΟΥ	τοῦ	minúsculas y acentuación
+499	ΑΓΙΟΥ	ἁγίου	minúsculas y acentuación
+500	ΕΥΑΓ’ΓΕΛΕΙ[ΟΥ	εὐαγγελίου	restitución editorial de letras (Testuz)
+501	ΜΕΝΕΙ	μένει	minúsculas y acentuación
+502	ΜΙΣΘΟΝ	μισθὸν	minúsculas y acentuación
+503	ΛΗΜΨΕΤΑΙ	λήμψεται	minúsculas y acentuación
+504	ΕΙ	εἴ	minúsculas y acentuación
+505	ΤΙΣ	τις	minúsculas y acentuación
+506	ΠΑΡΑΒΕΝΕΙ	παραβαίνει	ortografía (itacismo / grafía del copista) y acentuación
+507	ΤΑΥΤΑ	ταῦτα	minúsculas y acentuación
+508	ΤΟ	τὸ	minúsculas y acentuación
+509	ΠΥ<Ρ>	πῦρ	restitución editorial de letras (Testuz)
+510	ΕΣΤΙ	ἐστι	minúsculas y acentuación
+511	ΜΕ Τ	μετ’	unión de palabra partida por cambio de línea
+512	ΑΥΤΟΥ	αὐτοῦ	minúsculas y acentuación
+513	ΟΥ]ΤΩΣ	οὕτως	restitución editorial de letras (Testuz)
+514	ΠΡΟΟΔΥΠΟΡ[ ]Μ		supresión (letra tachada / palabra incompleta en laguna)
+515	Α]ΘΕΩΝ	ἀθέων	restitución editorial de letras (Testuz)
+516	<ΑΝΝ̣ΩΝ>	ἀνθρώπων	expansión de nomen sacrum
+517	ΟΙΤΙΝΕΣ	οἵτινες	minúsculas y acentuación
+518	ΤΕΚΝΗΜΑ ΤΑ	τεκνήματα	unión de palabra partida por cambio de línea
+519	ΕΧΕΙΔΝΩΝ	ἐχιδνῶν	ortografía (itacismo / grafía del copista) y acentuación
+520	ΕΙΣΕΙΝ	εἰσίν	ortografía (itacismo / grafía del copista) y acentuación
+521	ΟΥΣ	οὓς	minúsculas y acentuación
+522	ΑΠΟΤΡΕΠΕΣ ΘΕ	ἀποτρέπεσθε	unión de palabra partida por cambio de línea
+523	ΕΝ	ἐν	minúsculas y acentuación
+524	ΤΗ	τῇ	minúsculas y acentuación
+525	ΤΟΥ	τοῦ	minúsculas y acentuación
+526	<ΚΥ>	κυρίου	expansión de nomen sacrum
+527	ΔΥΝΑΜΕΙ	δυνάμει	minúsculas y acentuación
+528	ΚΑΙ	καὶ	minúsculas y acentuación
+529	ΕΣΤΩ	ἔστω	minúsculas y acentuación
+530	ΜΕΘ	μεθ’	minúsculas y acentuación
+531	ΥΜΩΝ	ὑμῶν	minúsculas y acentuación
+532	ΙΡΗΝΗ	εἰρήνη	ortografía (itacismo / grafía del copista) y acentuación
