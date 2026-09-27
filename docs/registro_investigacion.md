@@ -161,3 +161,18 @@ conocida y congelar el código (Sello 2, `paulinum-1.0.0`).
 `docs/laboratorio_actions.md` (anotación; especificaciones por familia; calibración, envolventes y variables
 publicadas antes de las dianas; *bootstrap*; segundo modelo; sensibilidad; veredicto; Sello 3); después, los tres
 canales no estilométricos (§ 9) y el montaje de los Tomos IV-VI.
+
+## Sesión 3 — 2026-09-27 — Bloque 5: campaña principal `paulinum_1_0` en el laboratorio de Actions
+
+**Objeto.** Puntos 4 y 5 de § 3.3: ejecutar la campaña principal con el código del Sello 2 (`paulinum-1.0.0`), en el
+orden de `docs/laboratorio_actions.md`, y cerrar con el veredicto mecánico y el Sello 3.
+
+**Antes de lanzar nada (13:00 UTC).** Enmienda 5 del registro del protocolo: *run* auxiliar `paulinum_1_0_calibracion`
+(`config/paulinum_1_0_calibracion.yaml`, copia del sellado con `sin_dianas: true`) para publicar calibración y
+envolventes antes de la primera fila de diana; anotada la observación sobre las semillas por índice (las filas de
+respuesta conocida del auxiliar y del definitivo son equivalentes, no idénticas; las envolventes sí son idénticas).
+El laboratorio `campana.yml` no se había ejecutado nunca: la primera orden (`anotacion`) sirve también de prueba de
+punta a punta de la descarga de Diorisis desde figshare, la reconstrucción del lexicón y la comprobación de su huella.
+Permiso de borrado concedido de nuevo para `Correccion_Fondo` (archivos de bloqueo de git). Las órdenes con hora y
+duración quedan en `results/<run>/bitacora.md` (las escribe el propio código) y en los *logs* públicos de Actions.
+

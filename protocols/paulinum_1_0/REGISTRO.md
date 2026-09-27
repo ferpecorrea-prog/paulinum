@@ -47,6 +47,28 @@ Formato de cada entrada: fecha · alcance · motivo · afecta a filas de diana y
    las otras ediciones (D-022) · afecta a filas de diana ya calculadas: **no** (ninguna calculada) · nuevo sello: **no** (todo queda
    dentro del Sello 2).
 
+5. **2026-09-27** · operativa (§ 3.3, punto 4; § 11), sin cambio de código ni de reglas · alcance: se añade
+   `config/paulinum_1_0_calibracion.yaml`, copia exacta del archivo sellado `config/paulinum_1_0.yaml` con dos diferencias
+   y solo dos (`nombre: paulinum_1_0_calibracion` y `parametros.sin_dianas: true`; comprobable con `diff`), para ejecutar en
+   el laboratorio de Actions un *run* auxiliar con **solo problemas de respuesta conocida** (etapas `specs`,
+   `calibration`, `ledger`, `variables`) y publicarlo (*commit* `[lab]`) **antes** de que la campaña `paulinum_1_0`
+   calcule ninguna fila de diana · motivo: la etapa `specs` del código sellado calcula en una sola pasada los problemas
+   de respuesta conocida y las filas `target`/`core_loo`, así que sin el *run* auxiliar no podría cumplirse literalmente
+   el punto 4 de § 3.3 (calibración y envolventes cerradas y publicadas antes de calcular ninguna diana) ·
+   observación registrada antes de ejecutar: en `paulinum/pipeline.py` la semilla de cada problema es
+   `semilla_de_la_especificación × 100003 + índice_del_problema_en_la_lista`, y con `sin_dianas` la lista no contiene los
+   14 problemas de carta (7 `core_loo` + 7 `target`) que encabezan la lista de la campaña completa; los índices —y por
+   tanto las semillas— de los problemas de respuesta conocida difieren en 14 posiciones entre el *run* auxiliar y el
+   definitivo, de modo que sus puntuaciones son **equivalentes** (mismos problemas, mismos parámetros, distinto
+   sorteo), **no idénticas** (corrige lo que decía `docs/ESTADO_DEL_PROYECTO_2026-09-27.md` § 5). Las envolventes E, B y G
+   y los pares de género usan semillas fijas propias (`variables.py`) y sí son idénticas en ambos *runs*. Consecuencias
+   fijadas ahora: (a) no se copian parciales del auxiliar al definitivo: cada *run* se reproduce desde cero con su
+   orden; (b) el veredicto usa la calibración del *run* definitivo, calculada por el mismo código sellado; (c) la
+   comparación auxiliar/definitivo (AUC por especificación, aptitud de familias, envolventes) se informa como
+   comprobación de estabilidad Monte Carlo · afecta a filas de diana ya calculadas: **no** (ninguna calculada) · nuevo
+   sello: **no** (§ 12: el archivo nuevo no está en el conjunto sellado y ningún archivo sellado cambia; la huella
+   `cd32dad6…` sigue siendo reproducible).
+
 ## Verificación
 
 Con el repositorio en la etiqueta indicada:
