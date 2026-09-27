@@ -30,5 +30,7 @@ falsificación preparado.
 
 **Decisiones.** D-001 a D-006 en `docs/decisiones.md`.
 
-**Pendiente.** Validación de 3 Corintios por el autor; DOI de concepto de Zenodo tras la primera *release*;
-diseño del protocolo y sellado (sesión 1).
+**Cierre (27-IX-2026, tarde).** El autor delegó la validación de 3 Corintios; resuelta con D-007; `data/local/3Cor.txt`
+registrado. Descarga de nivel 1 (NT y Padres Apostólicos, 43 archivos) comprobada en el portátil.
+
+**Pendiente.** DOI de concepto de Zenodo tras la primera *release*; diseño del protocolo y sellado (sesión 1).

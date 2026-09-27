@@ -29,3 +29,14 @@ un aviso y todo lo demás se ejecuta igual.
 
 Reserva ortográfica (regla preregistrada): la ortografía regularizada del copista introduce una
 incertidumbre propia de este documento que no afecta a ningún otro.
+
+## Registro de preparación (27-IX-2026)
+
+- Fuente: transcripción diplomática electrónica de P. Bodmer X, pp. 50-57 (texto de Testuz 1959 reproducido por
+  dhspriory.org), depositada por el autor en `3Cor_PBodmerX_Claude_package.zip` (SHA-256 de la transcripción
+  `8ebec730f58ad6c07643ad399a15fcc8f2c905fefcbdad70323b081d2f5c7d46`); copia de la parte usada en
+  `3Cor_diplomatica_respuesta_de_Pablo.txt`.
+- Normalización: `scripts/preparar_3cor.py` sobre `3Cor_normalizada_fuente.txt`; alineación en `3Cor_alineacion.tsv`
+  (531 filas); decisiones en `docs/3Cor_validacion_pendiente.md` y D-006/D-007.
+- Resultado: `3Cor.txt`, 531 palabras, SHA-256 `04fd948567e980d1f94fd4656e964bea7da93cc299ba6a91ccaccba6934a3a42`,
+  registrada por `python -m paulinum fetch --tier 1` en `data/provenance.json`.

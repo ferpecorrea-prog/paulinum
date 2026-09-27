@@ -1,8 +1,10 @@
-# 3 Corintios (P. Bodmer X): normalización pendiente de validación filológica
+# 3 Corintios (P. Bodmer X): normalización y decisiones filológicas
 
-Estado: **borrador**. Los ficheros `3Cor_BORRADOR.txt` y `3Cor_alineacion_BORRADOR.tsv` no entran en el corpus
-hasta que el autor valide las decisiones de abajo; entonces se renombran a `3Cor.txt` y `3Cor_alineacion.tsv`,
-`python -m paulinum fetch` anota su huella en `data/provenance.json` y se cierra la decisión D-006.
+Estado: **validado el 27-IX-2026**. El autor delegó las doce decisiones de abajo («decide tú lo mejor con total
+libertad»); se adoptó en todas la opción *borrador*, por el criterio de no corregir nunca en silencio el papiro y
+de regularizar solo la ortografía. Ficheros definitivos: `data/local/3Cor.txt` (531 palabras; SHA-256
+`04fd948567e980d1f94fd4656e964bea7da93cc299ba6a91ccaccba6934a3a42`, registrada en `data/provenance.json`) y
+`data/local/3Cor_alineacion.tsv`. Véase D-007.
 
 ## Fuente y alcance
 
@@ -30,7 +32,7 @@ hasta que el autor valide las decisiones de abajo; entonces se renombran a `3Cor
 Los signos de puntuación del copista (¦), los números de línea de la presentación electrónica (10, 20) y los
 encabezados de página no son palabras y no cuentan.
 
-## Decisiones que se le piden
+## Decisiones (todas resueltas con la opción «borrador»)
 
 | n.º | lugar | lectura del papiro | borrador | alternativa | comentario |
 |---|---|---|---|---|---|
@@ -47,8 +49,10 @@ encabezados de página no son palabras y no cuentan.
 | 11 | p. 57 | ..... ΟΥ]ΤΩΣ ΠΡΟΟΔΥΠΟΡ[ ]Μ Α]ΘΕΩΝ | οὕτως … ἀθέων (la palabra incompleta se omite) | omitir también οὕτως y ἀθέων por estar en laguna | restituciones de una o dos letras se admiten; palabras incompletas no |
 | 12 | general | restituciones de Testuz de una a tres letras (Ε]Ι, Τ]ΩΝ, ΟΙ]ΔΑΤΕ, ΙΝΑ], ΤΟΣ], Κ]ΑΙ, Α]ΔΟΥ, ΚΕΡΔΗΣ[Ω, ΑΝ[ΑΣ, ΕΥΑΓΓΕΛΕΙ[ΟΥ, ΠΥ<Ρ>, ΤΡΙ<Σ>, ΥΙ<Ω>, ΕΧΟΥΣ<Ι>, ΑΜΑΡΤΙ<Ω>, Τ<Η>, ΗΜ<Ω>, ΕΥΣ<Ι>, ΠΟΙΕΙ<Σ>ΘΑΙ, ΑΠ[[Α<Ο>]]) | admitidas | excluir las palabras afectadas | criterio: la palabra está segura aunque falte una letra |
 
-Si el autor confirma los borradores tal cual, no hay que cambiar nada; si elige alguna alternativa, se corrige la
-fila correspondiente de la alineación y el texto, y se documenta aquí la decisión.
+Comprobación adicional del 27-IX-2026: la transcripción electrónica de dhspriory.org, leída de nuevo, coincide letra
+por letra con el paquete del autor en los seis lugares dudosos (decisiones 2, 3, 4, 5, 8 y 10) y no trae aparato; por
+tanto no hay base documental accesible para emendar, y se conserva la lectura del papiro. La lectura ἔνσωμα
+(decisión 5) la apoya la versión latina de 3 Cor 3, 26 (*corporata et vestita*).
 
 ## Reserva preregistrada
 
