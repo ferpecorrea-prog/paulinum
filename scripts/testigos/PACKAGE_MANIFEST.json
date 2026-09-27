@@ -1,0 +1,14 @@
+{
+  "package_name": "nuevo_paulinum_witnesses_bootstrap",
+  "purpose": "Fetch and provenance-lock Codex Sinaiticus and P46 XML transcriptions for manuscript-sensitivity analyses.",
+  "files": [
+    "preparar_testigos.py",
+    "INSTRUCCIONES_PARA_CLAUDE.md"
+  ],
+  "default_output": "nuevo_paulinum/",
+  "canonical_sources": {
+    "sinaiticus_project_v105": "https://epapers.bham.ac.uk/id/eprint/3306/1/FINAL_TRANSCRIPTION_version105.xml.zip",
+    "p46_ntvmr": "https://ntvmr.uni-muenster.de/community/vmr/api/transcript/get/?docID=10046&pageID=ALL&format=teiraw",
+    "sinaiticus_ntvmr_optional": "https://ntvmr.uni-muenster.de/community/vmr/api/transcript/get/?docID=20001&pageID=ALL&format=teiraw"
+  }
+}

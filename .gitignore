@@ -30,3 +30,9 @@ results/*/distance_matrix_*.npy
 Thumbs.db
 *~
 *.swp
+
+# Testigos manuscritos (Sinaítico, P46): XML brutos y derivados con texto íntegro solo en local (D-013);
+# se versionan el manifiesto de procedencia, los guiones y los agregados
+data/local/testigos/*.xml
+data/local/testigos/*.zip
+data/local/testigos/derivados/*.txt

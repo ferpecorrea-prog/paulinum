@@ -75,3 +75,9 @@ del texto y las referencias en cursiva del margen. Resultado: 27 de los 28 tramo
 añadidos (3,5; 7,1-2; 7,4; 10,8-9; 10,28; 11,21; 12,15; 12,29); uno retirado (12,20, en redonda). Enmienda 1 del
 registro del protocolo; `metadata/masks.csv` con 35 tramos `otq` para Hebreos; cobertura 21,7 % (24,1 % con el cierre).
 
+**Testigos manuscritos (27-IX-2026, tarde).** El autor entregó `nuevo_paulinum_testigos_para_Claude.zip` (guion
+`preparar_testigos.py`, solo biblioteca estándar, que descarga de UBIRA y NTVMR y escribe el manifiesto de procedencia).
+El guion se conserva sin cambios en `scripts/testigos/`. Ni el portátil (espacio de trabajo) ni la réplica en la nube
+alcanzan epapers.bham.ac.uk ni ntvmr.uni-muenster.de (lista de dominios; véase el inventario de la sesión 0), así que
+la descarga debe hacerse fuera de ambos entornos; pendiente. Especificación de derivados y reglas: `docs/testigos_manuscritos.md`; D-013.
+
