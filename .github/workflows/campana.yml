@@ -149,13 +149,29 @@ jobs:
               # D-016/D-023: el modelo se instala aquí (huggingface.co solo se alcanza desde el ejecutor). OdyCy (chcaa,
               # MIT; spaCy >=3.7.4,<3.8) se instala desde su wheel publicado; greCy se instala con `python -m grecy install`.
               MODELO="${{ github.event.inputs.modelo }}"; MODELO="${MODELO:-grc_odycy_joint_sm}"
-              case "$MODELO" in
-                # spaCy 3.7 exige numpy < 2 (thinc 8.2) y su CLI importa `click`, que typer >= 0.20 ya no arrastra: en este
-                # paso, y solo en este, numpy baja a 1.26; la anotación no calcula ninguna cifra de la campaña.
-                grc_odycy_*) pip install "spacy>=3.7.4,<3.8.0" click && pip install "https://huggingface.co/chcaa/${MODELO}/resolve/main/${MODELO}-any-py3-none-any.whl" || echo "no se pudo instalar $MODELO" ;;
-                *) pip install spacy grecy && (python -m grecy install "$MODELO" || echo "no se pudo instalar $MODELO") ;;
-              esac
-              python -c "import spacy, numpy; print('spaCy', spacy.__version__, '| numpy', numpy.__version__)" || echo "spaCy no importable"
+              mkdir -p results/anotacion
+              LOG="results/anotacion/instalacion_${MODELO}_${{ github.run_id }}.log"   # diagnóstico público de la instalación
+              {
+                echo "== instalación de $MODELO (ejecución ${{ github.run_id }}) =="
+                case "$MODELO" in
+                  # spaCy 3.7 exige numpy < 2 (thinc 8.2) y su CLI importa `click`, que typer >= 0.20 ya no arrastra: en este
+                  # paso, y solo en este, numpy baja a 1.26; la anotación no calcula ninguna cifra de la campaña.
+                  grc_odycy_*) pip install "spacy>=3.7.4,<3.8.0" click 2>&1 | tail -n 5
+                               pip install "https://huggingface.co/chcaa/${MODELO}/resolve/main/${MODELO}-any-py3-none-any.whl" 2>&1 | tail -n 25 || echo "no se pudo instalar $MODELO" ;;
+                  *) pip install spacy grecy 2>&1 | tail -n 5; (python -m grecy install "$MODELO" 2>&1 | tail -n 25 || echo "no se pudo instalar $MODELO") ;;
+                esac
+                python -c "import spacy, numpy; print('spaCy', spacy.__version__, '| numpy', numpy.__version__)" || echo "spaCy no importable"
+                pip show "$MODELO" 2>&1 | head -n 3 || true
+                python - "$MODELO" <<'PY' || true
+          import sys, traceback
+          try:
+              import spacy
+              nlp = spacy.load(sys.argv[1])
+              print("carga correcta:", sys.argv[1], nlp.pipe_names)
+          except Exception:
+              traceback.print_exc()
+          PY
+              } 2>&1 | tee "$LOG"
               timeout ${{ github.event.inputs.horas }}h python scripts/anotacion_uniforme.py --edicion sblgnt --modelo "$MODELO" || echo "anotación no disponible o tope de tiempo: se envía el informe" ;;
             svm) timeout ${{ github.event.inputs.horas }}h python scripts/modelo_svm.py --run "$NAME" --features mfw:300,closed:150,char3:600,lemma_dict:300 || echo "tope de tiempo o error: se envía lo hecho" ;;
             *) timeout ${{ github.event.inputs.horas }}h python -m paulinum run $ARGS --stage "$STAGE" || echo "tope de tiempo o error: se envía lo hecho (reanudable)" ;;
