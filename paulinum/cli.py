@@ -37,24 +37,37 @@ def _sha(path: str) -> str:
 
 
 def seal(config_path: str, run_name: str, results_dir: str = "results", include_scripts: bool | None = None,
-         include_lexicon: bool | None = None) -> dict:
+         include_lexicon: bool | None = None, protocol_dir: str | None = None, label: str = "") -> dict:
+    """
+    Sello SHA-256 del conjunto: paulinum/*.py, metadata/*.csv, la configuración, scripts/*.py (siempre en los
+    protocolos de paulinum 1.0; en las reconstrucciones solo en la campaña 03) y, si la rejilla usa lemma_dict, el
+    lexicón. Con `protocol_dir` (paulinum 1.0) se sella además <protocol_dir>/PROTOCOLO.md y el sello se escribe en
+    <protocol_dir>/SELLO.json; sin él, en results/PROTOCOLO_SELLADO_<run>.json (campañas reconstruidas).
+    Huella = SHA-256 de la concatenación ordenada de «ruta\n + SHA-256 binario del archivo + \n».
+    """
     root = os.getcwd()
     files = sorted(glob.glob(os.path.join("paulinum", "*.py")))
     files += sorted(glob.glob(os.path.join("metadata", "*.csv")))
     files.append(config_path)
+    if protocol_dir:
+        files.append(os.path.join(protocol_dir, "PROTOCOLO.md"))
     if include_scripts is None:
-        include_scripts = "03" in run_name or "prueba" in run_name
+        include_scripts = bool(protocol_dir) or "03" in run_name or "prueba" in run_name
     if include_scripts:
         files += sorted(glob.glob(os.path.join("scripts", "*.py")))
     lex = os.path.join("data", "cache", "lexicon_uniforme.tsv")
     if include_lexicon is None:
-        # el lexicón entra en el sello solo cuando la rejilla usa lemma_dict (campaña 03)
+        # el lexicón entra en el sello cuando la rejilla usa lemma_dict (campaña 03; paulinum 1.0 desde el Sello 2)
         with open(config_path, encoding="utf-8") as f:
             include_lexicon = "lemma_dict" in f.read()
+    lexicon_note = ""
     if include_lexicon:
         if not os.path.exists(lex):
-            raise SystemExit(f"la configuración usa lemma_dict y falta {lex}: ejecute scripts/construir_lexicon.py antes de sellar")
+            raise SystemExit(f"la configuración usa lemma_dict y falta {lex}: ejecute scripts/construir_lexicon.py antes de sellar "
+                             f"(o use --sin-lexicon para un sello de protocolo anterior al lexicón)")
         files.append(lex)
+    else:
+        lexicon_note = "lexicón no incluido en este sello (se sella con el código congelado)"
     files = [f for f in dict.fromkeys(files) if os.path.exists(f)]
     h = hashlib.sha256()
     detail = {}
@@ -63,14 +76,26 @@ def seal(config_path: str, run_name: str, results_dir: str = "results", include_
         fh = _sha(f)
         detail[rel] = fh
         h.update(rel.encode("utf-8") + b"\n" + bytes.fromhex(fh) + b"\n")
-    sello = {"run": run_name, "config": config_path, "version": __version__,
-             "sealed_utc": _dt.datetime.utcnow().isoformat(timespec="seconds") + "Z",
-             "n_files": len(files), "files": detail, "sha256": h.hexdigest(),
-             "nota": "Reconstrucción: este sello NO coincide con los sellos publicados en el libro (código original perdido)."}
-    os.makedirs(results_dir, exist_ok=True)
-    out = os.path.join(results_dir, f"PROTOCOLO_SELLADO_{run_name}.json")
+    if protocol_dir:
+        nota = ("Sello del protocolo preregistrado: reproducible con "
+                f"`python -m paulinum seal --config {config_path} --run {run_name} --protocol {protocol_dir}"
+                f"{' --sin-lexicon' if not include_lexicon else ''}` en la etiqueta de git indicada.")
+    else:
+        nota = "Reconstrucción: este sello NO coincide con los sellos publicados en el libro (código original perdido)."
+    sello = {"run": run_name, "config": config_path, "version": __version__, "etiqueta": label,
+             "sealed_utc": _dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+             "n_files": len(files), "files": detail, "sha256": h.hexdigest(), "nota": nota}
+    if lexicon_note:
+        sello["lexicon"] = lexicon_note
+    if protocol_dir:
+        os.makedirs(protocol_dir, exist_ok=True)
+        out = os.path.join(protocol_dir, "SELLO.json")
+    else:
+        os.makedirs(results_dir, exist_ok=True)
+        out = os.path.join(results_dir, f"PROTOCOLO_SELLADO_{run_name}.json")
     with open(out, "w", encoding="utf-8") as f:
         json.dump(sello, f, ensure_ascii=False, indent=1)
+        f.write("\n")
     print(f"sello {run_name}: {sello['sha256']} ({len(files)} archivos) → {out}")
     return sello
 
@@ -95,6 +120,9 @@ def main(argv=None) -> int:
     p = sub.add_parser("seal", help="sellar el protocolo")
     p.add_argument("--config", required=True)
     p.add_argument("--run", required=True)
+    p.add_argument("--protocol", default=None, help="carpeta protocols/<campaña> (sella PROTOCOLO.md y escribe SELLO.json allí)")
+    p.add_argument("--sin-lexicon", action="store_true", help="no exigir ni incluir el lexicón (sello anterior al código congelado)")
+    p.add_argument("--etiqueta", default="", help="etiqueta de git que corresponde al sello (p. ej. protocolo-1.0.0)")
     p = sub.add_parser("run", help="ejecutar la campaña")
     p.add_argument("--config", required=True)
     p.add_argument("--run", default=None)
@@ -142,7 +170,7 @@ def main(argv=None) -> int:
     if a.cmd == "selftest":
         return subprocess.call([sys.executable, os.path.join("scripts", "selftest.py")])
     if a.cmd == "seal":
-        seal(a.config, a.run)
+        seal(a.config, a.run, protocol_dir=a.protocol, include_lexicon=False if a.sin_lexicon else None, label=a.etiqueta)
         return 0
     if a.cmd == "run":
         from .pipeline import run_campaign

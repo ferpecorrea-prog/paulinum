@@ -67,6 +67,7 @@ class Source:
     tier: int = 1            # 1: NT y Padres Apostólicos; 2: controles campaña 01; 3: ampliación campaña 03
     min_tokens: int = 0      # umbral de extensión para las partes de una colección
     max_docs: int = 0        # tope de documentos de una colección (0 = sin tope)
+    group_tokens: int = 0    # cartas consecutivas agrupadas hasta ≥ N palabras (colecciones pseudoepigráficas, paulinum 1.0)
     edition_key: str = "sblgnt"  # sblgnt | tischendorf | nestle1904 | lake | perseus | f1k | local
     note: str = ""
     reconstruido: bool = False
@@ -106,7 +107,7 @@ _NT_BOOKS = [
     ("2Tim", "76-2Ti", "Pablo?", "2 Timoteo", "target", "testamentaria", "individuo"),
     ("Tit", "77-Tit", "Pablo?", "Tito", "target", "mandato", "individuo"),
     ("Flm", "78-Phm", "Pablo", "Filemón", "core", "recomendacion", "individuo"),
-    ("Heb", "79-Heb", "anon", "Hebreos", "other", "homilia", "comunidad"),
+    ("Heb", "79-Heb", "Pablo?", "Hebreos", "target", "homilia", "comunidad"),   # D-002: diana 14 (paulinum 1.0)
     ("Sant", "80-Jas", "Santiago(?)", "Santiago", "other", "parenetica", "comunidad"),
     ("1Pe", "81-1Pe", "Pedro(?)", "1 Pedro", "other", "circular", "comunidad"),
     ("2Pe", "82-2Pe", "Pedro(?)", "2 Pedro", "other", "testamentaria", "comunidad"),
@@ -120,7 +121,7 @@ _NT_BOOKS = [
 NT: list[Source] = [
     Source(id=i, author=a, work=w, status=st, tradition="cristiano", repo="morphgnt",
            path=f"{f}-morphgnt.txt", parser="morphgnt", genre="carta" if "carta" in sg or sg in
-           ("circular", "mandato", "testamentaria", "recomendacion", "parenetica") else sg,
+           ("circular", "mandato", "testamentaria", "recomendacion", "parenetica") or i == "Heb" else sg,
            subgenre=sg, addressee=ad, date="s. I", edition="SBLGNT (MorphGNT 6.12)",
            license=REPOS["morphgnt"]["licencia"], tier=1, edition_key="sblgnt")
     for (i, f, a, w, st, sg, ad) in _NT_BOOKS
@@ -441,7 +442,115 @@ CONTROLS_03: list[Source] = [
        note="44 cartas (12.130 palabras en el inventario): se toman las 44 primeras que superan las 200 palabras; el criterio original de selección no consta"),
 ]
 
-ALL_SOURCES: list[Source] = NT + AF + [THREE_COR] + CONTROLS + CONTROLS_03
+# ---------------------------------------------------------------------------------------------
+# Ampliación de paulinum 1.0 (tier 4): envolvente epistolar de autores seguros, controles de género
+# dentro de un mismo autor, falsificaciones epistolares antiguas y casos de composición mediada.
+# Fijada antes del sello del protocolo (protocols/paulinum_1_0/PROTOCOLO.md § 4). Regla: un documento
+# que no se analiza o no alcanza el umbral se pierde y se anota en el inventario; nunca se añade nada.
+# ---------------------------------------------------------------------------------------------
+# Basilio de Cesarea, 368 cartas (Perseus, texto de Deferrari, Loeb 1926-1934). Auditoría conservadora de
+# estados: toda carta con cualquier reserva en Deferrari (índice y notas), Fedwick (1981) o Courtonne
+# (1957-1966) queda fuera de la calibración. spurious = atribuida a otro autor (Evagrio, Gregorio de Nisa,
+# Gregorio Nacianceno, Juliano) o reconocida como falsa; disputed = dudosa o de autenticidad debatida.
+_BASIL_SPURIOUS = {8, 16, 38, 39, 40, 41, 47, 189, 360, 365, 366, 367, 368}
+_BASIL_DISPUTED = {42, 43, 44, 45, 46, 50, 81, 115, 166, 167, 169, 170, 171, 197, 321} | set(range(335, 360)) | {361, 362, 363, 364}
+_BASIL_OTHER_AUTHOR = {8: "Evagrio Póntico", 16: "Gregorio de Nisa", 38: "Gregorio de Nisa", 39: "Ps-Juliano",
+                       40: "Ps-Juliano", 47: "Gregorio Nacianceno", 189: "Gregorio de Nisa"}
+CONTROLS_10: list[Source] = [
+    _p("Bas_Ep", "Basilio de Cesarea", "Cartas", "genuine", "cristiano",
+       "tlg2040/tlg004/tlg2040.tlg004.perseus-grc2.xml", split="letters", genre="carta", subgenre="carta_individuo",
+       addressee="individuo", date="357-378", edition="Deferrari, Loeb 1926-1934 (Perseus)", tier=4, min_tokens=200,
+       part_status={**{str(n): "spurious" for n in _BASIL_SPURIOUS}, **{str(n): "disputed" for n in _BASIL_DISPUTED}},
+       part_author={str(n): ("Ps-Basilio" if n not in _BASIL_OTHER_AUTHOR else _BASIL_OTHER_AUTHOR[n])
+                    for n in _BASIL_SPURIOUS},
+       note="envolvente epistolar cristiana de autor seguro; estados por carta según la auditoría conservadora del "
+            "PROTOCOLO § 4.3; las cartas a iglesias (destinatario comunidad) se anotan en metadata/basilio_cartas.csv"),
+    _p("Bas_Adol", "Basilio de Cesarea", "A los jóvenes (De legendis gentilium libris)", "genuine", "cristiano",
+       "tlg2040/tlg002/tlg2040.tlg002.perseus-grc2.xml", genre="tratado", subgenre="exhortacion", addressee="comunidad",
+       date="c. 370", edition="Perseus (Boulenger)", tier=4, note="control de género dentro del autor: carta frente a discurso"),
+    # Libanio: las 839 cartas del fichero de First1KGreek (Foerster) sin tope de documentos, y seis discursos
+    _f("Liban_Ep10", "Libanio", "Cartas", "genuine", "pagano", "tlg2200/tlg001/tlg2200.tlg001.1st1K-grc1.xml",
+       split="letters", genre="carta", subgenre="carta_individuo", addressee="individuo", date="s. IV",
+       edition="Foerster (Teubner) 1921-1922", tier=4, min_tokens=200,
+       note="sustituye a Liban_Ep (44 cartas) de la campaña 03; todas las cartas de ≥ 200 palabras"),
+] + [
+    Source(id=f"Liban_Or{n}", author="Libanio", work=f"Discurso {n}", status="genuine", tradition="pagano", repo="f1k",
+           path=f"tlg2200/tlg004{n:02d}/tlg2200.tlg004{n:02d}.opp-grc1.xml", parser="tei", genre="discurso",
+           subgenre=sg, addressee=ad, date="s. IV", edition="Foerster (Teubner) 1903-1908", license=REPOS["f1k"]["licencia"],
+           tier=4, edition_key="f1k", note="control de género dentro del autor (cartas frente a discursos)")
+    for n, sg, ad in [(1, "autobiografia", "publico"), (2, "apologia", "publico"), (11, "epidictico", "comunidad"),
+                      (30, "deliberativo", "individuo"), (47, "deliberativo", "individuo"), (64, "apologia", "publico")]
+] + [
+    # Juliano: discursos y dos cartas públicas (Wright), control de género dentro del autor
+    _p("Jul_Or1", "Juliano", "Or. 1, Panegírico de Constancio", "genuine", "pagano", "tlg2003/tlg001/tlg2003.tlg001.perseus-grc2.xml",
+       genre="discurso", subgenre="epidictico", date="356-357", edition="Wright, Loeb 1913", tier=4),
+    _p("Jul_Or2", "Juliano", "Or. 2 (3), Panegírico de Eusebia", "genuine", "pagano", "tlg2003/tlg002/tlg2003.tlg002.perseus-grc2.xml",
+       genre="discurso", subgenre="epidictico", date="356-357", edition="Wright, Loeb 1913", tier=4),
+    _p("Jul_Or3", "Juliano", "Or. 3 (2), Sobre la realeza", "genuine", "pagano", "tlg2003/tlg003/tlg2003.tlg003.perseus-grc2.xml",
+       genre="discurso", subgenre="epidictico", date="358", edition="Wright, Loeb 1913", tier=4),
+    _p("Jul_Or4", "Juliano", "Consolación a sí mismo por la partida de Salustio", "genuine", "pagano", "tlg2003/tlg004/tlg2003.tlg004.perseus-grc2.xml",
+       genre="discurso", subgenre="consolatoria", addressee="si_mismo", date="358", edition="Wright, Loeb 1913", tier=4),
+    _p("Jul_EpAth", "Juliano", "Carta a los atenienses", "genuine", "pagano", "tlg2003/tlg005/tlg2003.tlg005.perseus-grc2.xml",
+       genre="carta", subgenre="carta_comunidad", addressee="comunidad", date="361", edition="Wright, Loeb 1913", tier=4,
+       note="carta pública a una comunidad: par carta_comunidad / carta_individuo dentro de un mismo autor"),
+    _p("Jul_EpThem", "Juliano", "Carta a Temistio", "genuine", "pagano", "tlg2003/tlg006/tlg2003.tlg006.perseus-grc2.xml",
+       genre="carta", subgenre="carta_individuo", addressee="individuo", date="c. 361", edition="Wright, Loeb 1913", tier=4),
+    _p("Jul_Or7", "Juliano", "Or. 7, Contra el cínico Heraclio", "genuine", "pagano", "tlg2003/tlg007/tlg2003.tlg007.perseus-grc2.xml",
+       genre="discurso", subgenre="polemica", date="362", edition="Wright, Loeb 1913", tier=4),
+    _p("Jul_Or9", "Juliano", "Or. 6 (9), Contra los cínicos ignorantes", "genuine", "pagano", "tlg2003/tlg009/tlg2003.tlg009.perseus-grc2.xml",
+       genre="discurso", subgenre="polemica", date="362", edition="Wright, Loeb 1913", tier=4),
+    _p("Jul_Misop", "Juliano", "Misopogon", "genuine", "pagano", "tlg2003/tlg012/tlg2003.tlg012.perseus-grc2.xml",
+       genre="discurso", subgenre="satira", addressee="comunidad", date="363", edition="Wright, Loeb 1913", tier=4),
+    # Alcifrón por libros (sustituye al documento único de la campaña 01) y Eliano: cartas ficticias y miscelánea
+    _f("Alciphr10", "Alcifrón", "Cartas", "genuine", "pagano", "tlg0640/tlg001/tlg0640.tlg001.1st1K-grc1.xml",
+       split="books", work_group="", genre="carta", subgenre="carta_ficticia", addressee="individuo", date="s. II-III",
+       edition="Schepers 1905", tier=4, min_tokens=200, note="sustituye a Alciphr (un solo documento): un documento por libro"),
+    _p("Ael_EpRust", "Eliano", "Cartas rústicas", "genuine", "pagano", "tlg0545/tlg003/tlg0545.tlg003.perseus-grc2.xml",
+       genre="carta", subgenre="carta_ficticia", addressee="individuo", date="s. II-III", edition="Hercher (Teubner) 1866", tier=4),
+    _p("Ael_VH", "Eliano", "Varia historia", "genuine", "pagano", "tlg0545/tlg002/tlg0545.tlg002.perseus-grc2.xml",
+       split="books", work_group="Ael_VH", genre="miscelanea", subgenre="otra", date="s. II-III", edition="Hercher (Teubner) 1866", tier=4,
+       min_tokens=200, note="control de género dentro del autor (cartas ficticias frente a miscelánea)"),
+    # Composición mediada: Plotino editado por Porfirio, frente a las obras propias de Porfirio (Ad Marcellam es una carta)
+    _f("Plot_Enn", "Plotino", "Enéadas", "genuine", "pagano", "tlg2000/tlg001/tlg2000.tlg001.1st1K-grc1.xml",
+       split="books", work_group="Plot_Enn", genre="tratado", subgenre="filosofia", date="c. 253-270", edition="Henry-Schwyzer / Kirchhoff (F1K)",
+       tier=4, max_docs=6, note="texto de Plotino ordenado y editado por Porfirio: caso de composición mediada"),
+    _f("Porph_VPyth", "Porfirio", "Vida de Pitágoras", "genuine", "pagano", "tlg2034/tlg002/tlg2034.tlg002.1st1K-grc1.xml",
+       genre="biografia", subgenre="otra", date="s. III", edition="Nauck 1886", tier=4),
+    _f("Porph_Abst", "Porfirio", "De abstinentia", "genuine", "pagano", "tlg2034/tlg003/tlg2034.tlg003.1st1K-grc1.xml",
+       split="books", work_group="Porph_Abst", genre="tratado", subgenre="filosofia", addressee="individuo", date="c. 270", edition="Nauck 1886", tier=4),
+    _f("Porph_Marc", "Porfirio", "Carta a Marcela", "genuine", "pagano", "tlg2034/tlg005/tlg2034.tlg005.1st1K-grc1.xml",
+       genre="carta", subgenre="carta_individuo", addressee="individuo", date="c. 300", edition="Nauck 1886", tier=4,
+       note="carta auténtica de un autor con obras de otros géneros en el corpus"),
+    # Pseudoepigrafía epistolar cristiana añadida
+    _f("PsClem_Virg", "Ps-Clemente", "Cartas sobre la virginidad", "spurious", "cristiano", "tlg1271/tlg010/tlg1271.tlg010.1st1K-grc1.xml",
+       split="letters", genre="carta", subgenre="carta_comunidad", addressee="comunidad", date="s. III", edition="Diekamp-Funk 1913", tier=4,
+       min_tokens=200, note="imita a Clemente Romano; si el fichero no divide en cartas, un solo documento"),
+] + [
+    # Falsificaciones epistolares antiguas (Hercher, Epistolographi Graeci 1873): el autor imitado no tiene obra
+    # conservada en el corpus → solo negativos e impostores; cartas consecutivas agrupadas hasta ≥ 400 palabras
+    _f(i, a, w, "spurious", "pagano", f"{t}/tlg001/{t}.tlg001.1st1K-grc1.xml", split="letters", genre="carta",
+       subgenre="carta_individuo", addressee="individuo", date=d, edition="Hercher 1873", tier=4, min_tokens=200,
+       group_tokens=400, note="colección pseudoepigráfica; unidades = cartas consecutivas agrupadas hasta ≥ 400 palabras")
+    for i, a, w, t, d in [
+        ("PsPhal", "Ps-Fálaris", "Cartas de Fálaris", "tlg0053", "s. II-IV"),
+        ("PsChion", "Ps-Quión", "Cartas de Quión de Heraclea", "tlg0041", "s. I"),
+        ("PsBrut", "Ps-Bruto", "Cartas de Bruto", "tlg1803", "s. I-II"),
+        ("PsSocr", "Ps-Sócrates", "Cartas de Sócrates", "tlg0636", "s. I-III"),
+        ("PsSocrat", "Ps-Socráticos", "Cartas de los socráticos", "tlg0637", "s. I-III"),
+        ("PsCrat", "Ps-Crates", "Cartas de Crates", "tlg0623", "s. I-II"),
+        ("PsAnach", "Ps-Anacarsis", "Cartas de Anacarsis", "tlg0037", "s. III a. C."),
+        ("PsThem", "Ps-Temístocles", "Cartas de Temístocles", "tlg0055", "s. I-II"),
+        ("PsAntig", "Ps-Antígono", "Carta de Antígono", "tlg0618", "—"),
+        ("PsAntioch", "Ps-Antíoco", "Cartas de Antíoco", "tlg0044", "—"),
+        ("PsArtax", "Ps-Artajerjes", "Cartas de Artajerjes", "tlg0045", "—"),
+        ("PsMithr", "Ps-Mitrídates", "Carta de Mitrídates", "tlg0039", "—"),
+        ("PsNic", "Ps-Nicias", "Carta de Nicias", "tlg0046", "—"),
+    ]
+]
+# Entradas de niveles anteriores que la ampliación sustituye (mismo texto, otra división): no coexisten en el nivel 4.
+REPLACED_IN_10 = {"Liban_Ep", "Alciphr"}
+
+ALL_SOURCES: list[Source] = NT + AF + [THREE_COR] + CONTROLS + CONTROLS_03 + CONTROLS_10
 EDITION_SOURCES = {"sblgnt": None, "tischendorf": NT_TISCHENDORF, "nestle1904": NT_NESTLE1904}
 
 # Núcleos y dianas (config: core = seven | hauptbriefe | seven_plus)
@@ -449,17 +558,24 @@ CORE_SETS = {
     "seven": ["Rom", "1Cor", "2Cor", "Gal", "Flp", "1Tes", "Flm"],
     "hauptbriefe": ["Rom", "1Cor", "2Cor", "Gal"],
     "seven_plus": ["Rom", "1Cor", "2Cor", "Gal", "Flp", "1Tes", "Flm", "Col", "2Tes"],
+    # paulinum 1.0 (sensibilidad): las trece cartas con nombre de Pablo como núcleo; solo para el leave-one-out
+    # de las catorce y para Hebreos frente a la colección entera (PROTOCOLO.md § 6.3)
+    "trece": ["Rom", "1Cor", "2Cor", "Gal", "Ef", "Flp", "Col", "1Tes", "2Tes", "1Tim", "2Tim", "Tit", "Flm"],
 }
-TARGETS = ["Ef", "Col", "2Tes", "1Tim", "2Tim", "Tit"]
+# paulinum 1.0: siete dianas; Hebreos entra con el mismo rasero que las otras seis (D-002)
+TARGETS = ["Ef", "Col", "2Tes", "1Tim", "2Tim", "Tit", "Heb"]
 # Cartas hermanas (dependencia literaria): la hermana se excluye de los candidatos (SISTERS)
 SISTERS = {"Ef": ["Col"], "Col": ["Ef"], "2Tes": ["1Tes"], "1Tes": ["2Tes"]}
 # Pseudoepigrafías conocidas → autor imitado (problemas pseudo_pairs)
 IMITATED = {"Ps-Ignacio": "Ignacio", "Ps-Clemente": "Clemente Romano", "Ps-Plutarco": "Plutarco",
-            "Ps-Juliano": "Juliano", "Ps-Pablo": "Pablo"}
+            "Ps-Juliano": "Juliano", "Ps-Pablo": "Pablo", "Ps-Basilio": "Basilio de Cesarea"}
 
 
 def by_tier(max_tier: int) -> list[Source]:
-    return [s for s in ALL_SOURCES if s.tier <= max_tier]
+    srcs = [s for s in ALL_SOURCES if s.tier <= max_tier]
+    if max_tier >= 4:
+        srcs = [s for s in srcs if s.id not in REPLACED_IN_10]
+    return srcs
 
 
 def manifest_rows() -> list[dict]:

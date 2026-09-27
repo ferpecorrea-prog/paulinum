@@ -150,9 +150,929 @@
    "status": "ok",
    "url": "https://raw.githubusercontent.com/jtauber/apostolic-fathers/master/texts/015-diognetus.txt"
   },
+  "f1k/tlg0018/tlg001/tlg0018.tlg001.1st1K-grc1.xml": {
+   "bytes": 310028,
+   "edition": "Cohn 1896",
+   "fetched": "2026-09-27T08:51:32Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg001/tlg0018.tlg001.1st1K-grc1.xml",
+   "sha256": "93dcbd16b852ef66753ddaa56a2b27a0c2bfde82860d1cfecdcd9b58ea57cd6b",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg001/tlg0018.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg002/tlg0018.tlg002.1st1K-grc1.xml": {
+   "bytes": 575763,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:40Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg002/tlg0018.tlg002.1st1K-grc1.xml",
+   "sha256": "ef558dad43615bc7a146b087c92790a654433fa267aed2180c9ee8d5732376d9",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg002/tlg0018.tlg002.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg003/tlg0018.tlg003.1st1K-grc1.xml": {
+   "bytes": 169268,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:41Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg003/tlg0018.tlg003.1st1K-grc1.xml",
+   "sha256": "501518c0862b69886123dc3244128c0d573f480d19044d1eca62412e19a3b76f",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg003/tlg0018.tlg003.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg004/tlg0018.tlg004.1st1K-grc1.xml": {
+   "bytes": 271202,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:41Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg004/tlg0018.tlg004.1st1K-grc1.xml",
+   "sha256": "5d56ea855e5c3bfcd95ad3e28c0d7f3dc7a6fc7125a115e8c765450c5fcfa2b6",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg004/tlg0018.tlg004.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg005/tlg0018.tlg005.1st1K-grc1.xml": {
+   "bytes": 217438,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:42Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg005/tlg0018.tlg005.1st1K-grc1.xml",
+   "sha256": "0763e7af48f7b80ac6b2831696af1e17fe5ac88b1922fe10bf867855556e6e03",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg005/tlg0018.tlg005.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg006/tlg0018.tlg006.1st1K-grc1.xml": {
+   "bytes": 219005,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:42Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg006/tlg0018.tlg006.1st1K-grc1.xml",
+   "sha256": "f533b7e6e2566cbcadd3bb07898ed3ba08730e4a9084de3debc1f5ef6d3647d1",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg006/tlg0018.tlg006.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg007/tlg0018.tlg007.1st1K-grc1.xml": {
+   "bytes": 76186,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:42Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg007/tlg0018.tlg007.1st1K-grc1.xml",
+   "sha256": "6a9258755ef3424179beea5dd8f70a21ebd1734a8f61a07ed7cd0d872b1dffde",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg007/tlg0018.tlg007.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg008/tlg0018.tlg008.1st1K-grc1.xml": {
+   "bytes": 208232,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:43Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg008/tlg0018.tlg008.1st1K-grc1.xml",
+   "sha256": "e465ef5e4e88010e981ccd00cd01ab534925af95f7b5a287a1eaec5c656b125d",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg008/tlg0018.tlg008.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg009/tlg0018.tlg009.1st1K-grc1.xml": {
+   "bytes": 205836,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:43Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg009/tlg0018.tlg009.1st1K-grc1.xml",
+   "sha256": "25f12de24ba8ac2e8f25ce0ab0bd9ae45b8049373e60d93f173439015d539811",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg009/tlg0018.tlg009.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg010/tlg0018.tlg010.1st1K-grc1.xml": {
+   "bytes": 200151,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:44Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg010/tlg0018.tlg010.1st1K-grc1.xml",
+   "sha256": "e3773fa1792b98916fecb0c6211cd60b5c3250e25106da1cb262a63cd1cdbc40",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg010/tlg0018.tlg010.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg011/tlg0018.tlg011.1st1K-grc1.xml": {
+   "bytes": 245064,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:45Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg011/tlg0018.tlg011.1st1K-grc1.xml",
+   "sha256": "2f5df7fbb6360711a9a7a37ff819be4d351d083b5949ca4e2c995e68cc7811d7",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg011/tlg0018.tlg011.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg012/tlg0018.tlg012.1st1K-grc1.xml": {
+   "bytes": 76734,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:45Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg012/tlg0018.tlg012.1st1K-grc1.xml",
+   "sha256": "6932475379d6e3d6112aed12cfde1976015d0244e3f06b06ddeec0b548bfda10",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg012/tlg0018.tlg012.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg013/tlg0018.tlg013.1st1K-grc1.xml": {
+   "bytes": 211957,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:46Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg013/tlg0018.tlg013.1st1K-grc1.xml",
+   "sha256": "6bbfe84cda489b9bc387a6a85f4dec931c5d143e65b8259843adb881dacc0f61",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg013/tlg0018.tlg013.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg014/tlg0018.tlg014.1st1K-grc1.xml": {
+   "bytes": 245944,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:46Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg014/tlg0018.tlg014.1st1K-grc1.xml",
+   "sha256": "7040c8de9cb269e6f75056c78d45fc4a6aa639b8fa1b1b3e87df13ffff02785c",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg014/tlg0018.tlg014.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg015/tlg0018.tlg015.1st1K-grc1.xml": {
+   "bytes": 372368,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:47Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg015/tlg0018.tlg015.1st1K-grc1.xml",
+   "sha256": "ee538b30faeaab7433bba5050cf616a2d817cee154851b6195bb853f5e11094b",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg015/tlg0018.tlg015.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg016/tlg0018.tlg016.1st1K-grc1.xml": {
+   "bytes": 203629,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:47Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg016/tlg0018.tlg016.1st1K-grc1.xml",
+   "sha256": "0af3aebfd14538d08aca058d95e4fba09e018f01145f38b70e8225630dbbff4e",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg016/tlg0018.tlg016.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg017/tlg0018.tlg017.1st1K-grc1.xml": {
+   "bytes": 234601,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:48Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg017/tlg0018.tlg017.1st1K-grc1.xml",
+   "sha256": "bbd7ec326051c0b1e629e88a79b23586f3b7e8bb8c0364f69853ae74cafaad19",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg017/tlg0018.tlg017.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg018/tlg0018.tlg018.1st1K-grc1.xml": {
+   "bytes": 259920,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:49Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg018/tlg0018.tlg018.1st1K-grc1.xml",
+   "sha256": "c1394f2b4991eb636ad5dcfba20b40e3c4a991ccd3ddd1576136df25bd8fbeb0",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg018/tlg0018.tlg018.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg019/tlg0018.tlg019.1st1K-grc1.xml": {
+   "bytes": 550283,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:49Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg019/tlg0018.tlg019.1st1K-grc1.xml",
+   "sha256": "c45679ee1817c636b606ee9d9b3cc5489954bf8619ca16e15ba7a20c397afe02",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg019/tlg0018.tlg019.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg020/tlg0018.tlg020.1st1K-grc1.xml": {
+   "bytes": 326975,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:50Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg020/tlg0018.tlg020.1st1K-grc1.xml",
+   "sha256": "43a24fb593eb354a2534d9f12f1b67103c79d5c20c1eb835e74d31c98a476f28",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg020/tlg0018.tlg020.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg021/tlg0018.tlg021.1st1K-grc1.xml": {
+   "bytes": 309520,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:51Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg021/tlg0018.tlg021.1st1K-grc1.xml",
+   "sha256": "cec791534d21aa7a88d983913ace61e441efd0f6fbdf1378909eb879e6463374",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg021/tlg0018.tlg021.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg022/tlg0018.tlg022.1st1K-grc1.xml": {
+   "bytes": 803435,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:51Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg022/tlg0018.tlg022.1st1K-grc1.xml",
+   "sha256": "b999f4a73a6ae94100541239fb6880dceaf297d7fbcc597e77cb86035842a1fa",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg022/tlg0018.tlg022.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg023/tlg0018.tlg023.1st1K-grc1.xml": {
+   "bytes": 209481,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:52Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg023/tlg0018.tlg023.1st1K-grc1.xml",
+   "sha256": "1ea8629f4dd8668b90b0cfce1be0c495875b79e9c90c322831c6630e53ef61c2",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg023/tlg0018.tlg023.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg024/tlg0018.tlg024.1st1K-grc1.xml": {
+   "bytes": 1392057,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:53Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg024/tlg0018.tlg024.1st1K-grc1.xml",
+   "sha256": "60b4588688619bc32041c864cabc734a00ffe740dc4d5cf0627b0bd7f4312774",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg024/tlg0018.tlg024.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg025/tlg0018.tlg025.1st1K-grc1.xml": {
+   "bytes": 377366,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:53Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg025/tlg0018.tlg025.1st1K-grc1.xml",
+   "sha256": "e2c1001ca3bf457a27cc4caaf784c3dfd436c823a5ced847dd3633a2f389e434",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg025/tlg0018.tlg025.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg026/tlg0018.tlg026.1st1K-grc1.xml": {
+   "bytes": 217894,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:54Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg026/tlg0018.tlg026.1st1K-grc1.xml",
+   "sha256": "545687ec360d0d8d2f97776a3515a9c44db9f33b3b5f9493da6de70e4359e243",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg026/tlg0018.tlg026.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg027/tlg0018.tlg027.1st1K-grc1.xml": {
+   "bytes": 233686,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:54Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg027/tlg0018.tlg027.1st1K-grc1.xml",
+   "sha256": "9a2f287c2293f22b2357f2e5df07b1b551f70aa65d53bb519fb1d7c03418a49b",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg027/tlg0018.tlg027.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg028/tlg0018.tlg028.1st1K-grc1.xml": {
+   "bytes": 138561,
+   "edition": "Cohn-Wendland-Reiter 1896-1915",
+   "fetched": "2026-09-27T08:51:55Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg028/tlg0018.tlg028.1st1K-grc1.xml",
+   "sha256": "7b2c44539b64dd9283477478f58473c4553bc2392d08d046f870d942795a8cd5",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg028/tlg0018.tlg028.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg029/tlg0018.tlg029.1st1K-grc1.xml": {
+   "bytes": 253465,
+   "edition": "Cohn-Reiter 1915",
+   "fetched": "2026-09-27T08:51:55Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg029/tlg0018.tlg029.1st1K-grc1.xml",
+   "sha256": "4085ddd21df092222cb5122e729f08e01208987a5e6974a598ccd9373bbfe72c",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg029/tlg0018.tlg029.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg030/tlg0018.tlg030.1st1K-grc1.xml": {
+   "bytes": 206922,
+   "edition": "Reiter 1915",
+   "fetched": "2026-09-27T08:51:33Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg030/tlg0018.tlg030.1st1K-grc1.xml",
+   "sha256": "e12a3b67c3ba1a415e0281c8ea83b911048d9e18f54ba0f54c24b5ceb26b2e6f",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg030/tlg0018.tlg030.1st1K-grc1.xml"
+  },
+  "f1k/tlg0018/tlg031/tlg0018.tlg031.1st1K-grc1.xml": {
+   "bytes": 409573,
+   "edition": "Reiter 1915",
+   "fetched": "2026-09-27T08:51:33Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0018/tlg031/tlg0018.tlg031.1st1K-grc1.xml",
+   "sha256": "f4a8cf68b226474508e6800ce8bd3ed94083b230f765c27f003a77dcf7310f78",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0018/tlg031/tlg0018.tlg031.1st1K-grc1.xml"
+  },
+  "f1k/tlg0037/tlg001/tlg0037.tlg001.1st1K-grc1.xml": {
+   "bytes": 24810,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:32Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0037/tlg001/tlg0037.tlg001.1st1K-grc1.xml",
+   "sha256": "2e511732edde923bcfb2cbbf9a0b6b6c7e6cb02fbcfabc8ae027b1fea92ddabe",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0037/tlg001/tlg0037.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0039/tlg001/tlg0039.tlg001.1st1K-grc1.xml": {
+   "bytes": 10736,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:34Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0039/tlg001/tlg0039.tlg001.1st1K-grc1.xml",
+   "sha256": "2fbfbad7174b48e120ba9aaa4eef1517e9af940dca78cd19d4f49d4fb7c95cf5",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0039/tlg001/tlg0039.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0041/tlg001/tlg0041.tlg001.1st1K-grc1.xml": {
+   "bytes": 75416,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:30Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0041/tlg001/tlg0041.tlg001.1st1K-grc1.xml",
+   "sha256": "445eff0b2139b0c7915706038a987a14acc97549980456befde978e7e48adf98",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0041/tlg001/tlg0041.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0044/tlg001/tlg0044.tlg001.1st1K-grc1.xml": {
+   "bytes": 12457,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:34Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0044/tlg001/tlg0044.tlg001.1st1K-grc1.xml",
+   "sha256": "aefa9216838259e3f4e5404389344f095f1cb1387f438bfaf899ce2ea83fc1dc",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0044/tlg001/tlg0044.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0045/tlg001/tlg0045.tlg001.1st1K-grc1.xml": {
+   "bytes": 14742,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:34Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0045/tlg001/tlg0045.tlg001.1st1K-grc1.xml",
+   "sha256": "0021f7bdb85d22b5786d266cdc2fb685c76daf655b76978a793b06ab5b19ed2f",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0045/tlg001/tlg0045.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0046/tlg001/tlg0046.tlg001.1st1K-grc1.xml": {
+   "bytes": 15101,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:35Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0046/tlg001/tlg0046.tlg001.1st1K-grc1.xml",
+   "sha256": "59b6dfcd8a2ccf45d092e858fd2a52c0e029847bbad82c2c5b3f7372e08de3e4",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0046/tlg001/tlg0046.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0053/tlg001/tlg0053.tlg001.1st1K-grc1.xml": {
+   "bytes": 286128,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:30Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0053/tlg001/tlg0053.tlg001.1st1K-grc1.xml",
+   "sha256": "4b576b9fafb2aad4b89da820e8be34a1f74352e540f0e9b01ac9a1350a3edb41",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0053/tlg001/tlg0053.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0055/tlg001/tlg0055.tlg001.1st1K-grc1.xml": {
+   "bytes": 118426,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:33Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0055/tlg001/tlg0055.tlg001.1st1K-grc1.xml",
+   "sha256": "bdd67504008655b34232eb757630200555e7c4995555c410c7b7a2331fbed87c",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0055/tlg001/tlg0055.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0074/tlg008/tlg0074.tlg008.1st1K-grc1.xml": {
+   "bytes": 7431,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:51:30Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0074/tlg008/tlg0074.tlg008.1st1K-grc1.xml",
+   "sha256": "e2a50f01745e05e861a57fa12bc038f4034f57c337aa8455caad2ef33a478219",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0074/tlg008/tlg0074.tlg008.1st1K-grc1.xml"
+  },
+  "f1k/tlg0555/tlg001/tlg0555.tlg001.1st1K-grc1.xml": {
+   "bytes": 332223,
+   "edition": "Stählin 1905",
+   "fetched": "2026-09-27T08:52:00Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0555/tlg001/tlg0555.tlg001.1st1K-grc1.xml",
+   "sha256": "485b2e4c6fcaeb280c1ebfa448a40388427a7db317604889f2bb7befa5a256d4",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0555/tlg001/tlg0555.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0555/tlg002/tlg0555.tlg002.1st1K-grc1.xml": {
+   "bytes": 841250,
+   "edition": "Stählin 1905",
+   "fetched": "2026-09-27T08:52:00Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0555/tlg002/tlg0555.tlg002.1st1K-grc1.xml",
+   "sha256": "03e6a03655189105f5e897462085cc5d5943f90151d03235c605b14a7b9afea4",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0555/tlg002/tlg0555.tlg002.1st1K-grc1.xml"
+  },
+  "f1k/tlg0555/tlg006/tlg0555.tlg006.1st1K-grc1.xml": {
+   "bytes": 138114,
+   "edition": "Stählin 1909",
+   "fetched": "2026-09-27T08:52:01Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0555/tlg006/tlg0555.tlg006.1st1K-grc1.xml",
+   "sha256": "f300ef6a2ccfa81990a32dc00acd86f5a54c0147cf855ac38dc3d7b67475aa29",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0555/tlg006/tlg0555.tlg006.1st1K-grc1.xml"
+  },
+  "f1k/tlg0618/tlg001/tlg0618.tlg001.1st1K-grc1.xml": {
+   "bytes": 7643,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:33Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0618/tlg001/tlg0618.tlg001.1st1K-grc1.xml",
+   "sha256": "172c495d41485634cb5181d91be3e9bf84c26f80fedf6bb28d134f3409c87684",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0618/tlg001/tlg0618.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0623/tlg001/tlg0623.tlg001.1st1K-grc1.xml": {
+   "bytes": 57085,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:32Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0623/tlg001/tlg0623.tlg001.1st1K-grc1.xml",
+   "sha256": "0ea47762181f1964ac7d4e59bb3baaf6052c30d2ec9ddcdf1c61c45327e581fe",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0623/tlg001/tlg0623.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0636/tlg001/tlg0636.tlg001.1st1K-grc1.xml": {
+   "bytes": 51932,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:31Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0636/tlg001/tlg0636.tlg001.1st1K-grc1.xml",
+   "sha256": "84463b33515bd73e41b8791b23f533e3051fb02fc8e551ef63682d9976a06c50",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0636/tlg001/tlg0636.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0637/tlg001/tlg0637.tlg001.1st1K-grc1.xml": {
+   "bytes": 120522,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:31Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0637/tlg001/tlg0637.tlg001.1st1K-grc1.xml",
+   "sha256": "8ef7733c69c06d2f3d77c856297528f168864d73b0e4d8fc60c7a16dc8f9a3e3",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0637/tlg001/tlg0637.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0640/tlg001/tlg0640.tlg001.1st1K-grc1.xml": {
+   "bytes": 480042,
+   "edition": "Schepers 1905",
+   "fetched": "2026-09-27T08:52:25Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0640/tlg001/tlg0640.tlg001.1st1K-grc1.xml",
+   "sha256": "0d1b1d8b2fbfcc01e46a82039ef4884fffa9036e9632778680839394ddf058a6",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0640/tlg001/tlg0640.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0645/tlg001/tlg0645.tlg001.1st1K-grc1.xml": {
+   "bytes": 195802,
+   "edition": "Rauschen 1911",
+   "fetched": "2026-09-27T08:51:56Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0645/tlg001/tlg0645.tlg001.1st1K-grc1.xml",
+   "sha256": "d89772ab0d12a0a293c299652ddf4a5d69ccbd6cced5c4f9181ae887bde074bf",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0645/tlg001/tlg0645.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg0645/tlg002/tlg0645.tlg002.perseus-grc2.xml": {
+   "bytes": 55596,
+   "edition": "Rauschen 1911",
+   "fetched": "2026-09-27T08:51:56Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0645/tlg002/tlg0645.tlg002.perseus-grc2.xml",
+   "sha256": "ac7938667236b7472046f0956333ebfde31b3b4dc8f78c162b6307cad09901bf",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0645/tlg002/tlg0645.tlg002.perseus-grc2.xml"
+  },
+  "f1k/tlg0645/tlg003/tlg0645.tlg003.perseus-grc2.xml": {
+   "bytes": 769085,
+   "edition": "Archambault 1909",
+   "fetched": "2026-09-27T08:51:57Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg0645/tlg003/tlg0645.tlg003.perseus-grc2.xml",
+   "sha256": "d5e87fafb4ee51cd83389a17253a540f86e342c095a9083435886ecd232c663f",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg0645/tlg003/tlg0645.tlg003.perseus-grc2.xml"
+  },
+  "f1k/tlg1205/tlg001/tlg1205.tlg001.perseus-grc2.xml": {
+   "bytes": 156436,
+   "edition": "Schwartz 1891",
+   "fetched": "2026-09-27T08:51:58Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1205/tlg001/tlg1205.tlg001.perseus-grc2.xml",
+   "sha256": "3387d0158b5f60d45d28be48c51d269d12ffef0ddcc4314eedbc93e8add7db57",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1205/tlg001/tlg1205.tlg001.perseus-grc2.xml"
+  },
+  "f1k/tlg1205/tlg002/tlg1205.tlg002.perseus-grc2.xml": {
+   "bytes": 125225,
+   "edition": "Schwartz 1891",
+   "fetched": "2026-09-27T08:51:58Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1205/tlg002/tlg1205.tlg002.perseus-grc2.xml",
+   "sha256": "dd973383147afbd88222c158dac4e01ede0efb8a749bc0965b3d0af5af142a3b",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1205/tlg002/tlg1205.tlg002.perseus-grc2.xml"
+  },
+  "f1k/tlg1271/tlg001/tlg1271.tlg001.1st1K-grc1.xml": {
+   "bytes": 247600,
+   "edition": "Funk-Bihlmeyer (F1K)",
+   "fetched": "2026-09-27T08:51:35Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1271/tlg001/tlg1271.tlg001.1st1K-grc1.xml",
+   "sha256": "235c325ceb7460d093f1ae01d0490ba897028e26e931993a25b8073d39041035",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1271/tlg001/tlg1271.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg1271/tlg003/tlg1271.tlg003.1st1K-grc1.xml": {
+   "bytes": 10416,
+   "edition": "Rehm (GCS)",
+   "fetched": "2026-09-27T08:51:35Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1271/tlg003/tlg1271.tlg003.1st1K-grc1.xml",
+   "sha256": "dfcffa03bf98adf076e7115771e22ad4ec22ab9815fd30bf2994e26c44035b6f",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1271/tlg003/tlg1271.tlg003.1st1K-grc1.xml"
+  },
+  "f1k/tlg1271/tlg005/tlg1271.tlg005.1st1K-grc1.xml": {
+   "bytes": 39754,
+   "edition": "Rehm (GCS)",
+   "fetched": "2026-09-27T08:51:36Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1271/tlg005/tlg1271.tlg005.1st1K-grc1.xml",
+   "sha256": "b3e886feb86ab765123c3bd24e401517b126791aae38c624d19ba5da841d0793",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1271/tlg005/tlg1271.tlg005.1st1K-grc1.xml"
+  },
+  "f1k/tlg1271/tlg010/tlg1271.tlg010.1st1K-grc1.xml": {
+   "bytes": 51968,
+   "edition": "Diekamp-Funk 1913",
+   "fetched": "2026-09-27T08:52:29Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1271/tlg010/tlg1271.tlg010.1st1K-grc1.xml",
+   "sha256": "8899acb6655200df7890dba9ad30b785ffd120011e1913c60cb7050024e32439",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1271/tlg010/tlg1271.tlg010.1st1K-grc1.xml"
+  },
+  "f1k/tlg1286/tlg001/tlg1286.tlg001.1st1K-grc1.xml": {
+   "bytes": 37788,
+   "edition": "Scott 1924",
+   "fetched": "2026-09-27T08:52:07Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1286/tlg001/tlg1286.tlg001.1st1K-grc1.xml",
+   "sha256": "989f07cac4da9fd1723a541444852b9607e49654c1dd9f0c1d442445c80b7987",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1286/tlg001/tlg1286.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg1286/tlg004/tlg1286.tlg004.1st1K-grc1.xml": {
+   "bytes": 16486,
+   "edition": "Scott 1924",
+   "fetched": "2026-09-27T08:52:07Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1286/tlg004/tlg1286.tlg004.1st1K-grc1.xml",
+   "sha256": "2747272feadd42f7004a0663cc5155f804fa400db91111908bdfb9fa81090cda",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1286/tlg004/tlg1286.tlg004.1st1K-grc1.xml"
+  },
+  "f1k/tlg1286/tlg010/tlg1286.tlg010.1st1K-grc1.xml": {
+   "bytes": 37387,
+   "edition": "Scott 1924",
+   "fetched": "2026-09-27T08:52:08Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1286/tlg010/tlg1286.tlg010.1st1K-grc1.xml",
+   "sha256": "a753262d57cd50aacbaefc1eae01832f909c3d4b050a621fd73276513a11b5ec",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1286/tlg010/tlg1286.tlg010.1st1K-grc1.xml"
+  },
+  "f1k/tlg1286/tlg013/tlg1286.tlg013.1st1K-grc1.xml": {
+   "bytes": 34645,
+   "edition": "Scott 1924",
+   "fetched": "2026-09-27T08:52:08Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1286/tlg013/tlg1286.tlg013.1st1K-grc1.xml",
+   "sha256": "1058a214f9381d8e9c9936289c6446991647a821d50f39b971b1c9879cfc61d6",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1286/tlg013/tlg1286.tlg013.1st1K-grc1.xml"
+  },
+  "f1k/tlg1286/tlg016/tlg1286.tlg016.1st1K-grc1.xml": {
+   "bytes": 21583,
+   "edition": "Scott 1924",
+   "fetched": "2026-09-27T08:52:09Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1286/tlg016/tlg1286.tlg016.1st1K-grc1.xml",
+   "sha256": "1ac566a07a9391395402b29dd7be994ab1cc6f3c6531b8bee9291796b68edcf9",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1286/tlg016/tlg1286.tlg016.1st1K-grc1.xml"
+  },
+  "f1k/tlg1325/tlg001/tlg1325.tlg001.1st1K-grc1.xml": {
+   "bytes": 142671,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:13Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1325/tlg001/tlg1325.tlg001.1st1K-grc1.xml",
+   "sha256": "ddba35a5e0cf817831b25d71f185445ab9a72ab7bce798f15dd16e0fd859643a",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1325/tlg001/tlg1325.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg1367/tlg001/tlg1367.tlg001.1st1K-grc1.xml": {
+   "bytes": 31644,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:13Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1367/tlg001/tlg1367.tlg001.1st1K-grc1.xml",
+   "sha256": "927d510d28fc9f57b160152b03cccb5214cb145d8e7177b4b6db45c62d04ee65",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1367/tlg001/tlg1367.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg1443/tlg001/tlg1443.tlg001.1st1K-grc1.xml": {
+   "bytes": 169452,
+   "edition": "Funk-Diekamp 1913 (F1K)",
+   "fetched": "2026-09-27T08:51:34Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1443/tlg001/tlg1443.tlg001.1st1K-grc1.xml",
+   "sha256": "407480ff3171bc805d165869aa317d54b51818a47f42f8fe30a09db7ba9f585d",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1443/tlg001/tlg1443.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg1443/tlg002/tlg1443.tlg002.1st1K-grc1.xml": {
+   "bytes": 343360,
+   "edition": "Funk-Diekamp 1913",
+   "fetched": "2026-09-27T08:51:35Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1443/tlg002/tlg1443.tlg002.1st1K-grc1.xml",
+   "sha256": "064072d72e046ef5413caca0525cc8953f3a7ae14eb1e8015d530c4cfb28c5f8",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1443/tlg002/tlg1443.tlg002.1st1K-grc1.xml"
+  },
+  "f1k/tlg1463/tlg001/tlg1463.tlg001.1st1K-grc1.xml": {
+   "bytes": 117712,
+   "edition": "Black 1970 / Swete",
+   "fetched": "2026-09-27T08:52:06Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1463/tlg001/tlg1463.tlg001.1st1K-grc1.xml",
+   "sha256": "97ef42427781d8f96b1f3f4d98b687a622b67dafa223ec2ff0a0b75451152ca4",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1463/tlg001/tlg1463.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg1617/tlg001/tlg1617.tlg001.1st1K-grc1.xml": {
+   "bytes": 97812,
+   "edition": "Hinck 1873",
+   "fetched": "2026-09-27T08:52:09Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1617/tlg001/tlg1617.tlg001.1st1K-grc1.xml",
+   "sha256": "b873320f8a80881320283607881a87aaaa5c6f0cfff2704de13302f9c35f7805",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1617/tlg001/tlg1617.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg1681/tlg001/tlg1681.tlg001.1st1K-grc1.xml": {
+   "bytes": 12570,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:13Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1681/tlg001/tlg1681.tlg001.1st1K-grc1.xml",
+   "sha256": "29fa961250fabdaf7f06bbe39f793196c80d2f38fa2f265aabfdbfdc0e5034d1",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1681/tlg001/tlg1681.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg1701/tlg001/tlg1701.tlg001.1st1K-grc1.xml": {
+   "bytes": 149746,
+   "edition": "James 1892",
+   "fetched": "2026-09-27T08:52:05Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1701/tlg001/tlg1701.tlg001.1st1K-grc1.xml",
+   "sha256": "d3c693ce3fd5a0d9ed02e46581d0857fb5ec5d523f86ecc0a145b351eff70fe4",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1701/tlg001/tlg1701.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg1725/tlg001/tlg1725.tlg001.perseus-grc2.xml": {
+   "bytes": 294689,
+   "edition": "Otto 1861",
+   "fetched": "2026-09-27T08:51:59Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1725/tlg001/tlg1725.tlg001.perseus-grc2.xml",
+   "sha256": "b190660e1756629816c0182e9a7d3bbece3fee765b5a4ee284fe4e4d52b4bf33",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1725/tlg001/tlg1725.tlg001.perseus-grc2.xml"
+  },
+  "f1k/tlg1750/tlg002/tlg1750.tlg002.1st1K-grc1.xml": {
+   "bytes": 59452,
+   "edition": "Schermann 1907",
+   "fetched": "2026-09-27T08:52:05Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1750/tlg002/tlg1750.tlg002.1st1K-grc1.xml",
+   "sha256": "14f16b56fb89a58f2282a2e053036061d23be411bdca45e73aa6983ae0194794",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1750/tlg002/tlg1750.tlg002.1st1K-grc1.xml"
+  },
+  "f1k/tlg1764/tlg001/tlg1764.tlg001.1st1K-grc1.xml": {
+   "bytes": 2064627,
+   "edition": "Kroll 1908",
+   "fetched": "2026-09-27T08:52:06Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1764/tlg001/tlg1764.tlg001.1st1K-grc1.xml",
+   "sha256": "dfe1afd6de99a814cdadadf60af96e72ffe088a1af7a9fc9a0e4c297fe531120",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1764/tlg001/tlg1764.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg1766/tlg001/tlg1766.tlg001.perseus-grc1.xml": {
+   "bytes": 150510,
+   "edition": "Schwartz 1888",
+   "fetched": "2026-09-27T08:51:58Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1766/tlg001/tlg1766.tlg001.perseus-grc1.xml",
+   "sha256": "bfe1671160c9155552055a24bd86345d2efb5392cd03e70a947d4a7a9ce00e4a",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1766/tlg001/tlg1766.tlg001.perseus-grc1.xml"
+  },
+  "f1k/tlg1803/tlg001/tlg1803.tlg001.1st1K-grc1.xml": {
+   "bytes": 68554,
+   "edition": "Hercher 1873",
+   "fetched": "2026-09-27T08:52:30Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg1803/tlg001/tlg1803.tlg001.1st1K-grc1.xml",
+   "sha256": "3a4551c98a93ffac6f5dcdf0d0a42b79bede9c719942c645bd53fd09fb336d60",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg1803/tlg001/tlg1803.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg2000/tlg001/tlg2000.tlg001.1st1K-grc1.xml": {
+   "bytes": 3076142,
+   "edition": "Henry-Schwyzer / Kirchhoff (F1K)",
+   "fetched": "2026-09-27T08:52:27Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2000/tlg001/tlg2000.tlg001.1st1K-grc1.xml",
+   "sha256": "29a60f4609740c4a858f1cc517182b7fc90d19333ebbf47ae09f927520600bec",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2000/tlg001/tlg2000.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg2016/tlg001/tlg2016.tlg001.1st1K-grc1.xml": {
+   "bytes": 57028,
+   "edition": "Robinson 1891",
+   "fetched": "2026-09-27T08:52:04Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2016/tlg001/tlg2016.tlg001.1st1K-grc1.xml",
+   "sha256": "794cbdcd539878a994523c04f66e57d4583f6b1a3b03f241b85f1db98b05e8fd",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2016/tlg001/tlg2016.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg2034/tlg002/tlg2034.tlg002.1st1K-grc1.xml": {
+   "bytes": 85197,
+   "edition": "Nauck 1886",
+   "fetched": "2026-09-27T08:52:28Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2034/tlg002/tlg2034.tlg002.1st1K-grc1.xml",
+   "sha256": "2b8afb24c554d923f0f6a8bb38475ebc5e789880e94fc649fc7e72b7b672adac",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2034/tlg002/tlg2034.tlg002.1st1K-grc1.xml"
+  },
+  "f1k/tlg2034/tlg003/tlg2034.tlg003.1st1K-grc1.xml": {
+   "bytes": 457508,
+   "edition": "Nauck 1886",
+   "fetched": "2026-09-27T08:52:28Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2034/tlg003/tlg2034.tlg003.1st1K-grc1.xml",
+   "sha256": "5e4939ca7c66ca1ebca7b2c774e8887d49628ca764a64fac5c5744d6bdd05847",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2034/tlg003/tlg2034.tlg003.1st1K-grc1.xml"
+  },
+  "f1k/tlg2034/tlg005/tlg2034.tlg005.1st1K-grc1.xml": {
+   "bytes": 63490,
+   "edition": "Nauck 1886",
+   "fetched": "2026-09-27T08:52:29Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2034/tlg005/tlg2034.tlg005.1st1K-grc1.xml",
+   "sha256": "a1619abe3c06923ba4410ef88c1d826e8399373f1e87c2af8abcc68b61cfb242",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2034/tlg005/tlg2034.tlg005.1st1K-grc1.xml"
+  },
+  "f1k/tlg2038/tlg001/tlg2038.tlg001.1st1K-grc1.xml": {
+   "bytes": 389807,
+   "edition": "Bonnet 1903",
+   "fetched": "2026-09-27T08:52:04Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2038/tlg001/tlg2038.tlg001.1st1K-grc1.xml",
+   "sha256": "a438ef18808cd8d1e2c425db55c5741682407e25fb0f0ca5df111804dd561883",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2038/tlg001/tlg2038.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg2042/tlg001/tlg2042.tlg001.perseus-grc1.xml": {
+   "bytes": 2195910,
+   "edition": "Koetschau 1899",
+   "fetched": "2026-09-27T08:52:02Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2042/tlg001/tlg2042.tlg001.perseus-grc1.xml",
+   "sha256": "9ca7246da545316e6ec858f2485350948a4aceace694bb188ea1439c8431481d",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2042/tlg001/tlg2042.tlg001.perseus-grc1.xml"
+  },
+  "f1k/tlg2042/tlg007/tlg2042.tlg007.perseus-grc1.xml": {
+   "bytes": 167196,
+   "edition": "Koetschau 1899",
+   "fetched": "2026-09-27T08:52:03Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2042/tlg007/tlg2042.tlg007.perseus-grc1.xml",
+   "sha256": "dedb6ae89519545a0ab274061c858a0549760bb3ac97223a5f744130c13fb83b",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2042/tlg007/tlg2042.tlg007.perseus-grc1.xml"
+  },
+  "f1k/tlg2042/tlg008/tlg2042.tlg008.perseus-grc1.xml": {
+   "bytes": 427880,
+   "edition": "Koetschau 1899",
+   "fetched": "2026-09-27T08:52:02Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2042/tlg008/tlg2042.tlg008.perseus-grc1.xml",
+   "sha256": "1bc5446843d8880bf20c1ae7f44bf0717f7c9645f6365fccc09c18d93a4bd6fc",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2042/tlg008/tlg2042.tlg008.perseus-grc1.xml"
+  },
+  "f1k/tlg2042/tlg045/tlg2042.tlg045.1st1K-grc1.xml": {
+   "bytes": 85092,
+   "edition": "De Lange (SC 302)",
+   "fetched": "2026-09-27T08:52:03Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2042/tlg045/tlg2042.tlg045.1st1K-grc1.xml",
+   "sha256": "ef2a182af1d9c4e7db2e160a91a1cb3fb3576aef6a0753648b502c620317ac0f",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2042/tlg045/tlg2042.tlg045.1st1K-grc1.xml"
+  },
+  "f1k/tlg2200/tlg001/tlg2200.tlg001.1st1K-grc1.xml": {
+   "bytes": 2527243,
+   "edition": "Foerster (Teubner) 1921-1922",
+   "fetched": "2026-09-27T08:52:17Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2200/tlg001/tlg2200.tlg001.1st1K-grc1.xml",
+   "sha256": "4ad3886e2dbbb5ecbc005904581e485d063bcef7e7fbd71c7596a54cfbcda6b5",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2200/tlg001/tlg2200.tlg001.1st1K-grc1.xml"
+  },
+  "f1k/tlg2200/tlg00401/tlg2200.tlg00401.opp-grc1.xml": {
+   "bytes": 415326,
+   "edition": "Foerster (Teubner) 1903-1908",
+   "fetched": "2026-09-27T08:52:18Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2200/tlg00401/tlg2200.tlg00401.opp-grc1.xml",
+   "sha256": "6782b5758df63bef650215b3cf25a0af855d8632c07a8541f7b7b71ec43ec353",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2200/tlg00401/tlg2200.tlg00401.opp-grc1.xml"
+  },
+  "f1k/tlg2200/tlg00402/tlg2200.tlg00402.opp-grc1.xml": {
+   "bytes": 76647,
+   "edition": "Foerster (Teubner) 1903-1908",
+   "fetched": "2026-09-27T08:52:18Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2200/tlg00402/tlg2200.tlg00402.opp-grc1.xml",
+   "sha256": "961854afa6a97abd3cfe1ded71e390da0937a55268aa630b530bce5e4780f190",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2200/tlg00402/tlg2200.tlg00402.opp-grc1.xml"
+  },
+  "f1k/tlg2200/tlg00411/tlg2200.tlg00411.opp-grc1.xml": {
+   "bytes": 317492,
+   "edition": "Foerster (Teubner) 1903-1908",
+   "fetched": "2026-09-27T08:52:19Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2200/tlg00411/tlg2200.tlg00411.opp-grc1.xml",
+   "sha256": "3a604f622d642ad537d0cdb10ce5b66e235a4a32503059c71ce622cac53efe12",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2200/tlg00411/tlg2200.tlg00411.opp-grc1.xml"
+  },
+  "f1k/tlg2200/tlg00430/tlg2200.tlg00430.opp-grc1.xml": {
+   "bytes": 101646,
+   "edition": "Foerster (Teubner) 1903-1908",
+   "fetched": "2026-09-27T08:52:19Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2200/tlg00430/tlg2200.tlg00430.opp-grc1.xml",
+   "sha256": "f2b8fb83a690c7ed76d96220da2accf0c9113e5b1e84ab1a4a585ea88e3a4f14",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2200/tlg00430/tlg2200.tlg00430.opp-grc1.xml"
+  },
+  "f1k/tlg2200/tlg00447/tlg2200.tlg00447.opp-grc1.xml": {
+   "bytes": 64233,
+   "edition": "Foerster (Teubner) 1903-1908",
+   "fetched": "2026-09-27T08:52:19Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2200/tlg00447/tlg2200.tlg00447.opp-grc1.xml",
+   "sha256": "78d2f4787e83962189b78b61d79b54f1a08f3f76ee4549fb1bf76eb028b690de",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2200/tlg00447/tlg2200.tlg00447.opp-grc1.xml"
+  },
+  "f1k/tlg2200/tlg00464/tlg2200.tlg00464.opp-grc1.xml": {
+   "bytes": 250653,
+   "edition": "Foerster (Teubner) 1903-1908",
+   "fetched": "2026-09-27T08:52:20Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/f1k/tlg2200/tlg00464/tlg2200.tlg00464.opp-grc1.xml",
+   "sha256": "ae22976afe36497f9a69abdd519a5f10dbcea2d6f677060b2b6f110b1c35ffd7",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data/tlg2200/tlg00464/tlg2200.tlg00464.opp-grc1.xml"
+  },
   "local/3Cor.txt": {
    "bytes": 6364,
-   "fetched": "2026-09-27T08:26:14Z",
+   "fetched": "2026-09-27T08:51:14Z",
    "path": "data/local/3Cor.txt",
    "sha256": "04fd948567e980d1f94fd4656e964bea7da93cc299ba6a91ccaccba6934a3a42",
    "status": "local",
@@ -427,6 +1347,616 @@
    "sha256": "5386b17ab6e3a8a68478cb0f4644009f6ad5322f379327629407ffd46a0e6dd3",
    "status": "ok",
    "url": "https://raw.githubusercontent.com/morphgnt/sblgnt/master/87-Re-morphgnt.txt"
+  },
+  "perseus/tlg0007/tlg067/tlg0007.tlg067.perseus-grc2.xml": {
+   "bytes": 109505,
+   "edition": "Vernardakis (Teubner)",
+   "fetched": "2026-09-27T08:51:25Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0007/tlg067/tlg0007.tlg067.perseus-grc2.xml",
+   "sha256": "d5b40068ced6c06c06696f8d871ef4777f8e7d072ecb1ee53a6c9865e0f9b5c0",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg067/tlg0007.tlg067.perseus-grc2.xml"
+  },
+  "perseus/tlg0007/tlg076/tlg0007.tlg076.perseus-grc2.xml": {
+   "bytes": 177308,
+   "edition": "Vernardakis (Teubner)",
+   "fetched": "2026-09-27T08:51:25Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0007/tlg076/tlg0007.tlg076.perseus-grc2.xml",
+   "sha256": "6980afad080dfa5d2ffc95459871643f3245795477ec94b14f28f689d702d227",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg076/tlg0007.tlg076.perseus-grc2.xml"
+  },
+  "perseus/tlg0007/tlg078/tlg0007.tlg078.perseus-grc2.xml": {
+   "bytes": 72787,
+   "edition": "Vernardakis (Teubner)",
+   "fetched": "2026-09-27T08:51:22Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0007/tlg078/tlg0007.tlg078.perseus-grc2.xml",
+   "sha256": "8835d9b05bbe91a506182d11f854a2a868e71b67264663c843644efaeb8a6955",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg078/tlg0007.tlg078.perseus-grc2.xml"
+  },
+  "perseus/tlg0007/tlg080/tlg0007.tlg080.perseus-grc2.xml": {
+   "bytes": 68953,
+   "edition": "Vernardakis (Teubner)",
+   "fetched": "2026-09-27T08:51:24Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0007/tlg080/tlg0007.tlg080.perseus-grc2.xml",
+   "sha256": "1fe03fc5f5e75fdc6a25f3b8769faeaa4f488dd7283139dd76226e6fa00b2f01",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg080/tlg0007.tlg080.perseus-grc2.xml"
+  },
+  "perseus/tlg0007/tlg094/tlg0007.tlg094.perseus-grc2.xml": {
+   "bytes": 108319,
+   "edition": "Vernardakis (Teubner)",
+   "fetched": "2026-09-27T08:51:24Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0007/tlg094/tlg0007.tlg094.perseus-grc2.xml",
+   "sha256": "da8a3870d2453dde323083bad256513e5c1437f7485ab2258852dee7f9865b96",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg094/tlg0007.tlg094.perseus-grc2.xml"
+  },
+  "perseus/tlg0007/tlg095/tlg0007.tlg095.perseus-grc2.xml": {
+   "bytes": 104784,
+   "edition": "Vernardakis (Teubner)",
+   "fetched": "2026-09-27T08:51:23Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0007/tlg095/tlg0007.tlg095.perseus-grc2.xml",
+   "sha256": "339af0f025cb020152bcd5bb9995ccb75ead7bc4ed73c70b23678ff1fb335c7d",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg095/tlg0007.tlg095.perseus-grc2.xml"
+  },
+  "perseus/tlg0007/tlg096/tlg0007.tlg096.perseus-grc2.xml": {
+   "bytes": 118858,
+   "edition": "Vernardakis (Teubner)",
+   "fetched": "2026-09-27T08:51:23Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0007/tlg096/tlg0007.tlg096.perseus-grc2.xml",
+   "sha256": "2cc0adc90087f39fc33b000ea041a265feb9d3844e3132de451543502e155e9d",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg096/tlg0007.tlg096.perseus-grc2.xml"
+  },
+  "perseus/tlg0007/tlg101/tlg0007.tlg101.perseus-grc2.xml": {
+   "bytes": 110733,
+   "edition": "Vernardakis (Teubner)",
+   "fetched": "2026-09-27T08:51:22Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0007/tlg101/tlg0007.tlg101.perseus-grc2.xml",
+   "sha256": "0121e2365a3cf04d7c82a144b1d0e5c2dd55d55cdaa3f959ecdacc148f196742",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg101/tlg0007.tlg101.perseus-grc2.xml"
+  },
+  "perseus/tlg0007/tlg102/tlg0007.tlg102.perseus-grc2.xml": {
+   "bytes": 73092,
+   "edition": "Vernardakis (Teubner)",
+   "fetched": "2026-09-27T08:51:21Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0007/tlg102/tlg0007.tlg102.perseus-grc2.xml",
+   "sha256": "b7aaf4309548b1cd84cab0f8cb4708974634b6353cbe112faa07d53ee5310831",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg102/tlg0007.tlg102.perseus-grc2.xml"
+  },
+  "perseus/tlg0007/tlg108/tlg0007.tlg108.perseus-grc2.xml": {
+   "bytes": 71217,
+   "edition": "Vernardakis (Teubner)",
+   "fetched": "2026-09-27T08:51:26Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0007/tlg108/tlg0007.tlg108.perseus-grc2.xml",
+   "sha256": "e5abd7413f84f8d4d735116b886e43deff0ea293333fc91bfea0b170e6475b30",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg108/tlg0007.tlg108.perseus-grc2.xml"
+  },
+  "perseus/tlg0010/tlg011/tlg0010.tlg011.perseus-grc2.xml": {
+   "bytes": 169347,
+   "edition": "Norlin, Loeb 1928",
+   "fetched": "2026-09-27T08:51:19Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg011/tlg0010.tlg011.perseus-grc2.xml",
+   "sha256": "76fbffd1db3009ea212262670a1bb632669dfcc4249b63b98be921721b98d5b7",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg011/tlg0010.tlg011.perseus-grc2.xml"
+  },
+  "perseus/tlg0010/tlg013/tlg0010.tlg013.perseus-grc2.xml": {
+   "bytes": 51278,
+   "edition": "Norlin, Loeb 1928",
+   "fetched": "2026-09-27T08:51:20Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg013/tlg0010.tlg013.perseus-grc2.xml",
+   "sha256": "79bb8971cb79098d4d1ab7f5920e905dc83a3cd8f6cbd793cc13a7b50fb8152f",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg013/tlg0010.tlg013.perseus-grc2.xml"
+  },
+  "perseus/tlg0010/tlg014/tlg0010.tlg014.perseus-grc2.xml": {
+   "bytes": 62580,
+   "edition": "Norlin, Loeb 1928",
+   "fetched": "2026-09-27T08:51:20Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg014/tlg0010.tlg014.perseus-grc2.xml",
+   "sha256": "d50298297536151891b6d3abdacca9f58211fb6819283658e96c9704dc4e6faf",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg014/tlg0010.tlg014.perseus-grc2.xml"
+  },
+  "perseus/tlg0010/tlg015/tlg0010.tlg015.perseus-grc2.xml": {
+   "bytes": 75896,
+   "edition": "Norlin, Loeb 1928",
+   "fetched": "2026-09-27T08:51:21Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg015/tlg0010.tlg015.perseus-grc2.xml",
+   "sha256": "ffe86b79da1d4f0803fa5603760a0eab3dfd749dccf804bf06816f07e58892c4",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg015/tlg0010.tlg015.perseus-grc2.xml"
+  },
+  "perseus/tlg0010/tlg018/tlg0010.tlg018.perseus-grc2.xml": {
+   "bytes": 75933,
+   "edition": "Norlin, Loeb 1929",
+   "fetched": "2026-09-27T08:51:21Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg018/tlg0010.tlg018.perseus-grc2.xml",
+   "sha256": "6a89349fed2ca8072a31e6370d7736addeb883f98a6c3d7d3b4d90f97e3b6068",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg018/tlg0010.tlg018.perseus-grc2.xml"
+  },
+  "perseus/tlg0010/tlg022/tlg0010.tlg022.perseus-grc2.xml": {
+   "bytes": 14639,
+   "edition": "Van Hook, Loeb 1945",
+   "fetched": "2026-09-27T08:51:36Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg022/tlg0010.tlg022.perseus-grc2.xml",
+   "sha256": "88bedf470ed2f9a7110df9c7bd8add2c3aa85fe768c7f0d7ef52124795e856f4",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg022/tlg0010.tlg022.perseus-grc2.xml"
+  },
+  "perseus/tlg0010/tlg023/tlg0010.tlg023.perseus-grc2.xml": {
+   "bytes": 19012,
+   "edition": "Van Hook, Loeb 1945",
+   "fetched": "2026-09-27T08:51:37Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg023/tlg0010.tlg023.perseus-grc2.xml",
+   "sha256": "a3a2c9c291b56c311804855b1a977247d3be810daefafcdc2635e9248075b3db",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg023/tlg0010.tlg023.perseus-grc2.xml"
+  },
+  "perseus/tlg0010/tlg024/tlg0010.tlg024.perseus-grc2.xml": {
+   "bytes": 22557,
+   "edition": "Van Hook, Loeb 1945",
+   "fetched": "2026-09-27T08:51:37Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg024/tlg0010.tlg024.perseus-grc2.xml",
+   "sha256": "24349a2c41eb3d8512a89929de400b49dcd1f086cf364e895178037230754a68",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg024/tlg0010.tlg024.perseus-grc2.xml"
+  },
+  "perseus/tlg0010/tlg025/tlg0010.tlg025.perseus-grc2.xml": {
+   "bytes": 16054,
+   "edition": "Van Hook, Loeb 1945",
+   "fetched": "2026-09-27T08:51:37Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg025/tlg0010.tlg025.perseus-grc2.xml",
+   "sha256": "3b820ef1c45d5dacbe1fd6dccdf0668d2b2970e84350b951ba42ab7d0ef1c50c",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg025/tlg0010.tlg025.perseus-grc2.xml"
+  },
+  "perseus/tlg0010/tlg026/tlg0010.tlg026.perseus-grc3.xml": {
+   "bytes": 17624,
+   "edition": "Van Hook, Loeb 1945",
+   "fetched": "2026-09-27T08:51:38Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg026/tlg0010.tlg026.perseus-grc3.xml",
+   "sha256": "9fd86ee066aaa7f5e6dd723d20f46fe40e49b34061880025137d7401ff62162c",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg026/tlg0010.tlg026.perseus-grc3.xml"
+  },
+  "perseus/tlg0010/tlg027/tlg0010.tlg027.perseus-grc2.xml": {
+   "bytes": 25893,
+   "edition": "Van Hook, Loeb 1945",
+   "fetched": "2026-09-27T08:51:38Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg027/tlg0010.tlg027.perseus-grc2.xml",
+   "sha256": "9f837fb5a0d490d42c1a4023bbac89e2bc59f841fb8f085fb3c63c75ae57119d",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg027/tlg0010.tlg027.perseus-grc2.xml"
+  },
+  "perseus/tlg0010/tlg028/tlg0010.tlg028.perseus-grc2.xml": {
+   "bytes": 10451,
+   "edition": "Van Hook, Loeb 1945",
+   "fetched": "2026-09-27T08:51:39Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg028/tlg0010.tlg028.perseus-grc2.xml",
+   "sha256": "6c88c2901b37705cb34ceabbe182ad8f472e6e7082040b8fb7e98ad6c448ccf5",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg028/tlg0010.tlg028.perseus-grc2.xml"
+  },
+  "perseus/tlg0010/tlg029/tlg0010.tlg029.perseus-grc2.xml": {
+   "bytes": 18214,
+   "edition": "Van Hook, Loeb 1945",
+   "fetched": "2026-09-27T08:51:39Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg029/tlg0010.tlg029.perseus-grc2.xml",
+   "sha256": "3545af650672761ee6165e18ca196a0a318c41de1a41982e068c6f47c09e5b34",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg029/tlg0010.tlg029.perseus-grc2.xml"
+  },
+  "perseus/tlg0010/tlg030/tlg0010.tlg030.perseus-grc2.xml": {
+   "bytes": 12212,
+   "edition": "Van Hook, Loeb 1945",
+   "fetched": "2026-09-27T08:51:40Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0010/tlg030/tlg0010.tlg030.perseus-grc2.xml",
+   "sha256": "3421574d54f40975a7943e8ad36f792b7dc9c95bb4b735c0d21a0b4ebec0e6ff",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0010/tlg030/tlg0010.tlg030.perseus-grc2.xml"
+  },
+  "perseus/tlg0014/tlg063/tlg0014.tlg063.perseus-grc2.xml": {
+   "bytes": 88520,
+   "edition": "Rennie (OCT) 1931",
+   "fetched": "2026-09-27T08:52:14Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0014/tlg063/tlg0014.tlg063.perseus-grc2.xml",
+   "sha256": "b2e1e9b56a50ba23839808cd8ca0ed336948058516344f2f45e964e5270de5e6",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0014/tlg063/tlg0014.tlg063.perseus-grc2.xml"
+  },
+  "perseus/tlg0059/tlg036/tlg0059.tlg036.perseus-grc2.xml": {
+   "bytes": 234120,
+   "edition": "Burnet (OCT) 1907",
+   "fetched": "2026-09-27T08:52:14Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0059/tlg036/tlg0059.tlg036.perseus-grc2.xml",
+   "sha256": "810e1e79c12372ae2f60ce25ee5e5d924f9a69ba96c94c9ea0356473af91a4d8",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0059/tlg036/tlg0059.tlg036.perseus-grc2.xml"
+  },
+  "perseus/tlg0062/tlg007/tlg0062.tlg007.perseus-grc2.xml": {
+   "bytes": 64625,
+   "edition": "Harmon, Loeb 1913",
+   "fetched": "2026-09-27T08:51:26Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0062/tlg007/tlg0062.tlg007.perseus-grc2.xml",
+   "sha256": "ebead8032b5d65f5194348983296e91cdd0e602cb157656d9a8bd289418fc1a2",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0062/tlg007/tlg0062.tlg007.perseus-grc2.xml"
+  },
+  "perseus/tlg0062/tlg008/tlg0062.tlg008.perseus-grc2.xml": {
+   "bytes": 53511,
+   "edition": "Harmon, Loeb 1913",
+   "fetched": "2026-09-27T08:51:26Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0062/tlg008/tlg0062.tlg008.perseus-grc2.xml",
+   "sha256": "99fcfc5184ad508735769aba2bdaa0518842ef3b2eae1066eb37077b1e334417",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0062/tlg008/tlg0062.tlg008.perseus-grc2.xml"
+  },
+  "perseus/tlg0062/tlg022/tlg0062.tlg022.perseus-grc2.xml": {
+   "bytes": 98432,
+   "edition": "Harmon, Loeb 1915",
+   "fetched": "2026-09-27T08:51:27Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0062/tlg022/tlg0062.tlg022.perseus-grc2.xml",
+   "sha256": "05c22b4aa7b2de2c9b2886ab2331a795702d6bc7ccf95c13c930828ade50321f",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0062/tlg022/tlg0062.tlg022.perseus-grc2.xml"
+  },
+  "perseus/tlg0062/tlg042/tlg0062.tlg042.perseus-grc2.xml": {
+   "bytes": 69894,
+   "edition": "Harmon, Loeb 1936",
+   "fetched": "2026-09-27T08:51:28Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0062/tlg042/tlg0062.tlg042.perseus-grc2.xml",
+   "sha256": "8950030facb5c4537dd10eb875b8cf6037c8dad6d8a4a441385031176d18d34e",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0062/tlg042/tlg0062.tlg042.perseus-grc2.xml"
+  },
+  "perseus/tlg0062/tlg063/tlg0062.tlg063.perseus-grc2.xml": {
+   "bytes": 207447,
+   "edition": "Jacobitz (Teubner)",
+   "fetched": "2026-09-27T08:51:27Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0062/tlg063/tlg0062.tlg063.perseus-grc2.xml",
+   "sha256": "0d158e4f8c8aef86a44179812dfcb466823bc8f568ab7e4f442de5e5cd9d404d",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0062/tlg063/tlg0062.tlg063.perseus-grc2.xml"
+  },
+  "perseus/tlg0074/tlg001/tlg0074.tlg001.perseus-grc2.xml": {
+   "bytes": 1176295,
+   "edition": "Roos (Teubner)",
+   "fetched": "2026-09-27T08:51:29Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0074/tlg001/tlg0074.tlg001.perseus-grc2.xml",
+   "sha256": "d2c38397168edb4c65b43feb6a3004922ed99d0112ec180a0f31b8e1e3d49d7b",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0074/tlg001/tlg0074.tlg001.perseus-grc2.xml"
+  },
+  "perseus/tlg0074/tlg002/tlg0074.tlg002.perseus-grc2.xml": {
+   "bytes": 232156,
+   "edition": "Roos (Teubner)",
+   "fetched": "2026-09-27T08:51:29Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0074/tlg002/tlg0074.tlg002.perseus-grc2.xml",
+   "sha256": "a8f56360d5faf8c34be75614313ecdd5a6e9a61473ef16ade204c6174836d13b",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0074/tlg002/tlg0074.tlg002.perseus-grc2.xml"
+  },
+  "perseus/tlg0284/tlg024/tlg0284.tlg024.perseus-grc2.xml": {
+   "bytes": 73773,
+   "edition": "Dindorf 1829 / Keil 1898",
+   "fetched": "2026-09-27T08:52:12Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0284/tlg024/tlg0284.tlg024.perseus-grc2.xml",
+   "sha256": "9c09a081c124c0475fe3456b6c7629aec506f88a8adb7c3fe0ff5c9c3ac4f8b4",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0284/tlg024/tlg0284.tlg024.perseus-grc2.xml"
+  },
+  "perseus/tlg0284/tlg026/tlg0284.tlg026.perseus-grc2.xml": {
+   "bytes": 101870,
+   "edition": "Dindorf 1829 / Keil 1898",
+   "fetched": "2026-09-27T08:52:11Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0284/tlg026/tlg0284.tlg026.perseus-grc2.xml",
+   "sha256": "c062ba3f17326b37f1bd00523f9d3e1e3356667c35002c3f93c952a8ec958891",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0284/tlg026/tlg0284.tlg026.perseus-grc2.xml"
+  },
+  "perseus/tlg0284/tlg041/tlg0284.tlg041.perseus-grc2.xml": {
+   "bytes": 18477,
+   "edition": "Dindorf 1829 / Keil 1898",
+   "fetched": "2026-09-27T08:52:11Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0284/tlg041/tlg0284.tlg041.perseus-grc2.xml",
+   "sha256": "508f5ec1ba545778b750141b6de7cb378dba1eadc300d47b660a75e85a1b9602",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0284/tlg041/tlg0284.tlg041.perseus-grc2.xml"
+  },
+  "perseus/tlg0284/tlg043/tlg0284.tlg043.perseus-grc2.xml": {
+   "bytes": 70334,
+   "edition": "Dindorf 1829 / Keil 1898",
+   "fetched": "2026-09-27T08:52:10Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0284/tlg043/tlg0284.tlg043.perseus-grc2.xml",
+   "sha256": "f31036ca23800ddc297f1d10591eaf6e31dcef4b1ca65bce1c044dcf506c4094",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0284/tlg043/tlg0284.tlg043.perseus-grc2.xml"
+  },
+  "perseus/tlg0284/tlg045/tlg0284.tlg045.perseus-grc2.xml": {
+   "bytes": 381606,
+   "edition": "Dindorf 1829 / Keil 1898",
+   "fetched": "2026-09-27T08:52:10Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0284/tlg045/tlg0284.tlg045.perseus-grc2.xml",
+   "sha256": "14ece78ace55d2d77c1f6b75f41567a56e520aa284f1606b90c258eaeaf779d1",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0284/tlg045/tlg0284.tlg045.perseus-grc2.xml"
+  },
+  "perseus/tlg0284/tlg048/tlg0284.tlg048.perseus-grc2.xml": {
+   "bytes": 134235,
+   "edition": "Dindorf 1829 / Keil 1898",
+   "fetched": "2026-09-27T08:52:12Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0284/tlg048/tlg0284.tlg048.perseus-grc2.xml",
+   "sha256": "4aba59aca8f2bcb8092ee2a37d72e85e0ca825ef6b7ab6a7a91210cdf780fef5",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0284/tlg048/tlg0284.tlg048.perseus-grc2.xml"
+  },
+  "perseus/tlg0526/tlg001/tlg0526.tlg001.perseus-grc2.xml": {
+   "bytes": 5344541,
+   "edition": "Niese 1887-1890",
+   "fetched": "2026-09-27T08:51:16Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0526/tlg001/tlg0526.tlg001.perseus-grc2.xml",
+   "sha256": "64879910ecab63ca197146bf0c6e45849914c12221e1fb858c2a417bd65439f0",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0526/tlg001/tlg0526.tlg001.perseus-grc2.xml"
+  },
+  "perseus/tlg0526/tlg002/tlg0526.tlg002.perseus-grc2.xml": {
+   "bytes": 295787,
+   "edition": "Niese 1890",
+   "fetched": "2026-09-27T08:51:18Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0526/tlg002/tlg0526.tlg002.perseus-grc2.xml",
+   "sha256": "6ec49dd76faba814b4d34e9cb4ab7734b02e1fdf796ef62aa816d939221b7e13",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0526/tlg002/tlg0526.tlg002.perseus-grc2.xml"
+  },
+  "perseus/tlg0526/tlg003/tlg0526.tlg003.perseus-grc2.xml": {
+   "bytes": 422401,
+   "edition": "Niese 1889",
+   "fetched": "2026-09-27T08:51:18Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0526/tlg003/tlg0526.tlg003.perseus-grc2.xml",
+   "sha256": "3730705afb6fcc4a5aee24a41bda71dc08d87edddc8fd2c24be3f74e96442bf8",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0526/tlg003/tlg0526.tlg003.perseus-grc2.xml"
+  },
+  "perseus/tlg0526/tlg004/tlg0526.tlg004.perseus-grc2.xml": {
+   "bytes": 2161442,
+   "edition": "Niese 1894",
+   "fetched": "2026-09-27T08:51:17Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0526/tlg004/tlg0526.tlg004.perseus-grc2.xml",
+   "sha256": "ccb90dcbd5489d56e1822d0b082b7799827f478ebcc9af7e4ab5667ae362d547",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0526/tlg004/tlg0526.tlg004.perseus-grc2.xml"
+  },
+  "perseus/tlg0545/tlg002/tlg0545.tlg002.perseus-grc2.xml": {
+   "bytes": 559307,
+   "edition": "Hercher (Teubner) 1866",
+   "fetched": "2026-09-27T08:52:26Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0545/tlg002/tlg0545.tlg002.perseus-grc2.xml",
+   "sha256": "cc41188910c1e39e6147b863f97f6edc96dd37e913fbd1216ac9016ef83c2203",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0545/tlg002/tlg0545.tlg002.perseus-grc2.xml"
+  },
+  "perseus/tlg0545/tlg003/tlg0545.tlg003.perseus-grc2.xml": {
+   "bytes": 33480,
+   "edition": "Hercher (Teubner) 1866",
+   "fetched": "2026-09-27T08:52:25Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0545/tlg003/tlg0545.tlg003.perseus-grc2.xml",
+   "sha256": "61342ec89e2db8c136a3cfb0f713700efd1f4dc527c1b3c0fe071049c2076ef1",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0545/tlg003/tlg0545.tlg003.perseus-grc2.xml"
+  },
+  "perseus/tlg0557/tlg001/tlg0557.tlg001.perseus-grc2.xml": {
+   "bytes": 1261622,
+   "edition": "Schenkl (Teubner) 1916",
+   "fetched": "2026-09-27T08:51:30Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0557/tlg001/tlg0557.tlg001.perseus-grc2.xml",
+   "sha256": "8b4749107af1c96221c5fdb95341627c035e67b32498baf86cea9a9b694239d8",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0557/tlg001/tlg0557.tlg001.perseus-grc2.xml"
+  },
+  "perseus/tlg0557/tlg002/tlg0557.tlg002.perseus-grc2.xml": {
+   "bytes": 85469,
+   "edition": "Schenkl (Teubner) 1916",
+   "fetched": "2026-09-27T08:51:31Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0557/tlg002/tlg0557.tlg002.perseus-grc2.xml",
+   "sha256": "8142571a22ea88d560c0b77797751515a18b08655a28696695727a4f68fc7882",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0557/tlg002/tlg0557.tlg002.perseus-grc2.xml"
+  },
+  "perseus/tlg0562/tlg001/tlg0562.tlg001.perseus-grc2.xml": {
+   "bytes": 493215,
+   "edition": "Haines, Loeb 1916",
+   "fetched": "2026-09-27T08:51:31Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0562/tlg001/tlg0562.tlg001.perseus-grc2.xml",
+   "sha256": "9752103971dbbfcee8d483e926c4e926f78e8304abdff795f88e9f8766c178dc",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0562/tlg001/tlg0562.tlg001.perseus-grc2.xml"
+  },
+  "perseus/tlg0638/tlg006/tlg0638.tlg006.perseus-grc2.xml": {
+   "bytes": 105083,
+   "edition": "Kayser (Teubner) 1871",
+   "fetched": "2026-09-27T08:51:34Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg0638/tlg006/tlg0638.tlg006.perseus-grc2.xml",
+   "sha256": "e4c998393c028ba902ba605928cb18518d73820a8cc763c0e8dbb03ff905cf1e",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0638/tlg006/tlg0638.tlg006.perseus-grc2.xml"
+  },
+  "perseus/tlg2003/tlg001/tlg2003.tlg001.perseus-grc2.xml": {
+   "bytes": 168842,
+   "edition": "Wright, Loeb 1913",
+   "fetched": "2026-09-27T08:52:20Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg2003/tlg001/tlg2003.tlg001.perseus-grc2.xml",
+   "sha256": "775d8395393e881d504c7af5e76159561fea4edef3c7d3eb94d19317ed6709e3",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2003/tlg001/tlg2003.tlg001.perseus-grc2.xml"
+  },
+  "perseus/tlg2003/tlg002/tlg2003.tlg002.perseus-grc2.xml": {
+   "bytes": 99900,
+   "edition": "Wright, Loeb 1913",
+   "fetched": "2026-09-27T08:52:21Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg2003/tlg002/tlg2003.tlg002.perseus-grc2.xml",
+   "sha256": "30a8243f21aeb7e1fcfab8dff316b41ac63ff47232b46f6279b005ae9522e9f5",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2003/tlg002/tlg2003.tlg002.perseus-grc2.xml"
+  },
+  "perseus/tlg2003/tlg003/tlg2003.tlg003.perseus-grc2.xml": {
+   "bytes": 186057,
+   "edition": "Wright, Loeb 1913",
+   "fetched": "2026-09-27T08:52:22Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg2003/tlg003/tlg2003.tlg003.perseus-grc2.xml",
+   "sha256": "3e98c7d8848e459923367b2a9f91d51a19497f7f7d33eabd334e534cc608bd2e",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2003/tlg003/tlg2003.tlg003.perseus-grc2.xml"
+  },
+  "perseus/tlg2003/tlg004/tlg2003.tlg004.perseus-grc2.xml": {
+   "bytes": 46021,
+   "edition": "Wright, Loeb 1913",
+   "fetched": "2026-09-27T08:52:22Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg2003/tlg004/tlg2003.tlg004.perseus-grc2.xml",
+   "sha256": "37973a5a8fa8c0a96bbfa1c7d6e67bd472ff3c1cefe868bd005b3e0e36af237c",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2003/tlg004/tlg2003.tlg004.perseus-grc2.xml"
+  },
+  "perseus/tlg2003/tlg005/tlg2003.tlg005.perseus-grc2.xml": {
+   "bytes": 69684,
+   "edition": "Wright, Loeb 1913",
+   "fetched": "2026-09-27T08:52:23Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg2003/tlg005/tlg2003.tlg005.perseus-grc2.xml",
+   "sha256": "a063818d4291e87f33d2dfdf21f32ea5431f2cdde29a1ff9cbc356f2227b039f",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2003/tlg005/tlg2003.tlg005.perseus-grc2.xml"
+  },
+  "perseus/tlg2003/tlg006/tlg2003.tlg006.perseus-grc2.xml": {
+   "bytes": 49937,
+   "edition": "Wright, Loeb 1913",
+   "fetched": "2026-09-27T08:52:23Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg2003/tlg006/tlg2003.tlg006.perseus-grc2.xml",
+   "sha256": "00eab8a537e5d6e6f1521e7dff312998c609a98ab00a28ccbb73f0307dfcd118",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2003/tlg006/tlg2003.tlg006.perseus-grc2.xml"
+  },
+  "perseus/tlg2003/tlg007/tlg2003.tlg007.perseus-grc2.xml": {
+   "bytes": 123774,
+   "edition": "Wright, Loeb 1913",
+   "fetched": "2026-09-27T08:52:23Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg2003/tlg007/tlg2003.tlg007.perseus-grc2.xml",
+   "sha256": "0c5d70d101f06afe1aa2e3153a07d3d992c72f6a0fd3c57343defef3bfc05e83",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2003/tlg007/tlg2003.tlg007.perseus-grc2.xml"
+  },
+  "perseus/tlg2003/tlg009/tlg2003.tlg009.perseus-grc2.xml": {
+   "bytes": 83171,
+   "edition": "Wright, Loeb 1913",
+   "fetched": "2026-09-27T08:52:24Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg2003/tlg009/tlg2003.tlg009.perseus-grc2.xml",
+   "sha256": "aef0ab6feb265684ded96687e8f38adb7160447c493646959e3ca29bcced4029",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2003/tlg009/tlg2003.tlg009.perseus-grc2.xml"
+  },
+  "perseus/tlg2003/tlg012/tlg2003.tlg012.perseus-grc2.xml": {
+   "bytes": 121833,
+   "edition": "Wright, Loeb 1913",
+   "fetched": "2026-09-27T08:52:24Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg2003/tlg012/tlg2003.tlg012.perseus-grc2.xml",
+   "sha256": "b22d2be9f8375edc1a696131ea61c3b3db91781de76ac9ff4811a88b9d2df391",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2003/tlg012/tlg2003.tlg012.perseus-grc2.xml"
+  },
+  "perseus/tlg2003/tlg013/tlg2003.tlg013.perseus-grc2.xml": {
+   "bytes": 399977,
+   "edition": "Wright, Loeb 1923",
+   "fetched": "2026-09-27T08:51:19Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg2003/tlg013/tlg2003.tlg013.perseus-grc2.xml",
+   "sha256": "fde536dfa60e2d3e012addd91d43ed0cbfd5e4d06f8e5fb4ec435e163f4d3f62",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2003/tlg013/tlg2003.tlg013.perseus-grc2.xml"
+  },
+  "perseus/tlg2040/tlg002/tlg2040.tlg002.perseus-grc2.xml": {
+   "bytes": 82442,
+   "edition": "Perseus (Boulenger)",
+   "fetched": "2026-09-27T08:52:16Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg2040/tlg002/tlg2040.tlg002.perseus-grc2.xml",
+   "sha256": "34dec2fa03b91f93d42969a25294dc9b5271ebf88890d319fe9822046d2e4138",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2040/tlg002/tlg2040.tlg002.perseus-grc2.xml"
+  },
+  "perseus/tlg2040/tlg004/tlg2040.tlg004.perseus-grc2.xml": {
+   "bytes": 2090622,
+   "edition": "Deferrari, Loeb 1926-1934 (Perseus)",
+   "fetched": "2026-09-27T08:52:15Z",
+   "license": "CC BY-SA 4.0",
+   "path": "data/raw/perseus/tlg2040/tlg004/tlg2040.tlg004.perseus-grc2.xml",
+   "sha256": "170f6489117ed942c0e1d659ac53772e5268739d417b48c8fd016d084b821b56",
+   "status": "ok",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg2040/tlg004/tlg2040.tlg004.perseus-grc2.xml"
   }
  },
  "repos": {

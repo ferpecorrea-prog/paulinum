@@ -34,3 +34,38 @@ falsificación preparado.
 registrado. Descarga de nivel 1 (NT y Padres Apostólicos, 43 archivos) comprobada en el portátil.
 
 **Pendiente.** DOI de concepto de Zenodo tras la primera *release*; diseño del protocolo y sellado (sesión 1).
+
+## Sesión 1 — 2026-09-27 — Protocolo preregistrado y Sello 1
+
+**Objeto.** Fijar antes de ejecutar nada las hipótesis, el corpus, las reglas y el orden de la investigación
+(`protocols/paulinum_1_0/PROTOCOLO.md`), y sellarlo públicamente.
+
+**Hecho.**
+- Protocolo de paulinum 1.0 escrito y sellado: 13 secciones (objeto; hipótesis H1-H5 con predicciones por canal e
+  hipótesis sobre el método Hm1-Hm3; diseño con el mismo rasero para las catorce; corpus en cuatro estratos;
+  preparación; rejilla de 16 especificaciones y sensibilidad; tres familias de métodos; problemas de respuesta
+  conocida con los nuevos `genre_pairs`, `mediated_pairs` y `epist_pairs`; envolventes E, B y G con regla de
+  equivalencia; reglas de decisión en cuatro niveles y veredicto mecánico; protocolo de los tres canales no
+  estilométricos y regla de convergencia; falsación; reproducibilidad; enmiendas; referencias).
+- Configuración `config/paulinum_1_0.yaml` con bloque de preregistro.
+- Manifiesto ampliado (estrato 4, 39 entradas): comprobado en la réplica en la nube que los 39 archivos se descargan
+  (raw.githubusercontent.com) y se analizan: Basilio 201 cartas de ≥ 200 palabras (114.837 palabras), Libanio 170
+  (49.845), Alcifrón 4 libros, Eliano 1 + 14, Plotino 6, Porfirio 1 + 4 + 1, Juliano 9 obras, Libanio 6 discursos,
+  Basilio *A los jóvenes*, Ps-Clemente *De virginitate* 2, Hercher 13 colecciones → 86 unidades agrupadas
+  (Ps-Antígono se pierde: una sola carta sin numerar, bajo el umbral; se anota, no se corrige).
+- Hebreos como diana: `sources.py` (estado `target`, autor `Pablo?`, género `carta` a efectos de calibración,
+  subgénero `homilia`), máscaras (cierre 13, 18-25; 28 tramos de citas = 18,6 % de 4.935 palabras; 21,1 % con el
+  cierre; Romanos 23,2 %), variables de situación, `TARGETS` con siete cartas, núcleo `trece`.
+- `paulinum seal` ampliado (`--protocol`, `--sin-lexicon`, `--etiqueta`); `Source.group_tokens` y agrupación de
+  cartas consecutivas; `build_problems` seguro con dianas dentro del núcleo. `scripts/selftest.py` 25/25 con la
+  misma huella de referencia (`ecaf6572…`) en la nube y en el portátil tras los cambios.
+- Sello 1: `protocols/paulinum_1_0/SELLO.json` (34 archivos), etiqueta `protocolo-1.0.0`, *release* de GitHub;
+  DOI de Zenodo pendiente de anotar por el autor en `REGISTRO.md`.
+
+**Decisiones.** D-008 a D-012.
+
+**Pendiente (sesión 2, antes del Sello 2).** Familias NCD y Dirichlet-multinomial; `epist_pairs`, `genre_pairs`,
+`mediated_pairs`; envolventes B y G; `nearest_author`; ruido de edición con NA28 (extracción local) y testigos si
+el autor los deposita; anotación uniforme y su validación; `scripts/veredicto.py`; lexicón; cotejo de las máscaras
+de Hebreos con NA28 por el autor; DOI del Sello 1.
+

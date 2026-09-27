@@ -207,6 +207,26 @@ def parse_tei(path: str, split: str = "", min_tokens: int = 0, max_docs: int = 0
         numeric = [p for p in out if str(p["part"]).isdigit()]
         if len(numeric) >= len(out) / 2:
             out = numeric
+        if group_min_tokens:
+            # paulinum 1.0: cartas consecutivas agrupadas hasta ≥ group_min_tokens (colecciones pseudoepigráficas
+            # de cartas breves); el resto final se une al último grupo
+            grouped, acc, first = [], [], None
+            for p in out:
+                if first is None:
+                    first = p["part"]
+                acc.extend(p["tokens"])
+                if len(acc) >= group_min_tokens:
+                    grouped.append({"part": f"{first}-{p['part']}" if first != p["part"] else first,
+                                    "title": first, "tokens": acc})
+                    acc, first = [], None
+            if acc:
+                if grouped:
+                    grouped[-1]["tokens"].extend(acc)
+                    grouped[-1]["part"] = grouped[-1]["part"].split("-")[0] + f"-{out[-1]['part']}"
+                else:
+                    grouped.append({"part": f"{first}-{out[-1]['part']}" if first != out[-1]["part"] else first,
+                                    "title": first, "tokens": acc})
+            out = grouped
     if split == "chapters":
         # agrupar capítulos consecutivos hasta ≥ min_tokens
         grouped, acc, first = [], [], None

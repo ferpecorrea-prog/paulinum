@@ -15,7 +15,8 @@ investigador independiente, Barcelona. Todo el material está en español.
 
 | | |
 |---|---|
-| Versión en desarrollo | `1.0.0.dev0` (paulinum 1.0 se sellará antes de ejecutar la campaña principal) |
+| Versión en desarrollo | `1.0.0.dev0` |
+| Protocolo preregistrado | [`protocols/paulinum_1_0/PROTOCOLO.md`](protocols/paulinum_1_0/PROTOCOLO.md) — Sello 1 (`protocolo-1.0.0`) el 27-IX-2026; Sello 2 (código congelado) y Sello 3 (resultados) pendientes |
 | Punto de partida | `v0.2.0-r`: reconstrucción declarada del laboratorio publicado en 2026 (véase `LEEME_PRIMERO.md` y `docs/README_reconstruccion_0.2.0-r.md`) |
 | Registro de investigación | `docs/registro_investigacion.md` (bitácora por sesiones) |
 | Decisiones metodológicas y filológicas | `docs/decisiones.md` (numeradas, fechadas, con motivo) |
@@ -30,7 +31,7 @@ investigador independiente, Barcelona. Todo el material está en español.
 | `paulinum/` | paquete Python: `sources` (manifiesto de textos), `fetch`, `parsers`, `text`, `corpus`, `features`, `distances`, `verify`, `variables`, `rolling`, `pipeline`, `report`, `cli` |
 | `scripts/` | guiones auxiliares (calibración secundaria, lexicón, reutilización, variables de los controles, *bootstrap*, segundo modelo, lecturas) |
 | `config/` | configuraciones de campaña, cada una con su bloque de preregistro literal |
-| `protocols/` | protocolos sellados de la nueva investigación (se crean en la sesión de sellado) |
+| `protocols/` | protocolos sellados de la nueva investigación: `paulinum_1_0/` (protocolo, sello, registro público) |
 | `metadata/` | máscaras por referencia, pasajes paralelos, variables de situación, auditoría de estados de los controles |
 | `data/` | `raw/` (descargas, no versionadas), `cache/` (corpus construidos, no versionados), `local/` (3 Corintios preparado a partir de P. Bodmer X), `provenance.json` (huellas SHA-256) |
 | `results/` | resultados de las ejecuciones (tablas CSV/JSON, figuras, bitácoras) |

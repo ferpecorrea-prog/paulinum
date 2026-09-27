@@ -105,9 +105,9 @@ def build_problems(docs: list[Document], core_name: str = "seven", max_pos_per_a
                                 author="Pablo", cand_author="Pablo", tradition="cristiano"))
     # target
     for t in TARGETS:
-        if t not in by_id:
+        if t not in by_id or t in core:   # con el núcleo «trece» las dianas del núcleo ya tienen su leave-one-out
             continue
-        cands = [x for x in core if x not in sisters_excl(t)]
+        cands = [x for x in core if x != t and x not in sisters_excl(t)]
         problems.append(Problem(f"target:{t}", "target", t, cands, exclude=sorted(pauline), label=None,
                                 author="Pablo?", cand_author="Pablo", tradition="cristiano"))
     # autores de control con ≥ 2 obras genuinas de grupos de obra distintos

@@ -1,10 +1,9 @@
 """
-paulinum — verificación convergente de la autoría del corpus paulino canónico.
+paulinum — verificación convergente de la autoría de las catorce cartas de la tradición paulina.
 
-Reconstrucción (v0.2.0-r) del software descrito en el Apéndice técnico (A.1) de la Parte II de
-«¿Quién escribió las cartas de san Pablo?». El código original (v0.1.0, sellos 4eb0a436… y
-33e7b61b…) se perdió; este paquete reimplementa, módulo a módulo, la especificación publicada.
-Véase LEEME_PRIMERO.md en la raíz de paulinum_lab.
+paulinum 1.0 (en desarrollo) desciende de la reconstrucción 0.2.0-r del software descrito en el
+Apéndice técnico (A.1) de la Parte II del libro anterior; el código original (v0.1.0) se perdió.
+El protocolo preregistrado de la nueva investigación está en protocols/paulinum_1_0/PROTOCOLO.md.
 """
 
-__version__ = "0.2.0-r"
+__version__ = "1.0.0.dev0"

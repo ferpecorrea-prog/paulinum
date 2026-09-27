@@ -191,7 +191,8 @@ def build_corpus(tier: int = 1, edition_key: str = "sblgnt", data_dir: str = DAT
             continue
         try:
             if src.parser == "tei":
-                parts = parsers.parse_tei(path, split=src.split, min_tokens=src.min_tokens, max_docs=src.max_docs)
+                parts = parsers.parse_tei(path, split=src.split, min_tokens=src.min_tokens, max_docs=src.max_docs,
+                                          group_min_tokens=src.group_tokens)
             else:
                 parts = parsers.PARSERS[src.parser](path)
         except Exception as e:  # pragma: no cover

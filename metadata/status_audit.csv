@@ -1,10 +1,10 @@
 author_or_id,status,tradition,fuente_del_estado,nota
 Pablo (Rom 1Cor 2Cor Gal Flp 1Tes Flm),core,cristiano,consenso crítico (siete indiscutidas),núcleo de referencia; no se evalúa su autoría
-Pablo? (Ef Col 2Tes 1Tim 2Tim Tit),target,cristiano,—,cartas discutidas; se valoran una a una
+Pablo? (Ef Col 2Tes 1Tim 2Tim Tit Heb),target,cristiano,D-002 (paulinum 1.0),cartas discutidas y Hebreos; se valoran una a una con el mismo rasero; Hebreos deja de ser impostor y negativo
 Lucas(anon) (Lc Hch),genuine,cristiano,Catholic Encyclopedia «Acts of the Apostles» (B-n),unidad de autor Lucas-Hechos
 Juan(anon) Jn,genuine,cristiano,—,una sola obra: solo negativo e impostor
 Juan(anon) 1Jn,disputed,cristiano,§ 8.2,comunidad de autor con el cuarto Evangelio no dada por establecida
-Juan(presb.) (2Jn 3Jn); Juan(vidente) Ap; Mateo(anon); Marcos(anon); Pedro(?) (1Pe 2Pe); Santiago(?); Judas(?); anon (Heb Did MartPol Diogn),other,cristiano,§ 8.2,anónimos o de atribución no verificable: solo impostores y negativos frente a Pablo
+Juan(presb.) (2Jn 3Jn); Juan(vidente) Ap; Mateo(anon); Marcos(anon); Pedro(?) (1Pe 2Pe); Santiago(?); Judas(?); anon (Did MartPol Diogn),other,cristiano,§ 8.2,anónimos o de atribución no verificable: solo impostores y negativos frente a Pablo
 Clemente Romano 1Clem,genuine,cristiano,Lake (Loeb 1912) introd.,una sola obra
 Ps-Clemente 2Clem,spurious,cristiano,Lake: «no puede haber sido escrita por el autor de 1 Clemente»,imita a Clemente Romano
 Ps-Clemente EpPet EpJac,spurious,cristiano,Catholic Encyclopedia «Clementines»,cartas que abren y cierran las Homilías pseudoclementinas
@@ -35,3 +35,12 @@ anon(Acta Thomae); anon(Passio Perpetuae); anon(Enoch); anon(Test. Abrahae); ano
 Demóstenes/Ps-Demóstenes (cartas); Platón/Ps-Platón (cartas),disputed,pagano,debate crítico,fuera de la calibración
 Ps-Diógenes; Ps-Eurípides; Ps-Solón (Hercher),spurious,pagano,Hercher Epistolographi Graeci,autor imitado no conservado: solo negativos e impostores
 Ignacio y 1 Clemente en segunda edición (F1K),duplicate,cristiano,—,solo para el ruido de edición
+Basilio de Cesarea (cartas; A los jóvenes),genuine,cristiano,Deferrari (Loeb 1926-1934) índice y notas; Fedwick 1981; Courtonne 1957-1966,paulinum 1.0: 368 cartas; auditoría conservadora por carta en paulinum/sources.py (_BASIL_SPURIOUS y _BASIL_DISPUTED): toda carta con cualquier reserva queda fuera de la calibración
+Ps-Basilio / Evagrio / Gregorio de Nisa / Gregorio Nacianceno / Ps-Juliano (cartas 8 16 38 39 40 41 47 189 360 365-368 de la colección de Basilio),spurious,cristiano,Deferrari; Melcher 1923 (carta 8); Hübner 1972 (carta 38); Gallay (cartas de Gregorio),atribuidas a otros autores o reconocidas como falsas; solo negativos e impostores (Ps-Basilio → par de pseudoepigrafía frente a Basilio)
+Basilio (cartas 42-46 50 81 115 166 167 169-171 197 321 335-359 361-364),disputed,cristiano,Deferrari; Fedwick 1981,dudosas o de autenticidad debatida (correspondencia con Libanio y con Apolinar incluida): fuera de la calibración
+Libanio (839 cartas; discursos 1 2 11 30 47 64),genuine,pagano,Foerster (Teubner),paulinum 1.0: todas las cartas de ≥ 200 palabras (sustituye a las 44 de la campaña 03); discursos como control de género dentro del autor
+Juliano (discursos 1 2 3 4 7 9 Misopogon; cartas a los atenienses y a Temistio),genuine,pagano,Wright (Loeb 1913),control de género dentro del autor: cartas frente a discursos; par carta pública / carta privada
+Alcifrón (4 libros); Eliano (Cartas rústicas; Varia historia),genuine,pagano,Schepers 1905; Hercher 1866,cartas ficticias de autor seguro: control de género epistolar no auténtico y de género dentro del autor (Eliano)
+Plotino (Enéadas ed. Porfirio); Porfirio (Vida de Pitágoras; De abstinentia; Carta a Marcela),genuine,pagano,Henry-Schwyzer; Nauck 1886,caso de composición mediada (obra de uno editada por otro) junto a Epicteto/Arriano; Ad Marcellam es una carta auténtica
+Ps-Clemente Epistulae de virginitate,spurious,cristiano,Diekamp-Funk 1913,imita a Clemente Romano; pseudoepigrafía epistolar cristiana
+Ps-Fálaris; Ps-Quión; Ps-Bruto; Ps-Sócrates; Ps-Socráticos; Ps-Crates; Ps-Anacarsis; Ps-Temístocles; Ps-Antígono; Ps-Antíoco; Ps-Artajerjes; Ps-Mitrídates; Ps-Nicias (Hercher),spurious,pagano,Hercher Epistolographi Graeci 1873,falsificaciones epistolares antiguas reconocidas; autor imitado no conservado: solo negativos e impostores; unidades de cartas consecutivas agrupadas hasta ≥ 400 palabras
