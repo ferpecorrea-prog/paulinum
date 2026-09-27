@@ -1,0 +1,695 @@
+{
+ "modelo": "grc_odycy_joint_sm",
+ "version_modelo": "0.7.0",
+ "spacy": "3.7.5",
+ "pipeline": [
+  "tok2vec",
+  "tagger",
+  "morphologizer",
+  "parser",
+  "trainable_lemmatizer",
+  "frequency_lemmatizer"
+ ],
+ "obras_nt": 27,
+ "variantes": {
+  "V0_sellado": {
+   "tokens": 137554,
+   "acuerdo_pos": 0.14829812291899908,
+   "acuerdo_lema": 0.4872922634020094
+  },
+  "V1_forzado": {
+   "tokens": 137554,
+   "acuerdo_pos": 0.20003053346322172,
+   "acuerdo_lema": 0.6761708129171089
+  },
+  "V2_forzado_sigma": {
+   "tokens": 137554,
+   "acuerdo_pos": 0.24085813571397416,
+   "acuerdo_lema": 0.94166654550213
+  },
+  "V3_forzado_sigma_equiv": {
+   "tokens": 137554,
+   "acuerdo_pos": 0.2499527458307283,
+   "acuerdo_lema": 0.94166654550213
+  }
+ },
+ "segundos": 99,
+ "por_obra": {
+  "V0_sellado": [
+   {
+    "id": "Mt",
+    "tokens": 18329,
+    "acuerdo_pos": 0.13715969229090513,
+    "acuerdo_lema": 0.42119046320039283
+   },
+   {
+    "id": "Mc",
+    "tokens": 11286,
+    "acuerdo_pos": 0.2010455431508063,
+    "acuerdo_lema": 0.6848307637781322
+   },
+   {
+    "id": "Lc",
+    "tokens": 19446,
+    "acuerdo_pos": 0.17607734238403785,
+    "acuerdo_lema": 0.5909698652679214
+   },
+   {
+    "id": "Jn",
+    "tokens": 15438,
+    "acuerdo_pos": 0.10053115688560695,
+    "acuerdo_lema": 0.2599429977976422
+   },
+   {
+    "id": "Hch",
+    "tokens": 18412,
+    "acuerdo_pos": 0.17189876167716706,
+    "acuerdo_lema": 0.5898327177927438
+   },
+   {
+    "id": "Rom",
+    "tokens": 7055,
+    "acuerdo_pos": 0.139900779588944,
+    "acuerdo_lema": 0.46307583274273567
+   },
+   {
+    "id": "1Cor",
+    "tokens": 6812,
+    "acuerdo_pos": 0.08763945977686435,
+    "acuerdo_lema": 0.3549618320610687
+   },
+   {
+    "id": "2Cor",
+    "tokens": 4473,
+    "acuerdo_pos": 0.10708696624189581,
+    "acuerdo_lema": 0.3563603845293986
+   },
+   {
+    "id": "Gal",
+    "tokens": 2226,
+    "acuerdo_pos": 0.11365678346810422,
+    "acuerdo_lema": 0.4716981132075472
+   },
+   {
+    "id": "Ef",
+    "tokens": 2416,
+    "acuerdo_pos": 0.06746688741721854,
+    "acuerdo_lema": 0.15769867549668873
+   },
+   {
+    "id": "Flp",
+    "tokens": 1626,
+    "acuerdo_pos": 0.0965559655596556,
+    "acuerdo_lema": 0.32595325953259535
+   },
+   {
+    "id": "Col",
+    "tokens": 1580,
+    "acuerdo_pos": 0.21645569620253163,
+    "acuerdo_lema": 0.6208860759493671
+   },
+   {
+    "id": "1Tes",
+    "tokens": 1473,
+    "acuerdo_pos": 0.08486082824168364,
+    "acuerdo_lema": 0.27630685675492195
+   },
+   {
+    "id": "2Tes",
+    "tokens": 820,
+    "acuerdo_pos": 0.18536585365853658,
+    "acuerdo_lema": 0.5914634146341463
+   },
+   {
+    "id": "1Tim",
+    "tokens": 1591,
+    "acuerdo_pos": 0.11062225015713388,
+    "acuerdo_lema": 0.6021370207416719
+   },
+   {
+    "id": "2Tim",
+    "tokens": 1235,
+    "acuerdo_pos": 0.18218623481781376,
+    "acuerdo_lema": 0.648582995951417
+   },
+   {
+    "id": "Tit",
+    "tokens": 659,
+    "acuerdo_pos": 0.1274658573596358,
+    "acuerdo_lema": 0.5523520485584219
+   },
+   {
+    "id": "Flm",
+    "tokens": 334,
+    "acuerdo_pos": 0.26646706586826346,
+    "acuerdo_lema": 0.6916167664670658
+   },
+   {
+    "id": "Heb",
+    "tokens": 4935,
+    "acuerdo_pos": 0.11590678824721377,
+    "acuerdo_lema": 0.4204660587639311
+   },
+   {
+    "id": "Sant",
+    "tokens": 1739,
+    "acuerdo_pos": 0.0816561242093157,
+    "acuerdo_lema": 0.2742955721679126
+   },
+   {
+    "id": "1Pe",
+    "tokens": 1678,
+    "acuerdo_pos": 0.1501787842669845,
+    "acuerdo_lema": 0.570321811680572
+   },
+   {
+    "id": "2Pe",
+    "tokens": 1098,
+    "acuerdo_pos": 0.15209471766848817,
+    "acuerdo_lema": 0.5245901639344263
+   },
+   {
+    "id": "1Jn",
+    "tokens": 2137,
+    "acuerdo_pos": 0.24052409920449228,
+    "acuerdo_lema": 0.7080018717828732
+   },
+   {
+    "id": "2Jn",
+    "tokens": 245,
+    "acuerdo_pos": 0.2,
+    "acuerdo_lema": 0.710204081632653
+   },
+   {
+    "id": "3Jn",
+    "tokens": 219,
+    "acuerdo_pos": 0.1917808219178082,
+    "acuerdo_lema": 0.6210045662100456
+   },
+   {
+    "id": "Jud",
+    "tokens": 459,
+    "acuerdo_pos": 0.15904139433551198,
+    "acuerdo_lema": 0.5054466230936819
+   },
+   {
+    "id": "Ap",
+    "tokens": 9833,
+    "acuerdo_pos": 0.18661649547442286,
+    "acuerdo_lema": 0.5703244177768738
+   }
+  ],
+  "V1_forzado": [
+   {
+    "id": "Mt",
+    "tokens": 18329,
+    "acuerdo_pos": 0.21594194991543456,
+    "acuerdo_lema": 0.6875443286595013
+   },
+   {
+    "id": "Mc",
+    "tokens": 11286,
+    "acuerdo_pos": 0.2010455431508063,
+    "acuerdo_lema": 0.6848307637781322
+   },
+   {
+    "id": "Lc",
+    "tokens": 19446,
+    "acuerdo_pos": 0.20317803147176797,
+    "acuerdo_lema": 0.6848195001542734
+   },
+   {
+    "id": "Jn",
+    "tokens": 15438,
+    "acuerdo_pos": 0.23714211685451483,
+    "acuerdo_lema": 0.7347454333462884
+   },
+   {
+    "id": "Hch",
+    "tokens": 18412,
+    "acuerdo_pos": 0.18694329784922875,
+    "acuerdo_lema": 0.6409950032587443
+   },
+   {
+    "id": "Rom",
+    "tokens": 7055,
+    "acuerdo_pos": 0.2,
+    "acuerdo_lema": 0.6813607370659107
+   },
+   {
+    "id": "1Cor",
+    "tokens": 6812,
+    "acuerdo_pos": 0.16368173810921902,
+    "acuerdo_lema": 0.7155020551967117
+   },
+   {
+    "id": "2Cor",
+    "tokens": 4473,
+    "acuerdo_pos": 0.1743796109993293,
+    "acuerdo_lema": 0.6615247037782249
+   },
+   {
+    "id": "Gal",
+    "tokens": 2226,
+    "acuerdo_pos": 0.16801437556154536,
+    "acuerdo_lema": 0.6936208445642408
+   },
+   {
+    "id": "Ef",
+    "tokens": 2416,
+    "acuerdo_pos": 0.2048841059602649,
+    "acuerdo_lema": 0.6163079470198676
+   },
+   {
+    "id": "Flp",
+    "tokens": 1626,
+    "acuerdo_pos": 0.18511685116851168,
+    "acuerdo_lema": 0.6574415744157441
+   },
+   {
+    "id": "Col",
+    "tokens": 1580,
+    "acuerdo_pos": 0.21645569620253163,
+    "acuerdo_lema": 0.6208860759493671
+   },
+   {
+    "id": "1Tes",
+    "tokens": 1473,
+    "acuerdo_pos": 0.17175831636116767,
+    "acuerdo_lema": 0.6313645621181263
+   },
+   {
+    "id": "2Tes",
+    "tokens": 820,
+    "acuerdo_pos": 0.18536585365853658,
+    "acuerdo_lema": 0.5914634146341463
+   },
+   {
+    "id": "1Tim",
+    "tokens": 1591,
+    "acuerdo_pos": 0.11062225015713388,
+    "acuerdo_lema": 0.6021370207416719
+   },
+   {
+    "id": "2Tim",
+    "tokens": 1235,
+    "acuerdo_pos": 0.18218623481781376,
+    "acuerdo_lema": 0.648582995951417
+   },
+   {
+    "id": "Tit",
+    "tokens": 659,
+    "acuerdo_pos": 0.1274658573596358,
+    "acuerdo_lema": 0.5523520485584219
+   },
+   {
+    "id": "Flm",
+    "tokens": 334,
+    "acuerdo_pos": 0.26646706586826346,
+    "acuerdo_lema": 0.6916167664670658
+   },
+   {
+    "id": "Heb",
+    "tokens": 4935,
+    "acuerdo_pos": 0.17203647416413373,
+    "acuerdo_lema": 0.6389057750759879
+   },
+   {
+    "id": "Sant",
+    "tokens": 1739,
+    "acuerdo_pos": 0.1730879815986199,
+    "acuerdo_lema": 0.6889016676250719
+   },
+   {
+    "id": "1Pe",
+    "tokens": 1678,
+    "acuerdo_pos": 0.1501787842669845,
+    "acuerdo_lema": 0.570321811680572
+   },
+   {
+    "id": "2Pe",
+    "tokens": 1098,
+    "acuerdo_pos": 0.15209471766848817,
+    "acuerdo_lema": 0.5245901639344263
+   },
+   {
+    "id": "1Jn",
+    "tokens": 2137,
+    "acuerdo_pos": 0.24052409920449228,
+    "acuerdo_lema": 0.7080018717828732
+   },
+   {
+    "id": "2Jn",
+    "tokens": 245,
+    "acuerdo_pos": 0.2,
+    "acuerdo_lema": 0.710204081632653
+   },
+   {
+    "id": "3Jn",
+    "tokens": 219,
+    "acuerdo_pos": 0.1917808219178082,
+    "acuerdo_lema": 0.6210045662100456
+   },
+   {
+    "id": "Jud",
+    "tokens": 459,
+    "acuerdo_pos": 0.15904139433551198,
+    "acuerdo_lema": 0.5054466230936819
+   },
+   {
+    "id": "Ap",
+    "tokens": 9833,
+    "acuerdo_pos": 0.2227194142174311,
+    "acuerdo_lema": 0.6901250889860673
+   }
+  ],
+  "V2_forzado_sigma": [
+   {
+    "id": "Mt",
+    "tokens": 18329,
+    "acuerdo_pos": 0.25298706967101314,
+    "acuerdo_lema": 0.946369141797152
+   },
+   {
+    "id": "Mc",
+    "tokens": 11286,
+    "acuerdo_pos": 0.24136097820308347,
+    "acuerdo_lema": 0.949317738791423
+   },
+   {
+    "id": "Lc",
+    "tokens": 19446,
+    "acuerdo_pos": 0.24560320888614626,
+    "acuerdo_lema": 0.9448729815900442
+   },
+   {
+    "id": "Jn",
+    "tokens": 15438,
+    "acuerdo_pos": 0.267586474931986,
+    "acuerdo_lema": 0.9458479077600725
+   },
+   {
+    "id": "Hch",
+    "tokens": 18412,
+    "acuerdo_pos": 0.2324570932000869,
+    "acuerdo_lema": 0.9420486639148381
+   },
+   {
+    "id": "Rom",
+    "tokens": 7055,
+    "acuerdo_pos": 0.23869596031183557,
+    "acuerdo_lema": 0.9492558469170801
+   },
+   {
+    "id": "1Cor",
+    "tokens": 6812,
+    "acuerdo_pos": 0.19641808573106284,
+    "acuerdo_lema": 0.9380504991192015
+   },
+   {
+    "id": "2Cor",
+    "tokens": 4473,
+    "acuerdo_pos": 0.22646993069528282,
+    "acuerdo_lema": 0.9038676503465236
+   },
+   {
+    "id": "Gal",
+    "tokens": 2226,
+    "acuerdo_pos": 0.21069182389937108,
+    "acuerdo_lema": 0.9344115004492363
+   },
+   {
+    "id": "Ef",
+    "tokens": 2416,
+    "acuerdo_pos": 0.2669701986754967,
+    "acuerdo_lema": 0.9474337748344371
+   },
+   {
+    "id": "Flp",
+    "tokens": 1626,
+    "acuerdo_pos": 0.2201722017220172,
+    "acuerdo_lema": 0.9329643296432965
+   },
+   {
+    "id": "Col",
+    "tokens": 1580,
+    "acuerdo_pos": 0.2727848101265823,
+    "acuerdo_lema": 0.9316455696202531
+   },
+   {
+    "id": "1Tes",
+    "tokens": 1473,
+    "acuerdo_pos": 0.2437202987101154,
+    "acuerdo_lema": 0.8825526137135098
+   },
+   {
+    "id": "2Tes",
+    "tokens": 820,
+    "acuerdo_pos": 0.2573170731707317,
+    "acuerdo_lema": 0.9024390243902439
+   },
+   {
+    "id": "1Tim",
+    "tokens": 1591,
+    "acuerdo_pos": 0.1451917033312382,
+    "acuerdo_lema": 0.9553739786297926
+   },
+   {
+    "id": "2Tim",
+    "tokens": 1235,
+    "acuerdo_pos": 0.21133603238866397,
+    "acuerdo_lema": 0.9497975708502024
+   },
+   {
+    "id": "Tit",
+    "tokens": 659,
+    "acuerdo_pos": 0.16843702579666162,
+    "acuerdo_lema": 0.9484066767830045
+   },
+   {
+    "id": "Flm",
+    "tokens": 334,
+    "acuerdo_pos": 0.27844311377245506,
+    "acuerdo_lema": 0.9491017964071856
+   },
+   {
+    "id": "Heb",
+    "tokens": 4935,
+    "acuerdo_pos": 0.21519756838905776,
+    "acuerdo_lema": 0.9454913880445796
+   },
+   {
+    "id": "Sant",
+    "tokens": 1739,
+    "acuerdo_pos": 0.2121909143185739,
+    "acuerdo_lema": 0.9407705577918344
+   },
+   {
+    "id": "1Pe",
+    "tokens": 1678,
+    "acuerdo_pos": 0.19725864123957093,
+    "acuerdo_lema": 0.8933253873659118
+   },
+   {
+    "id": "2Pe",
+    "tokens": 1098,
+    "acuerdo_pos": 0.19216757741347906,
+    "acuerdo_lema": 0.8515482695810564
+   },
+   {
+    "id": "1Jn",
+    "tokens": 2137,
+    "acuerdo_pos": 0.27655591951333647,
+    "acuerdo_lema": 0.9078146934955545
+   },
+   {
+    "id": "2Jn",
+    "tokens": 245,
+    "acuerdo_pos": 0.24081632653061225,
+    "acuerdo_lema": 0.9061224489795918
+   },
+   {
+    "id": "3Jn",
+    "tokens": 219,
+    "acuerdo_pos": 0.2511415525114155,
+    "acuerdo_lema": 0.867579908675799
+   },
+   {
+    "id": "Jud",
+    "tokens": 459,
+    "acuerdo_pos": 0.20261437908496732,
+    "acuerdo_lema": 0.8474945533769063
+   },
+   {
+    "id": "Ap",
+    "tokens": 9833,
+    "acuerdo_pos": 0.26522932980779007,
+    "acuerdo_lema": 0.967049730499339
+   }
+  ],
+  "V3_forzado_sigma_equiv": [
+   {
+    "id": "Mt",
+    "tokens": 18329,
+    "acuerdo_pos": 0.2638441813519559,
+    "acuerdo_lema": 0.946369141797152
+   },
+   {
+    "id": "Mc",
+    "tokens": 11286,
+    "acuerdo_pos": 0.2513733829523303,
+    "acuerdo_lema": 0.949317738791423
+   },
+   {
+    "id": "Lc",
+    "tokens": 19446,
+    "acuerdo_pos": 0.257739380849532,
+    "acuerdo_lema": 0.9448729815900442
+   },
+   {
+    "id": "Jn",
+    "tokens": 15438,
+    "acuerdo_pos": 0.2762663557455629,
+    "acuerdo_lema": 0.9458479077600725
+   },
+   {
+    "id": "Hch",
+    "tokens": 18412,
+    "acuerdo_pos": 0.24522050836411036,
+    "acuerdo_lema": 0.9420486639148381
+   },
+   {
+    "id": "Rom",
+    "tokens": 7055,
+    "acuerdo_pos": 0.2454996456413891,
+    "acuerdo_lema": 0.9492558469170801
+   },
+   {
+    "id": "1Cor",
+    "tokens": 6812,
+    "acuerdo_pos": 0.2044920728126835,
+    "acuerdo_lema": 0.9380504991192015
+   },
+   {
+    "id": "2Cor",
+    "tokens": 4473,
+    "acuerdo_pos": 0.23630672926447574,
+    "acuerdo_lema": 0.9038676503465236
+   },
+   {
+    "id": "Gal",
+    "tokens": 2226,
+    "acuerdo_pos": 0.21203953279424978,
+    "acuerdo_lema": 0.9344115004492363
+   },
+   {
+    "id": "Ef",
+    "tokens": 2416,
+    "acuerdo_pos": 0.2740066225165563,
+    "acuerdo_lema": 0.9474337748344371
+   },
+   {
+    "id": "Flp",
+    "tokens": 1626,
+    "acuerdo_pos": 0.22755227552275523,
+    "acuerdo_lema": 0.9329643296432965
+   },
+   {
+    "id": "Col",
+    "tokens": 1580,
+    "acuerdo_pos": 0.27658227848101263,
+    "acuerdo_lema": 0.9316455696202531
+   },
+   {
+    "id": "1Tes",
+    "tokens": 1473,
+    "acuerdo_pos": 0.24915139171758316,
+    "acuerdo_lema": 0.8825526137135098
+   },
+   {
+    "id": "2Tes",
+    "tokens": 820,
+    "acuerdo_pos": 0.2621951219512195,
+    "acuerdo_lema": 0.9024390243902439
+   },
+   {
+    "id": "1Tim",
+    "tokens": 1591,
+    "acuerdo_pos": 0.1508485229415462,
+    "acuerdo_lema": 0.9553739786297926
+   },
+   {
+    "id": "2Tim",
+    "tokens": 1235,
+    "acuerdo_pos": 0.21619433198380567,
+    "acuerdo_lema": 0.9497975708502024
+   },
+   {
+    "id": "Tit",
+    "tokens": 659,
+    "acuerdo_pos": 0.17450682852807284,
+    "acuerdo_lema": 0.9484066767830045
+   },
+   {
+    "id": "Flm",
+    "tokens": 334,
+    "acuerdo_pos": 0.27844311377245506,
+    "acuerdo_lema": 0.9491017964071856
+   },
+   {
+    "id": "Heb",
+    "tokens": 4935,
+    "acuerdo_pos": 0.22168186423505573,
+    "acuerdo_lema": 0.9454913880445796
+   },
+   {
+    "id": "Sant",
+    "tokens": 1739,
+    "acuerdo_pos": 0.2190914318573893,
+    "acuerdo_lema": 0.9407705577918344
+   },
+   {
+    "id": "1Pe",
+    "tokens": 1678,
+    "acuerdo_pos": 0.20023837902264602,
+    "acuerdo_lema": 0.8933253873659118
+   },
+   {
+    "id": "2Pe",
+    "tokens": 1098,
+    "acuerdo_pos": 0.20218579234972678,
+    "acuerdo_lema": 0.8515482695810564
+   },
+   {
+    "id": "1Jn",
+    "tokens": 2137,
+    "acuerdo_pos": 0.28497894244267663,
+    "acuerdo_lema": 0.9078146934955545
+   },
+   {
+    "id": "2Jn",
+    "tokens": 245,
+    "acuerdo_pos": 0.2571428571428571,
+    "acuerdo_lema": 0.9061224489795918
+   },
+   {
+    "id": "3Jn",
+    "tokens": 219,
+    "acuerdo_pos": 0.2511415525114155,
+    "acuerdo_lema": 0.867579908675799
+   },
+   {
+    "id": "Jud",
+    "tokens": 459,
+    "acuerdo_pos": 0.20697167755991286,
+    "acuerdo_lema": 0.8474945533769063
+   },
+   {
+    "id": "Ap",
+    "tokens": 9833,
+    "acuerdo_pos": 0.2686870741381064,
+    "acuerdo_lema": 0.967049730499339
+   }
+  ]
+ }
+}
