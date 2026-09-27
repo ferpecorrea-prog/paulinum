@@ -1,0 +1,27 @@
+id,author,work,status,addressee_type,genre,polemic,length_class,work_group,tokens
+Lc,Lucas(anon),Evangelio de Lucas,genuine,individuo,evangelio,0,larga,Lc,19446
+Jn,Juan(anon),Evangelio de Juan,genuine,publico,evangelio,0,larga,Jn,15438
+Hch,Lucas(anon),Hechos de los Apóstoles,genuine,individuo,historia,0,larga,Hch,18412
+Rom,Pablo (13 cartas),Romanos,core,comunidad,carta,2,larga,Rom,7055
+1Cor,Pablo (13 cartas),1 Corintios,core,comunidad,carta,2,larga,1Cor,6812
+2Cor,Pablo (13 cartas),2 Corintios,core,comunidad,carta,3,media,2Cor,4473
+Gal,Pablo (13 cartas),Gálatas,core,comunidad,carta,3,media,Gal,2226
+Ef,Pablo (13 cartas),Efesios,target,comunidad,carta,0,media,Ef,2416
+Flp,Pablo (13 cartas),Filipenses,core,comunidad,carta,1,media,Flp,1626
+Col,Pablo (13 cartas),Colosenses,target,comunidad,carta,1,media,Col,1580
+1Tes,Pablo (13 cartas),1 Tesalonicenses,core,comunidad,carta,0,corta,1Tes,1473
+2Tes,Pablo (13 cartas),2 Tesalonicenses,target,comunidad,carta,1,corta,2Tes,820
+1Tim,Pablo (13 cartas),1 Timoteo,target,individuo,carta,2,media,1Tim,1591
+2Tim,Pablo (13 cartas),2 Timoteo,target,individuo,carta,1,corta,2Tim,1235
+Tit,Pablo (13 cartas),Tito,target,individuo,carta,1,corta,Tit,659
+Flm,Pablo (13 cartas),Filemón,core,individuo,carta,0,corta,Flm,334
+1Clem,Clemente Romano,1 Clemente,genuine,comunidad,carta,0,larga,1Clem,9825
+IgnEf,Ignacio,Ignacio a los Efesios,genuine,comunidad,carta,0,media,IgnEf,1772
+IgnMagn,Ignacio,Ignacio a los Magnesios,genuine,comunidad,carta,0,corta,IgnMagn,1055
+IgnTral,Ignacio,Ignacio a los Tralianos,genuine,comunidad,carta,0,corta,IgnTral,950
+IgnRom,Ignacio,Ignacio a los Romanos,genuine,comunidad,carta,0,corta,IgnRom,1021
+IgnFil,Ignacio,Ignacio a los Filadelfios,genuine,comunidad,carta,0,corta,IgnFil,1018
+IgnEsm,Ignacio,Ignacio a los Esmirniotas,genuine,comunidad,carta,0,corta,IgnEsm,1145
+IgnPol,Ignacio,Ignacio a Policarpo,genuine,individuo,carta,1,corta,IgnPol,785
+PolFil,Policarpo,Policarpo a los Filipenses,genuine,comunidad,carta,0,corta,PolFil,1131
+Herm,Hermas,El Pastor,genuine,comunidad,apocalipsis,0,larga,Herm,27337

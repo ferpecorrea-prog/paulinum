@@ -1,0 +1,53 @@
+spec_index,label,features,metric,window,mask,target,kind,score,log10lr,verbal,valid
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,mfw:300,minmax,500,none,Rom,core_loo,0.75,0.2983297187046053,no discriminante,True
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,mfw:300,minmax,500,none,1Cor,core_loo,0.625,0.15325337842471656,no discriminante,True
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,mfw:300,minmax,500,none,2Cor,core_loo,0.725,0.2716166956682226,no discriminante,True
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,mfw:300,minmax,500,none,Gal,core_loo,0.85,0.38763709383552303,apoyo débil a H_mismo-autor,True
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,mfw:300,minmax,500,none,Flp,core_loo,0.675,0.21438808999184186,no discriminante,True
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,mfw:300,minmax,500,none,1Tes,core_loo,0.65,0.18422991492623167,no discriminante,True
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,mfw:300,minmax,500,none,Flm,core_loo,0.8,0.34693991010609954,apoyo débil a H_mismo-autor,True
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,mfw:300,minmax,500,none,Ef,target,0.775,0.3235097903098846,apoyo débil a H_mismo-autor,True
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,mfw:300,minmax,500,none,Col,target,0.8,0.34693991010609954,apoyo débil a H_mismo-autor,True
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,mfw:300,minmax,500,none,2Tes,target,0.55,0.0567429779130446,no discriminante,True
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,mfw:300,minmax,500,none,1Tim,target,0.625,0.15325337842471656,no discriminante,True
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,mfw:300,minmax,500,none,2Tim,target,0.7,0.24357380057355166,no discriminante,True
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,mfw:300,minmax,500,none,Tit,target,0.375,-0.17523816915685175,no discriminante,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,mfw:300,delta,500,none,Rom,core_loo,0.7,0.17116143864814726,no discriminante,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,mfw:300,delta,500,none,1Cor,core_loo,0.675,0.14463903008697537,no discriminante,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,mfw:300,delta,500,none,2Cor,core_loo,0.75,0.22256603359637975,no discriminante,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,mfw:300,delta,500,none,Gal,core_loo,0.75,0.22256603359637975,no discriminante,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,mfw:300,delta,500,none,Flp,core_loo,0.675,0.14463903008697537,no discriminante,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,mfw:300,delta,500,none,1Tes,core_loo,0.625,0.09100910497959307,no discriminante,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,mfw:300,delta,500,none,Flm,core_loo,0.675,0.14463903008697537,no discriminante,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,mfw:300,delta,500,none,Ef,target,0.85,0.3111687508522246,apoyo débil a H_mismo-autor,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,mfw:300,delta,500,none,Col,target,0.65,0.1178603320846531,no discriminante,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,mfw:300,delta,500,none,2Tes,target,0.45,-0.08800851131722866,no discriminante,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,mfw:300,delta,500,none,1Tim,target,0.6,0.06424446069627741,no discriminante,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,mfw:300,delta,500,none,2Tim,target,0.55,0.011504870382403802,no discriminante,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,mfw:300,delta,500,none,Tit,target,0.55,0.011504870382403802,no discriminante,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,char3:600,minmax,500,none,Rom,core_loo,0.7,0.3453800800714726,apoyo débil a H_mismo-autor,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,char3:600,minmax,500,none,1Cor,core_loo,0.575,0.14269859185980938,no discriminante,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,char3:600,minmax,500,none,2Cor,core_loo,0.725,0.3827083884643988,apoyo débil a H_mismo-autor,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,char3:600,minmax,500,none,Gal,core_loo,0.7,0.3453800800714726,apoyo débil a H_mismo-autor,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,char3:600,minmax,500,none,Flp,core_loo,0.775,0.452161916163472,apoyo débil a H_mismo-autor,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,char3:600,minmax,500,none,1Tes,core_loo,0.825,0.512697013222412,apoyo débil a H_mismo-autor,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,char3:600,minmax,500,none,Flm,core_loo,0.9,0.5812467920282427,apoyo débil a H_mismo-autor,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,char3:600,minmax,500,none,Ef,target,0.65,0.26684162853917043,no discriminante,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,char3:600,minmax,500,none,Col,target,0.575,0.14269859185980938,no discriminante,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,char3:600,minmax,500,none,2Tes,target,0.55,0.10040724266662318,no discriminante,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,char3:600,minmax,500,none,1Tim,target,0.225,-0.4069539481687762,apoyo débil a H_otro-autor,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,char3:600,minmax,500,none,2Tim,target,0.175,-0.4639216212348103,apoyo débil a H_otro-autor,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,char3:600,minmax,500,none,Tit,target,0.025,-0.5661483702264685,apoyo débil a H_otro-autor,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,char3:600,delta,500,none,Rom,core_loo,0.575,0.09930460427654822,no discriminante,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,char3:600,delta,500,none,1Cor,core_loo,0.625,0.16813689123033287,no discriminante,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,char3:600,delta,500,none,2Cor,core_loo,0.7,0.2656195522694124,no discriminante,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,char3:600,delta,500,none,Gal,core_loo,0.8,0.3767313792949286,apoyo débil a H_mismo-autor,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,char3:600,delta,500,none,Flp,core_loo,0.875,0.43807815322306765,apoyo débil a H_mismo-autor,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,char3:600,delta,500,none,1Tes,core_loo,0.7,0.2656195522694124,no discriminante,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,char3:600,delta,500,none,Flm,core_loo,0.95,0.4739272145573007,apoyo débil a H_mismo-autor,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,char3:600,delta,500,none,Ef,target,0.85,0.42018981468352606,apoyo débil a H_mismo-autor,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,char3:600,delta,500,none,Col,target,0.65,0.2015739526041331,no discriminante,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,char3:600,delta,500,none,2Tes,target,0.675,0.23413034053846385,no discriminante,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,char3:600,delta,500,none,1Tim,target,0.275,-0.3080571751942755,apoyo débil a H_otro-autor,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,char3:600,delta,500,none,2Tim,target,0.2,-0.3896879449544236,apoyo débil a H_otro-autor,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,char3:600,delta,500,none,Tit,target,0.075,-0.4840957691607697,apoyo débil a H_otro-autor,True

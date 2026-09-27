@@ -1,0 +1,17 @@
+# Campaña 02 (robustez), subcampaña 02d_rasgos. Reconstrucción. Sello publicado: 4973f2627a9905fb05aa4a2f078ded5d66b823cf2b9531d760409c5682dc059d
+nombre: campana_02d_rasgos
+descripcion: "mfw:100, mfw:500, char4:1000 (6)"
+version_original: "paulinum 0.1.0 (sello publicado 4973f2627a9905fb05aa4a2f078ded5d66b823cf2b9531d760409c5682dc059d)"
+corpus: {tier: 2, edicion: sblgnt, min_tokens: 100}
+rejilla:
+  rasgos: ["mfw:100", "mfw:500", "char4:1000"]
+  distancias: ["minmax", "delta"]
+  ventanas: [500]
+  mascaras: ["none"]
+  diacriticos: ["dia"]
+  nucleos: ["seven"]
+  ediciones: ["sblgnt"]
+parametros: {iters: 100, fraccion_rasgos: 0.5, impostores: 30, semilla: 20260908, auc_minima: 0.80, max_positivos_por_autor: 6, n_pares_negativos: 150}
+preregistro:
+  fecha: "2026-09-08"
+  regla: "sensibilidad: se ejecuta con sello propio y solo como análisis de robustez de la campaña 01; no sustituye ninguna cifra de la campaña principal"

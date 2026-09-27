@@ -1,0 +1,17 @@
+# Campaña 02 (robustez), subcampaña 02a_nucleos. Reconstrucción. Sello publicado: b19ff50ab9111abefc142d24b0cb2e7948e8ed6298a75fad2da2f7c719504105
+nombre: campana_02a_nucleos
+descripcion: "núcleo seven / Hauptbriefe / seven_plus (9)"
+version_original: "paulinum 0.1.0 (sello publicado b19ff50ab9111abefc142d24b0cb2e7948e8ed6298a75fad2da2f7c719504105)"
+corpus: {tier: 2, edicion: sblgnt, min_tokens: 100}
+rejilla:
+  rasgos: ["mfw:300", "closed:150", "char3:600"]
+  distancias: ["minmax"]
+  ventanas: [500]
+  mascaras: ["none"]
+  diacriticos: ["dia"]
+  nucleos: ["seven", "hauptbriefe", "seven_plus"]
+  ediciones: ["sblgnt"]
+parametros: {iters: 100, fraccion_rasgos: 0.5, impostores: 30, semilla: 20260908, auc_minima: 0.80, max_positivos_por_autor: 6, n_pares_negativos: 150}
+preregistro:
+  fecha: "2026-09-08"
+  regla: "sensibilidad: se ejecuta con sello propio y solo como análisis de robustez de la campaña 01; no sustituye ninguna cifra de la campaña principal"

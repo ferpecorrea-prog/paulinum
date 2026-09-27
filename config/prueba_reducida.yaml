@@ -1,0 +1,20 @@
+# Campaña de PRUEBA REDUCIDA de la reconstrucción (no forma parte de la investigación publicada).
+# Corpus: NT + Padres Apostólicos (+ 3 Cor si está preparado), tier 1. Sirve para comprobar que la cadena
+# fetch → build → inventory → seal → run → report funciona de extremo a extremo en pocos minutos.
+nombre: prueba_reducida
+descripcion: "prueba de extremo a extremo con NT + Padres Apostólicos; 4 especificaciones, 40 iteraciones"
+corpus: {tier: 1, edicion: sblgnt, min_tokens: 100}
+rejilla:
+  rasgos: ["mfw:300", "char3:600"]
+  distancias: ["minmax", "delta"]
+  ventanas: [500]
+  mascaras: ["none"]
+  diacriticos: ["dia"]
+  nucleos: ["seven"]
+  ediciones: ["sblgnt"]
+parametros: {iters: 40, fraccion_rasgos: 0.5, impostores: 12, semilla: 20260925, auc_minima: 0.80, max_positivos_por_autor: 6, n_pares_negativos: 20}
+mismo_rasero: {rasgos: "mfw:300", distancias: ["minmax", "delta"], ventana: 500, sorteos: 10, tope_pares_por_autor: 120}
+variables: {rasgos: "mfw:200", distancia: delta, ventana: 400, permutaciones: 199}
+rolling: {rasgos: "mfw:300", distancia: minmax, ventana: 400, paso: 200, iters: 20}
+preregistro:
+  nota: "campaña técnica de prueba; sus cifras no se comparan con las publicadas (corpus de control distinto y mucho menor)"

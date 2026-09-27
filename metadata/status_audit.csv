@@ -1,0 +1,37 @@
+author_or_id,status,tradition,fuente_del_estado,nota
+Pablo (Rom 1Cor 2Cor Gal Flp 1Tes Flm),core,cristiano,consenso crítico (siete indiscutidas),núcleo de referencia; no se evalúa su autoría
+Pablo? (Ef Col 2Tes 1Tim 2Tim Tit),target,cristiano,—,cartas discutidas; se valoran una a una
+Lucas(anon) (Lc Hch),genuine,cristiano,Catholic Encyclopedia «Acts of the Apostles» (B-n),unidad de autor Lucas-Hechos
+Juan(anon) Jn,genuine,cristiano,—,una sola obra: solo negativo e impostor
+Juan(anon) 1Jn,disputed,cristiano,§ 8.2,comunidad de autor con el cuarto Evangelio no dada por establecida
+Juan(presb.) (2Jn 3Jn); Juan(vidente) Ap; Mateo(anon); Marcos(anon); Pedro(?) (1Pe 2Pe); Santiago(?); Judas(?); anon (Heb Did MartPol Diogn),other,cristiano,§ 8.2,anónimos o de atribución no verificable: solo impostores y negativos frente a Pablo
+Clemente Romano 1Clem,genuine,cristiano,Lake (Loeb 1912) introd.,una sola obra
+Ps-Clemente 2Clem,spurious,cristiano,Lake: «no puede haber sido escrita por el autor de 1 Clemente»,imita a Clemente Romano
+Ps-Clemente EpPet EpJac,spurious,cristiano,Catholic Encyclopedia «Clementines»,cartas que abren y cierran las Homilías pseudoclementinas
+Ps-Bernabé Bern,spurious,cristiano,Lake: carta «realmente anónima»,clasificada como espuria (ps-epígrafa de Bernabé)
+Ignacio (7 cartas recensión media),genuine,cristiano,Lake introd.: «siete cartas eusebianas»,forman pares positivos y envolvente
+Ps-Ignacio recensión larga (7 interpoladas),mixed,cristiano,Lake; Funk-Diekamp,texto genuino con adiciones: no se usan como positivos ni negativos de calibración salvo como impostores
+Ps-Ignacio recensión larga (6 espurias),spurious,cristiano,Lake: «varias cartas que claramente no eran genuinas»,imitan a Ignacio
+Policarpo PolFil,genuine,cristiano,Lake,una sola obra; caps. 10-12.14 en latín excluidos (campaña 03)
+Hermas Herm,genuine,cristiano,Lake,una sola obra; final latino excluido (campaña 03)
+Ps-Pablo 3Cor,spurious,cristiano,Testuz 1959; Klijn 1963,imitación directa de Pablo (control de falsificación)
+Josefo,genuine,judeo-helenistico,Niese,30 libros; los libros de una misma obra comparten grupo de obra
+Filón,genuine,judeo-helenistico,Cohn-Wendland-Reiter,37 obras/libros; De aeternitate mundi disputed (F-5)
+Juliano (cartas genuinas),genuine,pagano,Wright (Loeb) índice: fechadas y sin fechar,cartas 74-83 apócrifas separadas
+Ps-Juliano (cartas 74-83),spurious,pagano,Wright: Juliano «no pudo haber conocido a la persona a la que se dirigen»,incluye las seis a Jámblico
+Galo César (carta 82),other,pagano,Wright,carta de Galo a Juliano
+Isócrates (cartas y discursos),genuine,pagano,Van Hook (Loeb) notas introductorias,dudas sobre cartas 3 4 9 «infundadas»; carta 8 «indiscutida»
+Plutarco (7 opúsculos),genuine,pagano,Babbitt (Loeb),—
+Ps-Plutarco De liberis educandis,spurious,pagano,Babbitt: «no puede haber sido escrito por él»,imita a Plutarco
+Ps-Plutarco De fato,spurious,pagano,De Lacy y Einarson: «los manuscritos se equivocan al atribuir a Plutarco»,imita a Plutarco
+Ps-Plutarco Consolatio ad Apollonium,disputed,pagano,Babbitt defiende la autoría frente a sospechas recientes,fuera de la calibración
+Luciano; Arriano; Epicteto(ap. Arriano); Marco Aurelio; Alcifrón; Filóstrato; Vetio Valente; Elio Aristides; Polemón; Libanio,genuine,pagano,ediciones declaradas en el encabezamiento TEI,—
+Arriano Carta a Lucio Gelio,other,pagano,Hercher,196 palabras
+Justino (Apol. I-II; Diálogo),genuine,cristiano,Eusebio HE IV 18 (atribución antigua),Diálogo en 40 capítulos agrupados
+Taciano; Teófilo de Antioquía; Clemente de Alejandría; Orígenes,genuine,cristiano,ediciones Schwartz Otto Stählin Koetschau,—
+Atenágoras Legatio,genuine,cristiano,Schwartz,—
+Atenágoras De resurrectione,disputed,cristiano,debate crítico moderno (F-5),fuera de la calibración
+anon(Acta Thomae); anon(Passio Perpetuae); anon(Enoch); anon(Test. Abrahae); anon(Vitae Prophetarum); anon(Hermetica),other,—,—,anónimos: solo impostores y negativos
+Demóstenes/Ps-Demóstenes (cartas); Platón/Ps-Platón (cartas),disputed,pagano,debate crítico,fuera de la calibración
+Ps-Diógenes; Ps-Eurípides; Ps-Solón (Hercher),spurious,pagano,Hercher Epistolographi Graeci,autor imitado no conservado: solo negativos e impostores
+Ignacio y 1 Clemente en segunda edición (F1K),duplicate,cristiano,—,solo para el ruido de edición

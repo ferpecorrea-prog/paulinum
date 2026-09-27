@@ -1,0 +1,81 @@
+metric,texto,palabras,banco_epistolar,banco_amplio,condicion
+minmax,Rom,7055,0.995,0.990,core
+minmax,1Cor,6812,1.000,1.000,core
+minmax,2Cor,4473,0.965,0.980,core
+minmax,Gal,2226,1.000,1.000,core
+minmax,Flp,1626,0.840,0.900,core
+minmax,1Tes,1473,0.890,0.860,core
+minmax,Flm,334,0.900,0.940,core
+minmax,2Tes,820,0.755,0.740,target
+minmax,1Pe,1678,0.995,1.000,other
+minmax,Col,1580,0.545,0.410,target
+minmax,Sant,1739,0.500,0.450,other
+minmax,Ef,2416,0.640,0.520,target
+minmax,Heb,4935,0.490,0.480,other
+minmax,Flm,334,0.930,0.870,core
+minmax,2Tim,1235,0.605,0.530,target
+minmax,1Jn,2137,0.405,0.090,disputed
+minmax,2Pe,1098,0.775,0.800,other
+minmax,Tit,659,0.390,0.420,target
+minmax,1Tim,1591,0.620,0.540,target
+minmax,Jud,459,0.270,0.200,other
+minmax,IgnEf,1772,,0.990,Ignacio auténtica (LOO)
+minmax,IgnMagn,1055,,1.000,Ignacio auténtica (LOO)
+minmax,IgnTral,950,,1.000,Ignacio auténtica (LOO)
+minmax,IgnRom,1021,,0.980,Ignacio auténtica (LOO)
+minmax,IgnFil,1018,,0.990,Ignacio auténtica (LOO)
+minmax,IgnEsm,1145,,0.900,Ignacio auténtica (LOO)
+minmax,IgnPol,785,,0.420,Ignacio auténtica (LOO)
+minmax,IgnLong#1,500,,0.000,recensión larga (spurious)
+minmax,IgnLong#10,992,,0.080,recensión larga (spurious)
+minmax,IgnLong#11,2830,,1.000,recensión larga (mixed)
+minmax,IgnLong#12,1177,,1.000,recensión larga (mixed)
+minmax,IgnLong#13,567,,0.080,recensión larga (spurious)
+minmax,IgnLong#2,2062,,0.560,recensión larga (mixed)
+minmax,IgnLong#3,1922,,0.940,recensión larga (mixed)
+minmax,IgnLong#4,1120,,0.070,recensión larga (spurious)
+minmax,IgnLong#5,1974,,0.000,recensión larga (spurious)
+minmax,IgnLong#6,2375,,0.830,recensión larga (mixed)
+minmax,IgnLong#7,1812,,0.980,recensión larga (mixed)
+minmax,IgnLong#8,868,,1.000,recensión larga (mixed)
+minmax,IgnLong#9,1077,,0.440,recensión larga (spurious)
+cosine,Rom,7055,0.950,0.890,core
+cosine,1Cor,6812,0.930,0.880,core
+cosine,2Cor,4473,0.975,0.990,core
+cosine,Gal,2226,1.000,0.990,core
+cosine,Flp,1626,0.975,0.990,core
+cosine,1Tes,1473,0.885,0.870,core
+cosine,Flm,334,0.970,0.970,core
+cosine,2Tes,820,0.915,0.950,target
+cosine,1Pe,1678,0.995,0.970,other
+cosine,Col,1580,0.745,0.730,target
+cosine,Sant,1739,0.520,0.480,other
+cosine,Ef,2416,0.685,0.630,target
+cosine,Heb,4935,0.545,0.380,other
+cosine,Flm,334,0.955,0.960,core
+cosine,2Tim,1235,0.305,0.340,target
+cosine,1Jn,2137,0.280,0.030,disputed
+cosine,2Pe,1098,0.295,0.190,other
+cosine,Tit,659,0.615,0.650,target
+cosine,1Tim,1591,0.415,0.370,target
+cosine,Jud,459,0.185,0.130,other
+cosine,IgnEf,1772,,1.000,Ignacio auténtica (LOO)
+cosine,IgnMagn,1055,,1.000,Ignacio auténtica (LOO)
+cosine,IgnTral,950,,1.000,Ignacio auténtica (LOO)
+cosine,IgnRom,1021,,1.000,Ignacio auténtica (LOO)
+cosine,IgnFil,1018,,0.990,Ignacio auténtica (LOO)
+cosine,IgnEsm,1145,,1.000,Ignacio auténtica (LOO)
+cosine,IgnPol,785,,0.690,Ignacio auténtica (LOO)
+cosine,IgnLong#1,500,,0.080,recensión larga (spurious)
+cosine,IgnLong#10,992,,0.080,recensión larga (spurious)
+cosine,IgnLong#11,2830,,1.000,recensión larga (mixed)
+cosine,IgnLong#12,1177,,1.000,recensión larga (mixed)
+cosine,IgnLong#13,567,,0.470,recensión larga (spurious)
+cosine,IgnLong#2,2062,,1.000,recensión larga (mixed)
+cosine,IgnLong#3,1922,,1.000,recensión larga (mixed)
+cosine,IgnLong#4,1120,,0.060,recensión larga (spurious)
+cosine,IgnLong#5,1974,,0.040,recensión larga (spurious)
+cosine,IgnLong#6,2375,,1.000,recensión larga (mixed)
+cosine,IgnLong#7,1812,,1.000,recensión larga (mixed)
+cosine,IgnLong#8,868,,1.000,recensión larga (mixed)
+cosine,IgnLong#9,1077,,0.330,recensión larga (spurious)

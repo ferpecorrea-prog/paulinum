@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Si utiliza este laboratorio, cite el libro y la reconstrucción."
+title: "paulinum_lab: laboratorio de reproducibilidad de la verificación convergente de la autoría del corpus paulino canónico (reconstrucción)"
+version: "0.2.0-r"
+date-released: "2026-09-25"
+authors:
+  - family-names: "(autor)"
+    given-names: "Jesús"
+    affiliation: "Investigador independiente, Barcelona"
+keywords:
+  - estilometría
+  - corpus paulino
+  - impostores generales
+  - verificación de autoría
+  - griego antiguo
+license: MIT
+references:
+  - type: book
+    title: "¿Quién escribió las cartas de san Pablo? Verificación convergente de la autoría del corpus paulino canónico"
+    authors:
+      - family-names: "(autor)"
+        given-names: "Jesús"
+    year: 2026
+    notes: "Parte II, capítulos 7-12, Apéndice técnico A.1-A.6 y Anexos I-II (informes de las campañas 01 y 03)."

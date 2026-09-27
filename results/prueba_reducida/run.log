@@ -1,0 +1,16 @@
+[05:58:51] run prueba_reducida (paulinum 0.2.0-r) · etapas: specs, calibration, ledger, variables, rolling, extras
+[05:58:53]   spec 000 dia|mfw:300|minmax|w500|mnone|seven|sblgnt: AUC=0.908 c@1=0.816 (63 problemas, 2.4 s)
+[05:58:55]   spec 001 dia|mfw:300|delta|w500|mnone|seven|sblgnt: AUC=0.838 c@1=0.782 (63 problemas, 2.3 s)
+[05:59:01]   spec 002 dia|char3:600|minmax|w500|mnone|seven|sblgnt: AUC=0.936 c@1=0.890 (63 problemas, 5.2 s)
+[05:59:06]   spec 003 dia|char3:600|delta|w500|mnone|seven|sblgnt: AUC=0.890 c@1=0.835 (63 problemas, 5.0 s)
+[05:59:06] etapa specs: 15 s
+[05:59:06] etapa calibration: 0 s
+[05:59:06]   ledger minmax: 22 pares intra-autor; 0 s
+[05:59:07]   ledger delta: 22 pares intra-autor; 1 s
+[05:59:07] etapa ledger: 1 s
+[05:59:07]   variables: 76 ventanas; PERMANOVA de 8 variables
+[05:59:07] etapa variables: 0 s
+[05:59:11]   rolling: 145 ventanas
+[05:59:11] etapa rolling: 4 s
+[05:59:11]   extras: 0 pares de ruido de edición, 195 contribuciones de rasgos
+[05:59:11] etapa extras: 0 s

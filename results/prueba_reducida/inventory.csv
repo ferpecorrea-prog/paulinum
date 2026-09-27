@@ -1,0 +1,43 @@
+id,author,work,status,tradition,genre,subgenre,addressee,work_group,edition,tokens,types,ttr,masked_all,masked_reuse
+Mt,Mateo(anon),Evangelio de Mateo,other,cristiano,evangelio,evangelio,publico,,sblgnt,18329,3970,0.2166,0,0
+Mc,Marcos(anon),Evangelio de Marcos,other,cristiano,evangelio,evangelio,publico,,sblgnt,11286,2884,0.2555,0,0
+Lc,Lucas(anon),Evangelio de Lucas,genuine,cristiano,evangelio,evangelio,individuo,,sblgnt,19446,4630,0.2381,0,0
+Jn,Juan(anon),Evangelio de Juan,genuine,cristiano,evangelio,evangelio,publico,,sblgnt,15438,2569,0.1664,0,0
+Hch,Lucas(anon),Hechos de los Apóstoles,genuine,cristiano,historia,historia,individuo,,sblgnt,18412,4611,0.2504,0,0
+Rom,Pablo,Romanos,core,cristiano,carta,carta_comunidad,comunidad,,sblgnt,7055,1970,0.2792,1640,0
+1Cor,Pablo,1 Corintios,core,cristiano,carta,carta_comunidad,comunidad,,sblgnt,6812,1958,0.2874,634,0
+2Cor,Pablo,2 Corintios,core,cristiano,carta,carta_comunidad,comunidad,,sblgnt,4473,1426,0.3188,345,0
+Gal,Pablo,Gálatas,core,cristiano,carta,carta_comunidad,comunidad,,sblgnt,2226,843,0.3787,316,0
+Ef,Pablo?,Efesios,target,cristiano,carta,circular,comunidad,,sblgnt,2416,869,0.3597,857,81
+Flp,Pablo,Filipenses,core,cristiano,carta,carta_comunidad,comunidad,,sblgnt,1626,669,0.4114,286,0
+Col,Pablo?,Colosenses,target,cristiano,carta,carta_comunidad,comunidad,,sblgnt,1580,641,0.4057,670,85
+1Tes,Pablo,1 Tesalonicenses,core,cristiano,carta,carta_comunidad,comunidad,,sblgnt,1473,554,0.3761,310,41
+2Tes,Pablo?,2 Tesalonicenses,target,cristiano,carta,carta_comunidad,comunidad,,sblgnt,820,370,0.4512,278,37
+1Tim,Pablo?,1 Timoteo,target,cristiano,carta,mandato,individuo,,sblgnt,1591,821,0.516,180,0
+2Tim,Pablo?,2 Timoteo,target,cristiano,carta,testamentaria,individuo,,sblgnt,1235,643,0.5206,176,0
+Tit,Pablo?,Tito,target,cristiano,carta,mandato,individuo,,sblgnt,659,400,0.607,207,0
+Flm,Pablo,Filemón,core,cristiano,carta,recomendacion,individuo,,sblgnt,334,192,0.5749,133,0
+Heb,anon,Hebreos,other,cristiano,homilia,homilia,comunidad,,sblgnt,4935,1820,0.3688,0,0
+Sant,Santiago(?),Santiago,other,cristiano,carta,parenetica,comunidad,,sblgnt,1739,828,0.4761,0,0
+1Pe,Pedro(?),1 Pedro,other,cristiano,carta,circular,comunidad,,sblgnt,1678,809,0.4821,0,0
+2Pe,Pedro(?),2 Pedro,other,cristiano,carta,testamentaria,comunidad,,sblgnt,1098,601,0.5474,0,0
+1Jn,Juan(anon),1 Juan,disputed,cristiano,homilia,homilia,comunidad,,sblgnt,2137,487,0.2279,0,0
+2Jn,Juan(presb.),2 Juan,other,cristiano,carta,carta_comunidad,comunidad,,sblgnt,245,151,0.6163,0,0
+3Jn,Juan(presb.),3 Juan,other,cristiano,carta,recomendacion,individuo,,sblgnt,219,154,0.7032,0,0
+Jud,Judas(?),Judas,other,cristiano,carta,circular,comunidad,,sblgnt,459,294,0.6405,0,0
+Ap,Juan(vidente),Apocalipsis,other,cristiano,apocalipsis,apocalipsis,comunidad,,sblgnt,9833,2119,0.2155,0,0
+1Clem,Clemente Romano,1 Clemente,genuine,cristiano,carta,carta_comunidad,comunidad,,lake,9825,3369,0.3429,0,0
+2Clem,Ps-Clemente,2 Clemente,spurious,cristiano,homilia,homilia,comunidad,,lake,3013,1136,0.377,0,0
+IgnEf,Ignacio,Ignacio a los Efesios,genuine,cristiano,carta,carta_comunidad,comunidad,,lake,1772,786,0.4436,0,0
+IgnMagn,Ignacio,Ignacio a los Magnesios,genuine,cristiano,carta,carta_comunidad,comunidad,,lake,1055,496,0.4701,0,0
+IgnTral,Ignacio,Ignacio a los Tralianos,genuine,cristiano,carta,carta_comunidad,comunidad,,lake,950,483,0.5084,0,0
+IgnRom,Ignacio,Ignacio a los Romanos,genuine,cristiano,carta,carta_comunidad,comunidad,,lake,1021,520,0.5093,0,0
+IgnFil,Ignacio,Ignacio a los Filadelfios,genuine,cristiano,carta,carta_comunidad,comunidad,,lake,1018,499,0.4902,0,0
+IgnEsm,Ignacio,Ignacio a los Esmirniotas,genuine,cristiano,carta,carta_comunidad,comunidad,,lake,1145,567,0.4952,0,0
+IgnPol,Ignacio,Ignacio a Policarpo,genuine,cristiano,carta,mandato,individuo,,lake,785,457,0.5822,0,0
+PolFil,Policarpo,Policarpo a los Filipenses,genuine,cristiano,carta,carta_comunidad,comunidad,,lake,1131,567,0.5013,0,0
+Did,anon,Didajé,other,cristiano,manual,manual,comunidad,,lake,2199,928,0.422,0,0
+Bern,Ps-Bernabé,Carta de Bernabé,spurious,cristiano,homilia,homilia,comunidad,,lake,6712,2138,0.3185,0,0
+Herm,Hermas,El Pastor,genuine,cristiano,apocalipsis,apocalipsis,comunidad,,lake,27337,5251,0.1921,0,0
+MartPol,anon,Martirio de Policarpo,other,cristiano,carta,carta_comunidad,comunidad,,lake,2430,1127,0.4638,0,0
+Diogn,anon,A Diogneto,other,cristiano,apologia,apologia,individuo,,lake,2610,1241,0.4755,0,0

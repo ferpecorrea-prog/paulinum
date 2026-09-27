@@ -1,0 +1,65 @@
+# Apéndice A.2: composición del corpus de la campaña 03 (results/campana_03/inventory.csv agregado)
+autor,tradición,estado,documentos,palabras
+Atenágoras,cristiano,disputed,1,8922
+Atenágoras,cristiano,genuine,1,11315
+Clemente Romano,cristiano,duplicate,1,9830
+Clemente Romano,cristiano,genuine,1,9831
+Clemente de Alejandría,cristiano,genuine,5,89855
+Hermas,cristiano,genuine,1,27337
+Ignacio,cristiano,duplicate,7,7764
+Ignacio,cristiano,genuine,7,7746
+Juan(anon),cristiano,disputed,1,2137
+Juan(anon),cristiano,genuine,1,15438
+Juan(presb.),cristiano,other,2,464
+Juan(vidente),cristiano,other,1,9833
+Judas(?),cristiano,other,1,459
+Justino,cristiano,genuine,42,32048
+Lucas(anon),cristiano,genuine,2,37858
+Marcos(anon),cristiano,other,1,11286
+Mateo(anon),cristiano,other,1,18329
+Orígenes,cristiano,genuine,12,209905
+Pablo,cristiano,core,7,23999
+Pablo?,cristiano,target,6,8301
+Pedro(?),cristiano,other,2,2776
+Policarpo,cristiano,genuine,1,1131
+Ps-Bernabé,cristiano,spurious,1,6714
+Ps-Clemente,cristiano,spurious,3,6011
+Ps-Ignacio,cristiano,mixed,7,13062
+Ps-Ignacio,cristiano,spurious,6,6248
+Ps-Pablo,cristiano,spurious,1,531
+Santiago(?),cristiano,other,1,1739
+Taciano,cristiano,genuine,1,10230
+Teófilo de Antioquía,cristiano,genuine,3,21590
+anon,cristiano,other,4,12385
+anon(Acta Thomae),cristiano,other,1,28931
+anon(Passio Perpetuae),cristiano,other,1,3981
+Filón,judeo-helenistico,disputed,1,9196
+Filón,judeo-helenistico,genuine,37,408836
+Josefo,judeo-helenistico,genuine,30,473436
+anon(Enoch),judeo-helenistico,other,1,5711
+anon(Test. Abrahae),judeo-helenistico,other,1,6959
+anon(Vitae Prophetarum),judeo-helenistico,other,1,4083
+Alcifrón,pagano,genuine,1,20504
+Arriano,pagano,genuine,8,92334
+Arriano,pagano,other,1,196
+Demóstenes/Ps-Demóstenes,pagano,disputed,5,5963
+Elio Aristides,pagano,genuine,6,97904
+Epicteto(ap. Arriano),pagano,genuine,5,80161
+Filóstrato,pagano,genuine,1,7595
+Galo César,pagano,other,1,240
+Isócrates,pagano,genuine,13,49151
+Juliano,pagano,genuine,37,18975
+Libanio,pagano,genuine,44,12130
+Luciano,pagano,genuine,5,25854
+Marco Aurelio,pagano,genuine,12,29267
+Platón/Ps-Platón,pagano,disputed,11,16808
+Plutarco,pagano,genuine,7,46575
+Polemón,pagano,genuine,1,6060
+Ps-Diógenes,pagano,spurious,15,6071
+Ps-Eurípides,pagano,spurious,5,1820
+Ps-Juliano,pagano,spurious,8,4820
+Ps-Plutarco,pagano,disputed,1,9234
+Ps-Plutarco,pagano,spurious,2,9555
+Ps-Solón,pagano,spurious,1,227
+Vetio Valente,pagano,genuine,9,103551
+anon(Hermetica),pagano,other,5,9528

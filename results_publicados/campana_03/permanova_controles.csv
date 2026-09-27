@@ -1,0 +1,52 @@
+# Apéndice A.4.5: PERMANOVA dentro de cada autor de control y de Pablo, R² submuestreado a 76 ventanas
+author,variable,n_windows,k,R2,R2_sub76,p
+Arriano,work,227,2,0.042,0.049,0.003
+Clemente de Alejandría,addressee_type,223,2,0.018,0.029,0.003
+Clemente de Alejandría,genre,223,3,0.046,0.064,0.003
+Clemente de Alejandría,polemic,223,2,0.026,0.035,0.003
+Clemente de Alejandría,work,223,3,0.046,0.064,0.003
+Elio Aristides,length_class,242,2,0.020,0.028,0.003
+Elio Aristides,work,242,6,0.080,0.121,0.003
+Epicteto(ap. Arriano),genre,198,2,0.014,0.019,0.003
+Epicteto(ap. Arriano),length_class,198,2,0.014,0.022,0.003
+Epicteto(ap. Arriano),work,198,2,0.014,0.021,0.003
+Filón,genre,1006,3,0.014,0.035,0.003
+Filón,polemic,1006,2,0.007,0.018,0.003
+Filón,length_class,1006,2,0.001,0.013,0.117
+Filón,work,1006,30,0.088,0.378,0.003
+Ignacio,length_class,15,2,0.070,0.070,0.517
+Ignacio,work,15,7,0.425,0.425,0.567
+Isócrates,addressee_type,118,2,0.015,0.021,0.007
+Isócrates,genre,118,2,0.015,0.020,0.007
+Isócrates,length_class,118,3,0.029,0.039,0.003
+Isócrates,work,118,13,0.146,0.175,0.003
+Josefo,addressee_type,1171,2,0.008,0.020,0.003
+Josefo,genre,1171,3,0.013,0.040,0.003
+Josefo,polemic,1171,2,0.008,0.020,0.003
+Josefo,work,1171,4,0.042,0.075,0.003
+Juliano,addressee_type,49,2,0.028,0.028,0.040
+Juliano,length_class,49,2,0.042,0.042,0.003
+Juliano,work,49,37,0.791,0.791,0.003
+Justino,genre,84,2,0.048,0.049,0.003
+Justino,length_class,84,3,0.066,0.069,0.003
+Justino,work,84,3,0.066,0.068,0.003
+Lucas(anon),work,94,2,0.069,0.071,0.003
+Luciano,addressee_type,62,2,0.038,0.038,0.003
+Luciano,genre,62,4,0.117,0.117,0.003
+Luciano,polemic,62,2,0.041,0.041,0.003
+Luciano,length_class,62,2,0.028,0.028,0.003
+Luciano,work,62,5,0.146,0.146,0.003
+Orígenes,genre,518,4,0.030,0.059,0.003
+Orígenes,polemic,518,3,0.026,0.045,0.003
+Orígenes,length_class,518,2,0.004,0.012,0.003
+Orígenes,work,518,4,0.030,0.057,0.003
+Pablo (13 cartas),addressee_type,76,2,0.037,0.037,0.003
+Pablo (13 cartas),polemic,76,3,0.045,0.045,0.007
+Pablo (13 cartas),length_class,76,3,0.060,0.060,0.003
+Pablo (13 cartas),work,76,13,0.260,0.260,0.003
+Plutarco,addressee_type,113,2,0.054,0.058,0.003
+Plutarco,genre,113,5,0.135,0.149,0.003
+Plutarco,polemic,113,2,0.027,0.031,0.003
+Plutarco,length_class,113,2,0.033,0.036,0.003
+Plutarco,work,113,7,0.170,0.192,0.003
+Teófilo de Antioquía,length_class,52,2,0.033,0.033,0.017

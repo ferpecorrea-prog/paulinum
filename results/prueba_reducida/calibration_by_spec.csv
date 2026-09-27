@@ -1,0 +1,5 @@
+spec_index,label,dia,features,metric,window,mask,core,edition,iters,n_pos,n_neg,auc,c_at_1,thr_low,thr_high,fpr_at_0.5,fnr_at_0.5,valid
+0,dia|mfw:300|minmax|w500|mnone|seven|sblgnt,dia,mfw:300,minmax,500,none,seven,sblgnt,40,15,39,0.9076923076923077,0.8161865569272977,0.35,0.65,0.3076923076923077,0.13333333333333333,True
+1,dia|mfw:300|delta|w500|mnone|seven|sblgnt,dia,mfw:300,delta,500,none,seven,sblgnt,40,15,39,0.8376068376068376,0.7818930041152263,0.45,0.55,0.28205128205128205,0.13333333333333333,True
+2,dia|char3:600|minmax|w500|mnone|seven|sblgnt,dia,char3:600,minmax,500,none,seven,sblgnt,40,15,39,0.9358974358974359,0.8902606310013718,0.4,0.6,0.15384615384615385,0.13333333333333333,True
+3,dia|char3:600|delta|w500|mnone|seven|sblgnt,dia,char3:600,delta,500,none,seven,sblgnt,40,15,39,0.8897435897435897,0.8353909465020577,0.45,0.55,0.2564102564102564,0.13333333333333333,True

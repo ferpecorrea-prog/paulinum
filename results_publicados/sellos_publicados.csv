@@ -1,0 +1,9 @@
+# Apéndice A.3: sellos SHA-256 del protocolo de cada campaña (código original, perdido). NO coinciden con la reconstrucción.
+campaña,fecha y hora del sello (UTC),contenido,huella SHA-256
+campana_01,2026-09-08 13:51:35,"48 especificaciones, 100 iteraciones; variables; mismo rasero; rolling",4eb0a43658f14fa69391faa47e6c4508d02e327ffdfea2737f033b45fa6d08e2
+campana_02a_nucleos,2026-09-08 16:27:30,núcleo seven / Hauptbriefe / seven_plus (9),b19ff50ab9111abefc142d24b0cb2e7948e8ed6298a75fad2da2f7c719504105
+campana_02b_ediciones,2026-09-08 16:27:30,SBLGNT / Tischendorf / Nestle 1904 (9),d19b0a6acd13a8011d153a7eeba4324586e6fc9ac5b6a971443c8949ef95c19d
+campana_02c_ventana300,2026-09-08 16:27:31,ventana de 300 palabras (6),fb8a0f9247627c2a8fa68b1bd93b0617853931e594184b49a60dfbd23057cfac
+campana_02d_rasgos,2026-09-08 16:27:31,"mfw:100, mfw:500, char4:1000 (6)",4973f2627a9905fb05aa4a2f078ded5d66b823cf2b9531d760409c5682dc059d
+campana_02e_coseno,2026-09-08 16:27:31,distancia coseno (3),0edef83ff6a9406e02fef03b4ed90214bc280d159a48841464a6e2cafb2c2d6b
+campana_03,2026-09-09 06:31:51,"16 especificaciones, 300 iteraciones; corpus ampliado; lemas; máscara de reutilización",33e7b61b10d63ec486a35bbee8148fe0835918d8c6e1ec6a41e855855505b625

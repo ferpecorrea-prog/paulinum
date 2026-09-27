@@ -1,0 +1,14 @@
+id,addressee_type,captivity,polemic_level,n_cosenders,liturgical_register,church_order,group,autograph,tokens_note
+Rom,comunidad,0,2,0,1,0,nucleo,0,Tercio como escriba (16:22)
+1Cor,comunidad,0,2,1,1,1,nucleo,1,co-remitente Sóstenes; saludo autógrafo 16:21
+2Cor,comunidad,0,3,1,1,0,nucleo,0,co-remitente Timoteo
+Gal,comunidad,0,3,0,0,0,nucleo,1,saludo autógrafo 6:11
+Flp,comunidad,1,1,1,2,0,nucleo,0,co-remitente Timoteo; himno 2:6-11; cautividad
+1Tes,comunidad,0,0,2,1,0,nucleo,0,co-remitentes Silvano y Timoteo; «nosotros» dominante
+Flm,individuo,1,0,1,0,0,nucleo,1,co-remitente Timoteo; autógrafo v. 19; cautividad
+Ef,comunidad,1,0,0,3,0,deuteropaulinas,0,circular; registro litúrgico máximo; cautividad 3:1 4:1
+Col,comunidad,1,1,1,3,0,deuteropaulinas,1,co-remitente Timoteo; autógrafo 4:18; polémica 2:8-23; cautividad
+2Tes,comunidad,0,1,2,1,0,deuteropaulinas,1,co-remitentes Silvano y Timoteo; autógrafo 3:17
+1Tim,individuo,0,2,0,1,1,pastorales,0,mandato a colaborador; polémica contra «algunos»; orden eclesial
+2Tim,individuo,1,1,0,1,0,pastorales,0,testamentaria; cautividad; noticias personales
+Tit,individuo,0,1,0,1,1,pastorales,0,mandato a colaborador; orden eclesial

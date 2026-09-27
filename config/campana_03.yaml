@@ -1,0 +1,75 @@
+# Campaña 03 (ampliación, agenda G.6). Reconstrucción de config/campana_03.yaml (Apéndice A.1/A.3).
+# Sello publicado del original: 33e7b61b10d63ec486a35bbee8148fe0835918d8c6e1ec6a41e855855505b625
+nombre: campana_03
+descripcion: "16 especificaciones, 300 iteraciones; corpus ampliado; lemas; máscara de reutilización"
+version_original: "paulinum 0.1.0 (sello publicado 33e7b61b10d63ec486a35bbee8148fe0835918d8c6e1ec6a41e855855505b625)"
+
+corpus:
+  tier: 3            # 408 documentos, 2.220.730 tokens en el inventario publicado
+  edicion: sblgnt
+  min_tokens: 100
+
+rejilla:
+  rasgos: ["mfw:300", "closed:150", "char3:600", "lemma_dict:300"]
+  distancias: ["minmax", "delta"]
+  ventanas: [500]
+  mascaras: ["none", "reuse"]
+  diacriticos: ["dia"]
+  nucleos: ["seven"]
+  ediciones: ["sblgnt"]
+
+parametros:
+  iters: 300
+  fraccion_rasgos: 0.5
+  impostores: 30
+  semilla: 20260909
+  auc_minima: 0.80
+  max_positivos_por_autor: 10
+  n_pares_negativos: 351
+
+mismo_rasero:
+  rasgos: "mfw:300"
+  distancias: ["minmax", "delta"]
+  ventana: 500
+  sorteos: 20
+  tope_pares_por_autor: 120
+
+variables:
+  rasgos: "mfw:200"
+  distancia: delta
+  ventana: 400
+  permutaciones: 499
+  permutaciones_controles: 299
+
+rolling:
+  rasgos: "mfw:300"
+  distancia: minmax
+  ventana: 400
+  paso: 100
+  iters: 60
+
+bootstrap:
+  remuestreos_autores: 2000
+  replicas_ventanas: 100
+
+segundo_modelo:
+  ventana: 500
+  tope_ventanas_por_documento: 20
+  tope_ventanas_por_autor: 120
+  pliegues: 10
+  rasgos: ["mfw:300", "closed:150", "char3:600", "lemma_dict:300"]
+
+preregistro:
+  fecha: "2026-09-09"
+  rejilla: "4 rasgos × 2 distancias × 1 ventana × 2 máscaras × 1 diacríticos × 1 núcleo × 1 edición = 16 especificaciones, iters 300"
+  regla_auc: "una especificación con AUC < 0,80 en los problemas de respuesta conocida no produce LR"
+  veredicto: "por carta: mediana de log10 LR entre las especificaciones válidas, con Q1-Q3 y mín-máx; escala verbal ENFSI; se informa junto al veredicto de la campaña 01, sin sustituirlo"
+  mismo_rasero: "ninguna carta se declara anómala si su percentil intra-autor es <= 90; el percentil se acompaña de su IC 95 % por bootstrap de autores y de ventanas (scripts/bootstrap_percentil.py) y del leave-one-author-out; si el IC cruza 90 se dice 'indeterminado', no 'anómalo'"
+  carta_por_carta: "1 Tim, 2 Tim, Tit, Ef, Col y 2 Tes se valoran una a una; hermanas excluidas como candidatas (SISTERS); la máscara reuse se informa como especificación aparte y se compara con la sin máscara: si el signo de la LR cambia al enmascarar, se informa como dependencia de los pasajes paralelos"
+  lematizacion: "lemma_dict aplica el MISMO lexicón a todos los documentos (forma → lema más frecuente en MorphGNT+PROIEL+Diorisis; forma desconocida → forma sin diacríticos); su cobertura por documento se informa; separa léxico (lemma_dict) de morfología (char3, closed) en las Pastorales: se dirá que la señal es 'léxica' si lemma_dict discrimina y closed no, 'morfológica' en el caso inverso"
+  calibracion_secundaria: "LR con negativos cristianos (tradition == cristiano, ahora con Justino, Taciano, Atenágoras, Teófilo, Clemente de Alejandría, Orígenes, Acta Thomae, Passio Perpetuae además de nt/af y pseudoepígrafos) y, como tercera lectura, con cristianos + judeo-helenísticos (Filón, Josefo, Test. Abr., Vit. Proph., Enoc)"
+  desconfundido: "PERMANOVA de destinatario/género/polémica/longitud DENTRO de cada autor de control (scripts/variables_controles.py); el R² situacional de Pablo se lee frente a esa distribución: no se interpreta como anómalo si cae dentro del rango de los controles"
+  segundo_modelo: "SVM lineal calibrado y regresión logística sobre ventanas de 500 tokens, GroupKFold por autor (negativos) y por carta (núcleo); P(Pablo) media por carta; se informa el percentil de cada discutida entre los negativos genuine en validación cruzada y entre las cartas del núcleo en LOO; concordancia o discordancia con el GI se informa; no se elige el modelo que dé 'mejor' resultado"
+  tres_corintios: "3 Cor sigue como control negativo de respuesta conocida (pseudo_pairs); nunca se usa como argumento a favor ni en contra de una carta concreta"
+  resultado_adverso: "si alguna carta del núcleo queda por debajo de 0,5 en LOO en la mayoría de las especificaciones, se informa como heterogeneidad del núcleo; no se cambia el núcleo ni los parámetros dentro de esta campaña; los resultados de la campaña 01 no se retocan"
+  cambios_de_corpus: "Policarpo Fil. pierde los tokens latinos (caps. 10-12.14) que la campaña 01 incluía por error de filtro; se documenta en auditoria_sesion9.md; no se reabre la campaña 01"

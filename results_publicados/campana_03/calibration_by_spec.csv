@@ -1,0 +1,18 @@
+# Apéndice A.4.1, campaña 03 (139 positivos, 730 negativos). ADVERTENCIA: la tabla impresa en el libro está truncada: faltan thr_high, fpr_at_0.5 y fnr_at_0.5; la tercera cifra se interpreta como thr_low (banda de indecisión).
+features,metric,window,mask,auc,c_at_1,thr_low
+mfw:300,minmax,w500,mnone,0.928,0.928,0.400
+mfw:300,minmax,w500,mreuse,0.928,0.930,0.450
+mfw:300,delta,w500,mnone,0.827,0.916,0.650
+mfw:300,delta,w500,mreuse,0.826,0.913,0.650
+closed:150,minmax,w500,mnone,0.927,0.925,0.650
+closed:150,minmax,w500,mreuse,0.926,0.925,0.550
+closed:150,delta,w500,mnone,0.901,0.921,0.550
+closed:150,delta,w500,mreuse,0.901,0.920,0.600
+char3:600,minmax,w500,mnone,0.943,0.937,0.400
+char3:600,minmax,w500,mreuse,0.943,0.937,0.400
+char3:600,delta,w500,mnone,0.933,0.934,0.600
+char3:600,delta,w500,mreuse,0.932,0.934,0.650
+lemma_dict:300,minmax,w500,mnone,0.933,0.931,0.450
+lemma_dict:300,minmax,w500,mreuse,0.932,0.931,0.450
+lemma_dict:300,delta,w500,mnone,0.829,0.914,0.550
+lemma_dict:300,delta,w500,mreuse,0.829,0.914,0.550

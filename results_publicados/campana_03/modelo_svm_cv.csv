@@ -1,0 +1,10 @@
+# Apéndice A.4.4: segundo modelo, validación cruzada por autor
+features,model,n_pos,n_neg,auc_cv_grupo,fpr_cv_05,fnr_cv_05
+mfw:300,svm,45,1447,0.929,0.003,1.000
+mfw:300,logistic,45,1447,0.985,0.017,0.333
+closed:150,svm,45,1447,0.962,0.003,0.867
+closed:150,logistic,45,1447,0.977,0.014,0.267
+char3:600,svm,45,1447,0.885,0.000,1.000
+char3:600,logistic,45,1447,0.995,0.009,0.178
+lemma_dict:300,svm,45,1447,0.951,0.001,1.000
+lemma_dict:300,logistic,45,1447,0.995,0.011,0.111

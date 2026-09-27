@@ -1,0 +1,60 @@
+# Campaña 01 (principal). Reconstrucción de config/default.yaml a partir del Apéndice A.1/A.3.
+# El bloque `preregistro` reproduce literalmente el texto publicado (8 de septiembre de 2026).
+nombre: campana_01
+descripcion: "48 especificaciones, 100 iteraciones; variables no autorales; mismo rasero; rolling"
+version_original: "paulinum 0.1.0 (sello publicado 4eb0a43658f14fa69391faa47e6c4508d02e327ffdfea2737f033b45fa6d08e2)"
+
+corpus:
+  tier: 2            # NT + Padres Apostólicos + 3 Cor + controles de la campaña 01 (217 documentos)
+  edicion: sblgnt
+  min_tokens: 100
+
+rejilla:
+  rasgos: ["mfw:300", "closed:150", "char3:600"]
+  distancias: ["minmax", "delta"]
+  ventanas: [500, null]                    # 500 palabras / documento entero
+  mascaras: ["none", "formulae+preformed+otq"]
+  diacriticos: ["dia", "nodia"]
+  nucleos: ["seven"]
+  ediciones: ["sblgnt"]
+
+parametros:
+  iters: 100
+  fraccion_rasgos: 0.5
+  impostores: 30
+  semilla: 20260908
+  auc_minima: 0.80
+  max_positivos_por_autor: 6
+  n_pares_negativos: 150
+
+mismo_rasero:
+  rasgos: "mfw:300"
+  distancias: ["minmax", "delta"]
+  ventana: 500
+  sorteos: 20
+  tope_pares_por_autor: 120
+
+variables:
+  rasgos: "mfw:200"
+  distancia: delta
+  ventana: 400
+  permutaciones: 499
+
+rolling:
+  rasgos: "mfw:300"
+  distancia: minmax
+  ventana: 400
+  paso: 100
+  iters: 60
+
+preregistro:
+  fecha: "2026-09-08"
+  rejilla: "3 rasgos × 2 distancias × 2 ventanas × 2 máscaras × 2 diacríticos × 1 núcleo × 1 edición = 48 especificaciones, iters 100"
+  regla_auc: "una especificación con AUC < 0,80 en los problemas de respuesta conocida no produce LR"
+  veredicto: "por carta: mediana de log10 LR entre las especificaciones válidas, con Q1-Q3 y mín-máx; escala verbal ENFSI"
+  mismo_rasero: "ninguna carta se declara anómala si su percentil intra-autor (envolvente de controles genuine, tope 120 pares/autor) es <= 90"
+  carta_por_carta: "1 Tim, 2 Tim, Tit, Ef, Col y 2 Tes se valoran una a una; la carta hermana (Col para Ef, 1 Tes para 2 Tes) se comenta pero no se suma"
+  calibracion_secundaria: "además de la LR con todos los negativos, se informará la LR recalculada con los negativos restringidos a textos cristianos (grupos nt y af, Ps-Ignacio, Ps-Clementinas, 2 Clem, Bernabé, 3 Cor), porque la calibración rápida mostró que los falsos positivos frente a Pablo se concentran en la epistolografía cristiana (IgnEf 0,825; 2 Pe 0,725; 3 Jn 0,725; 1 Pe 0,70; Sant 0,65) mientras los negativos paganos puntúan ≈ 0"
+  tres_corintios: "3 Cor puntuó 0,65 frente al núcleo en la calibración rápida (no detectado como pseudoepígrafo): se informa como límite del método frente a un imitador del mismo registro, con la reserva ortográfica de data/local/LEEME_3Cor.md; nunca se usa como argumento a favor ni en contra de una carta concreta"
+  resultado_adverso: "si alguna carta del núcleo queda por debajo de 0,5 en leave-one-out en la mayoría de las especificaciones, se informa como heterogeneidad del núcleo; no se cambia el núcleo ni los parámetros dentro de esta campaña"
+  robustez: "las variantes de núcleo (hauptbriefe, seven_plus), edición (tischendorf, nestle1904), ventana 300 y rasgos mfw:100/500, char4:1000, cosine se ejecutan en una campaña separada (campana_02_robustez) con su propio sello y solo como sensibilidad"

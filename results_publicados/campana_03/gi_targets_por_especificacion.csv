@@ -1,0 +1,18 @@
+# Apéndice A.4.2: puntuación GI de las seis discutidas por rasgos, distancia y máscara, campaña 03
+features,metric,mask,Ef,Col,2Tes,1Tim,2Tim,Tit
+char3:600,delta,reuse,0.797,0.750,0.697,0.287,0.323,0.193
+char3:600,delta,sin,0.813,0.750,0.690,0.323,0.347,0.190
+char3:600,minmax,reuse,0.703,0.743,0.690,0.163,0.270,0.103
+char3:600,minmax,sin,0.673,0.727,0.690,0.180,0.263,0.110
+closed:150,delta,reuse,0.493,0.447,0.590,0.350,0.297,0.477
+closed:150,delta,sin,0.487,0.453,0.597,0.360,0.300,0.487
+closed:150,minmax,reuse,0.617,0.543,0.683,0.457,0.443,0.557
+closed:150,minmax,sin,0.610,0.553,0.680,0.437,0.453,0.550
+lemma_dict:300,delta,reuse,0.827,0.790,0.787,0.783,0.783,0.730
+lemma_dict:300,delta,sin,0.823,0.760,0.793,0.763,0.780,0.750
+lemma_dict:300,minmax,reuse,0.633,0.627,0.777,0.753,0.787,0.597
+lemma_dict:300,minmax,sin,0.623,0.637,0.773,0.740,0.770,0.613
+mfw:300,delta,reuse,0.777,0.660,0.743,0.793,0.753,0.867
+mfw:300,delta,sin,0.807,0.653,0.773,0.813,0.740,0.873
+mfw:300,minmax,reuse,0.780,0.697,0.693,0.857,0.783,0.780
+mfw:300,minmax,sin,0.767,0.683,0.703,0.847,0.767,0.790

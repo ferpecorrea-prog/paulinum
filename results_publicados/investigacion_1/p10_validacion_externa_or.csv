@@ -1,0 +1,6 @@
+# Cap. 4 (censos): P10-R diferencia, OR e IC
+Escenario,Diferencia,OR,IC 95 % aprox.
+P10 histórico,-0.085,0.64,"0,46–0,87"
+P10-R,"+0,046",1.35,"0,93–1,96"
+P10-R(sim),"+0,005",1.04,"0,71–1,51"
+P10-R(sym-ext),-0.002,0.99,"0,68–1,44"

@@ -1,0 +1,15 @@
+# Apéndice A.4.2: razones de verosimilitud (log10) por carta, campaña 03, con la mediana cristiana de la campaña 01 (c01_cristiana) y la lectura cristianos+judeo-helenísticos (c03_crist+judeo)
+target,log10lr_principal_mediana,log10lr_cristiana_mediana,log10lr_cristiana_q1,log10lr_cristiana_q3,log10lr_cristiana_min,log10lr_cristiana_max,verbal_cristiana_mediana,c01_cristiana,c03_crist+judeo
+Rom,0.584,0.367,0.305,0.446,0.173,0.528,apoyo débil a H_mismo-autor,0.600,0.459
+1Cor,0.487,0.294,0.202,0.342,0.081,0.466,no discriminante,0.550,0.373
+2Cor,1.030,0.929,0.653,1.045,0.414,1.448,apoyo débil a H_mismo-autor,1.027,0.977
+Gal,0.857,0.655,0.580,0.728,0.436,0.849,apoyo débil a H_mismo-autor,1.392,0.706
+Flp,0.689,0.502,0.386,0.541,0.179,0.662,apoyo débil a H_mismo-autor,0.326,0.615
+1Tes,0.642,0.431,0.316,0.563,0.165,0.775,apoyo débil a H_mismo-autor,0.553,0.524
+Flm,1.094,0.851,0.379,1.035,0.182,1.946,apoyo débil a H_mismo-autor,0.523,0.966
+Ef,0.549,0.364,0.258,0.466,0.080,0.534,apoyo débil a H_mismo-autor,0.066,0.442
+Col,0.493,0.239,0.138,0.308,0.027,0.478,no discriminante,0.065,0.335
+2Tes,0.549,0.303,0.252,0.358,0.205,0.495,apoyo débil a H_mismo-autor,0.081,0.406
+1Tim,0.361,0.127,-0.111,0.419,-0.358,0.826,no discriminante,-0.203,0.226
+2Tim,0.348,0.151,-0.155,0.327,-0.215,0.520,no discriminante,-0.274,0.240
+Tit,0.377,0.167,-0.046,0.286,-0.550,0.794,no discriminante,-0.258,0.264

@@ -1,0 +1,15 @@
+# Anexo I (informe final de la campaña 01): tabla resumen
+carta,tokens,GI mediana (Q1-Q3),log10 LR (Q1-Q3),log10 LR cristiana,escala verbal,percentil intra-autor,principales derrotadores,lectura H1-H5 en una línea
+Rom,7055,"0,87 (0,69-0,99)","0,86 (0,51-1,69)",0.60,débil-moderado a misma mano,59 / 6,diatriba (Rom 1-3) heterogénea; Tercio como escriba,referencia del núcleo (H1-H3)
+1 Cor,6812,"0,82 (0,63-0,99)","0,81 (0,42-1,72)",0.55,débil-moderado,66 / 19,"tramos 7 y 12-14 en 0,42-0,48",referencia (H1-H3)
+2 Cor,4473,"0,89 (0,79-1,00)","1,11 (0,87-1,71)",1.03,moderado,25 / 2,posible compilación; no se detecta,referencia (H1-H3)
+Gal,2226,"0,92 (0,74-1,00)","1,34 (0,78-1,74)",1.39,moderado,52 / 16,—,referencia (H1-H3)
+Flp,1626,"0,76 (0,60-0,94)","0,65 (0,38-1,04)",0.33,débil,32 / 3,la más «débil» del núcleo; himno,referencia (H1-H3)
+1 Tes,1473,"0,84 (0,70-0,96)","0,76 (0,57-1,38)",0.55,débil-moderado,45 / 6,«nosotros» dominante,referencia (H1-H3)
+Flm,334,"0,78 (0,67-0,90)","0,76 (0,46-1,07)",0.52,débil-moderado,53 / 7,334 tokens,referencia (H1-H3)
+Ef,2416,"0,66 (0,59-0,75)","0,39 (0,19-0,52)",0.07,no discriminante,54 / 3,registro litúrgico; dependencia de Col; circular,H1 no excluible; el estilo no separa H1 de H2-H5
+Col,1580,"0,66 (0,55-0,75)","0,37 (0,10-0,53)",0.06,no discriminante,67 / 7,"himno y código; tramo 2,10-3,18 bajo",H1 no excluible; ídem
+2 Tes,820,"0,67 (0,59-0,81)","0,38 (0,28-0,57)",0.08,no discriminante,22 / 3,820 tokens; dependencia de 1 Tes,H1 no excluible; ídem
+1 Tim,1591,"0,52 (0,26-0,73)","0,11 (-0,17-0,49)",-0.20,no discriminante,56 / 17,desacuerdo entre familias; instrucción; destinatario individual,H1 no excluible por estilo; distancia léxico-morfológica
+2 Tim,1235,"0,48 (0,28-0,68)","0,05 (-0,13-0,38)",-0.27,no discriminante,33 / 17,ídem; noticias personales,H1 no excluible por estilo
+Tit,659,"0,48 (0,11-0,63)","0,07 (-0,50-0,29)",-0.26,no discriminante,78 / 72,la más alejada; 659 tokens; gramática de la instrucción,"H1 no excluible por estilo; la carta más distante del núcleo, aún dentro de la envolvente"

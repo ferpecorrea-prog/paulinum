@@ -1,0 +1,10 @@
+# Apéndice A.4.5: PERMANOVA dentro del corpus paulino, ventanas de 400 palabras
+variable,n,k,R2,pseudo_F,p
+addressee_type,76,2,0.037,2.849,0.002
+captivity,76,2,0.042,3.256,0.002
+polemic_level,76,4,0.073,1.898,0.002
+n_cosenders,76,3,0.052,1.993,0.002
+liturgical_register,76,4,0.078,2.034,0.002
+church_order,76,2,0.029,2.221,0.002
+letter,76,13,0.260,1.844,0.002
+group,76,3,0.073,2.890,0.002

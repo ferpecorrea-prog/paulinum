@@ -1,0 +1,12 @@
+Los datos, metadatos, resultados, informes y documentación propios de este repositorio
+(carpetas metadata/, results/, results_publicados/, informes/, docs/, investigacion_1/ salvo los
+archivos .py, y los archivos .md y .yaml de la raíz y de config/) se publican bajo la licencia
+Creative Commons Atribución 4.0 Internacional (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/deed.es
+
+Atribución requerida: Jesús, «paulinum_lab: laboratorio de reproducibilidad de la verificación
+convergente de la autoría del corpus paulino canónico» (reconstrucción, 2026).
+
+Los textos griegos de origen (MorphGNT/SBLGNT, Open Apostolic Fathers, Perseus canonical-greekLit,
+First1KGreek, PROIEL, MACULA, Diorisis) no forman parte de este repositorio y conservan las licencias
+de sus editores, registradas en paulinum/sources.py y en data/provenance.json.

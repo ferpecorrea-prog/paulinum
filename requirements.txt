@@ -1,0 +1,14 @@
+# Versiones de la investigación publicada (Apéndice A.1): «con ellas, dos ordenadores distintos producen
+# resultados idénticos». La reconstrucción se ha probado además con numpy 2.4.4, scipy 1.17.1, pandas 3.0.2,
+# scikit-learn 1.8.0, matplotlib 3.10.9, lxml 6.1.0, pyyaml 6.0.3 (Python 3.11.15); las huellas del
+# selftest pueden diferir entre juegos de versiones.
+numpy==2.2.6
+scipy==1.15.3
+pandas==2.3.3
+scikit-learn==1.7.2
+matplotlib==3.10.9
+lxml==6.1.1
+pyyaml==6.0.3
+requests==2.34.2
+tqdm==4.70.0
+pytest==9.1.1

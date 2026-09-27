@@ -1,0 +1,10 @@
+# descargas de los repositorios de origen (se rehacen con `python -m paulinum fetch`)
+data/raw/
+# corpus construidos y lexicón (se rehacen con `build` y `construir_lexicon.py`); el lexicón puede pesar decenas de MB
+data/cache/
+# entornos y cachés de Python
+.venv/
+__pycache__/
+*.pyc
+# matrices de distancia grandes de ejecuciones completas (se rehacen con `run --stage ledger`)
+results/campana_0*/distance_matrix_*.npy
