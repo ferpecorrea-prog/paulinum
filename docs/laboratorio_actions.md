@@ -40,6 +40,12 @@ no hacía fallar el paso. Corregido en el propio flujo como se describe en los p
 sellado: el flujo no forma parte del sello). La ejecución de `specs` que corría en paralelo se canceló y se relanzó
 con el flujo corregido.
 
+Registros públicos de cada ejecución: además del *log* del ejecutor (legible solo con sesión de GitHub), el flujo deja en
+`results/<run>/` los archivos `lab_corpus_<run_id>.log` (construcción del corpus e inventario) y
+`lab_<etapa>_<run_id>.log` (salida completa de la etapa, con los errores de Python si los hubo), y en
+`results/anotacion/` el registro de instalación del modelo de anotación. Si la construcción del corpus falla, la
+ejecución publica igualmente ese registro y después se marca como fallida.
+
 ## Entradas del flujo
 
 | entrada | valor | ejemplo |

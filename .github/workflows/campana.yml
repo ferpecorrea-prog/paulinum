@@ -141,10 +141,22 @@ jobs:
           PY
           fi
       - name: Corpus
+        id: corpus
+        # Si falla, la ejecución sigue hasta el envío para que el registro del fallo quede publicado en results/
+        # (los registros del ejecutor no son legibles sin sesión de GitHub); el último paso marca la ejecución como fallida.
+        continue-on-error: true
         run: |
-          python -m paulinum build --config "${{ github.event.inputs.config }}"
-          python -m paulinum inventory --config "${{ github.event.inputs.config }}" ${{ github.event.inputs.run != '' && format('--run {0}', github.event.inputs.run) || '' }}
+          RUN="${{ github.event.inputs.run }}"
+          NAME="${RUN:-$(python -c "import yaml,sys; print(yaml.safe_load(open('${{ github.event.inputs.config }}'))['nombre'])")}"
+          mkdir -p "results/$NAME"
+          LOG="results/$NAME/lab_corpus_${{ github.run_id }}.log"
+          {
+            python -m paulinum build --config "${{ github.event.inputs.config }}" && \
+            python -m paulinum inventory --config "${{ github.event.inputs.config }}" ${{ github.event.inputs.run != '' && format('--run {0}', github.event.inputs.run) || '' }}
+          } 2>&1 | tee "$LOG"
+          test "${PIPESTATUS[0]}" -eq 0
       - name: Ejecutar (con tope de tiempo; reanudable por problema)
+        if: steps.corpus.outcome == 'success'
         run: |
           RUN="${{ github.event.inputs.run }}"
           FAM="${{ github.event.inputs.familias }}"
@@ -188,6 +200,9 @@ jobs:
           PY
             } 2>&1 | tee "$LOG"
           }
+          mkdir -p "results/$NAME"
+          exec > >(tee -a "results/$NAME/lab_${STAGE//,/_}_${{ github.run_id }}.log") 2>&1
+          echo "== ejecución ${{ github.run_id }} · $(date -u +%Y-%m-%dT%H:%M:%SZ) · commit $(git rev-parse --short HEAD) · etapa $STAGE · familias ${FAM:--} · solo ${SOLO:--} =="
           case "$STAGE" in
             bootstrap) timeout ${{ github.event.inputs.horas }}h python scripts/bootstrap_percentil.py --run "$NAME" --metric minmax --config "${{ github.event.inputs.config }}" && timeout ${{ github.event.inputs.horas }}h python scripts/bootstrap_percentil.py --run "$NAME" --metric delta --config "${{ github.event.inputs.config }}" || echo "tope de tiempo o error: se envía lo hecho" ;;
             veredicto) python scripts/veredicto.py --run "$NAME" ;;
@@ -203,6 +218,7 @@ jobs:
             *) timeout ${{ github.event.inputs.horas }}h python -m paulinum run $ARGS --stage "$STAGE" || echo "tope de tiempo o error: se envía lo hecho (reanudable)" ;;
           esac
       - name: Enviar resultados al repositorio
+        if: always()
         run: |
           git config user.name "paulinum-lab"
           git config user.email "paulinum-lab@users.noreply.github.com"
@@ -231,3 +247,8 @@ jobs:
           path: results/
           retention-days: 30
           if-no-files-found: ignore
+      - name: Marcar el fallo del corpus (si lo hubo), una vez publicado su registro
+        if: steps.corpus.outcome == 'failure'
+        run: |
+          echo "::error::la construcción del corpus o del inventario falló; véase results/<run>/lab_corpus_${{ github.run_id }}.log"
+          exit 1
