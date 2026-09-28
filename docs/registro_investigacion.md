@@ -218,3 +218,12 @@ que envía, y clave de concurrencia por campaña × etapa × familias × `solo` 
 auxiliar (las envolventes E/B/G no dependen de las especificaciones). Falta `calibration` cuando NCD termine; después,
 el *run* definitivo, cuyas familias correrán en paralelo.
 
+**Envolventes del auxiliar publicadas (04:50 UTC, `8ddee38`; 12 s de cálculo).** E (intra-autor, cartas) 917 pares, B
+(inter-autor) 1.560, G (saltos de género intra-autor) 715. Min-max: E mediana 0,624 (p90 0,681), G 0,631 (p90 0,684), B
+0,690 (p90 0,744); el 88 % de G y el 41 % de B quedan por debajo del p90 de E. Delta: E 0,761 (p90 0,845), G 0,779
+(0,856), B 0,817 (0,909); el 87 % de G y el 65 % de B por debajo del p90 de E. Lectura previa a las dianas (Hm2, § 2.3):
+los saltos de género de un mismo autor se distribuyen como la variación intra-autor y por debajo de la inter-autor en
+las dos medidas, pero B solapa mucho con E (más con Delta): el nivel 2 tendrá poca potencia para declarar «fuera», como
+ya anticipó la prueba Ignacio (D-018). Las tres fusiones concurrentes de esta mañana (`1365734`, `8ddee38` y los NCD en
+curso) se han integrado sin marcadores de conflicto en `bitacora.md` ni `run.log`.
+
