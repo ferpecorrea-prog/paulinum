@@ -1,0 +1,92 @@
+build: 857 documentos, 2794861 tokens (edición sblgnt)
+  → data/cache/corpus_sblgnt.jsonl
+build: 854 documentos, 2789663 tokens (edición tischendorf)
+  → data/cache/corpus_tischendorf.jsonl
+build: 857 documentos, 2795086 tokens (edición nestle1904)
+  → data/cache/corpus_nestle1904.jsonl
+857 documentos, 2794861 tokens → results/paulinum_1_0/sensibilidad/ediciones/inventory.csv
+  Alcifrón                   pagano             genuine       4    19899
+  Arriano                    pagano             genuine       8    92329
+  Arriano                    pagano             other         1      193
+  Atenágoras                 cristiano          disputed      1     8915
+  Atenágoras                 cristiano          genuine       1    11308
+  Basilio de Cesarea         cristiano          disputed     17    10171
+  Basilio de Cesarea         cristiano          genuine     175    98056
+  Clemente Romano            cristiano          duplicate     1     9830
+  Clemente Romano            cristiano          genuine       1     9825
+  Clemente de Alejandría     cristiano          genuine       5    89558
+  Demóstenes/Ps-Demóstenes   pagano             disputed      5     5938
+  Eliano                     pagano             genuine      15    40649
+  Elio Aristides             pagano             genuine       6    60915
+  Epicteto(ap. Arriano)      pagano             genuine       5    79426
+  Evagrio Póntico            cristiano          spurious      1     4100
+  Filón                      judeo-helenistico  disputed      1     9192
+  Filón                      judeo-helenistico  genuine      37   408413
+  Filóstrato                 pagano             genuine       1     7516
+  Galo César                 pagano             other         1      235
+  Gregorio Nacianceno        cristiano          spurious      1      249
+  Gregorio de Nisa           cristiano          spurious      3     5336
+  Hermas                     cristiano          genuine       1    27337
+  Ignacio                    cristiano          duplicate     7     7748
+  Ignacio                    cristiano          genuine       7     7746
+  Isócrates                  pagano             genuine      14    33552
+  Josefo                     judeo-helenistico  genuine      30   472698
+  Juan(anon)                 cristiano          disputed      1     2137
+  Juan(anon)                 cristiano          genuine       1    15438
+  Juan(presb.)               cristiano          other         2      464
+  Juan(vidente)              cristiano          other         1     9833
+  Judas(?)                   cristiano          other         1      459
+  Juliano                    pagano             genuine      36    78688
+  Justino                    cristiano          genuine      42    42777
+  Libanio                    pagano             genuine     176   109871
+  Lucas(anon)                cristiano          genuine       2    37858
+  Luciano                    pagano             genuine       5    31238
+  Marco Aurelio              pagano             genuine      12    29233
+  Marcos(anon)               cristiano          other         1    11286
+  Mateo(anon)                cristiano          other         1    18329
+  Orígenes                   cristiano          genuine      12   209822
+  Pablo                      cristiano          core          7    23999
+  Pablo?                     cristiano          target        7    13236
+  Pedro(?)                   cristiano          other         2     2776
+  Platón/Ps-Platón           pagano             disputed     10    16617
+  Plotino                    pagano             genuine       6   211383
+  Plutarco                   pagano             genuine       7    33834
+  Polemón                    pagano             genuine       1     6032
+  Policarpo                  cristiano          genuine       1     1131
+  Porfirio                   pagano             genuine       6    46564
+  Ps-Anacarsis               pagano             spurious      2     1327
+  Ps-Antíoco                 pagano             spurious      1      476
+  Ps-Artajerjes              pagano             spurious      1      627
+  Ps-Basilio                 cristiano          spurious      3     1099
+  Ps-Bernabé                 cristiano          spurious      1     6712
+  Ps-Bruto                   pagano             spurious      8     3661
+  Ps-Clemente                cristiano          spurious      5     8007
+  Ps-Crates                  pagano             spurious      6     2981
+  Ps-Diógenes                pagano             spurious     13     5677
+  Ps-Eurípides               pagano             spurious      5     1812
+  Ps-Fálaris                 pagano             spurious     35    17592
+  Ps-Ignacio                 cristiano          mixed         7    13046
+  Ps-Ignacio                 cristiano          spurious      6     6230
+  Ps-Juliano                 cristiano          spurious      2      511
+  Ps-Juliano                 pagano             spurious      8     4805
+  Ps-Mitrídates              pagano             spurious      1      327
+  Ps-Nicias                  pagano             spurious      1      735
+  Ps-Pablo                   cristiano          spurious      1      531
+  Ps-Plutarco                pagano             disputed      1     9234
+  Ps-Plutarco                pagano             spurious      2     9557
+  Ps-Quión                   pagano             spurious      6     4730
+  Ps-Socráticos              pagano             spurious     12     7624
+  Ps-Solón                   pagano             spurious      1      439
+  Ps-Sócrates                pagano             spurious      3     2922
+  Ps-Temístocles             pagano             spurious     10     8530
+  Santiago(?)                cristiano          other         1     1739
+  Taciano                    cristiano          genuine       1    10227
+  Teófilo de Antioquía       cristiano          genuine       3    21590
+  Vetio Valente              pagano             genuine       9   101830
+  anon                       cristiano          other         3     7239
+  anon(Acta Thomae)          cristiano          other         1    28850
+  anon(Enoch)                judeo-helenistico  other         1     5698
+  anon(Hermetica)            pagano             other         5     9399
+  anon(Passio Perpetuae)     cristiano          other         1     3964
+  anon(Test. Abrahae)        judeo-helenistico  other         1     6911
+  anon(Vitae Prophetarum)    judeo-helenistico  other         1     4083

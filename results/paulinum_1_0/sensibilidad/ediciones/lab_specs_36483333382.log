@@ -1,0 +1,54 @@
+== ejecución 36483333382 · 2026-09-28T21:10:04Z · commit 79dcbaa · etapa specs · familias - · solo - ==
+run paulinum_1_0/sensibilidad/ediciones (paulinum 1.0.0) · etapas: specs · familias: impostores, dirichlet · workers 4
+  spec impostores 000 dia|mfw:300|minmax|w500|mnone|seven|tischendorf: AUC=0.874 (epist. 0.983) c@1=0.857 (1610 problemas, 267.8 s)
+  spec impostores 001 dia|mfw:300|minmax|w500|mnone|seven|nestle1904: AUC=0.874 (epist. 0.983) c@1=0.859 (1614 problemas, 268.1 s)
+  spec impostores 002 dia|mfw:300|minmax|w500|mformulae+preformed+otq+reuse|seven|tischendorf: AUC=0.875 (epist. 0.983) c@1=0.858 (1610 problemas, 264.7 s)
+  spec impostores 003 dia|mfw:300|minmax|w500|mformulae+preformed+otq+reuse|seven|nestle1904: AUC=0.877 (epist. 0.983) c@1=0.861 (1614 problemas, 265.9 s)
+  spec impostores 004 dia|mfw:300|delta|w500|mnone|seven|tischendorf: AUC=0.806 (epist. 0.973) c@1=0.836 (1610 problemas, 267.8 s)
+  spec impostores 005 dia|mfw:300|delta|w500|mnone|seven|nestle1904: AUC=0.808 (epist. 0.974) c@1=0.836 (1614 problemas, 270.7 s)
+  spec impostores 006 dia|mfw:300|delta|w500|mformulae+preformed+otq+reuse|seven|tischendorf: AUC=0.799 (epist. 0.972) c@1=0.833 (1610 problemas, 269.2 s)
+  spec impostores 007 dia|mfw:300|delta|w500|mformulae+preformed+otq+reuse|seven|nestle1904: AUC=0.801 (epist. 0.974) c@1=0.833 (1614 problemas, 269.6 s)
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+  File "/home/runner/work/paulinum/paulinum/paulinum/pipeline.py", line 195, in _score_one
+    r = _ENGINE.score(pr, rng, return_detail=detail)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/paulinum/paulinum/paulinum/verify.py", line 358, in score
+    cols = np.sort(rng.choice(self.k, size=k_sel, replace=False))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/_generator.pyx", line 866, in numpy.random._generator.Generator.choice
+ValueError: a must be a positive integer unless no samples are taken
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/paulinum/paulinum/paulinum/__main__.py", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/runner/work/paulinum/paulinum/paulinum/cli.py", line 193, in main
+    run_campaign(a.config, a.run, stages, data_dir=a.data, workers=a.workers, families=fams, only=only)
+  File "/home/runner/work/paulinum/paulinum/paulinum/pipeline.py", line 676, in run_campaign
+    outs = stage_specs(ctx, run_dir, _log, workers=workers, families=families, only=only)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/paulinum/paulinum/paulinum/pipeline.py", line 296, in stage_specs
+    outs.append(run_spec(ctx, spec, path, log, workers=workers))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/paulinum/paulinum/paulinum/pipeline.py", line 250, in run_spec
+    for r in pool.imap_unordered(_score_one, todo, chunksize=4):
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/multiprocessing/pool.py", line 451, in <genexpr>
+    return (item for chunk in result for item in chunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/multiprocessing/pool.py", line 873, in next
+    raise value
+ValueError: a must be a positive integer unless no samples are taken
+tope de tiempo o error: se envía lo hecho (reanudable)

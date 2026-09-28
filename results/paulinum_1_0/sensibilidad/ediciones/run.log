@@ -1,0 +1,9 @@
+[21:10:05] run paulinum_1_0/sensibilidad/ediciones (paulinum 1.0.0) · etapas: specs · familias: impostores, dirichlet · workers 4
+[21:14:32]   spec impostores 000 dia|mfw:300|minmax|w500|mnone|seven|tischendorf: AUC=0.874 (epist. 0.983) c@1=0.857 (1610 problemas, 267.8 s)
+[21:19:01]   spec impostores 001 dia|mfw:300|minmax|w500|mnone|seven|nestle1904: AUC=0.874 (epist. 0.983) c@1=0.859 (1614 problemas, 268.1 s)
+[21:23:25]   spec impostores 002 dia|mfw:300|minmax|w500|mformulae+preformed+otq+reuse|seven|tischendorf: AUC=0.875 (epist. 0.983) c@1=0.858 (1610 problemas, 264.7 s)
+[21:27:51]   spec impostores 003 dia|mfw:300|minmax|w500|mformulae+preformed+otq+reuse|seven|nestle1904: AUC=0.877 (epist. 0.983) c@1=0.861 (1614 problemas, 265.9 s)
+[21:32:19]   spec impostores 004 dia|mfw:300|delta|w500|mnone|seven|tischendorf: AUC=0.806 (epist. 0.973) c@1=0.836 (1610 problemas, 267.8 s)
+[21:36:50]   spec impostores 005 dia|mfw:300|delta|w500|mnone|seven|nestle1904: AUC=0.808 (epist. 0.974) c@1=0.836 (1614 problemas, 270.7 s)
+[21:41:19]   spec impostores 006 dia|mfw:300|delta|w500|mformulae+preformed+otq+reuse|seven|tischendorf: AUC=0.799 (epist. 0.972) c@1=0.833 (1610 problemas, 269.2 s)
+[21:45:49]   spec impostores 007 dia|mfw:300|delta|w500|mformulae+preformed+otq+reuse|seven|nestle1904: AUC=0.801 (epist. 0.974) c@1=0.833 (1614 problemas, 269.6 s)
