@@ -227,3 +227,23 @@ las dos medidas, pero B solapa mucho con E (más con Delta): el nivel 2 tendrá 
 ya anticipó la prueba Ignacio (D-018). Las tres fusiones concurrentes de esta mañana (`1365734`, `8ddee38` y los NCD en
 curso) se han integrado sin marcadores de conflicto en `bitacora.md` ni `run.log`.
 
+**Run auxiliar cerrado (13:52 UTC, `f0c4cd2`): calibración sin dianas publicada.** 22 especificaciones (16 impostores +
+4 Dirichlet + 2 NCD; NCD 001 en dos tramos, 884 + 713 problemas). 35.134 filas de respuesta conocida, ninguna de carta.
+**Hm1 (§ 2.3, § 7.2): las tres familias son aptas.** AUC epistolar mediana: impostores 0,980 (mín. 0,964; 16/16 válidas),
+NCD 0,975 (2/2), Dirichlet 0,963 (mín. 0,945; 4/4); AUC general 0,860 / 0,870 / 0,957; AUC cristiana 0,802 / 0,854 / 0,924.
+**Falsación del método (§ 10.1), 3 Corintios frente al núcleo:** impostores lo detecta (puntuación < 0,5) solo en 6 de 16
+especificaciones (las seis de `char3:600` y ninguna de `mfw`, `closed` ni `lemma_dict`: mediana 0,64) → **límite declarado
+de la familia A frente a un imitador del mismo registro**, que acompañará como reserva expresa a todo veredicto que dependa
+de ella; NCD (0,17; 0,19) y Dirichlet (0,00-0,06) lo detectan en todas. Otras pseudoepigrafías (impostores, mediana):
+Ps-Clemente 0,14 (80/80 detectadas), Ps-Plutarco 0,34 (27/32), Ps-Ignacio 0,36 (67/96), Ps-Juliano 0,70 (25/160),
+Ps-Basilio 0,89 (0/48: las cartas «espurias» de Basilio no se distinguen de las genuinas por estilo). Hm3 (`mediated_pairs`)
+y el resto se leen con el veredicto. **Orden de § 3.3 cumplido:** calibración (`f0c4cd2`) y envolventes (`8ddee38`)
+publicadas antes de calcular ninguna fila de diana.
+
+## Sesión 4 — 2026-09-28 — Campaña definitiva `paulinum_1_0`
+
+**13:53 UTC.** Lanzadas en paralelo las cuatro piezas de `specs` del *run* definitivo (`config/paulinum_1_0.yaml`, con
+dianas): impostores (36431844159), Dirichlet (36431855988), NCD `solo=0` (36431867554) y NCD `solo=1` (36431879813); los
+dos NCD necesitarán un segundo tramo. Después: `calibration,ledger,variables,rolling,extras`, `bootstrap`, `svm`,
+bloques de sensibilidad (sin `pos3`, D-024; `testigos` en la réplica local) y `veredicto`.
+
