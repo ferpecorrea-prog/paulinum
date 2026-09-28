@@ -37,8 +37,12 @@ on:
         required: false
         default: "grc_odycy_joint_sm"
 
+# Una ejecución por combinación de campaña × familias × especificaciones: trozos distintos de la misma campaña (p. ej.
+# las dos especificaciones de NCD con solo=0 y solo=1) corren en paralelo; escriben archivos de especificación
+# distintos y las bitácoras se fusionan por unión (.gitattributes). Las etapas de cierre (calibration, ledger, …) se
+# lanzan solas, cuando no queda ninguna ejecución de specs de esa campaña en curso.
 concurrency:
-  group: campana-${{ github.event.inputs.run || github.event.inputs.config }}
+  group: campana-${{ github.event.inputs.run || github.event.inputs.config }}-${{ github.event.inputs.stage }}-${{ github.event.inputs.familias }}-${{ github.event.inputs.solo }}
   cancel-in-progress: false
 
 permissions:

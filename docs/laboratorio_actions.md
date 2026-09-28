@@ -62,8 +62,11 @@ Cada línea es un lanzamiento del flujo; ninguna produce filas de diana hasta el
    (`scripts/ruido_edicion.py`, § 5.4, D-022) → `results/paulinum_1_0/ruido_edicion_{minmax,delta}.csv` y
    `ruido_edicion_resumen.csv`; el ruido con los testigos (Sinaítico, 𝔓46) solo puede calcularse en local, porque
    sus derivados no se publican, y se añade a los mismos archivos desde el portátil (`--ediciones sinaiticus,p46`).
-3. `stage=specs`, `familias=impostores` (≈ 2 h con cuatro procesos); `familias=dirichlet` (≈ 0,5 h);
-   `familias=ncd`, `solo=0` y `solo=1` (≈ 1,5 h cada una tras D-020; reanudables).
+3. `stage=specs`, `familias=impostores` (1 h 35 min medidos con cuatro procesos); `familias=dirichlet` (10 min);
+   `familias=ncd`, `solo=0` y `solo=1` en paralelo (medido: ≈ 18 s por problema con cuatro procesos, ≈ 8 h por
+   especificación, frente a las ≈ 1,5 h estimadas tras D-020; reanudables por problema, así que cada una necesita dos
+   lanzamientos con el tope de 5 h). La clave de concurrencia del flujo incluye etapa, familias y `solo`, de modo que
+   trozos distintos de la misma campaña corren a la vez.
    Con `sin_dianas` **desactivado** en `config/paulinum_1_0.yaml`, estas ejecuciones calculan también las filas de
    diana (`target`, `core_loo`) de cada especificación: son la etapa 8 de § 11 y solo se lanzan cuando las etapas
    1-7 están publicadas. Para cerrar antes la calibración y las envolventes sin dianas se usa un `run` distinto con
