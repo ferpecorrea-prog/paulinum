@@ -204,3 +204,17 @@ creado por el autor; registro `nphcu`, plantilla *Open-Ended Registration*, lice
 resumen con los diez puntos del protocolo y los tres DOI; público sin embargo; el autor pulsó la orden de registrar).
 El autor lo aprobó minutos después: el registro es público (`Public registration`). Anotado en `REGISTRO.md` y `README.md`.
 
+## Sesión 3 (continuación) — 2026-09-28 — Run auxiliar: dirichlet recuperado, NCD en paralelo
+
+**Incidencia de cola (27-IX, 20:18 UTC).** La ejecución 36323226094 (`specs` dirichlet + NCD del auxiliar) agotó el tope de
+5 h y su envío falló por conflicto con los archivos comunes de la campaña (arrancó del *commit* del lanzamiento, anterior
+al de impostores). Dirichlet quedó completo (4 especificaciones; AUC epistolar 0,945-0,988; 2-3 min cada una) y NCD 000
+con 964 de 1.597 problemas (≈ 18 s por problema con cuatro procesos: ≈ 8 h por especificación, muy por encima de las
+≈ 1,5 h estimadas tras D-020). El autor descargó el artefacto `results-36323226094` y los archivos se integraron a mano
+en `main` (`1365734`), con el registro de la ejecución añadido a `run.log`. Correcciones del flujo: avance a `main` al
+inicio de cada ejecución, fusión por unión de bitácoras (`.gitattributes`), *rebase* con prevalencia de la ejecución
+que envía, y clave de concurrencia por campaña × etapa × familias × `solo` (`14dff77`, `311a720`).
+**Lanzamientos (04:45 UTC):** NCD `solo=0` (reanuda desde 964/1597) y NCD `solo=1` en paralelo; `ledger,variables` del
+auxiliar (las envolventes E/B/G no dependen de las especificaciones). Falta `calibration` cuando NCD termine; después,
+el *run* definitivo, cuyas familias correrán en paralelo.
+
