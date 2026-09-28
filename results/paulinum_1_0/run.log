@@ -23,3 +23,4 @@
 [15:36:13]   spec impostores 015 dia|lemma_dict:300|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.769 (epist. 0.966) c@1=0.803 (1614 problemas, 295.9 s)
 [15:36:13] etapa specs: 5787 s
 [13:58:15] run paulinum_1_0 (paulinum 1.0.0) · etapas: specs · familias: ncd · workers 4
+[13:59:40] run paulinum_1_0 (paulinum 1.0.0) · etapas: specs · familias: ncd · workers 4
