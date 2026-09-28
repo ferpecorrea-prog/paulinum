@@ -1,0 +1,7 @@
+== ejecución 36490259784 · 2026-09-28T22:13:23Z · commit e13322a · etapa specs · familias dirichlet · solo 0,1,2,3 ==
+run paulinum_1_0/sensibilidad/ediciones (paulinum 1.0.0) · etapas: specs · familias: dirichlet · workers 4
+  spec dirichlet 000 dirichlet|dia|mfw:300|dirmult|w500|mnone|seven|tischendorf: AUC=0.975 (epist. 0.987) c@1=0.958 (1610 problemas, 162.1 s)
+  spec dirichlet 001 dirichlet|dia|mfw:300|dirmult|w500|mnone|seven|nestle1904: AUC=0.968 (epist. 0.986) c@1=0.957 (1614 problemas, 160.7 s)
+  spec dirichlet 002 dirichlet|dia|mfw:300|dirmult|w500|mformulae+preformed+otq+reuse|seven|tischendorf: AUC=0.978 (epist. 0.988) c@1=0.958 (1610 problemas, 159.1 s)
+  spec dirichlet 003 dirichlet|dia|mfw:300|dirmult|w500|mformulae+preformed+otq+reuse|seven|nestle1904: AUC=0.972 (epist. 0.988) c@1=0.958 (1614 problemas, 159.5 s)
+etapa specs: 642 s
