@@ -107,3 +107,10 @@ enviar, su *rebase* chocó con los archivos comunes de la campaña (`bitacora.md
 1) y la fusión por unión (punto 6). Además, dirichlet + NCD juntos exceden el tope de 5 h: se lanzan por separado
 (`familias=dirichlet`; `familias=ncd` con `solo=0` y `solo=1`).
 
+Tercera incidencia (28-IX-2026, bloque `ediciones`, ejecuciones 36446163412 y 36478158896): `python -m paulinum build
+--config config/sens/paulinum_1_0_ediciones.yaml` construye solo las ediciones de la rejilla (Tischendorf, Nestle 1904)
+y no la edición base `sblgnt`, que el inventario y las etapas leen después (`FileNotFoundError:
+data/cache/corpus_sblgnt.jsonl`, visible en `lab_corpus_36478158896.log` gracias a los registros públicos). El flujo
+construye ahora siempre la configuración principal antes que la del bloque; el comportamiento de `build` queda anotado
+para la versión posterior a la campaña (código sellado).
+

@@ -151,6 +151,9 @@ jobs:
           mkdir -p "results/$NAME"
           LOG="results/$NAME/lab_corpus_${{ github.run_id }}.log"
           {
+            # `build` construye solo las ediciones de la rejilla de la configuración; el inventario y las etapas leen además
+            # la edición base (sblgnt), así que se construye siempre primero con la configuración principal sellada.
+            python -m paulinum build --config config/paulinum_1_0.yaml && \
             python -m paulinum build --config "${{ github.event.inputs.config }}" && \
             python -m paulinum inventory --config "${{ github.event.inputs.config }}" ${{ github.event.inputs.run != '' && format('--run {0}', github.event.inputs.run) || '' }}
           } 2>&1 | tee "$LOG"
