@@ -1,0 +1,19 @@
+== ejecución 36490251215 · 2026-09-28T22:11:16Z · commit e13322a · etapa specs · familias impostores · solo 16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 ==
+run paulinum_1_0/sensibilidad/ediciones (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 4
+  spec impostores 016 dia|char3:600|minmax|w500|mnone|seven|tischendorf: AUC=0.910 (epist. 0.994) c@1=0.878 (1610 problemas, 401.7 s)
+  spec impostores 017 dia|char3:600|minmax|w500|mnone|seven|nestle1904: AUC=0.909 (epist. 0.993) c@1=0.879 (1614 problemas, 406.4 s)
+  spec impostores 018 dia|char3:600|minmax|w500|mformulae+preformed+otq+reuse|seven|tischendorf: AUC=0.910 (epist. 0.994) c@1=0.881 (1610 problemas, 401.0 s)
+  spec impostores 019 dia|char3:600|minmax|w500|mformulae+preformed+otq+reuse|seven|nestle1904: AUC=0.909 (epist. 0.993) c@1=0.879 (1614 problemas, 404.8 s)
+  spec impostores 020 dia|char3:600|delta|w500|mnone|seven|tischendorf: AUC=0.902 (epist. 0.992) c@1=0.868 (1610 problemas, 401.3 s)
+  spec impostores 021 dia|char3:600|delta|w500|mnone|seven|nestle1904: AUC=0.901 (epist. 0.991) c@1=0.866 (1614 problemas, 409.1 s)
+  spec impostores 022 dia|char3:600|delta|w500|mformulae+preformed+otq+reuse|seven|tischendorf: AUC=0.903 (epist. 0.992) c@1=0.871 (1610 problemas, 407.6 s)
+  spec impostores 023 dia|char3:600|delta|w500|mformulae+preformed+otq+reuse|seven|nestle1904: AUC=0.902 (epist. 0.991) c@1=0.873 (1614 problemas, 407.9 s)
+  spec impostores 024 dia|lemma_dict:300|minmax|w500|mnone|seven|tischendorf: AUC=0.877 (epist. 0.984) c@1=0.868 (1610 problemas, 189.0 s)
+  spec impostores 025 dia|lemma_dict:300|minmax|w500|mnone|seven|nestle1904: AUC=0.877 (epist. 0.983) c@1=0.867 (1614 problemas, 190.0 s)
+  spec impostores 026 dia|lemma_dict:300|minmax|w500|mformulae+preformed+otq+reuse|seven|tischendorf: AUC=0.880 (epist. 0.984) c@1=0.868 (1610 problemas, 188.6 s)
+  spec impostores 027 dia|lemma_dict:300|minmax|w500|mformulae+preformed+otq+reuse|seven|nestle1904: AUC=0.880 (epist. 0.984) c@1=0.869 (1614 problemas, 188.6 s)
+  spec impostores 028 dia|lemma_dict:300|delta|w500|mnone|seven|tischendorf: AUC=0.783 (epist. 0.969) c@1=0.805 (1610 problemas, 191.9 s)
+  spec impostores 029 dia|lemma_dict:300|delta|w500|mnone|seven|nestle1904: AUC=0.786 (epist. 0.971) c@1=0.804 (1614 problemas, 192.1 s)
+  spec impostores 030 dia|lemma_dict:300|delta|w500|mformulae+preformed+otq+reuse|seven|tischendorf: AUC=0.791 (epist. 0.972) c@1=0.816 (1610 problemas, 194.2 s)
+  spec impostores 031 dia|lemma_dict:300|delta|w500|mformulae+preformed+otq+reuse|seven|nestle1904: AUC=0.792 (epist. 0.975) c@1=0.818 (1614 problemas, 197.1 s)
+etapa specs: 4772 s
