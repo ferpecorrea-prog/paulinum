@@ -1,0 +1,3 @@
+family,n_specs,auc_epist_mediana,auc_epist_min,apta
+impostores,16,0.9801626311627807,0.9647383155600197,True
+dirichlet,4,0.9685636740538115,0.9493727694313252,True
