@@ -30,3 +30,14 @@
 [19:10:38] run paulinum_1_0 (paulinum 1.0.0) · etapas: specs · familias: ncd · workers 4
 [20:48:51]   spec ncd 000 ncd|dia|ncd|ncd|w500|mnone|seven|sblgnt: AUC=0.870 (epist. 0.968) c@1=0.877 (1614 problemas, 5892.4 s)
 [20:48:51] etapa specs: 5892 s
+[21:08:59] run paulinum_1_0 (paulinum 1.0.0) · etapas: calibration, ledger, variables, rolling, extras · familias: impostores, ncd, dirichlet · workers 4
+[21:09:00] etapa calibration: 1 s
+[21:09:26]   ledger minmax: E 917 pares, B 1560, G 715; 23 s
+[21:09:49]   ledger delta: E 917 pares, B 1560, G 715; 23 s
+[21:09:49] etapa ledger: 49 s
+[21:09:53]   variables: 88 ventanas; PERMANOVA de 8 variables
+[21:09:53] etapa variables: 4 s
+[21:10:17]   rolling: 325 ventanas
+[21:10:17] etapa rolling: 24 s
+[21:10:22]   extras: 8 pares de ruido de edición, 210 contribuciones de rasgos
+[21:10:22] etapa extras: 6 s

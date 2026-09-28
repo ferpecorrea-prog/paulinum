@@ -1,0 +1,9 @@
+Partición de varianza (dbRDA sobre coordenadas principales; ventanas de 400 palabras; 88 ventanas)
+  addressee_type         R2 = 0.0269
+  captivity              R2 = 0.0363
+  polemic_level          R2 = 0.0763
+  n_cosenders            R2 = 0.0481
+  liturgical_register    R2 = 0.0724
+  church_order           R2 = 0.0286
+  group                  R2 = 0.1019
+  _conjunto              R2 = 0.2579

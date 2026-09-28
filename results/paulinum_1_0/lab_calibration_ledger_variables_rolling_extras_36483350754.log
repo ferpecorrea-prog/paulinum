@@ -1,0 +1,12 @@
+== ejecución 36483350754 · 2026-09-28T21:08:58Z · commit 79dcbaa · etapa calibration,ledger,variables,rolling,extras · familias - · solo - ==
+run paulinum_1_0 (paulinum 1.0.0) · etapas: calibration, ledger, variables, rolling, extras · familias: impostores, ncd, dirichlet · workers 4
+etapa calibration: 1 s
+  ledger minmax: E 917 pares, B 1560, G 715; 23 s
+  ledger delta: E 917 pares, B 1560, G 715; 23 s
+etapa ledger: 49 s
+  variables: 88 ventanas; PERMANOVA de 8 variables
+etapa variables: 4 s
+  rolling: 325 ventanas
+etapa rolling: 24 s
+  extras: 8 pares de ruido de edición, 210 contribuciones de rasgos
+etapa extras: 6 s
