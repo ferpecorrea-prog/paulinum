@@ -60,3 +60,10 @@
 [20:29:21]   spec dirichlet 010 dirichlet|dia|closed:150|dirmult|w500|mformulae+preformed+otq+reuse|seven_plus|sblgnt: AUC=0.946 (epist. 0.953) c@1=0.937 (1612 problemas, 95.0 s)
 [20:30:57]   spec dirichlet 011 dirichlet|dia|closed:150|dirmult|w500|mformulae+preformed+otq+reuse|trece|sblgnt: AUC=0.941 (epist. 0.947) c@1=0.935 (1611 problemas, 95.1 s)
 [20:30:57] etapa specs: 16685 s
+[21:08:56] run paulinum_1_0/sensibilidad/nucleos (paulinum 1.0.0) · etapas: calibration, ledger, extras · familias: impostores, dirichlet · workers 4
+[21:08:59] etapa calibration: 3 s
+[21:09:21]   ledger minmax: E 917 pares, B 1560, G 715; 20 s
+[21:09:41]   ledger delta: E 917 pares, B 1560, G 715; 20 s
+[21:09:41] etapa ledger: 42 s
+[21:09:47]   extras: 8 pares de ruido de edición, 165 contribuciones de rasgos
+[21:09:48] etapa extras: 7 s
