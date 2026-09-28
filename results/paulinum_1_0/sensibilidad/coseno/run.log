@@ -1,0 +1,10 @@
+[15:52:53] run paulinum_1_0/sensibilidad/coseno (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 4
+[15:57:16]   spec impostores 000 dia|mfw:300|cosine|w500|mnone|seven|sblgnt: AUC=0.844 (epist. 0.965) c@1=0.842 (1614 problemas, 263.0 s)
+[16:01:38]   spec impostores 001 dia|mfw:300|cosine|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.844 (epist. 0.963) c@1=0.842 (1614 problemas, 261.6 s)
+[16:05:31]   spec impostores 002 dia|closed:150|cosine|w500|mnone|seven|sblgnt: AUC=0.770 (epist. 0.953) c@1=0.824 (1614 problemas, 232.9 s)
+[16:09:25]   spec impostores 003 dia|closed:150|cosine|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.768 (epist. 0.953) c@1=0.831 (1614 problemas, 234.1 s)
+[16:19:58]   spec impostores 004 dia|char3:600|cosine|w500|mnone|seven|sblgnt: AUC=0.851 (epist. 0.975) c@1=0.836 (1614 problemas, 633.2 s)
+[16:30:41]   spec impostores 005 dia|char3:600|cosine|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.852 (epist. 0.979) c@1=0.844 (1614 problemas, 643.1 s)
+[16:35:29]   spec impostores 006 dia|lemma_dict:300|cosine|w500|mnone|seven|sblgnt: AUC=0.831 (epist. 0.963) c@1=0.824 (1614 problemas, 287.6 s)
+[16:40:16]   spec impostores 007 dia|lemma_dict:300|cosine|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.831 (epist. 0.966) c@1=0.833 (1614 problemas, 287.5 s)
+[16:40:16] etapa specs: 2844 s
