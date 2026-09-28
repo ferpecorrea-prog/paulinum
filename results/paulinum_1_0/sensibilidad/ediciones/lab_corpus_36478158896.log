@@ -1,0 +1,17 @@
+build: 854 documentos, 2789663 tokens (edición tischendorf)
+  → data/cache/corpus_tischendorf.jsonl
+build: 857 documentos, 2795086 tokens (edición nestle1904)
+  → data/cache/corpus_nestle1904.jsonl
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/paulinum/paulinum/paulinum/__main__.py", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/runner/work/paulinum/paulinum/paulinum/cli.py", line 169, in main
+    docs = load_corpus(ed, a.data)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/paulinum/paulinum/paulinum/corpus.py", line 318, in load_corpus
+    with open(p, encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/cache/corpus_sblgnt.jsonl'
