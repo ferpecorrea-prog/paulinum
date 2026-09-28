@@ -1,0 +1,9 @@
+family,spec_index,label,dia,features,metric,window,mask,core,edition,iters,n_neg_cristianos,auc_cristiana,auc_cristiana_pos_cristianos,fpr_cristiana_0.5
+impostores,0,dia|mfw:300|cosine|w500|mnone|seven|sblgnt,dia,mfw:300,cosine,500,none,seven,sblgnt,300,508,0.7714468854204612,0.7723246241947029,0.2204724409448819
+impostores,1,dia|mfw:300|cosine|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,mfw:300,cosine,500,formulae+preformed+otq+reuse,seven,sblgnt,300,508,0.7781124779331409,0.7752550107372942,0.17913385826771652
+impostores,2,dia|closed:150|cosine|w500|mnone|seven|sblgnt,dia,closed:150,cosine,500,none,seven,sblgnt,300,508,0.7069591167652086,0.6935397279885469,0.16535433070866143
+impostores,3,dia|closed:150|cosine|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,closed:150,cosine,500,formulae+preformed+otq+reuse,seven,sblgnt,300,508,0.7095335836579146,0.694736488904796,0.15354330708661418
+impostores,4,dia|char3:600|cosine|w500|mnone|seven|sblgnt,dia,char3:600,cosine,500,none,seven,sblgnt,300,508,0.7803787093339312,0.7652894595561919,0.25196850393700787
+impostores,5,dia|char3:600|cosine|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,char3:600,cosine,500,formulae+preformed+otq+reuse,seven,sblgnt,300,508,0.7911214167624064,0.7799413922691482,0.22440944881889763
+impostores,6,dia|lemma_dict:300|cosine|w500|mnone|seven|sblgnt,dia,lemma_dict:300,cosine,500,none,seven,sblgnt,300,508,0.7495656681704822,0.7485795454545454,0.25196850393700787
+impostores,7,dia|lemma_dict:300|cosine|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,lemma_dict:300,cosine,500,formulae+preformed+otq+reuse,seven,sblgnt,300,508,0.7572225180037548,0.7505480493915533,0.23031496062992127

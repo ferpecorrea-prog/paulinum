@@ -8,3 +8,10 @@
 [16:35:29]   spec impostores 006 dia|lemma_dict:300|cosine|w500|mnone|seven|sblgnt: AUC=0.831 (epist. 0.963) c@1=0.824 (1614 problemas, 287.6 s)
 [16:40:16]   spec impostores 007 dia|lemma_dict:300|cosine|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.831 (epist. 0.966) c@1=0.833 (1614 problemas, 287.5 s)
 [16:40:16] etapa specs: 2844 s
+[20:19:18] run paulinum_1_0/sensibilidad/coseno (paulinum 1.0.0) · etapas: calibration, ledger, extras · familias: impostores · workers 4
+[20:19:18] etapa calibration: 0 s
+[20:19:37]   ledger minmax: E 917 pares, B 1560, G 715; 17 s
+[20:19:53]   ledger delta: E 917 pares, B 1560, G 715; 16 s
+[20:19:53] etapa ledger: 35 s
+[20:19:59]   extras: 8 pares de ruido de edición, 210 contribuciones de rasgos
+[20:19:59] etapa extras: 5 s
