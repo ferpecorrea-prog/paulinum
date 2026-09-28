@@ -8,9 +8,11 @@ deja cada ejecución registrada en público: el *log* del ejecutor, la bitácora
 
 ## Qué hace cada ejecución
 
-1. Parte de cero: `actions/checkout` del *commit* de `main` en el momento del lanzamiento (después del Sello 2, el
-   código de ese *commit* es el sellado; la huella se puede recomputar con `python -m paulinum seal`), Python 3.11 y
-   las versiones fijadas en `requirements.txt`.
+1. Parte de cero: `actions/checkout` del *commit* de `main` en el momento del lanzamiento y, acto seguido, **avance al
+   `main` actual** (`git pull`): una ejecución que esperó en cola arranca así con los resultados que otras publicaron
+   entre tanto (reanuda sus parciales en vez de repetirlos y su envío final no choca con ellos). Después del Sello 2
+   el código de cualquiera de esos *commits* es el sellado (la huella se recomputa con `python -m paulinum seal`);
+   Python 3.11 y las versiones fijadas en `requirements.txt`.
 2. Descarga los textos de origen (`python -m paulinum fetch --tier 4 --editions`) y **comprueba sus huellas contra
    `data/provenance.json`** (el archivo versionado): `fetch` reescribe ese archivo con las huellas y la hora de cada
    descarga; el flujo compara cada huella con la registrada en el repositorio, se detiene si alguna difiere, informa
@@ -23,7 +25,9 @@ deja cada ejecución registrada en público: el *log* del ejecutor, la bitácora
 5. Ejecuta la etapa pedida con tope de horas (`timeout`), cuatro procesos (`--workers 4`) y, si se indica, solo
    algunas familias (`--familias`) o algunas especificaciones (`--solo`, para trocear la familia NCD).
 6. Añade `results/` y hace *commit* y *push* a `main` (con reintentos si otra ejecución empujó antes; antes del
-   *rebase* restaura cualquier archivo versionado tocado fuera de `results/`). Si el envío no se logra en cinco
+   *rebase* restaura cualquier archivo versionado tocado fuera de `results/`; `bitacora.md` y `run.log` se fusionan por
+   unión de líneas —`.gitattributes`— y en cualquier otro choque prevalece la ejecución que envía, porque los agregados
+   los recalcula la etapa `calibration`). Si el envío no se logra en cinco
    intentos, la ejecución **falla de forma visible**; en todo caso, `results/` se guarda además como artefacto de la
    ejecución (`results-<run_id>`, 30 días), de modo que ningún cómputo se pierde. Si el tope de tiempo cortó la
    etapa, se envía lo hecho: los archivos `specs/<spec>.json.parcial.jsonl` guardan cada problema terminado y la
@@ -85,3 +89,12 @@ ejecución de una pieza. La prueba `test_determinismo_por_problema` de `tests/te
 - No usa ninguna credencial aparte del `GITHUB_TOKEN` efímero del propio flujo (permiso `contents: write`).
 - No redistribuye textos de terceros ni el lexicón: `data/` no se versiona; solo se publican `results/`.
 - No decide nada: el veredicto lo calcula `scripts/veredicto.py`, sellado en el Sello 2, con las reglas de § 8.
+
+Segunda incidencia (27-IX-2026, 20:18 UTC, ejecución 36323226094, `specs` dirichlet + NCD del *run* auxiliar): la
+ejecución había esperado en cola y arrancó del *commit* del lanzamiento, anterior a los resultados de impostores; al
+enviar, su *rebase* chocó con los archivos comunes de la campaña (`bitacora.md`, `run.log`, `config_used.json`,
+`inventory.csv`) y falló de forma visible, como estaba previsto; los resultados quedaron en el artefacto
+`results-36323226094` (no alcanzable desde los entornos de la sesión). Corregido con el avance a `main` al inicio (punto
+1) y la fusión por unión (punto 6). Además, dirichlet + NCD juntos exceden el tope de 5 h: se lanzan por separado
+(`familias=dirichlet`; `familias=ncd` con `solo=0` y `solo=1`).
+

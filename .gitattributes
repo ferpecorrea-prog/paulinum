@@ -1,0 +1,4 @@
+# Bitácoras y registros de ejecución del laboratorio (results/<run>/): dos ejecuciones concurrentes de la misma campaña
+# añaden líneas al mismo archivo; se fusionan por unión de líneas en vez de marcar conflicto.
+results/**/bitacora.md merge=union
+results/**/run.log merge=union

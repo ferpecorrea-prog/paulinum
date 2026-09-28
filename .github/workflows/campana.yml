@@ -52,6 +52,16 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Ponerse al día con main (las ejecuciones en cola parten de los resultados ya publicados)
+        run: |
+          # `workflow_dispatch` fija el commit en el momento del lanzamiento; una ejecución que esperó en cola
+          # arrancaría sin los resultados que otras publicaron entre tanto y su envío final chocaría con ellos.
+          # Se avanza al `main` actual: el código sigue siendo el sellado (la huella se recomputa igual) y los
+          # parciales de otras ejecuciones se reanudan en vez de repetirse.
+          git config user.name "paulinum-lab"
+          git config user.email "paulinum-lab@users.noreply.github.com"
+          git pull --ff-only origin main || git pull --rebase origin main
+          echo "commit de trabajo: $(git rev-parse --short HEAD)"
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -201,7 +211,10 @@ jobs:
           git status --short | head -20
           enviado=0
           for i in 1 2 3 4 5; do
-            if git pull --rebase origin main && git push origin HEAD:main; then enviado=1; break; fi
+            # bitácoras y registros se fusionan por unión (.gitattributes); en cualquier otro choque prevalece esta
+            # ejecución («theirs» en un rebase), porque los agregados los recalcula la etapa de calibración al final
+            if git pull --rebase -X theirs origin main && git push origin HEAD:main; then enviado=1; break; fi
+            git rebase --abort 2>/dev/null || true
             echo "intento $i fallido; se reintenta"
             sleep $((i * 20))
           done
