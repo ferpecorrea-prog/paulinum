@@ -1,0 +1,14 @@
+[15:52:11] run paulinum_1_0/sensibilidad/rasgos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 4
+[15:55:09]   spec impostores 000 dia|mfw:100|minmax|w500|mnone|seven|sblgnt: AUC=0.865 (epist. 0.981) c@1=0.864 (1614 problemas, 177.6 s)
+[15:58:04]   spec impostores 001 dia|mfw:100|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.869 (epist. 0.983) c@1=0.863 (1614 problemas, 175.4 s)
+[16:01:03]   spec impostores 002 dia|mfw:100|delta|w500|mnone|seven|sblgnt: AUC=0.850 (epist. 0.977) c@1=0.849 (1614 problemas, 178.4 s)
+[16:03:59]   spec impostores 003 dia|mfw:100|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.853 (epist. 0.977) c@1=0.853 (1614 problemas, 176.0 s)
+[16:07:20]   spec impostores 004 dia|mfw:500|minmax|w500|mnone|seven|sblgnt: AUC=0.885 (epist. 0.985) c@1=0.866 (1614 problemas, 201.7 s)
+[16:10:44]   spec impostores 005 dia|mfw:500|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.882 (epist. 0.986) c@1=0.869 (1614 problemas, 203.4 s)
+[16:14:09]   spec impostores 006 dia|mfw:500|delta|w500|mnone|seven|sblgnt: AUC=0.785 (epist. 0.972) c@1=0.827 (1614 problemas, 205.3 s)
+[16:17:35]   spec impostores 007 dia|mfw:500|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.760 (epist. 0.971) c@1=0.828 (1614 problemas, 205.9 s)
+[16:23:57]   spec impostores 008 dia|char4:1000|minmax|w500|mnone|seven|sblgnt: AUC=0.909 (epist. 0.993) c@1=0.874 (1614 problemas, 381.7 s)
+[16:30:17]   spec impostores 009 dia|char4:1000|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.908 (epist. 0.993) c@1=0.877 (1614 problemas, 380.2 s)
+[16:36:48]   spec impostores 010 dia|char4:1000|delta|w500|mnone|seven|sblgnt: AUC=0.860 (epist. 0.984) c@1=0.833 (1614 problemas, 391.0 s)
+[16:43:21]   spec impostores 011 dia|char4:1000|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.863 (epist. 0.985) c@1=0.833 (1614 problemas, 393.3 s)
+[16:43:21] etapa specs: 3070 s
