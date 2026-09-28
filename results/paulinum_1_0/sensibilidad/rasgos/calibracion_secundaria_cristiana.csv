@@ -1,0 +1,13 @@
+family,spec_index,label,dia,features,metric,window,mask,core,edition,iters,n_neg_cristianos,auc_cristiana,auc_cristiana_pos_cristianos,fpr_cristiana_0.5
+impostores,0,dia|mfw:100|minmax|w500|mnone|seven|sblgnt,dia,mfw:100,minmax,500,none,seven,sblgnt,300,508,0.816319668226525,0.8263690050107373,0.1377952755905512
+impostores,1,dia|mfw:100|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,mfw:100,minmax,500,formulae+preformed+otq+reuse,seven,sblgnt,300,508,0.8239134698909967,0.8342877594846099,0.14960629921259844
+impostores,2,dia|mfw:100|delta|w500|mnone|seven|sblgnt,dia,mfw:100,delta,500,none,seven,sblgnt,300,508,0.799100512791773,0.8008791159627774,0.1437007874015748
+impostores,3,dia|mfw:100|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,mfw:100,delta,500,formulae+preformed+otq+reuse,seven,sblgnt,300,508,0.8064000896685067,0.8052523264137438,0.14566929133858267
+impostores,4,dia|mfw:500|minmax|w500|mnone|seven|sblgnt,dia,mfw:500,minmax,500,none,seven,sblgnt,300,508,0.8358821139350464,0.8354621510379384,0.1830708661417323
+impostores,5,dia|mfw:500|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,mfw:500,minmax,500,formulae+preformed+otq+reuse,seven,sblgnt,300,508,0.8347402415445401,0.8327442734430923,0.18110236220472442
+impostores,6,dia|mfw:500|delta|w500|mnone|seven|sblgnt,dia,mfw:500,delta,500,none,seven,sblgnt,300,508,0.6938450976546081,0.6716177523264137,0.19291338582677164
+impostores,7,dia|mfw:500|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,mfw:500,delta,500,formulae+preformed+otq+reuse,seven,sblgnt,300,508,0.6752108610978788,0.6606343951324266,0.20275590551181102
+impostores,8,dia|char4:1000|minmax|w500|mnone|seven|sblgnt,dia,char4:1000,minmax,500,none,seven,sblgnt,300,508,0.8851892846134447,0.8726735862562635,0.1515748031496063
+impostores,9,dia|char4:1000|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,char4:1000,minmax,500,formulae+preformed+otq+reuse,seven,sblgnt,300,508,0.8831647378597248,0.8714768253400144,0.1437007874015748
+impostores,10,dia|char4:1000|delta|w500|mnone|seven|sblgnt,dia,char4:1000,delta,500,none,seven,sblgnt,300,508,0.7992826519460868,0.7626163206871869,0.24015748031496062
+impostores,11,dia|char4:1000|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt,dia,char4:1000,delta,500,formulae+preformed+otq+reuse,seven,sblgnt,300,508,0.8009008882786449,0.757527290622763,0.21653543307086615

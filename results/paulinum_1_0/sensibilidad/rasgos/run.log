@@ -12,3 +12,10 @@
 [16:36:48]   spec impostores 010 dia|char4:1000|delta|w500|mnone|seven|sblgnt: AUC=0.860 (epist. 0.984) c@1=0.833 (1614 problemas, 391.0 s)
 [16:43:21]   spec impostores 011 dia|char4:1000|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.863 (epist. 0.985) c@1=0.833 (1614 problemas, 393.3 s)
 [16:43:21] etapa specs: 3070 s
+[20:20:16] run paulinum_1_0/sensibilidad/rasgos (paulinum 1.0.0) · etapas: calibration, ledger, extras · familias: impostores · workers 4
+[20:20:16] etapa calibration: 1 s
+[20:20:41]   ledger minmax: E 917 pares, B 1560, G 715; 22 s
+[20:21:02]   ledger delta: E 917 pares, B 1560, G 715; 21 s
+[20:21:02] etapa ledger: 45 s
+[20:21:09]   extras: 8 pares de ruido de edición, 210 contribuciones de rasgos
+[20:21:09] etapa extras: 7 s
