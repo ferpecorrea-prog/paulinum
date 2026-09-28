@@ -4,3 +4,21 @@
 [14:07:01]   spec dirichlet 002 dirichlet|dia|closed:150|dirmult|w500|mnone|seven|sblgnt: AUC=0.945 (epist. 0.951) c@1=0.938 (1614 problemas, 117.1 s)
 [14:08:59]   spec dirichlet 003 dirichlet|dia|closed:150|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.942 (epist. 0.952) c@1=0.937 (1614 problemas, 117.8 s)
 [14:08:59] etapa specs: 549 s
+[13:59:46] run paulinum_1_0 (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 4
+[14:04:09]   spec impostores 000 dia|mfw:300|minmax|w500|mnone|seven|sblgnt: AUC=0.882 (epist. 0.984) c@1=0.864 (1614 problemas, 263.4 s)
+[14:08:30]   spec impostores 001 dia|mfw:300|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.879 (epist. 0.984) c@1=0.862 (1614 problemas, 261.2 s)
+[14:12:57]   spec impostores 002 dia|mfw:300|delta|w500|mnone|seven|sblgnt: AUC=0.802 (epist. 0.974) c@1=0.827 (1614 problemas, 267.1 s)
+[14:17:25]   spec impostores 003 dia|mfw:300|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.790 (epist. 0.973) c@1=0.826 (1614 problemas, 267.3 s)
+[14:21:17]   spec impostores 004 dia|closed:150|minmax|w500|mnone|seven|sblgnt: AUC=0.842 (epist. 0.978) c@1=0.851 (1614 problemas, 231.9 s)
+[14:25:12]   spec impostores 005 dia|closed:150|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.848 (epist. 0.980) c@1=0.854 (1614 problemas, 235.3 s)
+[14:29:08]   spec impostores 006 dia|closed:150|delta|w500|mnone|seven|sblgnt: AUC=0.804 (epist. 0.971) c@1=0.833 (1614 problemas, 236.0 s)
+[14:33:06]   spec impostores 007 dia|closed:150|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.828 (epist. 0.973) c@1=0.841 (1614 problemas, 237.8 s)
+[14:43:50]   spec impostores 008 dia|char3:600|minmax|w500|mnone|seven|sblgnt: AUC=0.911 (epist. 0.993) c@1=0.882 (1614 problemas, 644.2 s)
+[14:54:45]   spec impostores 009 dia|char3:600|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.912 (epist. 0.994) c@1=0.883 (1614 problemas, 654.8 s)
+[15:05:40]   spec impostores 010 dia|char3:600|delta|w500|mnone|seven|sblgnt: AUC=0.902 (epist. 0.991) c@1=0.867 (1614 problemas, 655.2 s)
+[15:16:39]   spec impostores 011 dia|char3:600|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.904 (epist. 0.992) c@1=0.874 (1614 problemas, 658.5 s)
+[15:21:30]   spec impostores 012 dia|lemma_dict:300|minmax|w500|mnone|seven|sblgnt: AUC=0.877 (epist. 0.985) c@1=0.864 (1614 problemas, 291.1 s)
+[15:26:22]   spec impostores 013 dia|lemma_dict:300|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.880 (epist. 0.985) c@1=0.871 (1614 problemas, 291.7 s)
+[15:31:17]   spec impostores 014 dia|lemma_dict:300|delta|w500|mnone|seven|sblgnt: AUC=0.763 (epist. 0.965) c@1=0.791 (1614 problemas, 295.0 s)
+[15:36:13]   spec impostores 015 dia|lemma_dict:300|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.769 (epist. 0.966) c@1=0.803 (1614 problemas, 295.9 s)
+[15:36:13] etapa specs: 5787 s
