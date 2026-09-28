@@ -1,0 +1,6 @@
+[13:59:50] run paulinum_1_0 (paulinum 1.0.0) · etapas: specs · familias: dirichlet · workers 4
+[14:02:28]   spec dirichlet 000 dirichlet|dia|mfw:300|dirmult|w500|mnone|seven|sblgnt: AUC=0.973 (epist. 0.994) c@1=0.958 (1614 problemas, 158.4 s)
+[14:05:04]   spec dirichlet 001 dirichlet|dia|mfw:300|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.971 (epist. 0.989) c@1=0.958 (1614 problemas, 155.9 s)
+[14:07:01]   spec dirichlet 002 dirichlet|dia|closed:150|dirmult|w500|mnone|seven|sblgnt: AUC=0.945 (epist. 0.951) c@1=0.938 (1614 problemas, 117.1 s)
+[14:08:59]   spec dirichlet 003 dirichlet|dia|closed:150|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.942 (epist. 0.952) c@1=0.937 (1614 problemas, 117.8 s)
+[14:08:59] etapa specs: 549 s
