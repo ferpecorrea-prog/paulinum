@@ -16,3 +16,8 @@
 [15:06:58]   spec impostores 014 dia|lemma_dict:300|delta|w500|mnone|seven|sblgnt: AUC=0.757 (epist. 0.964) c@1=0.789 (1597 problemas, 294.2 s)
 [15:11:50]   spec impostores 015 dia|lemma_dict:300|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.761 (epist. 0.966) c@1=0.802 (1597 problemas, 292.7 s)
 [15:11:50] etapa specs: 5733 s
+[15:17:54] run paulinum_1_0_calibracion (paulinum 1.0.0) · etapas: specs · familias: dirichlet, ncd · workers 4 · SIN DIANAS
+[15:20:32]   spec dirichlet 000 dirichlet|dia|mfw:300|dirmult|w500|mnone|seven|sblgnt: AUC=0.969 (epist. 0.980) c@1=0.957 (1597 problemas, 157.7 s)
+[15:23:06]   spec dirichlet 001 dirichlet|dia|mfw:300|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.973 (epist. 0.988) c@1=0.958 (1597 problemas, 153.5 s)
+[15:25:01]   spec dirichlet 002 dirichlet|dia|closed:150|dirmult|w500|mnone|seven|sblgnt: AUC=0.943 (epist. 0.945) c@1=0.936 (1597 problemas, 115.3 s)
+[15:26:57]   spec dirichlet 003 dirichlet|dia|closed:150|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.944 (epist. 0.947) c@1=0.936 (1597 problemas, 116.0 s)
