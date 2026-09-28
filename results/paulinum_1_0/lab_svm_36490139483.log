@@ -1,0 +1,90 @@
+== ejecución 36490139483 · 2026-09-28T22:11:33Z · commit 3dd808d · etapa svm · familias - · solo - ==
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+  mfw:300         svm       AUC_cv=0.987 FPR=0.001 FNR=0.889 (n+=45, n-=2067)
+  mfw:300         logistic  AUC_cv=0.998 FPR=0.007 FNR=0.067 (n+=45, n-=2067)
+  closed:150      svm       AUC_cv=0.986 FPR=0.001 FNR=0.756 (n+=45, n-=2067)
+  closed:150      logistic  AUC_cv=0.990 FPR=0.013 FNR=0.178 (n+=45, n-=2067)
+  char3:600       svm       AUC_cv=0.992 FPR=0.000 FNR=1.000 (n+=45, n-=2067)
+  char3:600       logistic  AUC_cv=0.999 FPR=0.005 FNR=0.067 (n+=45, n-=2067)
+  lemma_dict:300  svm       AUC_cv=0.987 FPR=0.001 FNR=1.000 (n+=45, n-=2067)
+  lemma_dict:300  logistic  AUC_cv=0.996 FPR=0.009 FNR=0.111 (n+=45, n-=2067)
+  Rom   P(Pablo) 0.491  pct negativos 0.993  pct núcleo 0.083
+  1Cor  P(Pablo) 0.457  pct negativos 0.994  pct núcleo 0.250
+  2Cor  P(Pablo) 0.724  pct negativos 0.999  pct núcleo 0.833
+  Gal   P(Pablo) 0.697  pct negativos 0.998  pct núcleo 0.833
+  Flp   P(Pablo) 0.510  pct negativos 0.997  pct núcleo 0.500
+  1Tes  P(Pablo) 0.666  pct negativos 0.997  pct núcleo 0.333
+  Flm   P(Pablo) 0.346  pct negativos 0.998  pct núcleo 0.833
+  Ef    P(Pablo) 0.500  pct negativos 0.995  pct núcleo 0.286
+  Col   P(Pablo) 0.430  pct negativos 0.993  pct núcleo 0.286
+  2Tes  P(Pablo) 0.125  pct negativos 0.995  pct núcleo 0.429
+  1Tim  P(Pablo) 0.335  pct negativos 0.993  pct núcleo 0.286
+  2Tim  P(Pablo) 0.157  pct negativos 0.988  pct núcleo 0.071
+  Tit   P(Pablo) 0.133  pct negativos 0.990  pct núcleo 0.071
