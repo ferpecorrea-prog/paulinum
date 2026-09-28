@@ -33,3 +33,5 @@
 [10:04:44] run paulinum_1_0_calibracion (paulinum 1.0.0) · etapas: specs · familias: ncd · workers 4 · SIN DIANAS
 [12:56:45]   spec ncd 001 ncd|dia|ncd|ncd|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.872 (epist. 0.975) c@1=0.878 (1597 problemas, 10320.5 s)
 [12:56:45] etapa specs: 10321 s
+[13:52:23] run paulinum_1_0_calibracion (paulinum 1.0.0) · etapas: calibration · familias: impostores, ncd, dirichlet · workers 4 · SIN DIANAS
+[13:52:24] etapa calibration: 1 s

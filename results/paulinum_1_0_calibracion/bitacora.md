@@ -7,3 +7,4 @@
 | 2026-09-28 04:50:20 | python -m paulinum run --config config/paulinum_1_0_calibracion.yaml --run paulinum_1_0_calibracion --stage variables | 0.0 s |  |
 | 2026-09-28 04:52:29 | python -m paulinum run --config config/paulinum_1_0_calibracion.yaml --run paulinum_1_0_calibracion --stage specs | 10,219.2 s |  |
 | 2026-09-28 10:04:44 | python -m paulinum run --config config/paulinum_1_0_calibracion.yaml --run paulinum_1_0_calibracion --stage specs | 10,320.5 s |  |
+| 2026-09-28 13:52:23 | python -m paulinum run --config config/paulinum_1_0_calibracion.yaml --run paulinum_1_0_calibracion --stage calibration | 1.0 s |  |
