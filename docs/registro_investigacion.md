@@ -247,3 +247,13 @@ dianas): impostores (36431844159), Dirichlet (36431855988), NCD `solo=0` (364318
 dos NCD necesitarán un segundo tramo. Después: `calibration,ledger,variables,rolling,extras`, `bootstrap`, `svm`,
 bloques de sensibilidad (sin `pos3`, D-024; `testigos` en la réplica local) y `veredicto`.
 
+**21:02-21:46 UTC.** Especificaciones del definitivo completas (22: NCD 000 y 001 en dos tramos cada una). Lanzados y
+publicados el cierre del definitivo `calibration,ledger,variables,rolling,extras` (36483350754, `ef0bdee`) y el de
+`nucleos` (36483342044, `8d1ede3`), sin errores. Las `specs` del bloque `ediciones` (36483333382, `3dd808d`) se detuvieron
+en la especificación 008 (`closed:150` sobre Tischendorf): el inventario de clase cerrada del código sellado depende de
+las etiquetas MorphGNT y esas ediciones llevan PROIEL y MACULA (inventario vacío, `ValueError` en la primera iteración).
+Comprobado en la réplica: `closed` = 0 formas en Tischendorf y Nestle 1904, 346 en SBLGNT y 308 en los derivados de los
+testigos (que sí llevan MorphGNT). **D-025:** las 8 + 4 especificaciones `closed:150` del bloque quedan sin calcular; el
+resto (impostores 016-031, Dirichlet 000-003) se lanza con `solo`. El bloque `testigos` sigue en la réplica de la nube
+(64 impostores + 16 Dirichlet, dos procesos, ≈ 6 min por especificación; el contenedor pierde los procesos al quedar
+inactivo, así que se mantiene la sesión activa hasta que termine). Lanzados `bootstrap` y `svm` del definitivo (23:07 UTC).
