@@ -27,3 +27,6 @@
 [19:12:33] run paulinum_1_0 (paulinum 1.0.0) · etapas: specs · familias: ncd · workers 4
 [20:23:24]   spec ncd 001 ncd|dia|ncd|ncd|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.872 (epist. 0.966) c@1=0.879 (1614 problemas, 4250.8 s)
 [20:23:24] etapa specs: 4251 s
+[19:10:38] run paulinum_1_0 (paulinum 1.0.0) · etapas: specs · familias: ncd · workers 4
+[20:48:51]   spec ncd 000 ncd|dia|ncd|ncd|w500|mnone|seven|sblgnt: AUC=0.870 (epist. 0.968) c@1=0.877 (1614 problemas, 5892.4 s)
+[20:48:51] etapa specs: 5892 s
