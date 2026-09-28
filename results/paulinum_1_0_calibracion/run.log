@@ -21,3 +21,8 @@
 [15:23:06]   spec dirichlet 001 dirichlet|dia|mfw:300|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.973 (epist. 0.988) c@1=0.958 (1597 problemas, 153.5 s)
 [15:25:01]   spec dirichlet 002 dirichlet|dia|closed:150|dirmult|w500|mnone|seven|sblgnt: AUC=0.943 (epist. 0.945) c@1=0.936 (1597 problemas, 115.3 s)
 [15:26:57]   spec dirichlet 003 dirichlet|dia|closed:150|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt: AUC=0.944 (epist. 0.947) c@1=0.936 (1597 problemas, 116.0 s)
+[04:50:08] run paulinum_1_0_calibracion (paulinum 1.0.0) · etapas: ledger, variables · familias: impostores, ncd, dirichlet · workers 4 · SIN DIANAS
+[04:50:15]   ledger minmax: E 917 pares, B 1560, G 715; 6 s
+[04:50:20]   ledger delta: E 917 pares, B 1560, G 715; 4 s
+[04:50:20] etapa ledger: 12 s
+[04:50:20] etapa variables: 0 s
