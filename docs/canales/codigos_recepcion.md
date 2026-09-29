@@ -72,3 +72,20 @@ Reglas:
 - H5: atestación tardía, asimétrica, atribución vacilante o ausente.
 - Cuando la carta cumple parte de un patrón y parte de otro, el canal «no decide» entre las hipótesis afectadas.
 Los umbrales (150, 200, 50 años) se fijan aquí, antes de codificar, y se aplican igual a las catorce cartas.
+
+## 5. Lectura con el mismo rasero (añadida el 29-IX-2026 tras codificar; véase D-027)
+
+Los umbrales absolutos de § 4, aplicados con la regla conservadora de fechas (extremo tardío de cada horquilla),
+clasifican como «H4» a cinco de las siete cartas del núcleo (solo 1 Corintios y Filipenses tienen atestación de nivel 3
+en Oriente antes de 200, por Policarpo): los testigos orientales tempranos (Ignacio, Policarpo) casi nunca nombran la
+carta que usan, así que el nivel 3 en Oriente llega con Clemente de Alejandría (215) para casi todas. El umbral estaba
+mal calibrado y su resultado se conserva en `recepcion_medidas.csv` (`lectura_umbrales_absolutos_*`) sin retocarlo.
+La lectura que entra en la convergencia es la del **mismo rasero** que § 9 y el índice del Tomo VI exigen («leída
+con el mismo rasero que las indiscutidas»): el rango del núcleo (máximo de `n2_tardia` y de `n3_tardia`, rango de la
+asimetría) fija la referencia, y una carta queda **dentro** si sus primeras atestaciones de nivel 2 y 3 no son más
+tardías que las del núcleo en más de 50 años. Regla: atribución no estable (vacilante o negada) → H1-H3 no compatibles,
+H4 y H5 compatibles; dentro del rango con atribución estable → H1-H4 compatibles (el canal no las separa, porque el
+núcleo muestra el mismo patrón) y H5 no compatible; fuera del rango con atribución estable → H1-H3 debilitadas, H4
+compatible, H5 no decide. La presencia o ausencia en las colecciones antiguas (Marción, 𝔓46, Muratori) se informa
+aparte (`colecciones_antiguas`) y no entra en la regla: Filemón, del núcleo, falta probablemente de 𝔓46, y la ausencia
+de las Pastorales en Marción la lee ya Tertuliano como rechazo, no como inexistencia.

@@ -332,3 +332,23 @@ fijados por canal (recepción: nivel ≥ 2 antes de 150, nivel 3 antes de 200, a
 percentiles 10-90 bajo autenticidad; institucional: s1 / fin_s1 / s2). Acceso comprobado desde el navegador integrado:
 LGPN, papyri.info, PHI y AGRW alcanzables; Biblindex y Trismegistos piden verificación anti-robots, que pasa el autor.
 Zenodo: la *release* `resultados-1.0.0` figura como «Received» en la integración de GitHub (en proceso).
+
+**07:40-08:15 UTC. Canal de recepción y transmisión codificado** (`results/canales/recepcion.csv`, 196 filas: 14 cartas
+× 14 testigos; `recepcion_medidas.csv`; datos y cálculo en `herramientas/recepcion_datos.py` y `recepcion_medidas.py`).
+Verificados por navegador, pasaje a pasaje: Muratori (Metzger), Tertuliano (*Adv. Marc.* V; *De praescr.* 25 y 33;
+*De pud.* 20), Eusebio (HE III 3; III 25; III 38; V 26; VI 14; VI 25), Atanasio (Ep. 39), Ireneo (AH I-V, texto íntegro:
+cita nominal de las trece cartas salvo Filemón, ausente de los cinco libros), NTAF 1905 (1 Clemente, Ignacio, Policarpo:
+clases A-D), Apéndice I de NA28 (papiros 𝔓1-𝔓127, ejemplar del autor). No accesibles: Biblindex (Cloudflare en bucle
+aun con la casilla marcada por el autor) y la Liste en línea del INTF; Clemente de Alejandría y Orígenes se codifican
+por la *Biblia Patristica* impresa (1 y 3) con `juicio=sí` salvo los pasajes verificados en Eusebio. Resultado
+(fechas en extremo tardío): las trece cartas tienen nivel 2 antes de 150 (Tito: 185, Ireneo) y nivel 3 antes de 190 en
+Occidente (Marción 144, salvo las Pastorales: Ireneo 185); en Oriente el nivel 3 llega con Policarpo (1 Cor, Flp: 140) y,
+para el resto, con Clemente de Alejandría (215) u Orígenes (Flm: 250); atribución estable en las trece. Hebreos: uso
+claro en 1 Clemente (140) y en Policarpo, sin nombre; atribución a Pablo en Oriente (Clemente de Alejandría, Orígenes con
+reserva, 𝔓46 la incluye anónima tras Romanos) y negada o desviada en Occidente (Ireneo según Gobar, Tertuliano → Bernabé,
+Roma según Eusebio; ausente de Marción y de Muratori). **D-027:** los umbrales absolutos preregistrados clasifican como
+«H4» a cinco cartas del núcleo (los testigos orientales tempranos no nombran las cartas): se conservan y se añade la
+lectura con el mismo rasero (rango del núcleo + 50 años, estabilidad de la atribución), que es la que entra en la
+convergencia: trece cartas «H1-H4 compatibles, H5 no compatible» (el canal no separa H1-H3 de H4 porque el núcleo muestra
+el mismo patrón; las Pastorales, ausentes de Marción y de 𝔓46 y presentes en Muratori, quedan dentro del rango por
+Ireneo, 185); Hebreos «H1-H3 no compatibles; H4 y H5 compatibles».
