@@ -31,3 +31,6 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.22996786
     description: Sello 2, código congelado de paulinum 1.0 (etiqueta paulinum-1.0.0, versión 1.0.0)
+  - type: doi
+    value: 10.5281/zenodo.23034497
+    description: Sello 3, resultados y veredicto mecánico de la campaña paulinum_1_0 (etiqueta resultados-1.0.0)

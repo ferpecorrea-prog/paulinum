@@ -62,7 +62,7 @@ sblgnt_rec_sinaiticus,p46,sblgnt_rec_p46}.jsonl`.
 |---|---|---|---|---|
 | 1. Protocolo preregistrado | `protocolo-1.0.0` | `9b65c9d8…dbfe4` (34 archivos, sin lexicón) | 10.5281/zenodo.22993122 | 2026-09-27 |
 | 2. Código congelado | `paulinum-1.0.0` (versión 1.0.0) | `cd32dad6…29ef` (50 archivos, con lexicón) | 10.5281/zenodo.22996786 | 2026-09-27 |
-| 3. Resultados | `resultados-1.0.0` | `980b3ab28e85caa7f2bf94dc24b8e6977a191bff7249fb6c21db11407a44c1b3` (765 archivos versionados de `results/`; `SELLO_resultados-1.0.0.json`; `python herramientas/sellar_resultados.py --comprobar …`) | véase `REGISTRO.md` (Zenodo archiva la *release* con retraso) | 2026-09-29 |
+| 3. Resultados | `resultados-1.0.0` | `980b3ab28e85caa7f2bf94dc24b8e6977a191bff7249fb6c21db11407a44c1b3` (765 archivos versionados de `results/`; `SELLO_resultados-1.0.0.json`; `python herramientas/sellar_resultados.py --comprobar …`) | 10.5281/zenodo.23034497 | 2026-09-29 |
 
 DOI de concepto (todas las versiones): 10.5281/zenodo.22993121. Registro en OSF: https://osf.io/nphcu (público,
 remite al Sello 1). Enmiendas registradas: 1-4 (sesiones 1-2) y 5 (run auxiliar sin dianas). Decisiones nuevas del
@@ -143,8 +143,7 @@ Según § 9 del protocolo y `08_informes/indice_propuesto_tomos_IV_V_VI.md`:
 
 ## 7. Cosas pequeñas pendientes
 
-- Anotar el DOI del Sello 3 en `REGISTRO.md`, `README.md` y `CITATION.cff` en cuanto Zenodo lo emita (si esta sesión
-  no llegó a hacerlo).
+- DOI del Sello 3 anotado (10.5281/zenodo.23034497; Zenodo tardó unas dos horas en archivar la *release*).
 - Mover `Correccion_Fondo\paulinum_lab\` a `_to_delete\` y vaciar `nuevo_paulinum\_to_delete\` cuando el autor lo confirme.
 - Defectos del código sellado para 1.1.0: guion de anotación (D-024), `learn_closed_class` solo con MorphGNT (D-025),
   comprobación de cartas breves fuera de la etapa `ledger` (D-026), `build` no construye la edición base cuando se le

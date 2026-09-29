@@ -372,3 +372,6 @@ el libro leerá como lo que es: catálogo homilético y ausencia de prosopograf�
 con una pseudoepigrafía. Hallazgo colateral: 2 Timoteo es, tras Romanos, la carta con más nombres nuevos (12 de 27) y
 todos están documentados en la epigrafía; las incoherencias de cronología con Hechos (Trófimo en Mileto, 2 Tim 4,20) se
 codifican «no comprobable» porque exigen suponer viajes que Hechos no narra.
+**09:25 UTC.** Zenodo archivó la *release* `resultados-1.0.0` (unas dos horas después de publicarla; estado «Received»
+mientras tanto): **DOI del Sello 3: 10.5281/zenodo.23034497**, anotado en `REGISTRO.md`, `README.md`, `CITATION.cff` y
+`docs/ESTADO_DEL_PROYECTO_2026-09-29.md`. Los tres sellos tienen DOI.
