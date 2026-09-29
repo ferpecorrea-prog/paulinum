@@ -3,6 +3,21 @@
 Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). Versionado semántico para el software;
 cada campaña de investigación lleva además su propia etiqueta (`campana-XX-sellado`, `campana-XX-resultados`).
 
+## [canales-1.0.0] — 2026-09-29 — Canales no estilométricos y convergencia
+
+Sin cambio de versión del software (sigue 1.0.0; código sellado intacto) ni de `results/paulinum_1_0` salvo dos
+comprobaciones añadidas fuera del sello. Esta versión archiva en Zenodo los datos citados por el Tomo VI que no están en
+el Sello 3. La huella del Sello 3 (`980b3ab2…c1b3`) se comprueba sobre la etiqueta `resultados-1.0.0`: los archivos añadidos después a `results/` la cambian en `main`, como está previsto.
+
+### Añadido
+- **Canal de recepción** (`results/canales/recepcion*.csv`, D-027), **onomástico** (`onomastica_*.csv`, D-028, D-029),
+  **institucional** (`institucional*.csv`, D-030) y **convergencia § 9.4** (`convergencia.csv`,
+  `convergencia_veredicto.csv`, D-031), con sus libros de códigos (`docs/canales/`) y el registro de consultas.
+- `herramientas/filtro_persona_ediciones.py` y `results/paulinum_1_0/filtro_persona_ediciones.csv` (D-032).
+
+### Corregido
+- Recuento de H4 «debilitada» en D-031 y en el registro de investigación (nueve cartas, no once).
+
 ## [resultados-1.0.0] — 2026-09-29 — Sello 3 (resultados de la campaña `paulinum_1_0`)
 
 Sin cambio de versión del software (sigue 1.0.0; el código sellado no se ha tocado: huella del Sello 2 `cd32dad6…29ef`
