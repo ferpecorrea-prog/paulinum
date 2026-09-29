@@ -1,0 +1,8 @@
+== ejecución 36500436863 · 2026-09-29T00:02:59Z · commit f5505f8 · etapa calibration,ledger,extras · familias - · solo - ==
+run paulinum_1_0/sensibilidad/ediciones (paulinum 1.0.0) · etapas: calibration, ledger, extras · familias: impostores, dirichlet · workers 4
+etapa calibration: 1 s
+  ledger minmax: E 917 pares, B 1560, G 715; 21 s
+  ledger delta: E 917 pares, B 1560, G 715; 20 s
+etapa ledger: 45 s
+  extras: 8 pares de ruido de edición, 210 contribuciones de rasgos
+etapa extras: 7 s

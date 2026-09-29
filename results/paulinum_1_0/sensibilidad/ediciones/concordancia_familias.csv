@@ -1,0 +1,15 @@
+id,kind,signo_impostores,signo_ncd,signo_dirichlet,concordancia,mediana_familias_log10lr_epist
+Rom,core_loo,+,,+,concordante,1.5711301817426249
+1Cor,core_loo,+,,+,concordante,1.2667227494988231
+2Cor,core_loo,+,,+,concordante,1.7637366775182062
+Gal,core_loo,+,,+,concordante,1.734494557943792
+Flp,core_loo,+,,+,concordante,1.4718966255780879
+1Tes,core_loo,+,,+,concordante,1.4853443295576403
+Flm,core_loo,+,,+,concordante,1.396347131184728
+Ef,target,+,,+,concordante,1.0248908373189916
+Col,target,+,,+,concordante,0.6573911063931319
+2Tes,target,+,,+,concordante,0.7165300967815125
+1Tim,target,+,,+,concordante,1.2936834105254427
+2Tim,target,+,,+,concordante,0.9022516924149322
+Tit,target,+,,+,concordante,0.749070457352295
+Heb,target,-,,-,concordante,-0.5337078896625495

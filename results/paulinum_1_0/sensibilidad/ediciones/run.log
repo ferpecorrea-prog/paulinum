@@ -31,3 +31,10 @@
 [23:27:31]   spec impostores 030 dia|lemma_dict:300|delta|w500|mformulae+preformed+otq+reuse|seven|tischendorf: AUC=0.791 (epist. 0.972) c@1=0.816 (1610 problemas, 194.2 s)
 [23:30:48]   spec impostores 031 dia|lemma_dict:300|delta|w500|mformulae+preformed+otq+reuse|seven|nestle1904: AUC=0.792 (epist. 0.975) c@1=0.818 (1614 problemas, 197.1 s)
 [23:30:48] etapa specs: 4772 s
+[00:03:00] run paulinum_1_0/sensibilidad/ediciones (paulinum 1.0.0) · etapas: calibration, ledger, extras · familias: impostores, dirichlet · workers 4
+[00:03:02] etapa calibration: 1 s
+[00:03:26]   ledger minmax: E 917 pares, B 1560, G 715; 21 s
+[00:03:46]   ledger delta: E 917 pares, B 1560, G 715; 20 s
+[00:03:46] etapa ledger: 45 s
+[00:03:54]   extras: 8 pares de ruido de edición, 210 contribuciones de rasgos
+[00:03:54] etapa extras: 7 s
