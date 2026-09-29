@@ -5,8 +5,8 @@ sellar_resultados.py — huella del conjunto de resultados (Sello 3, PROTOCOLO �
 
 Fuera del conjunto sellado del Sello 2 (no está en `scripts/` ni en `paulinum/`), porque el código congelado no
 incluía un sello de resultados. Usa la misma convención que `python -m paulinum seal`: para cada archivo, en orden
-de ruta, `ruta\\n` + SHA-256 binario + `\\n` alimentan una SHA-256 global. Entran todos los archivos de `results/`
-(campaña definitiva, run auxiliar de calibración, anotación), salvo los parciales de reanudación (`*.parcial.jsonl`).
+de ruta, `ruta\\n` + SHA-256 binario + `\\n` alimentan una SHA-256 global. Entran todos los archivos versionados de `results/`
+(campaña definitiva, run auxiliar de calibración, anotación, pruebas), salvo los parciales de reanudación (`*.parcial.jsonl`).
 
 Uso: python herramientas/sellar_resultados.py --etiqueta resultados-1.0.0 [--raiz results] [--salida protocols/paulinum_1_0]
 Comprobación: python herramientas/sellar_resultados.py --comprobar protocols/paulinum_1_0/SELLO_resultados-1.0.0.json
@@ -18,6 +18,7 @@ import datetime as _dt
 import hashlib
 import json
 import os
+import subprocess
 import sys
 
 
@@ -30,13 +31,17 @@ def _sha(path: str) -> str:
 
 
 def listar(raiz: str) -> list[str]:
-    out = []
-    for d, _, files in os.walk(raiz):
-        for f in files:
-            if f.endswith(".parcial.jsonl"):
-                continue
-            out.append(os.path.join(d, f).replace(os.sep, "/"))
-    return sorted(out)
+    """Archivos versionados bajo `raiz` (`git ls-files`), de modo que la huella es la del árbol de la etiqueta y no
+    depende de archivos locales no versionados (`.npy` ignorados, parciales de reanudación); sin git, todos los
+    archivos del disco salvo `*.parcial.jsonl`."""
+    try:
+        out = subprocess.run(["git", "ls-files", "-z", "--", raiz], check=True, capture_output=True).stdout
+        files = [f.decode("utf-8") for f in out.split(b"\0") if f]
+    except (OSError, subprocess.CalledProcessError):
+        files = []
+        for d, _, fs in os.walk(raiz):
+            files += [os.path.join(d, f).replace(os.sep, "/") for f in fs]
+    return sorted(f for f in files if not f.endswith(".parcial.jsonl") and os.path.exists(f))
 
 
 def sellar(raiz: str) -> tuple[str, dict[str, str]]:
@@ -71,7 +76,7 @@ def main() -> int:
     sello = {"etiqueta": a.etiqueta, "raiz": a.raiz, "sello": 3,
              "sealed_utc": _dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
              "n_files": len(detail), "files": detail, "sha256": sha,
-             "nota": ("Sello 3 (resultados): huella de todos los archivos de results/ (sin parciales de reanudación), "
+             "nota": ("Sello 3 (resultados): huella de todos los archivos versionados de results/ (sin parciales de reanudación), "
                       "misma convención que `python -m paulinum seal`; reproducible con "
                       f"`python herramientas/sellar_resultados.py --etiqueta {a.etiqueta}` en la etiqueta de git indicada "
                       "(el campo sealed_utc cambia; la huella no).")}

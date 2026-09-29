@@ -4,7 +4,7 @@
 |---|---|---|---|---|---|
 | 1. Protocolo preregistrado | `protocolo-1.0.0` | `9b65c9d823691887279abb93522a8dbd1479ec7b08fef411dc099bf083edbfe4` (34 archivos, sin lexicón; conservado en `SELLO_protocolo-1.0.0.json`) | https://github.com/ferpecorrea-prog/paulinum/releases/tag/protocolo-1.0.0 | https://doi.org/10.5281/zenodo.22993122 (registro 22993122; DOI de concepto de todas las versiones: https://doi.org/10.5281/zenodo.22993121) | 2026-09-27 |
 | 2. Código congelado | `paulinum-1.0.0` | `cd32dad63855460c77a200606d81b2bd863f9e4d3121926aead66e9a6b0a29ef` (50 archivos, con el lexicón; `SELLO.json` = `SELLO_paulinum-1.0.0.json`) | https://github.com/ferpecorrea-prog/paulinum/releases/tag/paulinum-1.0.0 | https://doi.org/10.5281/zenodo.22996786 (registro 22996786; misma serie que el Sello 1 bajo el DOI de concepto 10.5281/zenodo.22993121) | 2026-09-27 |
-| 3. Resultados | `resultados-1.0.0` | — | — | — | — |
+| 3. Resultados | `resultados-1.0.0` | `980b3ab28e85caa7f2bf94dc24b8e6977a191bff7249fb6c21db11407a44c1b3` (765 archivos versionados de `results/`: campaña definitiva `paulinum_1_0` con veredicto y siete bloques de sensibilidad, run auxiliar `paulinum_1_0_calibracion`, anotación y pruebas; `SELLO_resultados-1.0.0.json`, calculado con `herramientas/sellar_resultados.py`, D-026) | https://github.com/ferpecorrea-prog/paulinum/releases/tag/resultados-1.0.0 | (pendiente de Zenodo) | 2026-09-29 |
 
 Registro en OSF: **https://osf.io/nphcu** (plantilla *Open-Ended Registration*, proyecto https://osf.io/bvq4n; documento registrado: el protocolo del Sello 1 con DOI 10.5281/zenodo.22993122; enviado el 27-IX-2026, 17:47 UTC, aprobado por el autor y **público** desde ese mismo día; texto en `docs/osf_registro_texto.md`).
 
@@ -74,6 +74,8 @@ Formato de cada entrada: fecha · alcance · motivo · afecta a filas de diana y
 Con el repositorio en la etiqueta indicada:
 
 ```bash
+# Sello 3 (etiqueta resultados-1.0.0): huella de results/ (archivos versionados), fuera del código sellado
+python herramientas/sellar_resultados.py --comprobar protocols/paulinum_1_0/SELLO_resultados-1.0.0.json
 # Sello 1 (etiqueta protocolo-1.0.0): sin lexicón
 python -m paulinum seal --config config/paulinum_1_0.yaml --run paulinum_1_0 --protocol protocols/paulinum_1_0 --sin-lexicon --etiqueta protocolo-1.0.0
 # Sello 2 (etiqueta paulinum-1.0.0): con el lexicón uniforme reconstruido desde MorphGNT + PROIEL + Diorisis

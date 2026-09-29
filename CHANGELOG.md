@@ -3,6 +3,35 @@
 Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). Versionado semántico para el software;
 cada campaña de investigación lleva además su propia etiqueta (`campana-XX-sellado`, `campana-XX-resultados`).
 
+## [resultados-1.0.0] — 2026-09-29 — Sello 3 (resultados de la campaña `paulinum_1_0`)
+
+Sin cambio de versión del software (sigue 1.0.0; el código sellado no se ha tocado: huella del Sello 2 `cd32dad6…29ef`
+comprobada). Esta etiqueta congela `results/` (huella `980b3ab2…c1b3`, 765 archivos, `protocols/paulinum_1_0/SELLO_resultados-1.0.0.json`).
+
+### Añadido
+- **Resultados de la campaña `paulinum_1_0`** (`results/paulinum_1_0/`): 22 especificaciones (16 impostores, 2 NCD,
+  4 Dirichlet) con filas de diana; calibraciones (Hm1: las tres familias aptas), envolventes E/B/G, «mismo rasero»,
+  núcleo más próximo, bootstrap de percentiles, segundo modelo (SVM), variables de situación, ventanas deslizantes,
+  ruido de edición con Tischendorf, Nestle 1904, Sinaítico y 𝔓46, y el **veredicto mecánico** (`veredicto.csv`,
+  `veredicto.md`; § 8 del protocolo, `scripts/veredicto.py` sellado).
+- **Run auxiliar `paulinum_1_0_calibracion`** (enmienda 5): calibración y envolventes publicadas antes de calcular
+  ninguna fila de diana (§ 3.3).
+- **Siete bloques de sensibilidad** (`results/paulinum_1_0/sensibilidad/`): `nucleos`, `ventana300`,
+  `documento_entero`, `rasgos`, `coseno`, `nodia`, `ediciones` (28 de 40 especificaciones, D-025) y `testigos`
+  (80 especificaciones, calculadas en la réplica local: los derivados de los testigos no se redistribuyen).
+  `pos3` descartado (D-024).
+- **Validación de la anotación uniforme** (`results/anotacion/`): OdyCy en lugar de greCy (D-023), diagnóstico
+  fuera del conjunto sellado (`diagnostico/`).
+- **Comprobaciones de falsación** (§ 10): 3 Corintios (límite declarado de la familia A), cartas breves de Basilio y
+  Libanio (`falsacion_cartas_breves_*.csv`, D-026), Hm2, Hm3 y § 10.3, documentadas en `docs/registro_investigacion.md`.
+- `herramientas/` (fuera del conjunto sellado): `sellar_resultados.py` y `falsacion_cartas_breves.py` (D-026).
+- Laboratorio de cómputo en GitHub Actions (`.github/workflows/campana.yml`, `docs/laboratorio_actions.md`): registros
+  públicos de cada ejecución en `results/`, reanudación por problema, fusión por unión de bitácoras.
+
+### Registrado
+- Enmienda 5 (`protocols/paulinum_1_0/REGISTRO.md`), decisiones D-023 a D-026 (`docs/decisiones.md`), registro en OSF
+  (osf.io/nphcu), sesiones 3-5 del registro de investigación.
+
 ## [1.0.0] — 2026-09-27 — Sello 2 (`paulinum-1.0.0`, código congelado)
 
 El código de esta versión es el que ejecuta la campaña `paulinum_1_0`; después de este sello no cambia salvo por
