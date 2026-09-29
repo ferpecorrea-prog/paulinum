@@ -1,0 +1,15 @@
+carta,kind,n_nombres,p_nuevos,p_nuevos_pct_autenticidad,p_nuevos_pct_falsificacion,p_nuevos_documentados,p_nuevos_documentados_pct_autenticidad,p_nuevos_documentados_pct_falsificacion,p_incoherencias,p_incoherencias_pct_autenticidad,p_incoherencias_pct_falsificacion,p_famosos,p_famosos_pct_autenticidad,p_famosos_pct_falsificacion,p_de_otras_fuentes,p_de_otras_fuentes_pct_autenticidad,p_de_otras_fuentes_pct_falsificacion,H1_H3,H4,H5,lectura
+Rom,core,50,0.56,0.694,0.837,1.0,0.591,0.643,0.0,0.5,0.496,0.3,0.507,0.467,0.44,0.567,0.415,compatible,no compatible,no compatible,H1-H3 compatible; H4 no compatible; H5 no compatible
+1Cor,core,15,0.267,0.47,0.602,1.0,0.591,0.643,0.0,0.5,0.496,0.133,0.425,0.333,0.733,0.769,0.675,compatible,no decide,no compatible,H1-H3 compatible; H4 no decide; H5 no compatible
+2Cor,core,6,0.0,0.153,0.215,,,,0.0,0.5,0.496,0.667,0.791,0.703,0.833,0.813,0.768,compatible,no decide,no decide,H1-H3 compatible; H4 no decide; H5 no decide
+Gal,core,9,0.0,0.153,0.215,,,,0.0,0.5,0.496,0.333,0.556,0.496,1.0,0.907,0.898,compatible,no decide,no decide,H1-H3 compatible; H4 no decide; H5 no decide
+Flp,core,5,0.8,0.795,0.931,1.0,0.591,0.643,0.0,0.5,0.496,0.2,0.459,0.378,0.2,0.358,0.211,compatible,no compatible,no compatible,H1-H3 compatible; H4 no compatible; H5 no compatible
+1Tes,core,0,,,,,,,,,,,,,,,,no decide,no decide,no decide,"no decide (sin nombres fuera del prescripto; también 1 Tes, del núcleo)"
+Flm,core,6,0.0,0.153,0.215,,,,0.0,0.5,0.496,0.0,0.209,0.15,1.0,0.907,0.898,compatible,no decide,no decide,H1-H3 compatible; H4 no decide; H5 no decide
+Ef,target,1,0.0,0.153,0.215,,,,0.0,0.5,0.496,0.0,0.209,0.15,1.0,0.907,0.898,compatible,no decide,no decide,H1-H3 compatible; H4 no decide; H5 no decide
+Col,target,11,0.182,0.351,0.496,1.0,0.591,0.643,0.0,0.5,0.496,0.0,0.209,0.15,0.818,0.813,0.756,compatible,no decide,no compatible,H1-H3 compatible; H4 no decide; H5 no compatible
+2Tes,target,0,,,,,,,,,,,,,,,,no decide,no decide,no decide,"no decide (sin nombres fuera del prescripto; también 1 Tes, del núcleo)"
+1Tim,target,5,0.0,0.153,0.215,,,,0.0,0.5,0.496,0.6,0.78,0.675,1.0,0.907,0.898,compatible,no decide,no decide,H1-H3 compatible; H4 no decide; H5 no decide
+2Tim,target,27,0.444,0.575,0.764,1.0,0.591,0.643,0.0,0.5,0.496,0.148,0.433,0.341,0.556,0.694,0.52,compatible,no compatible,no compatible,H1-H3 compatible; H4 no compatible; H5 no compatible
+Tit,target,4,0.5,0.627,0.805,1.0,0.591,0.643,0.0,0.5,0.496,0.0,0.209,0.15,0.5,0.631,0.476,compatible,no compatible,no compatible,H1-H3 compatible; H4 no compatible; H5 no compatible
+Heb,target,24,0.0,0.153,0.215,,,,0.0,0.5,0.496,0.958,0.918,0.78,1.0,0.907,0.898,no compatible,no decide,compatible,H1-H3 no compatible; H4 no decide; H5 compatible

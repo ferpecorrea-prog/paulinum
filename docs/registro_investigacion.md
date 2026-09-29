@@ -352,3 +352,23 @@ lectura con el mismo rasero (rango del núcleo + 50 años, estabilidad de la atr
 convergencia: trece cartas «H1-H4 compatibles, H5 no compatible» (el canal no separa H1-H3 de H4 porque el núcleo muestra
 el mismo patrón; las Pastorales, ausentes de Marción y de 𝔓46 y presentes en Muratori, quedan dentro del rango por
 Ireneo, 185); Hebreos «H1-H3 no compatibles; H4 y H5 compatibles».
+
+**08:20-09:20 UTC. Canal onomástico (§ 9.2) codificado** (`results/canales/onomastica_inventario.csv`, 1.590 filas
+nombre × documento en 14 cartas y 12 colecciones de referencia; `onomastica_indices.csv`, 308 documentos;
+`onomastica_lectura.csv`). Extracción de candidatos de las fuentes crudas con `herramientas/onomastica_extraer.py`
+(mayúscula inicial; lema de MorphGNT en el NT; filtro de las mayúsculas de comienzo de frase por el resto del corpus) y
+clasificación manual (`onomastica_datos_paulinas.py`, `onomastica_datos_referencia.py`; Hechos de Pablo y Tecla desde
+James 1924). Consultas externas (D-028): LGPN caído (504), Trismegistos con CAPTCHA, papyri.info descartada por ruido
+(D-029); PHI Greek Inscriptions consultada para 148 patrones (los 54 nombres nuevos de las catorce cartas y muestras
+sorteadas de las colecciones de referencia; registro de consultas 20-171): de los 54 nombres nuevos paulinos, 53 tienen
+al menos una aparición epigráfica (Ἀσύγκριτος y Ἡρῳδίων una; Λωΐς una; 50 con seis o más) y ninguno cero.
+**Lectura por hipótesis** (D-029; `p_nuevos` del núcleo 0-0,8; percentiles sobre 134 documentos auténticos y 123
+pseudoepigráficos con nombres): H1-H3 compatibles en las doce cartas con nombres; H4 no compatible en Rom, Flp, 2 Tim y
+Tit (más de la mitad de sus nombres son nuevos y todos documentados) y «no decide» en 1 Cor, 2 Cor, Gal, Flm, Ef, Col,
+1 Tim; H5 no compatible en Rom, 1 Cor, Flp, Col, 2 Tim y Tit; 1 Tes y 2 Tes sin nombres fuera del prescripto → «no
+decide» (el cero no distingue: 1 Tes es del núcleo); **Hebreos: H1-H3 no compatibles, H5 compatible** (23 de 24
+nombres son personajes bíblicos, percentil 0,92 bajo autenticidad; ninguna prosopografía salvo Timoteo, Heb 13,23), que
+el libro leerá como lo que es: catálogo homilético y ausencia de prosopografía, compatible con una homilía tanto como
+con una pseudoepigrafía. Hallazgo colateral: 2 Timoteo es, tras Romanos, la carta con más nombres nuevos (12 de 27) y
+todos están documentados en la epigrafía; las incoherencias de cronología con Hechos (Trófimo en Mileto, 2 Tim 4,20) se
+codifican «no comprobable» porque exigen suponer viajes que Hechos no narra.

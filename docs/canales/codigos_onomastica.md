@@ -71,3 +71,27 @@ LGPN (lgpn.ox.ac.uk, búsqueda por nombre y región), Trismegistos People (trism
 anti-robots que pasa el autor), papyri.info (búsqueda de texto), PHI Greek Inscriptions (inscriptions.packhum.org,
 búsqueda por región). Se registra el número de portadores y la horquilla de fechas que la base ofrece; si la base no
 permite acotar por fecha, se anota y se codifica con la cifra total marcando `juicio=sí`.
+
+## 6. Concreción fijada antes de consultar (29-IX-2026, D-028)
+
+Consulta (c) para todos los nombres nuevos de las catorce cartas y para una muestra sorteada (semilla 20260929) de
+hasta 15 nombres nuevos por colección de referencia; fuente principal PHI Greek Inscriptions (recuento total y por
+región, sin fecha → `juicio=sí`), papyri.info si PHI da 0. Escala de `c_region_periodo` aplicada al recuento total de
+PHI (o de papyri.info): 0 = 0; 1 = 1-5; 2 = 6-50; 3 = > 50; se anota además el recuento de la región del documento
+cuando PHI la desglosa. Los nombres no muestreados quedan con `c_region_periodo` vacío y no entran en
+`p_nuevos_documentados`.
+
+## 7. Precisiones fijadas tras codificar (29-IX-2026; D-029)
+
+La lectura de § 3 se aplica por hipótesis (compatible / no compatible / no decide), como exige § 9.4, con tres
+precisiones que la codificación del núcleo hizo necesarias y que se declaran aquí: (a) una carta sin nombres fuera del
+prescripto (`n_nombres` = 0) queda «no decide» en las tres hipótesis, porque 1 Tesalonicenses, del núcleo, tampoco los
+lleva: el cero no distingue; (b) H4 se declara «no compatible» cuando la mitad o más de los nombres son nuevos
+(`p_nuevos` ≥ 0,5: no pueden proceder de las cartas seguras ni de Hechos) y «no decide» en los demás casos salvo la
+señal positiva de § 3; (c) H5 se declara «no compatible» cuando la mitad o más de los nombres nuevos consultados están
+documentados en la epigrafía (`p_nuevos_documentados` ≥ 0,5) y no hay incoherencias por encima del percentil 90.
+El remitente y el destinatario nominal no cuentan como nombres del documento (en las colecciones de referencia, tampoco
+el nombre del autor real o supuesto). Percentiles calculados sobre los documentos con al menos un nombre: 134 bajo
+autenticidad, 123 bajo falsificación. papyri.info, prevista como segunda fuente cuando PHI da 0, no se usa: su búsqueda
+por subcadena sin mayúsculas ni acentos devuelve ruido (ἤλεκτρον para «Λέκτρ») que exigiría revisar cada resultado a
+mano; los 17 nombres con 0 apariciones en PHI quedan con `c_region_periodo` = 0 y `juicio` = sí.
