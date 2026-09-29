@@ -375,3 +375,30 @@ codifican «no comprobable» porque exigen suponer viajes que Hechos no narra.
 **09:25 UTC.** Zenodo archivó la *release* `resultados-1.0.0` (unas dos horas después de publicarla; estado «Received»
 mientras tanto): **DOI del Sello 3: 10.5281/zenodo.23034497**, anotado en `REGISTRO.md`, `README.md`, `CITATION.cff` y
 `docs/ESTADO_DEL_PROYECTO_2026-09-29.md`. Los tres sellos tienen DOI.
+
+**09:10-09:50 UTC. Canal institucional (§ 9.3) codificado** (`results/canales/institucional.csv`, 602 apariciones del
+léxico cerrado en las catorce cartas y en Hechos, 1 Clemente, Didajé, Ignacio, Policarpo y Hermas, extraídas con
+`herramientas/institucional_extraer.py` y codificadas una a una en `herramientas/institucional_datos.py` (uso, rasgos,
+juicio, nota); `institucional_resumen.csv` por documento; `institucional_lectura.csv` para las catorce cartas).
+Comparación externa en AGRW (philipharland.com; consultas 172-191): ἐπίσκοπος como cargo de asociación desde ca. 200
+a. C. (Thera, dos ἐπίσκοποι que administran un legado) y en Delos 98-117; πρεσβύτεροι como colegio desde el s. III
+a. C. (Alejandría, Kition) y en Egipto en 46 y 109; κοινὸν τῶν διακόνων en Ambracia (s. I a. C.); προστάτης y
+ἡγούμενος con requisitos, elección anual, obediencia y multas en los reglamentos de Filadelfia (69-58 a. C.) y Tebtynis
+(14-43); doble porción (AGRW 287, 67 a. C.); listas de miembros con edad. Sin paralelo en asociaciones: las viudas y
+los jóvenes como grupo, la imposición de manos, la sucesión en el cargo y el monoepiscopado, que se datan por el texto
+más antiguo del corpus cristiano (Hechos y 1 Clemente → `fin_s1`; Ignacio → `s2`). **Lectura fijada antes de calcular
+(D-030; § 6 del libro de códigos).** Control: la escala reproduce el orden convencional del corpus de comparación
+(Didajé `s1`; Hechos, 1 Clemente, Policarpo y Hermas `fin_s1`; solo Ignacio `s2`, por el monoepiscopado y la jerarquía
+entre cargos). Resultado en las catorce cartas: Rom (Febe διάκονος τῆς ἐκκλησίας) y Flp (ἐπίσκοποι καὶ διάκονοι en
+plural) `s1` → H1-H3 y H4 compatibles, H5 no decide; 1 Tim, 2 Tim, Tit y Heb `fin_s1` de origen cristiano (viudas y
+jóvenes como categoría, imposición de manos; 1 Tim con requisitos, prueba previa, doble honor, disciplina y lista de
+viudas, todos con paralelo en las asociaciones del s. I; **ninguna de las cuatro lleva monoepiscopado ni jerarquía
+entre cargos**: el ἐπίσκοπος de 1 Tim 3,2 y Tit 1,7 es singular genérico junto a διάκονοι y πρεσβύτεροι en plural) →
+H1-H3 «no decide», H4 compatible, H5 «no decide»; las otras ocho cartas no llevan cargo, categoría ni rito del léxico
+(1 Cor 12,28 nombra apóstoles, profetas y maestros, fuera del léxico; 2 Cor 8,19 elige un delegado «a mano alzada»,
+función con elección) → «no decide». Sin las filas `juicio=sí`, Tit vuelve a `s1` (H1-H3 compatibles) y Heb y Rom
+quedan «no decide». Hallazgo colateral: Policarpo escribe «con los presbíteros» y sin ἐπίσκοπος, y queda `fin_s1`
+frente a Ignacio; el libro lo dirá al presentar el límite del canal (una organización puede ser temprana en un lugar
+y tardía en otro). Las cifras del extractor: ἐκκλησία 144, διάκονος 113, οἶκος 85, ἐπίσκοπος 79, πρεσβύτερος 79,
+προϊστάμενος 32 (18 falsos positivos de προστάσσω/προστίθημι, codificados `no_institucional`), χήρα 24, ἡγούμενος 15,
+ἐπίθεσις χειρῶν 13, νεώτερος 12, χειροτονία 6.

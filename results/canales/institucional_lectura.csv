@@ -1,0 +1,15 @@
+carta,kind,n_institucional,n_cargos,n_rasgos,fecha_compatible,origen_fecha,fija_fecha,H1_H3,H4,H5,fecha_compatible_sin_juicio,H1_H3_sin_juicio,H4_sin_juicio,H5_sin_juicio,lectura
+Rom,core,1,1,0,s1,asociaciones,διάκονος 16:1,compatible,compatible,no decide,,no decide,no decide,no decide,H1-H3 compatible; H4 compatible; H5 no decide
+1Cor,core,0,0,0,,,,no decide,no decide,no decide,,no decide,no decide,no decide,H1-H3 no decide; H4 no decide; H5 no decide
+2Cor,core,0,0,0,,,,no decide,no decide,no decide,,no decide,no decide,no decide,H1-H3 no decide; H4 no decide; H5 no decide
+Gal,core,0,0,0,,,,no decide,no decide,no decide,,no decide,no decide,no decide,H1-H3 no decide; H4 no decide; H5 no decide
+Flp,core,2,2,1,s1,asociaciones,διάκονος 1:1;ἐπίσκοπος 1:1,compatible,compatible,no decide,s1,compatible,compatible,no decide,H1-H3 compatible; H4 compatible; H5 no decide
+1Tes,core,0,0,0,,,,no decide,no decide,no decide,,no decide,no decide,no decide,H1-H3 no decide; H4 no decide; H5 no decide
+Flm,core,0,0,0,,,,no decide,no decide,no decide,,no decide,no decide,no decide,H1-H3 no decide; H4 no decide; H5 no decide
+Ef,target,0,0,0,,,,no decide,no decide,no decide,,no decide,no decide,no decide,H1-H3 no decide; H4 no decide; H5 no decide
+Col,target,0,0,0,,,,no decide,no decide,no decide,,no decide,no decide,no decide,H1-H3 no decide; H4 no decide; H5 no decide
+2Tes,target,0,0,0,,,,no decide,no decide,no decide,,no decide,no decide,no decide,H1-H3 no decide; H4 no decide; H5 no decide
+1Tim,target,22,10,6,fin_s1,corpus_cristiano,νεώτερος 5:11;νεώτερος 5:14;χήρα 5:11;χήρα 5:16;χήρα 5:3;χήρα 5:4;χήρα 5:5;χήρα 5:9;ἐπίθεσις χειρῶν 4:14;ἐπίθεσις χειρῶν 5:22,no decide,compatible,no decide,fin_s1,no decide,compatible,no decide,H1-H3 no decide; H4 compatible; H5 no decide
+2Tim,target,1,0,0,fin_s1,corpus_cristiano,ἐπίθεσις χειρῶν 1:6,no decide,compatible,no decide,fin_s1,no decide,compatible,no decide,H1-H3 no decide; H4 compatible; H5 no decide
+Tit,target,3,2,3,fin_s1,corpus_cristiano,νεώτερος 2:6,no decide,compatible,no decide,s1,compatible,compatible,no decide,H1-H3 no decide; H4 compatible; H5 no decide
+Heb,target,1,0,0,fin_s1,corpus_cristiano,ἐπίθεσις χειρῶν 6:2,no decide,compatible,no decide,,no decide,no decide,no decide,H1-H3 no decide; H4 compatible; H5 no decide
