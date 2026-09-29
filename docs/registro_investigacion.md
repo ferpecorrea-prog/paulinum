@@ -275,3 +275,41 @@ derivados de los testigos: impostores AUC epistolar mediana 0,984 (mín. 0,968; 
 comprobado que la huella del Sello 2 sigue siendo `cd32dad6…29ef`, 50 archivos) para la huella del Sello 3 sobre
 `results/`. Con esto están publicados los siete bloques de sensibilidad calculables y todas las etapas del definitivo
 salvo `veredicto`.
+
+## Sesión 5 — 2026-09-29 — Veredicto mecánico y Sello 3
+
+**06:52-07:02 UTC. `stage=veredicto` (36533398340, `51104b3`):** `results/paulinum_1_0/veredicto.{csv,md}`, primera lectura
+de filas de diana de la campaña. Antes de leerlo se comprobó lo que el protocolo manda comprobar sin mirar dianas:
+
+- **Estabilidad Monte Carlo (run auxiliar sin dianas frente al definitivo, semillas por índice distintas, enmienda 5):**
+  22 especificaciones; AUC epistolar, diferencia media +0,001 y máxima 0,015 en valor absoluto; c@1 epistolar, máxima
+  0,006; AUC cristiana, media +0,012 y máxima 0,036. Hm1 igual en los dos: las tres familias aptas (definitivo:
+  impostores mediana 0,982, mín. 0,965, 16/16; NCD 0,967, 2/2; Dirichlet 0,963, mín. 0,945, 4/4).
+- **§ 10.1, 3 Corintios** en el definitivo: impostores lo detecta en 6/16 (las cuatro de `char3:600` y dos de
+  `closed:150`; mediana 0,63; en el auxiliar 6/16, las seis de `char3`) → se mantiene el **límite declarado de la
+  familia A** frente a un imitador del mismo registro; NCD 2/2 (mediana 0,25) y Dirichlet 4/4 (0,02).
+- **§ 10.1, cartas breves de Basilio y Libanio:** D-026 (`herramientas/falsacion_cartas_breves.py`): fuera de su
+  propia envolvente 2,9 % / 2,3 % (Basilio) y 1,2 % / 0,6 % (Libanio) → el criterio del 10 % no se cumple; frente a la
+  E global, Basilio 8,6 % / 6,3 % y Libanio 25,3 % (min-max) / 9,4 % (Delta), cifra que el libro dará como reserva.
+- **Hm2** (`envolventes_*.json`): G queda dentro del p90 de E en el 88 % (min-max) y 87 % (Delta) de los saltos de
+  género, B solo en el 41 % y 65 %; medianas G 0,631 < B 0,690 (min-max) y 0,779 < 0,817 (Delta): Hm2 se sostiene,
+  con más solapamiento B-E en Delta (menor potencia del nivel 2 para declarar «fuera», como se anotó el 28-IX).
+- **Hm3** (`mediated_pairs`): las 25 obras editadas por otro (Arriano/Epicteto, Plotino/Porfirio) se reconocen como
+  del autor y no del editor en el 100 % de las especificaciones de las tres familias (medianas impostores 0,01-0,32,
+  NCD 0,00-0,23, Dirichlet 0,00-0,05): el procedimiento no confunde autor con editor.
+- **§ 10.3, núcleo (`core_loo`):** Flm queda por debajo de 0,5 en las dos especificaciones NCD (0,01) → heterogeneidad
+  del núcleo en la familia B, que se informa; 1 Tes en Dirichlet 2/4 (mediana 0,65, no es mayoría); ninguna carta del
+  núcleo por debajo de 0,5 en la mayoría de las especificaciones de impostores.
+
+**Veredicto (tabla mecánica, sin grado):** nivel 2 «dentro» en las catorce cartas en las dos medidas; nivel 3 «pasa» en
+doce (mejor otro autor: Ignacio en once, Lucas en Gal) e «indeterminado» (IC del margen incluye 0, mejor otro Lucas) en
+2 Tim y Heb; nivel 4 8/8 en trece cartas y 5/8 en Heb (cambian de signo `coseno`, `documento_entero` y `rasgos`).
+Nivel 1: apoyo moderado a mismo autor en seis de las siete del núcleo (todas salvo Flm), en Ef y en 2 Tes; débil en Col y 2 Tim;
+**discordante** (NCD en contra, impostores y Dirichlet a favor) en Flm (núcleo), 1 Tim y Tit; **apoyo débil a otro
+autor** en Heb (impostores +0,13, NCD −0,62, Dirichlet −0,71). Patrones § 8.5: «compatible con H1-H3; no con H5; H4
+improbable» en Rom, 1 Cor, 2 Cor, Gal, Flp, 1 Tes, Ef, Col, 2 Tes; «familias discordantes: compatible con H2-H3; no con
+H5» en Flm, 1 Tim, Tit; «LR no discriminante: compatible con H1-H3; H5 improbable» en 2 Tim; **Hebreos: «dentro del
+rango con LR en contra: discordancia entre niveles; se informa sin decidir»**. Ninguna carta cumple la condición de
+refutación de § 10.2 (fuera del rango del tamaño de un cambio de autor con LR en contra). El libro reproduce la tabla
+y la comenta con las reservas registradas (límite de la familia A ante imitadores del mismo registro, Flm en NCD,
+cartas breves de Libanio frente a E global, solapamiento B-E en Delta, D-025).

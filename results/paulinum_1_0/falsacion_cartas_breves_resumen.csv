@@ -1,0 +1,5 @@
+metrica,autor,n_cartas,n_pares_propios,fuera_propia,pct_fuera_propia,fuera_E_global,pct_fuera_E_global,supera_10_pct_propia,supera_10_pct_E_global
+minmax,Basilio de Cesarea,174,15051,5,0.0287,15,0.0862,False,False
+minmax,Libanio,170,14365,2,0.0118,43,0.2529,False,True
+delta,Basilio de Cesarea,174,15051,4,0.023,11,0.0632,False,False
+delta,Libanio,170,14365,1,0.0059,16,0.0941,False,False
