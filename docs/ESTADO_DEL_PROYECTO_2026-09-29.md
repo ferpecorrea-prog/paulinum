@@ -101,7 +101,7 @@ Delta (menor potencia para declarar «fuera»); `closed:150` no calculado en `ed
 recepción (`results/canales/recepcion*.csv`, D-027), onomástica (`onomastica_*.csv`, D-028, D-029), institucional
 (`institucional*.csv`, D-030, consultas AGRW 172-191) y convergencia § 9.4 (`convergencia.csv`,
 `convergencia_veredicto.csv`, D-031). Resumen: H1-H3 sostenidas en las trece; H5 descartada en las trece; H4
-debilitada en once, descartada en Rom y Flp, abierta en Flm, sostenida en 1 Tim; hipótesis de partida no refutada en
+debilitada en nueve, descartada en Rom y Flp, abierta en Flm, sostenida en 1 Tim; hipótesis de partida no refutada en
 nueve y abierta en Flm, 1 Tim, 2 Tim, Tit; Hebreos H1-H3 descartadas (recepción, onomástica), H4 y H5 sostenidas,
 estilometría sin decidir. Detalle en `docs/canales/codigos_convergencia.md` § 4 y en `docs/registro_investigacion.md`
 (Sesión 6). **Siguiente: montaje de los Tomos IV, V y VI** (punto 3). Esfuerzo: alto, sin cómputo.
@@ -123,6 +123,18 @@ de cuerpo, 96 notas, 99 entradas bibliográficas; sin grados (cada expediente ci
 cifra de la primera investigación; expediente moderno de Hebreos nuevo (Harnack 1900, Fonck 1910, 1 Clem 36 y 41,
 recuentos MorphGNT). El Tomo IV se reentrega como `_v2` con la conclusión literal de Van Nes en § 8.6. **Siguiente:
 Tomo VI** (la investigación, desde `results/paulinum_1_0` y los canales), después títulos y metadatos.
+
+**Bloque 7, tercera entrega (29-IX-2026): Tomo VI montado.** Entregado en
+`Correccion_Fondo\07_finales\Pablo de Tarso 6_TomoVI_la_investigacion_2026-09-29.docx`, con informe en
+`08_informes\informe_montaje_tomo_VI_2026-09-29.md`; fuentes y guiones de los tres tomos en
+`09_recursos\montaje_tomosIV-VI_2026-09-29.zip`. Introducción, cuatro Partes (método; las catorce cartas; recepción,
+onomástica e institucional; convergencia y conclusiones, con el cierre de la obra en § 10.6), apéndice técnico
+(depósitos, corpus, rejilla, tablas A.1-A.9, glosario, archivos) y bibliografía; 29.700 palabras de cuerpo (6.100 en
+tablas), 45 notas, 49 entradas bibliográficas, 27 tablas, ~150 páginas. Solo cifras de `paulinum` 1.0 y de
+`results/canales/`; desviaciones D-024, D-025, D-027-D-031 y enmienda 6 declaradas; SVM sin Hebreos y variables de
+situación sin controles declaradas como tareas. `build_tomo.py` cambia el tratamiento de tablas (anchura completa; 8 pt
+con cinco o más columnas): los Tomos IV y V lo tomarán al regenerarse. **Siguiente: títulos definitivos y metadatos de
+Amazon de los tres tomos** y regeneración de los tres DOCX; después, versión 1.1.0.
 
 Según § 9 del protocolo y `08_informes/indice_propuesto_tomos_IV_V_VI.md`:
 
