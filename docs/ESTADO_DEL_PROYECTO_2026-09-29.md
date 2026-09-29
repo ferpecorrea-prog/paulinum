@@ -95,7 +95,16 @@ especificaciones NCD (heterogeneidad del núcleo en la familia B, § 10.3); cart
 Delta (menor potencia para declarar «fuera»); `closed:150` no calculado en `ediciones` (D-025); 𝔓46 no conserva
 1 Tes (< 100 palabras), 2 Tes, 1-2 Tim, Tit ni Flm (dato del canal de transmisión).
 
-## 5. Bloque 6 (siguiente): canales no estilométricos y montaje del libro. Esfuerzo: alto, sin cómputo pesado
+## 5. Bloque 6: canales no estilométricos y convergencia (HECHO el 29-IX-2026) y montaje del libro (siguiente)
+
+**Hecho (commits `cfd4d42` y siguientes):** enmienda 6 (un solo codificador), libros de códigos en `docs/canales/`,
+recepción (`results/canales/recepcion*.csv`, D-027), onomástica (`onomastica_*.csv`, D-028, D-029), institucional
+(`institucional*.csv`, D-030, consultas AGRW 172-191) y convergencia § 9.4 (`convergencia.csv`,
+`convergencia_veredicto.csv`, D-031). Resumen: H1-H3 sostenidas en las trece; H5 descartada en las trece; H4
+debilitada en once, descartada en Rom y Flp, abierta en Flm, sostenida en 1 Tim; hipótesis de partida no refutada en
+nueve y abierta en Flm, 1 Tim, 2 Tim, Tit; Hebreos H1-H3 descartadas (recepción, onomástica), H4 y H5 sostenidas,
+estilometría sin decidir. Detalle en `docs/canales/codigos_convergencia.md` § 4 y en `docs/registro_investigacion.md`
+(Sesión 6). **Siguiente: montaje de los Tomos IV, V y VI** (punto 3). Esfuerzo: alto, sin cómputo.
 
 Según § 9 del protocolo y `08_informes/indice_propuesto_tomos_IV_V_VI.md`:
 

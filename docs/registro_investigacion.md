@@ -402,3 +402,16 @@ frente a Ignacio; el libro lo dirá al presentar el límite del canal (una organ
 y tardía en otro). Las cifras del extractor: ἐκκλησία 144, διάκονος 113, οἶκος 85, ἐπίσκοπος 79, πρεσβύτερος 79,
 προϊστάμενος 32 (18 falsos positivos de προστάσσω/προστίθημι, codificados `no_institucional`), χήρα 24, ἡγούμενος 15,
 ἐπίθεσις χειρῶν 13, νεώτερος 12, χειροτονία 6.
+
+**10:00-10:20 UTC. Convergencia § 9.4** (`herramientas/convergencia.py` → `results/canales/convergencia.csv`, 56 filas
+carta × canal, y `convergencia_veredicto.csv`; reglas en `docs/canales/codigos_convergencia.md`, D-031). Resultado:
+H1, H2 y H3 **sostenidas en las trece cartas** (estilometría, recepción y onomástica; Flm, 1 Tim y Tit con
+estilometría «no decide» en H1 por familias discordantes); H5 **descartada en las trece** (estilometría y recepción;
+onomástica además en Rom, 1 Cor, Flp, Col, 2 Tim, Tit); H4 debilitada por la estilometría en once, descartada en Rom y
+Flp (onomástica), abierta en Flm y **sostenida en 1 Tim** (recepción e institucional compatibles, ningún canal en
+contra: la estilometría no separa H4 en las cartas con familias discordantes). Hipótesis de partida (§ 10): no
+refutada en nueve cartas; abierta en Flm, 1 Tim y Tit (nivel 1 discordante) y en 2 Tim (nivel 3 indeterminado).
+**Hebreos:** H1-H3 descartadas (recepción: atribución negada en Occidente; onomástica: sin prosopografía), H4 y H5
+sostenidas, estilometría sin decidir: la contradicción entre el nivel 2 (dentro del rango) y los dos canales externos
+es el resultado que el libro debe presentar. Cierre del bloque 6 (canales y convergencia): queda el montaje de los
+Tomos IV-VI.

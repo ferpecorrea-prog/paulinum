@@ -14,11 +14,13 @@ códigos que dependen de apreciación.
 | `codigos_recepcion.md` | lista cerrada de testigos con fecha y edición de referencia; códigos 0-3; atribución; posición; medidas |
 | `codigos_onomastica.md` | reglas del inventario de nombres; códigos (a)-(e); índices; colecciones de referencia y muestras sorteadas |
 | `codigos_institucional.md` | léxico cerrado; corpus de comparación; códigos de datación; lectura |
+| `codigos_convergencia.md` | traducción de cada canal a los tres valores, regla de § 9.4, hipótesis de partida de § 10 y resultado |
 | `registro_consultas.md` | una línea por consulta a una fuente externa (fecha UTC, fuente, URL o referencia, consulta, resultado) |
 | `../../results/canales/recepcion.csv` | codificación: una fila por carta × testigo |
 | `../../results/canales/onomastica_inventario.csv` | una fila por nombre × documento (catorce cartas y colecciones de referencia) |
 | `../../results/canales/institucional.csv` | una fila por término × documento × contexto |
-| `../../results/canales/convergencia.csv` | § 9.4: una fila por carta × canal × hipótesis (compatible / no compatible / no decide) |
+| `../../results/canales/convergencia.csv` | § 9.4: una fila por carta × canal, con H1-H5 (compatible / no compatible / no decide) |
+| `../../results/canales/convergencia_veredicto.csv` | § 9.4: una fila por carta, H1-H5 → sostenida / debilitada / descartada / abierta; hipótesis de partida § 10 |
 
 ## Procedimiento común
 
