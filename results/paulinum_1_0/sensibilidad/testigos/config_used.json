@@ -1,0 +1,117 @@
+{
+ "nombre": "paulinum_1_0/sensibilidad/testigos",
+ "descripcion": "sensibilidad testigos de paulinum 1.0 (PROTOCOLO § 6.2): una dimensión cambiada, el resto igual",
+ "protocolo": "protocols/paulinum_1_0/PROTOCOLO.md",
+ "corpus": {
+  "tier": 4,
+  "edicion": "sblgnt",
+  "min_tokens": 100
+ },
+ "rejilla": {
+  "rasgos": [
+   "mfw:300",
+   "closed:150",
+   "char3:600",
+   "lemma_dict:300"
+  ],
+  "distancias": [
+   "minmax",
+   "delta"
+  ],
+  "ventanas": [
+   500
+  ],
+  "mascaras": [
+   "none",
+   "formulae+preformed+otq+reuse"
+  ],
+  "diacriticos": [
+   "nodia"
+  ],
+  "nucleos": [
+   "seven"
+  ],
+  "ediciones": [
+   "sinaiticus",
+   "sblgnt_rec_sinaiticus",
+   "p46",
+   "sblgnt_rec_p46"
+  ]
+ },
+ "familias": {
+  "impostores": {
+   "activa": true
+  },
+  "ncd": {
+   "activa": true,
+   "compresor": "lzma",
+   "preset": 6,
+   "unidad": "caracteres sin diacríticos",
+   "ventana": 500,
+   "iters": 100
+  },
+  "dirichlet": {
+   "activa": true,
+   "rasgos": [
+    "mfw:300",
+    "closed:150"
+   ],
+   "hiperparametro": "empirico (envolvente)",
+   "ventana": 500
+  }
+ },
+ "parametros": {
+  "iters": 300,
+  "fraccion_rasgos": 0.5,
+  "impostores": 30,
+  "semilla": 20260927,
+  "auc_minima": 0.8,
+  "max_positivos_por_autor": 6,
+  "n_pares_negativos": 400
+ },
+ "mismo_rasero": {
+  "rasgos": "mfw:300",
+  "distancias": [
+   "minmax",
+   "delta"
+  ],
+  "ventana": 500,
+  "sorteos": 20,
+  "tope_pares_por_autor": 120,
+  "bootstrap_autores": 2000,
+  "bootstrap_ventanas": 100,
+  "percentil_intra": 90,
+  "percentil_inter_minimo": 10
+ },
+ "variables": {
+  "rasgos": "mfw:200",
+  "distancia": "delta",
+  "ventana": 400,
+  "permutaciones": 499,
+  "permutaciones_controles": 299
+ },
+ "rolling": {
+  "rasgos": "mfw:300",
+  "distancia": "minmax",
+  "ventana": 400,
+  "paso": 100,
+  "iters": 60
+ },
+ "segundo_modelo": {
+  "rasgos": [
+   "mfw:300",
+   "closed:150",
+   "char3:600",
+   "lemma_dict:300"
+  ],
+  "ventana": 500,
+  "tope_ventanas_documento": 20,
+  "tope_ventanas_autor": 120,
+  "pliegues": 10
+ },
+ "preregistro": {
+  "bloque": "testigos",
+  "regla": "solo se informa; nunca sustituye a la rejilla principal; si contradice a la principal, se informa la contradicción (PROTOCOLO § 6.2)"
+ },
+ "bloque_sensibilidad": "testigos"
+}

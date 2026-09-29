@@ -1,0 +1,141 @@
+[15:52:26] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores, dirichlet, ncd · workers 2
+[15:58:30]   spec impostores 000 nodia|mfw:300|minmax|w500|mnone|seven|sinaiticus: AUC=0.872 (epist. 0.982) c@1=0.858 (1614 problemas, 364.2 s)
+[21:04:04] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores, dirichlet, ncd · workers 2
+[21:07:27]   spec impostores 001 nodia|mfw:300|minmax|w500|mnone|seven|sblgnt_rec_sinaiticus: AUC=0.876 (epist. 0.984) c@1=0.859 (1614 problemas, 203.4 s)
+[21:58:29] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores, dirichlet, ncd · workers 2
+[22:02:45]   spec impostores 002 nodia|mfw:300|minmax|w500|mnone|seven|p46: AUC=0.883 (epist. 0.983) c@1=0.869 (1608 problemas, 255.7 s)
+[22:08:02]   spec impostores 003 nodia|mfw:300|minmax|w500|mnone|seven|sblgnt_rec_p46: AUC=0.887 (epist. 0.984) c@1=0.874 (1608 problemas, 317.7 s)
+[22:13:31]   spec impostores 004 nodia|mfw:300|minmax|w500|mformulae+preformed+otq+reuse|seven|sinaiticus: AUC=0.872 (epist. 0.983) c@1=0.856 (1614 problemas, 328.6 s)
+[22:18:56]   spec impostores 005 nodia|mfw:300|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_sinaiticus: AUC=0.875 (epist. 0.983) c@1=0.860 (1614 problemas, 325.5 s)
+[22:24:11]   spec impostores 006 nodia|mfw:300|minmax|w500|mformulae+preformed+otq+reuse|seven|p46: AUC=0.881 (epist. 0.983) c@1=0.870 (1608 problemas, 314.3 s)
+[22:29:20]   spec impostores 007 nodia|mfw:300|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_p46: AUC=0.890 (epist. 0.986) c@1=0.877 (1608 problemas, 309.4 s)
+[22:34:39]   spec impostores 008 nodia|mfw:300|delta|w500|mnone|seven|sinaiticus: AUC=0.781 (epist. 0.969) c@1=0.816 (1614 problemas, 318.4 s)
+[22:40:12]   spec impostores 009 nodia|mfw:300|delta|w500|mnone|seven|sblgnt_rec_sinaiticus: AUC=0.784 (epist. 0.969) c@1=0.816 (1614 problemas, 333.6 s)
+[22:45:45]   spec impostores 010 nodia|mfw:300|delta|w500|mnone|seven|p46: AUC=0.813 (epist. 0.974) c@1=0.835 (1608 problemas, 332.7 s)
+[22:51:16]   spec impostores 011 nodia|mfw:300|delta|w500|mnone|seven|sblgnt_rec_p46: AUC=0.815 (epist. 0.974) c@1=0.837 (1608 problemas, 331.0 s)
+[22:56:52]   spec impostores 012 nodia|mfw:300|delta|w500|mformulae+preformed+otq+reuse|seven|sinaiticus: AUC=0.776 (epist. 0.970) c@1=0.822 (1614 problemas, 335.7 s)
+[23:02:25]   spec impostores 013 nodia|mfw:300|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_sinaiticus: AUC=0.783 (epist. 0.969) c@1=0.818 (1614 problemas, 333.5 s)
+[23:07:53]   spec impostores 014 nodia|mfw:300|delta|w500|mformulae+preformed+otq+reuse|seven|p46: AUC=0.787 (epist. 0.973) c@1=0.832 (1608 problemas, 327.4 s)
+[23:13:19]   spec impostores 015 nodia|mfw:300|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_p46: AUC=0.800 (epist. 0.974) c@1=0.836 (1608 problemas, 326.3 s)
+[23:18:11]   spec impostores 016 nodia|closed:150|minmax|w500|mnone|seven|sinaiticus: AUC=0.837 (epist. 0.975) c@1=0.851 (1614 problemas, 292.2 s)
+[23:23:04]   spec impostores 017 nodia|closed:150|minmax|w500|mnone|seven|sblgnt_rec_sinaiticus: AUC=0.843 (epist. 0.977) c@1=0.854 (1614 problemas, 292.1 s)
+[23:27:49]   spec impostores 018 nodia|closed:150|minmax|w500|mnone|seven|p46: AUC=0.854 (epist. 0.976) c@1=0.866 (1608 problemas, 285.5 s)
+[23:32:34]   spec impostores 019 nodia|closed:150|minmax|w500|mnone|seven|sblgnt_rec_p46: AUC=0.854 (epist. 0.975) c@1=0.862 (1608 problemas, 284.8 s)
+[23:37:24]   spec impostores 020 nodia|closed:150|minmax|w500|mformulae+preformed+otq+reuse|seven|sinaiticus: AUC=0.846 (epist. 0.978) c@1=0.857 (1614 problemas, 290.5 s)
+[23:42:15]   spec impostores 021 nodia|closed:150|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_sinaiticus: AUC=0.849 (epist. 0.978) c@1=0.854 (1614 problemas, 290.5 s)
+[23:47:00]   spec impostores 022 nodia|closed:150|minmax|w500|mformulae+preformed+otq+reuse|seven|p46: AUC=0.851 (epist. 0.977) c@1=0.864 (1608 problemas, 285.5 s)
+[23:51:50]   spec impostores 023 nodia|closed:150|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_p46: AUC=0.860 (epist. 0.980) c@1=0.869 (1608 problemas, 289.1 s)
+[23:56:51]   spec impostores 024 nodia|closed:150|delta|w500|mnone|seven|sinaiticus: AUC=0.793 (epist. 0.968) c@1=0.828 (1614 problemas, 301.6 s)
+[00:01:54]   spec impostores 025 nodia|closed:150|delta|w500|mnone|seven|sblgnt_rec_sinaiticus: AUC=0.806 (epist. 0.971) c@1=0.832 (1614 problemas, 302.5 s)
+[00:06:45]   spec impostores 026 nodia|closed:150|delta|w500|mnone|seven|p46: AUC=0.822 (epist. 0.971) c@1=0.837 (1608 problemas, 290.8 s)
+[00:11:36]   spec impostores 027 nodia|closed:150|delta|w500|mnone|seven|sblgnt_rec_p46: AUC=0.824 (epist. 0.973) c@1=0.841 (1608 problemas, 291.6 s)
+[00:16:07] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores, dirichlet, ncd · workers 2
+[00:17:03] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[00:17:34]   spec impostores 028 nodia|closed:150|delta|w500|mformulae+preformed+otq+reuse|seven|sinaiticus: AUC=0.819 (epist. 0.972) c@1=0.831 (1614 problemas, 31.0 s)
+[00:22:45]   spec impostores 029 nodia|closed:150|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_sinaiticus: AUC=0.825 (epist. 0.974) c@1=0.835 (1614 problemas, 311.3 s)
+[00:27:38]   spec impostores 030 nodia|closed:150|delta|w500|mformulae+preformed+otq+reuse|seven|p46: AUC=0.818 (epist. 0.971) c@1=0.836 (1608 problemas, 292.9 s)
+[00:32:31]   spec impostores 031 nodia|closed:150|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_p46: AUC=0.822 (epist. 0.971) c@1=0.841 (1608 problemas, 292.8 s)
+[00:32:31] etapa specs: 928 s
+[00:34:07] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[00:48:42]   spec impostores 032 nodia|char3:600|minmax|w500|mnone|seven|sinaiticus: AUC=0.904 (epist. 0.992) c@1=0.876 (1614 problemas, 874.7 s)
+[01:03:29]   spec impostores 033 nodia|char3:600|minmax|w500|mnone|seven|sblgnt_rec_sinaiticus: AUC=0.903 (epist. 0.993) c@1=0.873 (1614 problemas, 887.7 s)
+[01:03:29] etapa specs: 1762 s
+[01:03:33] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[01:17:59]   spec impostores 034 nodia|char3:600|minmax|w500|mnone|seven|p46: AUC=0.905 (epist. 0.992) c@1=0.882 (1608 problemas, 866.2 s)
+[01:32:34]   spec impostores 035 nodia|char3:600|minmax|w500|mnone|seven|sblgnt_rec_p46: AUC=0.905 (epist. 0.991) c@1=0.879 (1608 problemas, 874.5 s)
+[01:32:34] etapa specs: 1741 s
+[01:32:37] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[01:47:24]   spec impostores 036 nodia|char3:600|minmax|w500|mformulae+preformed+otq+reuse|seven|sinaiticus: AUC=0.904 (epist. 0.992) c@1=0.875 (1614 problemas, 887.1 s)
+[02:02:15]   spec impostores 037 nodia|char3:600|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_sinaiticus: AUC=0.903 (epist. 0.993) c@1=0.874 (1614 problemas, 890.7 s)
+[02:02:15] etapa specs: 1778 s
+[02:02:18] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[02:16:50]   spec impostores 038 nodia|char3:600|minmax|w500|mformulae+preformed+otq+reuse|seven|p46: AUC=0.906 (epist. 0.991) c@1=0.878 (1608 problemas, 871.3 s)
+[02:31:35]   spec impostores 039 nodia|char3:600|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_p46: AUC=0.905 (epist. 0.992) c@1=0.879 (1608 problemas, 885.1 s)
+[02:31:35] etapa specs: 1756 s
+[02:31:38] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[02:46:30]   spec impostores 040 nodia|char3:600|delta|w500|mnone|seven|sinaiticus: AUC=0.893 (epist. 0.990) c@1=0.863 (1614 problemas, 891.9 s)
+[03:01:25]   spec impostores 041 nodia|char3:600|delta|w500|mnone|seven|sblgnt_rec_sinaiticus: AUC=0.891 (epist. 0.990) c@1=0.862 (1614 problemas, 894.3 s)
+[03:01:25] etapa specs: 1786 s
+[03:01:28] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[03:16:02]   spec impostores 042 nodia|char3:600|delta|w500|mnone|seven|p46: AUC=0.897 (epist. 0.990) c@1=0.868 (1608 problemas, 873.7 s)
+[03:30:41]   spec impostores 043 nodia|char3:600|delta|w500|mnone|seven|sblgnt_rec_p46: AUC=0.895 (epist. 0.990) c@1=0.868 (1608 problemas, 878.5 s)
+[03:30:41] etapa specs: 1752 s
+[03:30:44] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[03:45:36]   spec impostores 044 nodia|char3:600|delta|w500|mformulae+preformed+otq+reuse|seven|sinaiticus: AUC=0.892 (epist. 0.990) c@1=0.864 (1614 problemas, 891.9 s)
+[04:00:37]   spec impostores 045 nodia|char3:600|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_sinaiticus: AUC=0.893 (epist. 0.991) c@1=0.862 (1614 problemas, 901.4 s)
+[04:00:37] etapa specs: 1793 s
+[04:00:41] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[04:15:21]   spec impostores 046 nodia|char3:600|delta|w500|mformulae+preformed+otq+reuse|seven|p46: AUC=0.896 (epist. 0.989) c@1=0.870 (1608 problemas, 880.6 s)
+[04:30:02]   spec impostores 047 nodia|char3:600|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_p46: AUC=0.896 (epist. 0.990) c@1=0.871 (1608 problemas, 880.3 s)
+[04:30:02] etapa specs: 1761 s
+[04:30:05] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[04:36:07]   spec impostores 048 nodia|lemma_dict:300|minmax|w500|mnone|seven|sinaiticus: AUC=0.895 (epist. 0.991) c@1=0.883 (1614 problemas, 361.6 s)
+[04:42:13]   spec impostores 049 nodia|lemma_dict:300|minmax|w500|mnone|seven|sblgnt_rec_sinaiticus: AUC=0.894 (epist. 0.991) c@1=0.882 (1614 problemas, 366.3 s)
+[04:42:13] etapa specs: 728 s
+[04:42:16] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[04:48:03]   spec impostores 050 nodia|lemma_dict:300|minmax|w500|mnone|seven|p46: AUC=0.893 (epist. 0.990) c@1=0.884 (1608 problemas, 346.7 s)
+[04:53:49]   spec impostores 051 nodia|lemma_dict:300|minmax|w500|mnone|seven|sblgnt_rec_p46: AUC=0.895 (epist. 0.990) c@1=0.887 (1608 problemas, 346.5 s)
+[04:53:49] etapa specs: 693 s
+[04:53:52] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[04:59:46]   spec impostores 052 nodia|lemma_dict:300|minmax|w500|mformulae+preformed+otq+reuse|seven|sinaiticus: AUC=0.898 (epist. 0.991) c@1=0.886 (1614 problemas, 353.9 s)
+[05:05:41]   spec impostores 053 nodia|lemma_dict:300|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_sinaiticus: AUC=0.896 (epist. 0.990) c@1=0.886 (1614 problemas, 355.2 s)
+[05:05:41] etapa specs: 709 s
+[05:05:44] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[05:11:30]   spec impostores 054 nodia|lemma_dict:300|minmax|w500|mformulae+preformed+otq+reuse|seven|p46: AUC=0.895 (epist. 0.988) c@1=0.887 (1608 problemas, 346.1 s)
+[05:17:19]   spec impostores 055 nodia|lemma_dict:300|minmax|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_p46: AUC=0.897 (epist. 0.990) c@1=0.887 (1608 problemas, 348.2 s)
+[05:17:19] etapa specs: 694 s
+[05:17:21] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[05:23:23]   spec impostores 056 nodia|lemma_dict:300|delta|w500|mnone|seven|sinaiticus: AUC=0.823 (epist. 0.985) c@1=0.848 (1614 problemas, 362.0 s)
+[05:29:26]   spec impostores 057 nodia|lemma_dict:300|delta|w500|mnone|seven|sblgnt_rec_sinaiticus: AUC=0.823 (epist. 0.983) c@1=0.849 (1614 problemas, 362.8 s)
+[05:29:26] etapa specs: 725 s
+[05:29:29] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[05:35:20]   spec impostores 058 nodia|lemma_dict:300|delta|w500|mnone|seven|p46: AUC=0.840 (epist. 0.986) c@1=0.857 (1608 problemas, 350.5 s)
+[05:41:16]   spec impostores 059 nodia|lemma_dict:300|delta|w500|mnone|seven|sblgnt_rec_p46: AUC=0.842 (epist. 0.987) c@1=0.858 (1608 problemas, 356.1 s)
+[05:41:16] etapa specs: 707 s
+[05:41:19] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[05:47:22]   spec impostores 060 nodia|lemma_dict:300|delta|w500|mformulae+preformed+otq+reuse|seven|sinaiticus: AUC=0.829 (epist. 0.985) c@1=0.853 (1614 problemas, 362.9 s)
+[05:53:31]   spec impostores 061 nodia|lemma_dict:300|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_sinaiticus: AUC=0.826 (epist. 0.985) c@1=0.852 (1614 problemas, 369.6 s)
+[05:53:31] etapa specs: 733 s
+[05:53:34] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: impostores · workers 2
+[05:59:32]   spec impostores 062 nodia|lemma_dict:300|delta|w500|mformulae+preformed+otq+reuse|seven|p46: AUC=0.792 (epist. 0.977) c@1=0.852 (1608 problemas, 357.6 s)
+[06:05:31]   spec impostores 063 nodia|lemma_dict:300|delta|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_p46: AUC=0.800 (epist. 0.981) c@1=0.851 (1608 problemas, 359.3 s)
+[06:05:31] etapa specs: 717 s
+[06:05:34] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: dirichlet · workers 2
+[06:08:41]   spec dirichlet 000 dirichlet|nodia|mfw:300|dirmult|w500|mnone|seven|sinaiticus: AUC=0.971 (epist. 0.987) c@1=0.957 (1614 problemas, 187.2 s)
+[06:11:51]   spec dirichlet 001 dirichlet|nodia|mfw:300|dirmult|w500|mnone|seven|sblgnt_rec_sinaiticus: AUC=0.970 (epist. 0.987) c@1=0.957 (1614 problemas, 189.9 s)
+[06:11:51] etapa specs: 377 s
+[06:11:54] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: dirichlet · workers 2
+[06:15:02]   spec dirichlet 002 dirichlet|nodia|mfw:300|dirmult|w500|mnone|seven|p46: AUC=0.974 (epist. 0.992) c@1=0.956 (1608 problemas, 187.9 s)
+[06:18:06]   spec dirichlet 003 dirichlet|nodia|mfw:300|dirmult|w500|mnone|seven|sblgnt_rec_p46: AUC=0.973 (epist. 0.987) c@1=0.955 (1608 problemas, 183.6 s)
+[06:18:06] etapa specs: 372 s
+[06:18:09] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: dirichlet · workers 2
+[06:21:14]   spec dirichlet 004 dirichlet|nodia|mfw:300|dirmult|w500|mformulae+preformed+otq+reuse|seven|sinaiticus: AUC=0.978 (epist. 0.994) c@1=0.957 (1614 problemas, 185.1 s)
+[06:24:18]   spec dirichlet 005 dirichlet|nodia|mfw:300|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_sinaiticus: AUC=0.975 (epist. 0.994) c@1=0.956 (1614 problemas, 184.2 s)
+[06:24:18] etapa specs: 369 s
+[06:24:21] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: dirichlet · workers 2
+[06:27:26]   spec dirichlet 006 dirichlet|nodia|mfw:300|dirmult|w500|mformulae+preformed+otq+reuse|seven|p46: AUC=0.973 (epist. 0.988) c@1=0.958 (1608 problemas, 184.4 s)
+[06:30:27]   spec dirichlet 007 dirichlet|nodia|mfw:300|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_p46: AUC=0.974 (epist. 0.981) c@1=0.957 (1608 problemas, 181.1 s)
+[06:30:27] etapa specs: 366 s
+[06:30:30] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: dirichlet · workers 2
+[06:32:36]   spec dirichlet 008 dirichlet|nodia|closed:150|dirmult|w500|mnone|seven|sinaiticus: AUC=0.947 (epist. 0.948) c@1=0.933 (1614 problemas, 126.7 s)
+[06:34:41]   spec dirichlet 009 dirichlet|nodia|closed:150|dirmult|w500|mnone|seven|sblgnt_rec_sinaiticus: AUC=0.953 (epist. 0.949) c@1=0.935 (1614 problemas, 124.8 s)
+[06:34:41] etapa specs: 251 s
+[06:34:44] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: dirichlet · workers 2
+[06:36:50]   spec dirichlet 010 dirichlet|nodia|closed:150|dirmult|w500|mnone|seven|p46: AUC=0.944 (epist. 0.940) c@1=0.934 (1608 problemas, 126.2 s)
+[06:38:56]   spec dirichlet 011 dirichlet|nodia|closed:150|dirmult|w500|mnone|seven|sblgnt_rec_p46: AUC=0.944 (epist. 0.941) c@1=0.935 (1608 problemas, 125.6 s)
+[06:38:56] etapa specs: 252 s
+[06:38:59] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: dirichlet · workers 2
+[06:41:06]   spec dirichlet 012 dirichlet|nodia|closed:150|dirmult|w500|mformulae+preformed+otq+reuse|seven|sinaiticus: AUC=0.949 (epist. 0.948) c@1=0.935 (1614 problemas, 126.7 s)
+[06:43:12]   spec dirichlet 013 dirichlet|nodia|closed:150|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_sinaiticus: AUC=0.951 (epist. 0.949) c@1=0.936 (1614 problemas, 126.9 s)
+[06:43:12] etapa specs: 254 s
+[06:43:16] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: specs · familias: dirichlet · workers 2
+[06:45:24]   spec dirichlet 014 dirichlet|nodia|closed:150|dirmult|w500|mformulae+preformed+otq+reuse|seven|p46: AUC=0.942 (epist. 0.948) c@1=0.935 (1608 problemas, 128.5 s)
+[06:47:31]   spec dirichlet 015 dirichlet|nodia|closed:150|dirmult|w500|mformulae+preformed+otq+reuse|seven|sblgnt_rec_p46: AUC=0.950 (epist. 0.949) c@1=0.936 (1608 problemas, 126.6 s)
+[06:47:31] etapa specs: 255 s
+[06:49:25] run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: calibration, ledger, extras · familias: impostores, ncd, dirichlet · workers 2
+[06:49:29] etapa calibration: 4 s
+[06:49:54]   ledger minmax: E 917 pares, B 1560, G 715; 21 s
+[06:50:14]   ledger delta: E 917 pares, B 1560, G 715; 21 s
+[06:50:14] etapa ledger: 45 s
+[06:50:22]   extras: 8 pares de ruido de edición, 210 contribuciones de rasgos
+[06:50:22] etapa extras: 7 s

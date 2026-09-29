@@ -265,3 +265,13 @@ del definitivo: Sinaítico en las 14 cartas, 𝔓46 en 8 (el papiro no conserva,
 cartas del núcleo en las ocho combinaciones (medida × máscara × testigo). El bloque `testigos` pasa a ejecutarse por
 trozos de cuatro especificaciones en procesos nuevos: el proceso único crecía ≈ 100 MB por especificación y el límite
 de memoria del contenedor (6,27 GB) lo abatió en la 29.ª (reanudado por problema, sin pérdida).
+**06:47-06:55 UTC.** Bloque `testigos` completo en la réplica de la nube: 80 especificaciones (64 impostores + 16
+Dirichlet; NCD inactiva en el bloque), dos procesos, ≈ 8 h de cómputo efectivo entre las 21:04 del 28-IX y las 06:47
+del 29-IX (interrumpido dos veces: reinicio del contenedor y límite de memoria; reanudado por problema). Cierre
+`calibration,ledger,extras` local (58 s; registro `lab_calibration_ledger_extras_local.log`). Aptitud (Hm1) en los
+derivados de los testigos: impostores AUC epistolar mediana 0,984 (mín. 0,968; 64/64), Dirichlet 0,965 (mín. 0,940;
+16/16). Los resultados viajan al portátil como parche comprimido (14 MB; huella SHA-256 del `.gz`
+`75073fc2…defc1e`) y se publican desde allí. Añadida `herramientas/sellar_resultados.py` (fuera del conjunto sellado;
+comprobado que la huella del Sello 2 sigue siendo `cd32dad6…29ef`, 50 archivos) para la huella del Sello 3 sobre
+`results/`. Con esto están publicados los siete bloques de sensibilidad calculables y todas las etapas del definitivo
+salvo `veredicto`.

@@ -1,0 +1,12 @@
+== ejecución local (réplica en la nube, 2 procesos) · 2026-09-29T06:49:24Z · commit 4a23d56 · etapa calibration,ledger,extras ==
+run paulinum_1_0/sensibilidad/testigos (paulinum 1.0.0) · etapas: calibration, ledger, extras · familias: impostores, ncd, dirichlet · workers 2
+etapa calibration: 4 s
+  ledger minmax: E 917 pares, B 1560, G 715; 21 s
+  ledger delta: E 917 pares, B 1560, G 715; 21 s
+etapa ledger: 45 s
+  extras: 8 pares de ruido de edición, 210 contribuciones de rasgos
+etapa extras: 7 s
+
+real	0m57.940s
+user	0m56.948s
+sys	0m1.220s
