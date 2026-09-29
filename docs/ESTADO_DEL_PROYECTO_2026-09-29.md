@@ -147,6 +147,13 @@ subtítulo y el tratamiento común de tablas) y las fichas KDP (descripción HTM
 contraportada) en `07_finales\fichas_KDP_tomos_IV-VI_2026-09-29.txt`. **Siguiente: versión 1.1.0** (D-024, D-025,
 D-026, SVM con Hebreos, variables de situación con controles), cuando el autor lo ordene.
 
+**Tras la cuarta entrega (29-IX-2026).** (1) **D-032:** en el bloque `ediciones` el código sellado no aprende las formas
+verbales de 1.ª y 2.ª persona (etiquetas PROIEL/MACULA; `herramientas/filtro_persona_ediciones.py`); el bloque cambia dos
+dimensiones y así lo declara el Tomo VI (§ 2.2, § 4.6, A.3, § 10.5); nada del análisis principal cambia. (2) **Depósito
+`canales-1.0.0`** en Zenodo, **DOI 10.5281/zenodo.23044976** (canales, convergencia, D-032), citado en el Tomo VI (nota del
+cap. 6, tabla A.1, bibliografía). Tomo VI definitivo: `07_finales\Pablo de Tarso 6_TomoVI_quien_escribio_las_cartas_2026-09-29_v2.docx`.
+Recalcular el bloque `ediciones` con el filtro corregido pasa a la versión 1.1.0.
+
 Según § 9 del protocolo y `08_informes/indice_propuesto_tomos_IV_V_VI.md`:
 
 1. **Canales no estilométricos** con protocolo de codificación fijado antes de codificar (§ 9.1-9.3): recepción y
@@ -195,7 +202,7 @@ Según § 9 del protocolo y `08_informes/indice_propuesto_tomos_IV_V_VI.md`:
 
 - DOI del Sello 3 anotado (10.5281/zenodo.23034497; Zenodo tardó unas dos horas en archivar la *release*).
 - Mover `Correccion_Fondo\paulinum_lab\` a `_to_delete\` y vaciar `nuevo_paulinum\_to_delete\` cuando el autor lo confirme.
-- Defectos del código sellado para 1.1.0: guion de anotación (D-024), `learn_closed_class` solo con MorphGNT (D-025),
+- Defectos del código sellado para 1.1.0: filtro de persona por edición (D-032), guion de anotación (D-024), `learn_closed_class` solo con MorphGNT (D-025),
   comprobación de cartas breves fuera de la etapa `ledger` (D-026), `build` no construye la edición base cuando se le
   pasa una configuración de bloque (tercera incidencia del laboratorio), crecimiento de memoria de `stage specs`.
 - Fallo visible de la prueba Ignacio (IgnLong#9 leído débilmente como Ignacio) y la observación sobre la distancia de

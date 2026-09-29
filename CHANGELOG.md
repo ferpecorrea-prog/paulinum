@@ -3,7 +3,7 @@
 Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). Versionado semántico para el software;
 cada campaña de investigación lleva además su propia etiqueta (`campana-XX-sellado`, `campana-XX-resultados`).
 
-## [canales-1.0.0] — 2026-09-29 — Canales no estilométricos y convergencia
+## [canales-1.0.0] — 2026-09-29 — Canales no estilométricos y convergencia (DOI 10.5281/zenodo.23044976)
 
 Sin cambio de versión del software (sigue 1.0.0; código sellado intacto) ni de `results/paulinum_1_0` salvo dos
 comprobaciones añadidas fuera del sello. Esta versión archiva en Zenodo los datos citados por el Tomo VI que no están en
