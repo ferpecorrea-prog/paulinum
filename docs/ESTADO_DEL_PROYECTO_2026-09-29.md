@@ -106,6 +106,15 @@ nueve y abierta en Flm, 1 Tim, 2 Tim, Tit; Hebreos H1-H3 descartadas (recepción
 estilometría sin decidir. Detalle en `docs/canales/codigos_convergencia.md` § 4 y en `docs/registro_investigacion.md`
 (Sesión 6). **Siguiente: montaje de los Tomos IV, V y VI** (punto 3). Esfuerzo: alto, sin cómputo.
 
+**Bloque 7, primera entrega (29-IX-2026): Tomo IV montado.** Entregado en
+`Correccion_Fondo\07_finales\Pablo de Tarso 4_TomoIV_historia_de_la_cuestion_2026-09-29.docx` (nombre nuevo; los
+anteriores intocados), con informe en `08_informes\informe_montaje_tomo_IV_2026-09-29.md` y fuentes markdown,
+guiones (`ensamblar.py`, `build_tomoIV.py`) y registro de verificaciones en `09_recursos\montaje_tomoIV_2026-09-29.zip`.
+Catorce capítulos en cinco Partes, introducción general a los tres tomos y conclusión; 44.100 palabras de cuerpo,
+174 notas (ninguna >130 palabras), 161 entradas bibliográficas, sin índice ni apéndices; título de cubierta
+provisional. Las remisiones al Tomo V siguen la numeración del índice aprobado y se comprobarán al montarlo.
+**Siguiente: Tomo V**, después Tomo VI.
+
 Según § 9 del protocolo y `08_informes/indice_propuesto_tomos_IV_V_VI.md`:
 
 1. **Canales no estilométricos** con protocolo de codificación fijado antes de codificar (§ 9.1-9.3): recepción y
