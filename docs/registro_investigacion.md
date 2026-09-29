@@ -313,3 +313,11 @@ rango con LR en contra: discordancia entre niveles; se informa sin decidir»**. 
 refutación de § 10.2 (fuera del rango del tamaño de un cambio de autor con LR en contra). El libro reproduce la tabla
 y la comenta con las reservas registradas (límite de la familia A ante imitadores del mismo registro, Flm en NCD,
 cartas breves de Libanio frente a E global, solapamiento B-E en Delta, D-025).
+
+**07:05-07:35 UTC. Sello 3.** Huella de `results/` calculada con `herramientas/sellar_resultados.py` (archivos
+versionados, 765; convención de `paulinum seal`) y reproducida byte a byte en el portátil y en la réplica de la nube:
+`980b3ab28e85caa7f2bf94dc24b8e6977a191bff7249fb6c21db11407a44c1b3`. Comprobado antes de sellar: ningún archivo de
+credenciales versionado ni patrón de token en el árbol; huella del Sello 2 intacta. Commit `45f20ea`, etiqueta
+`resultados-1.0.0`, *release* https://github.com/ferpecorrea-prog/paulinum/releases/tag/resultados-1.0.0; el DOI de
+Zenodo se anota en `REGISTRO.md`, `README.md` y `CITATION.cff` en cuanto el archivo esté hecho. Traspaso para la
+sesión siguiente: `docs/ESTADO_DEL_PROYECTO_2026-09-29.md` (bloque 6: canales no estilométricos y montaje del libro).
