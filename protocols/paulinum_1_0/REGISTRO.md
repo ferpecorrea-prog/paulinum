@@ -69,6 +69,22 @@ Formato de cada entrada: fecha · alcance · motivo · afecta a filas de diana y
    sello: **no** (§ 12: el archivo nuevo no está en el conjunto sellado y ningún archivo sellado cambia; la huella
    `cd32dad6…` sigue siendo reproducible).
 
+6. **2026-09-29** · § 9 (canales no estilométricos), sin cambio de código ni de reglas de codificación · alcance: los tres
+   canales se codifican por **un solo codificador** (el asistente de investigación), no por dos independientes como
+   preveía § 9; se conservan sin cambio los libros de códigos, la lista cerrada de testigos, las colecciones de
+   referencia (codificadas antes que las catorce cartas), el registro de cada consulta una a una
+   (`docs/canales/registro_consultas.md`) y la regla de convergencia de § 9.4 · motivo: decisión del autor (29-IX-2026)
+   de no actuar como segundo codificador ciego; la desviación se declara en el libro como limitación del canal y se
+   compensa con dos medidas fijadas ahora, antes de codificar: (a) cada código lleva su fuente y su cita textual, de modo
+   que cualquier lector puede recodificar; (b) los códigos que dependen de juicio (niveles 1-2 de atestación, coherencia
+   interna onomástica, paralelo epigráfico) se marcan con `juicio=sí` y se cuentan aparte en cada índice · afecta a filas
+   de diana ya calculadas: **no** (los canales no tocan la estilometría; el Sello 3 está puesto) · nuevo sello: **no**
+   (§ 12: ningún archivo sellado cambia; los libros de códigos y las tablas de codificación son archivos nuevos en
+   `docs/canales/` y `results/canales/`, fuera del Sello 3, que solo cubre `results/` en la etiqueta `resultados-1.0.0`).
+   Las consultas por navegador: Biblindex y Trismegistos exigen una verificación anti-robots que el asistente no supera
+   ni intenta superar (la pasa el autor en el navegador integrado cuando haga falta); LGPN, papyri.info, PHI y AGRW se
+   alcanzan sin obstáculo (comprobado el 29-IX-2026).
+
 ## Verificación
 
 Con el repositorio en la etiqueta indicada:

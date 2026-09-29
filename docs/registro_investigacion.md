@@ -321,3 +321,14 @@ credenciales versionado ni patrón de token en el árbol; huella del Sello 2 int
 `resultados-1.0.0`, *release* https://github.com/ferpecorrea-prog/paulinum/releases/tag/resultados-1.0.0; el DOI de
 Zenodo se anota en `REGISTRO.md`, `README.md` y `CITATION.cff` en cuanto el archivo esté hecho. Traspaso para la
 sesión siguiente: `docs/ESTADO_DEL_PROYECTO_2026-09-29.md` (bloque 6: canales no estilométricos y montaje del libro).
+
+## Sesión 6 — 2026-09-29 — Bloque 6: canales no estilométricos (§ 9)
+
+**07:40-07:55 UTC.** Decisión del autor: un solo codificador (enmienda 6 del registro del protocolo; se declara en el
+libro; cada código con fuente y cita, marca `juicio`). Libros de códigos y plantillas fijados antes de codificar:
+`docs/canales/` (LEEME, recepción, onomástica, institucional, registro de consultas) y `results/canales/*.csv`
+(cabeceras). Muestras fijas de Basilio y Libanio (60 cartas cada una, semilla 20260929). Umbrales de lectura de § 2.2
+fijados por canal (recepción: nivel ≥ 2 antes de 150, nivel 3 antes de 200, asimetría ≤ 50 años; onomástica:
+percentiles 10-90 bajo autenticidad; institucional: s1 / fin_s1 / s2). Acceso comprobado desde el navegador integrado:
+LGPN, papyri.info, PHI y AGRW alcanzables; Biblindex y Trismegistos piden verificación anti-robots, que pasa el autor.
+Zenodo: la *release* `resultados-1.0.0` figura como «Received» en la integración de GitHub (en proceso).
