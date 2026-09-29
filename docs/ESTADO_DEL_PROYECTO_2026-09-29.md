@@ -115,6 +115,15 @@ Catorce capítulos en cinco Partes, introducción general a los tres tomos y con
 provisional. Las remisiones al Tomo V siguen la numeración del índice aprobado y se comprobarán al montarlo.
 **Siguiente: Tomo V**, después Tomo VI.
 
+**Bloque 7, segunda entrega (29-IX-2026): Tomo V montado.** Entregado en
+`Correccion_Fondo\07_finales\Pablo de Tarso 5_TomoV_el_debate_actual_2026-09-29.docx`, con informe en
+`08_informes\informe_montaje_tomo_V_2026-09-29.md`; fuentes y guiones de los dos tomos en
+`09_recursos\montaje_tomosIV-V_2026-09-29.zip`. Cuatro Partes, doce capítulos, introducción y epílogo; 56.400 palabras
+de cuerpo, 96 notas, 99 entradas bibliográficas; sin grados (cada expediente cierra con «qué habría que medir»); ninguna
+cifra de la primera investigación; expediente moderno de Hebreos nuevo (Harnack 1900, Fonck 1910, 1 Clem 36 y 41,
+recuentos MorphGNT). El Tomo IV se reentrega como `_v2` con la conclusión literal de Van Nes en § 8.6. **Siguiente:
+Tomo VI** (la investigación, desde `results/paulinum_1_0` y los canales), después títulos y metadatos.
+
 Según § 9 del protocolo y `08_informes/indice_propuesto_tomos_IV_V_VI.md`:
 
 1. **Canales no estilométricos** con protocolo de codificación fijado antes de codificar (§ 9.1-9.3): recepción y
