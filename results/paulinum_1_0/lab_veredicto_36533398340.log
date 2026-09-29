@@ -1,0 +1,16 @@
+== ejecución 36533398340 · 2026-09-29T07:00:13Z · commit 911ec69 · etapa veredicto · familias - · solo - ==
+veredicto: 14 cartas → results/paulinum_1_0/veredicto.csv
+  Rom   N1 apoyo moderado a H_mismo-autor   N2 dentro         N3 pasa     → dentro del rango, LR a favor, núcleo el más próximo: compatible con H1-H3; no con H5; H4 improbable
+  1Cor  N1 apoyo moderado a H_mismo-autor   N2 dentro         N3 pasa     → dentro del rango, LR a favor, núcleo el más próximo: compatible con H1-H3; no con H5; H4 improbable
+  2Cor  N1 apoyo moderado a H_mismo-autor   N2 dentro         N3 pasa     → dentro del rango, LR a favor, núcleo el más próximo: compatible con H1-H3; no con H5; H4 improbable
+  Gal   N1 apoyo moderado a H_mismo-autor   N2 dentro         N3 pasa     → dentro del rango, LR a favor, núcleo el más próximo: compatible con H1-H3; no con H5; H4 improbable
+  Flp   N1 apoyo moderado a H_mismo-autor   N2 dentro         N3 pasa     → dentro del rango, LR a favor, núcleo el más próximo: compatible con H1-H3; no con H5; H4 improbable
+  1Tes  N1 apoyo moderado a H_mismo-autor   N2 dentro         N3 pasa     → dentro del rango, LR a favor, núcleo el más próximo: compatible con H1-H3; no con H5; H4 improbable
+  Flm   N1 discordante                      N2 dentro         N3 pasa     → dentro del rango con familias discordantes: compatible con H2-H3; no con H5
+  Ef    N1 apoyo moderado a H_mismo-autor   N2 dentro         N3 pasa     → dentro del rango, LR a favor, núcleo el más próximo: compatible con H1-H3; no con H5; H4 improbable
+  Col   N1 apoyo débil a H_mismo-autor      N2 dentro         N3 pasa     → dentro del rango, LR a favor, núcleo el más próximo: compatible con H1-H3; no con H5; H4 improbable
+  2Tes  N1 apoyo moderado a H_mismo-autor   N2 dentro         N3 pasa     → dentro del rango, LR a favor, núcleo el más próximo: compatible con H1-H3; no con H5; H4 improbable
+  1Tim  N1 discordante                      N2 dentro         N3 pasa     → dentro del rango con familias discordantes: compatible con H2-H3; no con H5
+  2Tim  N1 apoyo débil a H_mismo-autor      N2 dentro         N3 indeterminado (IC del margen incluye 0) → dentro del rango, LR no discriminante: compatible con H1-H3; H5 improbable
+  Tit   N1 discordante                      N2 dentro         N3 pasa     → dentro del rango con familias discordantes: compatible con H2-H3; no con H5
+  Heb   N1 apoyo débil a H_otro-autor       N2 dentro         N3 indeterminado (IC del margen incluye 0) → dentro del rango con LR en contra: discordancia entre niveles; se informa sin decidir
