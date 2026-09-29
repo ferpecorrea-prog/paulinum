@@ -407,7 +407,7 @@ y tardía en otro). Las cifras del extractor: ἐκκλησία 144, διάκο�
 carta × canal, y `convergencia_veredicto.csv`; reglas en `docs/canales/codigos_convergencia.md`, D-031). Resultado:
 H1, H2 y H3 **sostenidas en las trece cartas** (estilometría, recepción y onomástica; Flm, 1 Tim y Tit con
 estilometría «no decide» en H1 por familias discordantes); H5 **descartada en las trece** (estilometría y recepción;
-onomástica además en Rom, 1 Cor, Flp, Col, 2 Tim, Tit); H4 debilitada por la estilometría en once, descartada en Rom y
+onomástica además en Rom, 1 Cor, Flp, Col, 2 Tim, Tit); H4 debilitada en nueve —siete por la estilometría, 2 Tim y Tit por la onomástica— [corregido el 29-IX-2026: decía «por la estilometría en once»], descartada en Rom y
 Flp (onomástica), abierta en Flm y **sostenida en 1 Tim** (recepción e institucional compatibles, ningún canal en
 contra: la estilometría no separa H4 en las cartas con familias discordantes). Hipótesis de partida (§ 10): no
 refutada en nueve cartas; abierta en Flm, 1 Tim y Tit (nivel 1 discordante) y en 2 Tim (nivel 3 indeterminado).
