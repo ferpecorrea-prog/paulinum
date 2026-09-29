@@ -256,4 +256,12 @@ Comprobado en la réplica: `closed` = 0 formas en Tischendorf y Nestle 1904, 346
 testigos (que sí llevan MorphGNT). **D-025:** las 8 + 4 especificaciones `closed:150` del bloque quedan sin calcular; el
 resto (impostores 016-031, Dirichlet 000-003) se lanza con `solo`. El bloque `testigos` sigue en la réplica de la nube
 (64 impostores + 16 Dirichlet, dos procesos, ≈ 6 min por especificación; el contenedor pierde los procesos al quedar
-inactivo, así que se mantiene la sesión activa hasta que termine). Lanzados `bootstrap` y `svm` del definitivo (23:07 UTC).
+inactivo, así que se mantiene la sesión activa hasta que termine). Lanzados `bootstrap` y `svm` del definitivo (22:04 UTC) y las dos piezas restantes de `ediciones` (22:05 UTC).
+**29-IX, 00:04-00:20 UTC.** Bloque `ediciones` cerrado (`calibration,ledger,extras`, 36500436863, `cf4574d`; 28
+especificaciones, D-025). Ruido de edición con los testigos manuscritos, calculado en la réplica (los derivados no se
+publican; `scripts/ruido_edicion.py --ediciones sinaiticus,p46`, 32 s) y añadido a `ruido_edicion_{minmax,delta,resumen}.csv`
+del definitivo: Sinaítico en las 14 cartas, 𝔓46 en 8 (el papiro no conserva, o no llega a 100 palabras, en 1 Tes, 2 Tes,
+1 Tim, 2 Tim, Tit y Flm: dato del canal de transmisión); el ruido máximo queda por debajo de la distancia mínima entre
+cartas del núcleo en las ocho combinaciones (medida × máscara × testigo). El bloque `testigos` pasa a ejecutarse por
+trozos de cuatro especificaciones en procesos nuevos: el proceso único crecía ≈ 100 MB por especificación y el límite
+de memoria del contenedor (6,27 GB) lo abatió en la 29.ª (reanudado por problema, sin pérdida).
