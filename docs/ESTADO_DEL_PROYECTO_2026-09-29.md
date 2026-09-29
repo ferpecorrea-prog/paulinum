@@ -136,6 +136,17 @@ situación sin controles declaradas como tareas. `build_tomo.py` cambia el trata
 con cinco o más columnas): los Tomos IV y V lo tomarán al regenerarse. **Siguiente: títulos definitivos y metadatos de
 Amazon de los tres tomos** y regeneración de los tres DOCX; después, versión 1.1.0.
 
+**Bloque 7, cuarta entrega (29-IX-2026): títulos y fichas de Amazon.** Título común «¿Quién escribió las cartas de
+san Pablo?»; subtítulos: IV «Historia de la autoría de las epístolas paulinas, de los Padres de la Iglesia y Erasmo a
+la crítica bíblica moderna y la estilometría computacional»; V «El debate actual sobre la autenticidad de las epístolas
+paulinas: pseudoepigrafía, secretarios, cartas pastorales, Colosenses, Efesios y Hebreos»; VI «Una investigación
+estilométrica y convergente sobre la autoría de las trece epístolas paulinas y la Carta a los Hebreos: método,
+resultados y conclusiones». Serie «Teología y Exégesis de San Pablo Apóstol», vols. 4-6. Los tres DOCX regenerados
+(`07_finales\Pablo de Tarso {4,5,6}_Tomo{IV,V,VI}_quien_escribio_las_cartas_2026-09-29.docx`; solo cambia el
+subtítulo y el tratamiento común de tablas) y las fichas KDP (descripción HTML, tres categorías, siete palabras clave,
+contraportada) en `07_finales\fichas_KDP_tomos_IV-VI_2026-09-29.txt`. **Siguiente: versión 1.1.0** (D-024, D-025,
+D-026, SVM con Hebreos, variables de situación con controles), cuando el autor lo ordene.
+
 Según § 9 del protocolo y `08_informes/indice_propuesto_tomos_IV_V_VI.md`:
 
 1. **Canales no estilométricos** con protocolo de codificación fijado antes de codificar (§ 9.1-9.3): recepción y
