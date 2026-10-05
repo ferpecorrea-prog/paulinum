@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import csv
 import io
+import os
 import re
 from typing import Iterator
 
@@ -36,23 +37,31 @@ def _tok(form: str, lemma: str = "", pos: str = "", person: str = "", ref: str =
 # ---------------------------------------------------------------------------------------------
 # MorphGNT / SBLGNT
 # ---------------------------------------------------------------------------------------------
-def parse_morphgnt(path: str) -> list[dict]:
+MORPHGNT_COLUMN = os.environ.get("PAULINUM_MORPHGNT_COLUMN", "word")
+
+
+def parse_morphgnt(path: str, column: str | None = None) -> list[dict]:
     """
     Columnas: bcv, pos, parse, text, word, normalized, lemma.
     parse = persona, tiempo, voz, modo, caso, número, género, grado (8 posiciones).
-    Se usa la columna `normalized` (forma sin puntuación ni signos críticos).
+    Se usa por defecto la columna `word` (forma del texto sin puntuación), que se normaliza con las mismas reglas que
+    los demás corpus. La columna `normalized` de MorphGNT NO es comparable con ellos: deshace la elisión (δι’ → διά),
+    unifica οὐκ/οὐχ → οὐ y ἐξ → ἐκ y acentúa los enclíticos (ἐστιν → ἐστίν, τις → τίς), de modo que unas 40 formas
+    frecuentes (τε, οὐκ, ἐξ, τις, δ’…) faltan por construcción en todo el NT. `column="normalized"` (o la variable
+    PAULINUM_MORPHGNT_COLUMN) reproduce los resultados sellados de paulinum 1.0.
     """
+    col = {"word": 4, "normalized": 5}[column or MORPHGNT_COLUMN]
     tokens = []
     with open(path, encoding="utf-8") as f:
         for line in f:
             parts = line.rstrip("\n").split(" ")
             if len(parts) < 7:
                 continue
-            bcv, pos, parse, _text, _word, normalized, lemma = parts[:7]
+            bcv, pos, parse, lemma = parts[0], parts[1], parts[2], parts[6]
             ch, vs = int(bcv[2:4]), int(bcv[4:6])
             person = parse[0] if parse and parse[0] in "123" else ""
             mood = parse[3] if len(parse) > 3 and parse[3] in "ISOPDN" else ""  # D = imperativo
-            tokens.append(_tok(normalized, lemma, pos.strip("-"), person, f"{ch}:{vs}", mood))
+            tokens.append(_tok(parts[col], lemma, pos.strip("-"), person, f"{ch}:{vs}", mood))
     return [{"part": "", "title": "", "tokens": tokens}]
 
 

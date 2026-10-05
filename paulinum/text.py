@@ -44,8 +44,11 @@ def normalize_form(token: str, keep_diacritics: bool = True) -> str:
     t = t.lower()
     # grave → agudo
     t = "".join(_GRAVE_TO_ACUTE.get(ch, ch) for ch in t)
-    # elisión: se conserva una marca uniforme
+    # elisión: se conserva una marca uniforme. El apóstrofo o la coronis final se quita ANTES del filtro de letras:
+    # U+1FBD (koronis) y U+1FBF (psili) están en el bloque griego y, si no, sobrevivirían al filtro («δ᾿» → «δ᾿’»,
+    # rasgo distinto de «δ’»).
     elided = t.endswith(tuple(_APOSTROPHES))
+    t = t.rstrip(_APOSTROPHES)
     # filtro de caracteres: solo letras griegas y signos combinatorios
     t = "".join(ch for ch in t if GREEK_LETTER_RE.match(ch) or unicodedata.combining(ch))
     t = unicodedata.normalize("NFC", t)

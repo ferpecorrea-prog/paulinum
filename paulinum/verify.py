@@ -602,19 +602,21 @@ class LRCalibrator:
         self.pos = np.clip(np.asarray(pos, float), 0.0, 1.0)
         self.neg = np.clip(np.asarray(neg, float), 0.0, 1.0)
         self.floor = floor
-        self.kp = gaussian_kde(self._jitter(self.pos)) if len(self.pos) > 2 else None
-        self.kn = gaussian_kde(self._jitter(self.neg)) if len(self.neg) > 2 else None
+        # el ancho de banda (Scott) se estima sobre la muestra ORIGINAL; la reflexión en 0 y 1 se aplica al evaluar.
+        # Estimarlo sobre la muestra reflejada [x, −x, 2−x] lo multiplicaba por 2-3 y aplastaba las LR hacia 0.
+        self.kp = gaussian_kde(self.pos) if len(self.pos) > 2 and np.ptp(self.pos) > 0 else None
+        self.kn = gaussian_kde(self.neg) if len(self.neg) > 2 and np.ptp(self.neg) > 0 else None
 
     @staticmethod
-    def _jitter(x: np.ndarray) -> np.ndarray:
+    def _reflected(k: gaussian_kde, s: float) -> float:
         # reflexión en los bordes 0 y 1 para que la densidad no se hunda en los extremos
-        return np.concatenate([x, -x, 2 - x])
+        return float(k(s)[0] + k(-s)[0] + k(2 - s)[0])
 
     def log10lr(self, s: float) -> float:
         if self.kp is None or self.kn is None:
             return float("nan")
-        fp = max(float(self.kp(s)[0]) * 3, self.floor)  # ×3 compensa la reflexión
-        fn = max(float(self.kn(s)[0]) * 3, self.floor)
+        fp = max(self._reflected(self.kp, s), self.floor)
+        fn = max(self._reflected(self.kn, s), self.floor)
         return math.log10(fp / fn)
 
 
