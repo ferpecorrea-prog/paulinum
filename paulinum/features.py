@@ -39,6 +39,21 @@ PERSON_FORMS = {
 PERSON_LEMMAS = {"ἐγώ", "σύ", "ἐμόσ", "σόσ", "ἡμέτεροσ", "ὑμέτεροσ", "ἐμαυτοῦ", "σεαυτοῦ"}
 # Categorías de clase cerrada en MorphGNT: RA artículo, C conjunción, P preposición, RP/RD/RR/RI pronombres, X partícula
 CLOSED_POS = {"RA", "C", "P", "RP", "RD", "RR", "RI", "X"}
+# Equivalencias de las etiquetas de PROIEL (Tischendorf) y MACULA (Nestle 1904) con las de MorphGNT (D-025, D-032):
+# sin ellas, en esas ediciones el inventario de clase cerrada sale vacío y no se aprende ninguna forma verbal de 1.ª/2.ª
+# persona.
+POS_TO_MORPHGNT = {
+    # PROIEL
+    "V-": "V", "S-": "RA", "C-": "C", "G-": "C", "R-": "P", "Pp": "RP", "Pk": "RP", "Pc": "RP", "Pd": "RD",
+    "Pr": "RR", "Pi": "RI", "Px": "RI",
+    # MACULA (columna class)
+    "verb": "V", "det": "RA", "conj": "C", "prep": "P", "pron": "RP", "ptcl": "X",
+}
+
+
+def morphgnt_pos(tag: str) -> str:
+    """Etiqueta de categoría en el juego de MorphGNT (las de MorphGNT pasan sin cambio)."""
+    return POS_TO_MORPHGNT.get(tag, tag)
 
 
 def learn_person_verb_forms(docs: list[Document]) -> set[str]:
@@ -46,7 +61,7 @@ def learn_person_verb_forms(docs: list[Document]) -> set[str]:
     out = set()
     for d in docs:
         for f, p, pe in zip(d.forms, d.pos, d.person):
-            if p == "V" and pe in ("1", "2"):
+            if morphgnt_pos(p) == "V" and pe in ("1", "2"):
                 out.add(f)
     return out
 
@@ -59,7 +74,7 @@ def learn_closed_class(docs: list[Document], min_share: float = 0.9) -> set[str]
             if not p:
                 continue
             tot[f] += 1
-            if p in CLOSED_POS:
+            if morphgnt_pos(p) in CLOSED_POS:
                 clo[f] += 1
     return {f for f, n in tot.items() if clo[f] / n >= min_share}
 
